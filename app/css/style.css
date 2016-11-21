@@ -329,10 +329,19 @@
             @include medium-desktop {
               display: none;
             }
+          }*/
+    /*.title-icon:before {
+            width: 70px;
+            height: 70px;
+            background: url('../img/icons/hospital.png') no-repeat;
+            background-size: 93%;
           }*/ }
-    .med-centers .container .row .title-icon:before {
+    .med-centers .container .row .container-title .title-icon {
+      margin-top: 50px; }
+    .med-centers .container .row .container-title .title-icon:before {
       width: 70px;
       height: 70px;
+      margin-top: -32px;
       background: url("../img/icons/hospital.png") no-repeat;
       background-size: 93%; }
     .med-centers .container .row .col-lg-6 {
@@ -442,26 +451,65 @@
 /* FONTS */
 /* FONT SIZES */
 /* COLORS */
-.best-doctors .row {
-  /*.title-icon {
-      line-height: 5.75vw;
-      &:before {
-        width: 70px;
-        height: 70px;
-        background: url('../img/icons/doc-silouette.png') no-repeat;
-        background-size: 93%;
-      }
-    }*/ }
-  .best-doctors .row .container-title {
-    width: 44%;
-    margin: 0 auto; }
-    .best-doctors .row .container-title .title-icon {
-      line-height: 5.75vw; }
-      .best-doctors .row .container-title .title-icon:before {
-        width: 70px;
-        height: 70px;
-        background: url("../img/icons/doc-silouette.png") no-repeat;
-        background-size: 93%; }
+.best-doctors .row .container-title {
+  width: 44%;
+  margin: 0 auto; }
+  @media (max-width: 1201px) {
+    .best-doctors .row .container-title {
+      width: 80%; } }
+  .best-doctors .row .container-title .title-icon {
+    margin-top: 52px; }
+    .best-doctors .row .container-title .title-icon:before {
+      width: 70px;
+      height: 70px;
+      margin-top: -36px;
+      background: url("../img/icons/doc-silouette.png") no-repeat;
+      background-size: 93%; }
+
+.best-doctors .row .col-lg-4 .card {
+  border: 1px solid #d3d3d3; }
+  .best-doctors .row .col-lg-4 .card:hover {
+    border: 1px solid #1fc3bb; }
+  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-3 .ava {
+    width: 100px;
+    height: 110px;
+    background: url("../img/ava-gourvitz.jpg") no-repeat;
+    background-size: 124%;
+    background-position: 85% 12%;
+    -webkit-border-radius: 0 0 20px 0;
+            border-radius: 0 0 20px 0; }
+  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 ul {
+    margin-left: 15px;
+    padding: 0;
+    text-align: left; }
+  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 .skill {
+    border-bottom: 1px solid #d1d5d5;
+    width: 242px;
+    margin-left: 15px; }
+  .best-doctors .row .col-lg-4 .card .statistics {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #e9f2f1; }
+    .best-doctors .row .col-lg-4 .card .statistics ul li {
+      float: left; }
+  .best-doctors .row .col-lg-4 .card .footer {
+    border: 2px solid #00baab;
+    /*margin-left: -1px;
+            margin-right: -1px;
+            margin-bottom: -1px;*/
+    margin: 0 -1px -1px;
+    -webkit-border-radius: 0 0 18px 18px;
+            border-radius: 0 0 18px 18px; }
+    .best-doctors .row .col-lg-4 .card .footer:hover {
+      background: #00c7bb;
+      /* Old browsers */
+      background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#00ae9f));
+      background: -webkit-linear-gradient(top, #00c7bb 0%, #00ae9f 100%);
+      background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+      border-bottom: 2px solid #008977;
+      color: #fff; }
 
 /* COMMON STYLES */
 body {
@@ -513,8 +561,7 @@ ul li {
 
 /* TITLE WITH ICON */
 .title-icon {
-  display: inline-block;
-  line-height: 5.35vw; }
+  display: inline-block; }
   @media (max-width: 969px) {
     .title-icon {
       line-height: 1.1; } }

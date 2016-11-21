@@ -34,12 +34,24 @@
               display: none;
             }
           }*/
-          .title-icon:before {
+          .container-title {
+            .title-icon {
+              margin-top: 50px;
+            }
+            .title-icon:before {
+              width: 70px;
+              height: 70px;
+              margin-top: -32px;
+              background: url('../img/icons/hospital.png') no-repeat;
+              background-size: 93%;
+            }
+          }
+          /*.title-icon:before {
             width: 70px;
             height: 70px;
             background: url('../img/icons/hospital.png') no-repeat;
             background-size: 93%;
-          }
+          }*/
           .col-lg-6 {
             padding: 7px;
             @include medium-desktop {

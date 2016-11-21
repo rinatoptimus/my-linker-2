@@ -6,24 +6,86 @@
     .container-title {
       width: 44%;
       margin: 0 auto;
+      @include large-desktop {
+        width: 80%;
+      }
         .title-icon {
-          line-height: 5.75vw;
+          margin-top: 52px;
+          //line-height: 5.75vw;
           &:before {
             width: 70px;
             height: 70px;
+            margin-top: -36px;
             background: url('../img/icons/doc-silouette.png') no-repeat;
             background-size: 93%;
           }
         }
     }
-    /*.title-icon {
-      line-height: 5.75vw;
-      &:before {
-        width: 70px;
-        height: 70px;
-        background: url('../img/icons/doc-silouette.png') no-repeat;
-        background-size: 93%;
+    .col-lg-4 {
+      .card {
+        border: 1px solid $grey-border;
+        //box-shadow: 0 0 0 0px red, 0 2px 0px grey;
+        &:hover {
+          border: 1px solid $green-border-hover;
+        }
+          .profile-info {
+            .col-lg-3 {
+              .ava {
+                width: 100px;
+                height: 110px;
+                background: url('../img/ava-gourvitz.jpg') no-repeat;
+                background-size: 124%;
+
+                //background-position-x: 90%;
+                background-position: 85% 12%;
+                border-radius: 0 0 20px 0;
+
+              }
+            }
+            .col-lg-9 {
+              ul {
+                margin-left: 15px;
+                padding: 0;
+                text-align: left;
+              }
+              .skill {
+                border-bottom: 1px solid $grey-border-list;
+                width: 242px;
+                margin-left: 15px;
+              }
+            }
+          }
+          .specialization {
+
+          }
+          .statistics {
+            margin-left: 0;
+            margin-right: 0;
+            background-color: $olive;
+              ul {
+                li {
+                  float: left;
+                }
+              }
+          }
+          .footer {
+            border: 2px solid $green-border;
+            /*margin-left: -1px;
+            margin-right: -1px;
+            margin-bottom: -1px;*/
+            margin: 0 -1px -1px;
+            border-radius: 0 0 18px 18px;
+            &:hover {
+              background: #00c7bb; /* Old browsers */
+              //background: -moz-linear-gradient(top,  #00c7bb 0%, #00c7bb 100%); /* FF3.6-15 */
+              //background: -webkit-linear-gradient(top,  #00c7bb 0%,#00ae9f 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to bottom,  #00c7bb 0%,#00ae9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+              border-bottom: 2px solid $green-border-dark;
+              color: $white;
+            }
+          }
       }
-    }*/
+    }
   }
 }
