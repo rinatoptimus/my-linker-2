@@ -1,0 +1,113 @@
+@import '_variables';
+@import '_mixins';
+
+.med-centers {
+  height: 1055px;
+  background: url('../img/bg-med-centers.jpg') no-repeat;
+  background-size: cover;
+  @include large-desktop {
+    height: auto;
+    background-position-x: 55%;
+  }
+    .container {
+      .row {
+        //text-align: center;
+          /*h2 {
+            display: inline-block;
+            line-height: 5.35vw;
+            @include medium-desktop {
+              line-height: 1.1;
+            }
+          }*/
+          /*.title-icon:before {
+            content: '';
+            display: block;
+            float: left;
+            width: 70px;
+            height: 70px;
+            float: left;
+            margin-right: 10px;
+            margin-top: -5px;
+            background: url('../img/icons/hospital.png') no-repeat;
+            background-size: 93%;
+            @include medium-desktop {
+              display: none;
+            }
+          }*/
+          .title-icon:before {
+            width: 70px;
+            height: 70px;
+            background: url('../img/icons/hospital.png') no-repeat;
+            background-size: 93%;
+          }
+          .col-lg-6 {
+            padding: 7px;
+            @include medium-desktop {
+              padding: 0px 17px;
+            }
+              .card {
+                width: 100%;
+                margin: 1px;
+                box-sizing: content-box;
+                &:hover {
+                  margin: 0;
+                  border: 1px solid $green-darker;
+                }
+                  .header {
+                    .col-lg-6 {
+                      .med-center-logo {
+                        width: 192px;
+                        height: 57px;
+                        margin-left: 20px;
+                        background: url('../img/logo-transmed.png') no-repeat;
+                        background-size: 60%;
+                      }
+                    }
+                    .col-lg-6 {
+                      .med-center-contacts {
+                        li {
+                          i {
+                            float: left;
+                            color: $blue-dark;
+                          }
+                        }
+                      }
+                    }
+                  }
+                .content {
+                  .col-lg-12 {
+                    .med-center-content {
+                      background-color: $olive-dark;
+                    }
+                  }
+                }
+                .statistics {
+                  .col-lg-12 {
+                    .med-center-statistics {
+                      margin-top: -10px;
+                      background-color: $olive;
+                        ul {
+                          //height: 32px;
+                          display: inline-block;
+                          margin-bottom: 0;
+                            li {
+                              float: left;
+                              line-height: 27px;
+                            }
+                        }
+                    }
+                  }
+                }
+                .footer {
+                  .btn-sign-in {
+                    padding: 13px 46px;
+                    &:hover {
+                      background-color: $green-bg-btn;
+                    }
+                  }
+                }
+              }
+          }
+      }
+    }
+}

@@ -1,0 +1,143 @@
+@import '_variables';
+
+.nav-tabs > li, .nav-pills > li {
+  float: none;
+  display: inline-block;
+  *display: inline; /* ie7 fix */
+  zoom: 1; /* hasLayout ie7 trigger */
+}
+.nav-tabs, .nav-pills {
+  text-align: center;
+}
+
+.panel-group {
+  .panel-default {
+    border: 1px solid $green-darker;
+    border-radius: 0;
+      .panel-heading {
+        background: url('../img/pattern-alphabet.jpg') transparent;
+        border: $green-darker;
+        border-radius: 0;
+      }
+      .panel-title:before {
+        content: '';
+        display: block;
+        float: left;
+        width: 33px;
+        height: 33px;
+        float: left;
+        margin-right: 10px;
+        margin-top: -5px;
+      }
+  }
+  .assign {
+    .panel-heading {
+      .panel-title:before {
+        background: url('../img/icons-green/paper-pen-green.png') no-repeat;
+      }
+    }
+  }
+  .choose-clinic {
+    .panel-heading {
+      .panel-title:before {
+        background: url('../img/icons-green/bed-hospital-green.png') no-repeat;
+      }
+    }
+  }
+  .find-medicine {
+    .panel-heading {
+      .panel-title:before {
+        background: url('../img/icons-green/needle-green.png') no-repeat;
+      }
+    }
+  }
+  .survey {
+    .panel-heading {
+      .panel-title:before {
+        background: url('../img/icons-green/cardio-green.png') no-repeat;
+      }
+    }
+  }
+}
+
+.row {
+  .nav-tabs {
+    border-bottom: 1px solid $green-light;
+    li.active {
+      a {
+        font-size: 18px;
+        border: 1px solid $green-darker;
+      }
+    }
+    .assign, .choose-clinic, .find-medicine, .survey {
+      a {
+        border-radius: 0;
+        font-size: 16px;
+        background: url('../img/pattern-alphabet.jpg');
+        color: $black-lighter;
+        &:before {
+          content: '';
+          display: block;
+          float: left;
+          width: 33px;
+          height: 33px;
+          float: left;
+          margin-right: 10px;
+          margin-top: -5px;
+        }
+      }
+    }
+    .assign {
+      a:before {
+        background: url('../img/icons-green/paper-pen-green.png') no-repeat;
+      }
+    }
+    .choose-clinic {
+      a:before {
+        background: url('../img/icons-green/bed-hospital-green.png') no-repeat;
+      }
+    }
+    .find-medicine {
+      a:before {
+        background: url('../img/icons-green/needle-green.png') no-repeat;
+      }
+    }
+    .survey {
+      a:before {
+        background: url('../img/icons-green/cardio-green.png') no-repeat;
+      }
+    }
+    .alphabet-tabs-icon {
+      width: 33px;
+      height: 33px;
+    }
+  }
+
+  .panel-group {
+    padding: 0px 16px;
+  }
+
+  .wrapper-alphabet-filter {
+    text-align: center;
+      ul.alphabet-letters {
+        display: inline-block;
+        margin-top: 20px;
+        padding-left: 0px;
+        li {
+            float: left;
+          }
+      }
+  }
+  .container {
+    clear: both;
+    .row {
+      .col-xs-3 {
+        padding-left: 0;
+          .alphabet-list {
+            float: none;
+            padding-left: 0;
+          }
+      }
+    }
+  }
+}

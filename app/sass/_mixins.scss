@@ -1,0 +1,25 @@
+$phone: 400px;
+$small-devices: 768px;
+$medium-desktop: 970px;
+$large-desktop: 1200px;
+
+@mixin phone {
+  @media (max-width: #{$phone + 1px}) {
+    @content;
+  }
+}
+@mixin small-devices {
+  @media (max-width: #{$small-devices - 1px}) {
+    @content;
+  }
+}
+@mixin medium-desktop {
+  @media (max-width: #{$medium-desktop - 1px}) {
+    @content;
+  }
+}
+@mixin large-desktop {
+  @media (max-width: #{$large-desktop + 1px}) {
+    @content;
+  }
+}

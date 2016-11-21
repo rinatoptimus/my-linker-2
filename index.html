@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My linker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+    <script src="app/js/tabs.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-main-menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Клиники</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Лекарства</a></li>
+                    <li><a href="#">Обследования</a></li>
+                    <li><a href="#">Медтуризм</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li><a href="#">Библиотека</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-sign-in fa-2" aria-hidden="true"></i>Вход</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav><!-- navbar-main-menu -->
+
+    <nav class="navbar navbar-fixed-top navbar-contacts">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-contacts" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="logo">Logo</div>
+                </a>
+            </div>
+            <div id="navbar-contacts" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ваш город <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Единый центр записи</a></li>
+                            <li><a href="#">8 (800) 333-03-03</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">Единый центр записи</a></li>
+                    <li><a href="#about">8 (800) 333-03-03</a></li>
+                    <li><a href="#contact">Регистрация</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav><!-- navbar-contacts -->
+
+    <div class="bg-jumbotron">
+    </div><!-- bg-jumbotron -->
+
+    <div class="container">
+        <div class="row how">
+            <h2>Как работает наш сервис</h2>
+            <div class="col-lg-4">
+                <p class="how-number">1.</p>
+                <div class="how-icon how-icon-doc"></div>
+                <h3>Выберите специалиста</h3>
+                <p>Сравните рейтинги врачей  и почитайте отзывы,чтобы определиться с выбором</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <p class="how-number">2.</p>
+                <div class="how-icon how-icon-paper-pen"></div>
+                <h3>Запишитесь на прием</h3>
+                <p>Заполните анкету, указав удобную для вас дату и время приёма</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <p class="how-number">3.</p>
+                <div class="how-icon how-icon-mark-geo"></div>
+                <h3>Посетите врача</h3>
+                <p>Мы пришлём вам sms - напоминание накануне визита к доктору</p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div><!-- how -->
+
+    <div class="medicines">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 medicines-pediatry">
+                    <div class="medicines-bg medicines-bg-pediatry">
+                        <h3>Педиатрия</h3>
+                        <ul>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Овчинникова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Григорова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Елинина Наталия Ивановна</a>
+                            </li>
+                        </ul>
+                        <div class="medicines-footer">
+                            <i class="fa fa-chevron-right fa-2" aria-hidden="true"></i>
+                            <a href="#">Все специалисты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 medicines-cardiology">
+                    <div class="medicines-bg medicines-bg-cardiology">
+                        <h3>Кардиология</h3>
+                        <ul>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Овчинникова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Григорова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Елинина Наталия Ивановна</a>
+                            </li>
+                        </ul>
+                        <div class="medicines-footer">
+                            <i class="fa fa-chevron-right fa-2" aria-hidden="true"></i>
+                            <a href="#">Все специалисты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 medicines-dent">
+                    <div class="medicines-bg medicines-bg-dent">
+                        <h3>Стоматология</h3>
+                        <ul>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Овчинникова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Григорова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Елинина Наталия Ивановна</a>
+                            </li>
+                        </ul>
+                        <div class="medicines-footer">
+                            <i class="fa fa-chevron-right fa-2" aria-hidden="true"></i>
+                            <a href="#">Все специалисты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container med-large">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 container-neurology">
+                    <div class="medicines-bg medicines-bg-neurology">
+                        <h3>Неврология</h3>
+                        <ul>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Овчинникова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Григорова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Елинина Наталия Ивановна</a>
+                            </li>
+                        </ul>
+                        <div class="medicines-footer">
+                            <i class="fa fa-chevron-right fa-2" aria-hidden="true"></i>
+                            <a href="#">Все специалисты</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="medicines-bg medicines-bg-diet">
+                        <h3>Диетология</h3>
+                        <ul>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Овчинникова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Григорова Наталия Ивановна</a>
+                            </li>
+                            <li>
+                                <div class="eye"></div>
+                                <a href="#">Елинина Наталия Ивановна</a>
+                            </li>
+                        </ul>
+                        <div class="medicines-footer">
+                            <i class="fa fa-chevron-right fa-2" aria-hidden="true"></i>
+                            <a href="#">Все специалисты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- medicines -->
+
+    <div class="container">
+        <div class="row">
+            <h2>Алфавитный указатель</h2>
+
+            <ul class="nav nav-tabs responsive hidden-xs hidden-sm" id="myTab">
+                <li class="active assign"><a href="#resp-tab1">Записаться к врачу</a></li>
+                <li class="choose-clinic"><a href="#resp-tab2">Подобрать клинику</a></li>
+                <li class="find-medicine"><a href="#resp-tab3">Найти лекарство</a></li>
+                <li class="survey"><a href="#resp-tab4">Обследования</a></li>
+            </ul>
+            <div class="tab-content responsive hidden-xs hidden-sm">
+              <div class="tab-pane active" id="resp-tab1">
+                  <div class="wrapper-alphabet-filter">
+                      <ul class="alphabet-letters">
+                          <li><a href="">А</a></li>
+                          <li><a href="">Б</a></li>
+                          <li><a href="">В</a></li>
+                          <li><a href="">Г</a></li>
+                          <li><a href="">Д</a></li>
+                          <li><a href="">Е</a></li>
+                          <li><a href="">Ё</a></li>
+                          <li><a href="">Ж</a></li>
+                          <li><a href="">З</a></li>
+                          <li><a href="">И</a></li>
+                          <li><a href="">Й</a></li>
+                          <li><a href="">К</a></li>
+                          <li><a href="">Л</a></li>
+                          <li><a href="">М</a></li>
+                          <li><a href="">Н</a></li>
+                          <li><a href="">О</a></li>
+                          <li><a href="">П</a></li>
+                          <li><a href="">Р</a></li>
+                          <li><a href="">С</a></li>
+                          <li><a href="">Т</a></li>
+                          <li><a href="">У</a></li>
+                          <li><a href="">Ф</a></li>
+                          <li><a href="">Х</a></li>
+                          <li><a href="">Ц</a></li>
+                          <li><a href="">Ч</a></li>
+                          <li><a href="">Ш</a></li>
+                          <li><a href="">Щ</a></li>
+                          <li><a href="">Э</a></li>
+                          <li><a href="">Ю</a></li>
+                          <li><a href="">Я</a></li>
+                      </ul>
+                  </div>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-3 col-xs-6">
+                              <ul class="alphabet-list">
+                                  <li>Акушер-гинеколог</li>
+                                  <li>Акушерка</li>
+                                  <li>Аллерголог</li>
+                              </ul>
+                          </div>
+                          <div class="col-lg-3 col-xs-6">
+                              <ul class="alphabet-list">
+                                  <li>Андролог</li>
+                                  <li>Андролог-эндокринолог</li>
+                                  <li>Анестезиолог</li>
+                              </ul>
+                          </div>
+                          <div class="col-lg-3 col-xs-6">
+                              <ul class="alphabet-list">
+                                  <li>Артролог</li>
+                                  <li>Аллерголог-иммунолог</li>
+                                  <li>Ангиохирург</li>
+                              </ul>
+                          </div>
+                          <div class="col-lg-3 col-xs-6">
+                              <ul class="alphabet-list">
+                                  <li>Аритмолог</li>
+                                  <li>Ароматерапевт</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane" id="resp-tab2">Tab 2222</div>
+              <div class="tab-pane" id="resp-tab3">Tab 3333</div>
+              <div class="tab-pane" id="resp-tab4">Tab 4444</div>
+            </div>
+
+        </div>
+    </div><!-- alphabet filter -->
+
+    <div class="med-centers">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="title-icon">Медицинские центры и клиники</h2>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p>Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <a class="show-all" href="#">Посмотреть все клиники <i class="fa fa-angle-down fa-2" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- med-centers -->
+
+    <div class="container best-doctors">
+        <div class="row text-center">
+            <div class="container-title">
+                <h2 class="title-icon">Лучшие врачи Казани</h2>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">Стаж</div>
+                    <div class="row specialization">Дерматолог</div>
+                    <div class="row statistics">86 отзывов</div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">Стаж</div>
+                    <div class="row specialization">Дерматолог</div>
+                    <div class="row statistics">86 отзывов</div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">Стаж</div>
+                    <div class="row specialization">Дерматолог</div>
+                    <div class="row statistics">86 отзывов</div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+        </div>
+    </div><!-- best-doctors-->
+
+    <footer>
+        <div class="footer-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <div class="logo">Logo</div>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">b</a></li>
+                        <li><a href="#">c</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="#">d</a></li>
+                        <li><a href="#">e</a></li>
+                        <li><a href="#">f</a></li>
+                        <li><a href="#">g</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <li><a href="#">h</a></li>
+                        <li><a href="#">i</a></li>
+                        <li><a href="#">j</a></li>
+                        <li><a href="#">k</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app/js/vendor/responsive-tabs.js"></script>
+    <script src="app/js/tabs.js"></script>
+</body>
+</html>

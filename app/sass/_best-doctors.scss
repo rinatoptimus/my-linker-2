@@ -1,0 +1,29 @@
+@import '_variables';
+@import '_mixins';
+
+.best-doctors {
+  .row {
+    .container-title {
+      width: 44%;
+      margin: 0 auto;
+        .title-icon {
+          line-height: 5.75vw;
+          &:before {
+            width: 70px;
+            height: 70px;
+            background: url('../img/icons/doc-silouette.png') no-repeat;
+            background-size: 93%;
+          }
+        }
+    }
+    /*.title-icon {
+      line-height: 5.75vw;
+      &:before {
+        width: 70px;
+        height: 70px;
+        background: url('../img/icons/doc-silouette.png') no-repeat;
+        background-size: 93%;
+      }
+    }*/
+  }
+}
