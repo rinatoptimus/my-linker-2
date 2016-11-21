@@ -451,56 +451,340 @@
 /* FONTS */
 /* FONT SIZES */
 /* COLORS */
-.best-doctors .row .container-title {
-  width: 44%;
-  margin: 0 auto; }
-  @media (max-width: 1201px) {
-    .best-doctors .row .container-title {
-      width: 80%; } }
-  .best-doctors .row .container-title .title-icon {
-    margin-top: 52px; }
-    .best-doctors .row .container-title .title-icon:before {
-      width: 70px;
-      height: 70px;
-      margin-top: -36px;
-      background: url("../img/icons/doc-silouette.png") no-repeat;
-      background-size: 93%; }
+.best-doctors {
+  padding-bottom: 4vw; }
+  .best-doctors .row .container-title {
+    width: 44%;
+    margin: 0 auto; }
+    @media (max-width: 1201px) {
+      .best-doctors .row .container-title {
+        width: 80%; } }
+    .best-doctors .row .container-title .title-icon {
+      margin-top: 52px; }
+      .best-doctors .row .container-title .title-icon:before {
+        width: 70px;
+        height: 70px;
+        margin-top: -36px;
+        background: url("../img/icons/doc-silouette.png") no-repeat;
+        background-size: 93%; }
+  .best-doctors .row .col-lg-4 .card {
+    border: 1px solid #d3d3d3; }
+    .best-doctors .row .col-lg-4 .card:hover {
+      border: 1px solid #1fc3bb; }
+    .best-doctors .row .col-lg-4 .card .profile-info .col-lg-3 .ava {
+      width: 100px;
+      height: 110px;
+      background: url("../img/ava-gourvitz.jpg") no-repeat;
+      background-size: 124%;
+      background-position: 85% 12%;
+      -webkit-border-radius: 0 0 20px 0;
+              border-radius: 0 0 20px 0; }
+    .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 ul {
+      margin-left: 15px;
+      padding: 0;
+      text-align: left; }
+    .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 .skill {
+      border-bottom: 1px solid #d1d5d5;
+      width: 242px;
+      margin-left: 15px; }
+    .best-doctors .row .col-lg-4 .card .statistics {
+      margin-left: 0;
+      margin-right: 0;
+      background-color: #e9f2f1; }
+      .best-doctors .row .col-lg-4 .card .statistics ul li {
+        float: left; }
+    .best-doctors .row .col-lg-4 .card .footer {
+      border: 2px solid #00baab;
+      /*margin-left: -1px;
+              margin-right: -1px;
+              margin-bottom: -1px;*/
+      margin: 0 -1px -1px;
+      -webkit-border-radius: 0 0 18px 18px;
+              border-radius: 0 0 18px 18px; }
+      .best-doctors .row .col-lg-4 .card .footer:hover {
+        background: #00c7bb;
+        /* Old browsers */
+        background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#00ae9f));
+        background: -webkit-linear-gradient(top, #00c7bb 0%, #00ae9f 100%);
+        background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+        border-bottom: 2px solid #008977;
+        color: #fff; }
 
-.best-doctors .row .col-lg-4 .card {
-  border: 1px solid #d3d3d3; }
-  .best-doctors .row .col-lg-4 .card:hover {
-    border: 1px solid #1fc3bb; }
-  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-3 .ava {
-    width: 100px;
-    height: 110px;
-    background: url("../img/ava-gourvitz.jpg") no-repeat;
-    background-size: 124%;
-    background-position: 85% 12%;
-    -webkit-border-radius: 0 0 20px 0;
-            border-radius: 0 0 20px 0; }
-  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 ul {
-    margin-left: 15px;
-    padding: 0;
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  src: local("Open Sans Light"), local("Open-Sans-Light"), url("../fonts/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans LightItalic';
+  font-style: normal;
+  src: local("Open Sans LightItalic"), local("Open-Sans-LightItalic"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondLight';
+  font-style: normal;
+  src: local("Open Sans CondLight"), local("Open-Sans-CondLight"), url("../fonts/OpenSans-CondLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondLightItalic';
+  font-style: normal;
+  src: local("Open Sans CondLightItalic"), local("Open-Sans-CondLightItalic"), url("../fonts/OpenSans-CondLightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  src: local("Open Sans Italic"), local("Open-Sans-Italic"), url("../fonts/OpenSans-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  font-style: normal;
+  src: local("Open Sans Semibold"), local("Open-Sans-Semibold"), url("../fonts/OpenSans-Semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans SemiboldItalic';
+  font-style: normal;
+  src: local("Open Sans SemiboldItalic"), local("Open-Sans-SemiboldItalic"), url("../fonts/OpenSans-SemiboldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  src: local("Open Sans Bold"), local("Open-Sans-Bold"), url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  font-style: normal;
+  src: local("Open Sans BoldItalic"), local("Open-Sans-BoldItalic"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondBold_0';
+  font-style: normal;
+  src: local("Open Sans CondBold_0"), local("Open-Sans-CondBold_0"), url("../fonts/OpenSans-CondBold_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  font-style: normal;
+  src: local("Open Sans ExtraBold"), local("Open-Sans-ExtraBold"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans ExtraBoldItalic';
+  font-style: normal;
+  src: local("Open Sans ExtraBoldItalic"), local("Open-Sans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
+
+/* FONTS */
+/* FONT SIZES */
+/* COLORS */
+.common-diseases {
+  padding-top: 31px;
+  background: url("../img/bg-common-diseases.jpg") no-repeat;
+  background-size: cover; }
+  @media (max-width: 1201px) {
+    .common-diseases {
+      padding-bottom: 25px; } }
+  .common-diseases .container .text-center .container-title .title-icon:before {
+    width: 55px;
+    height: 62px;
+    margin-top: -27px;
+    background: url(../img/icons/fonendoscope.png) no-repeat;
+    background-size: 100%; }
+  .common-diseases .container .text-center .col-lg-4 {
+    margin-top: 26px;
+    margin-bottom: 28px;
     text-align: left; }
-  .best-doctors .row .col-lg-4 .card .profile-info .col-lg-9 .skill {
-    border-bottom: 1px solid #d1d5d5;
-    width: 242px;
-    margin-left: 15px; }
-  .best-doctors .row .col-lg-4 .card .statistics {
-    margin-left: 0;
-    margin-right: 0;
-    background-color: #e9f2f1; }
-    .best-doctors .row .col-lg-4 .card .statistics ul li {
-      float: left; }
-  .best-doctors .row .col-lg-4 .card .footer {
-    border: 2px solid #00baab;
-    /*margin-left: -1px;
-            margin-right: -1px;
-            margin-bottom: -1px;*/
-    margin: 0 -1px -1px;
-    -webkit-border-radius: 0 0 18px 18px;
-            border-radius: 0 0 18px 18px; }
-    .best-doctors .row .col-lg-4 .card .footer:hover {
+    @media (max-width: 401px) {
+      .common-diseases .container .text-center .col-lg-4 {
+        margin-bottom: 55px; } }
+    .common-diseases .container .text-center .col-lg-4 .title {
+      font-size: 20px;
+      font-family: "Open Sans Bold", Arial, sans-serif; }
+    .common-diseases .container .text-center .col-lg-4 .descr {
+      font-size: 15px;
+      font-family: "Open Sans LightItalic", Arial, sans-serif; }
+    .common-diseases .container .text-center .col-lg-4 ul {
+      padding-left: 0; }
+      .common-diseases .container .text-center .col-lg-4 ul li:first-child {
+        margin-right: 37px; }
+      .common-diseases .container .text-center .col-lg-4 ul li {
+        margin-bottom: 1px;
+        float: left; }
+        .common-diseases .container .text-center .col-lg-4 ul li:hover {
+          margin-bottom: 0px;
+          border-bottom: 1px solid #a5d4d0; }
+        .common-diseases .container .text-center .col-lg-4 ul li .links-icon {
+          width: 11px;
+          height: 12px;
+          display: block;
+          float: left;
+          margin-top: 4px;
+          margin-right: 10px; }
+        .common-diseases .container .text-center .col-lg-4 ul li .specialists {
+          background: url("../img/icons-green/specialists.png") no-repeat; }
+        .common-diseases .container .text-center .col-lg-4 ul li .researches {
+          background: url("../img/icons-green/researches.png") no-repeat; }
+        .common-diseases .container .text-center .col-lg-4 ul li a {
+          font-size: 14px;
+          color: #0ba39a; }
+          .common-diseases .container .text-center .col-lg-4 ul li a:hover {
+            text-decoration: none; }
+  .common-diseases .container .row .col-lg-12 ul {
+    margin-bottom: 5vw;
+    padding-left: 0; }
+    @media (max-width: 1201px) {
+      .common-diseases .container .row .col-lg-12 ul {
+        margin-top: 3vw;
+        margin-bottom: 0; } }
+    .common-diseases .container .row .col-lg-12 ul .list-title {
+      margin-right: 19px;
+      font-size: 16px;
+      font-family: "Open Sans Semibold", Arial, sans-serif;
+      color: #191717; }
+    .common-diseases .container .row .col-lg-12 ul li {
+      float: left;
+      margin-right: 10px; }
+      .common-diseases .container .row .col-lg-12 ul li a {
+        font-size: 16px;
+        text-decoration: underline;
+        color: #191717; }
+        .common-diseases .container .row .col-lg-12 ul li a:hover {
+          text-decoration: none; }
+
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  src: local("Open Sans Light"), local("Open-Sans-Light"), url("../fonts/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans LightItalic';
+  font-style: normal;
+  src: local("Open Sans LightItalic"), local("Open-Sans-LightItalic"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondLight';
+  font-style: normal;
+  src: local("Open Sans CondLight"), local("Open-Sans-CondLight"), url("../fonts/OpenSans-CondLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondLightItalic';
+  font-style: normal;
+  src: local("Open Sans CondLightItalic"), local("Open-Sans-CondLightItalic"), url("../fonts/OpenSans-CondLightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  src: local("Open Sans Italic"), local("Open-Sans-Italic"), url("../fonts/OpenSans-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  font-style: normal;
+  src: local("Open Sans Semibold"), local("Open-Sans-Semibold"), url("../fonts/OpenSans-Semibold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans SemiboldItalic';
+  font-style: normal;
+  src: local("Open Sans SemiboldItalic"), local("Open-Sans-SemiboldItalic"), url("../fonts/OpenSans-SemiboldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  src: local("Open Sans Bold"), local("Open-Sans-Bold"), url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  font-style: normal;
+  src: local("Open Sans BoldItalic"), local("Open-Sans-BoldItalic"), url("../fonts/OpenSans-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans CondBold_0';
+  font-style: normal;
+  src: local("Open Sans CondBold_0"), local("Open-Sans-CondBold_0"), url("../fonts/OpenSans-CondBold_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  font-style: normal;
+  src: local("Open Sans ExtraBold"), local("Open-Sans-ExtraBold"), url("../fonts/OpenSans-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans ExtraBoldItalic';
+  font-style: normal;
+  src: local("Open Sans ExtraBoldItalic"), local("Open-Sans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
+
+/* FONTS */
+/* FONT SIZES */
+/* COLORS */
+.container .text-center .container-title .title-icon {
+  margin-top: 52px; }
+  .container .text-center .container-title .title-icon:before {
+    width: 56px;
+    height: 57px;
+    margin-top: -24px;
+    background: url("../img/icons/drugs.png") no-repeat;
+    background-size: 93%; }
+
+.container .text-center .col-lg-3 .card {
+  border: 1px solid #d3d3d3; }
+  .container .text-center .col-lg-3 .card:hover {
+    border: 1px solid #1fc3bb; }
+  .container .text-center .col-lg-3 .card img {
+    width: 268px;
+    height: 154px; }
+  .container .text-center .col-lg-3 .card .med-descr {
+    padding-top: 15px;
+    padding-left: 14px;
+    padding-right: 30px;
+    background-color: #e9f2f1;
+    border-top: 1px solid #d3d3d3;
+    text-align: left; }
+    .container .text-center .col-lg-3 .card .med-descr p {
+      font-size: 18px; }
+    .container .text-center .col-lg-3 .card .med-descr ul {
+      margin-top: 16px;
+      padding-left: 0;
+      height: 60px;
+      background-color: #e9f2f1; }
+      .container .text-center .col-lg-3 .card .med-descr ul li {
+        float: left; }
+      .container .text-center .col-lg-3 .card .med-descr ul .med-company {
+        font-family: "Open Sans Italic", Arial, sans-serif;
+        color: #828282; }
+      .container .text-center .col-lg-3 .card .med-descr ul .med-price {
+        margin-right: -31px;
+        margin-top: -5px;
+        padding: 1px 33px 1px 15px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #2ec0b5; }
+  .container .text-center .col-lg-3 .card .med-statistics {
+    clear: both; }
+    .container .text-center .col-lg-3 .card .med-statistics ul {
+      padding: 1px 13px; }
+      .container .text-center .col-lg-3 .card .med-statistics ul li:first-child {
+        margin-right: 16px; }
+      .container .text-center .col-lg-3 .card .med-statistics ul li {
+        float: left;
+        margin-top: -3px;
+        font-size: 12px;
+        font-family: "Open Sans Semibold", Arial, sans-serif;
+        color: #565656; }
+        .container .text-center .col-lg-3 .card .med-statistics ul li i {
+          margin-right: 5px; }
+  .container .text-center .col-lg-3 .card .footer {
+    margin: 21px 0 0;
+    font-size: 18px; }
+    .container .text-center .col-lg-3 .card .footer:hover {
+      margin: 21px 0 -2px;
       background: #00c7bb;
       /* Old browsers */
       background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#00ae9f));
@@ -509,7 +793,19 @@
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
       border-bottom: 2px solid #008977;
-      color: #fff; }
+      -webkit-border-radius: 0 0 20px 20px;
+              border-radius: 0 0 20px 20px; }
+      .container .text-center .col-lg-3 .card .footer:hover .btn-buy {
+        color: #fff; }
+    .container .text-center .col-lg-3 .card .footer .btn-buy {
+      display: block;
+      border: 2px solid #00b6a7;
+      -webkit-border-radius: 0 0 20px 20px;
+              border-radius: 0 0 20px 20px;
+      padding: 9px 103px 12px;
+      margin: 0 -1px -1px;
+      font-size: 18px;
+      color: #000; }
 
 /* COMMON STYLES */
 body {

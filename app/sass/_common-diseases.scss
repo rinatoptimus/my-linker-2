@@ -1,0 +1,106 @@
+@import '_variables';
+@import '_mixins';
+
+.common-diseases {
+  padding-top: 31px;
+  background: url('../img/bg-common-diseases.jpg') no-repeat;
+  background-size: cover;
+  @include large-desktop {
+    padding-bottom: 25px;
+  }
+    .container {
+      .text-center {
+        .container-title {
+          .title-icon:before {
+            width: 55px;
+            height: 62px;
+            margin-top: -27px;
+            background: url(../img/icons/fonendoscope.png) no-repeat;
+            background-size: 100%;
+          }
+        }
+        .col-lg-4 {
+          margin-top: 26px;
+          margin-bottom: 28px;
+          @include phone {
+            margin-bottom: 55px;
+          }
+          text-align: left;
+            .title {
+              font-size: 20px;
+              font-family: $bold;
+            }
+            .descr {
+              font-size: 15px;
+              font-family: $lightItalic;
+            }
+
+            ul {
+              padding-left: 0;
+                li:first-child {
+                  margin-right: 37px;
+                }
+                li {
+                  margin-bottom: 1px;
+                  &:hover {
+                    margin-bottom: 0px;
+                    border-bottom: 1px solid $green-link-hover;
+                  }
+                  float: left;
+                    .links-icon {
+                      width: 11px;
+                      height: 12px;
+                      display: block;
+                      float: left;
+                      margin-top: 4px;
+                      margin-right: 10px;
+                    }
+                    .specialists {
+                      background: url('../img/icons-green/specialists.png') no-repeat;
+                    }
+                    .researches {
+                      background: url('../img/icons-green/researches.png') no-repeat;
+                    }
+                    a {
+                      font-size: 14px;
+                      color: $green-diseases;
+                      &:hover {
+                        text-decoration: none;
+                    }
+                }
+              }
+            }
+        }
+      }
+      .row {
+        .col-lg-12 {
+          ul {
+            margin-bottom: 5vw;
+            padding-left: 0;
+            @include large-desktop {
+              margin-top: 3vw;
+              margin-bottom: 0;
+            }
+              .list-title {
+                margin-right: 19px;
+                font-size: 16px;
+                font-family: $semibold;
+                color: $black-btn-font;
+              }
+              li {
+                float: left;
+                margin-right: 10px;
+                  a {
+                    font-size: 16px;
+                    text-decoration: underline;
+                    color: $black-btn-font;
+                    &:hover {
+                      text-decoration: none;
+                    }
+                  }
+              }
+          }
+        }
+      }
+    }
+}
