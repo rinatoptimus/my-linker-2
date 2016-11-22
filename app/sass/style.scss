@@ -5,6 +5,7 @@
 @import '_best-doctors';
 @import 'common-diseases';
 @import '_medicines';
+@import '_footer';
 
 /* COMMON STYLES */
 body {
@@ -18,6 +19,15 @@ h2 {
 }
 h3 {
   font-size: 20px;
+}
+.logo {
+  background: url('../img/logo.png') no-repeat;
+  display: block;
+  width: 150px;
+  height: 65px;
+  &:hover {
+    opacity: .7;
+  }
 }
 ul li {
   list-style: none;
@@ -85,6 +95,7 @@ ul li {
 
 /* CUSTOM STYLES */
 .navbar-main-menu {
+  margin-top: 10px;
   position: relative;
   min-height: 29px;
   margin-bottom: 0;
@@ -109,6 +120,19 @@ ul li {
             }
           }
           .navbar-right {
+            li:last-child {
+              border-bottom: 1px solid #66d7cf;
+              width: 53px;
+              &:hover {
+                border-bottom: none;
+              }
+                a {
+                  padding: 0;
+                    i {
+                      margin-right: 6px;
+                    }
+                }
+            }
             li {
               border-right: none;
             }
@@ -381,29 +405,4 @@ ul li {
         }
       }
   }
-}
-
-footer {
-  height: 100px;
-  background: $green-dark;
-  width: 100%;
-  height: 400px;
-    .container {
-      .row {
-        .col-lg-3 {
-          ul {
-            li {
-              a {
-                color: $white;
-              }
-            }
-          }
-        }
-      }
-    }
-    .footer-overlay {
-      background: url('../img/dot.png') $green-dark;
-      width: 100%;
-      height: 400px;
-    }
 }
