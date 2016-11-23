@@ -3,8 +3,9 @@
 @import '_alphabet-filter';
 @import '_med-centers';
 @import '_best-doctors';
-@import 'common-diseases';
+@import '_common-diseases';
 @import '_medicines';
+@import '_alphabet-tabs';
 @import '_footer';
 
 /* COMMON STYLES */
@@ -95,7 +96,6 @@ ul li {
 
 /* CUSTOM STYLES */
 .navbar-main-menu {
-  margin-top: 10px;
   position: relative;
   min-height: 29px;
   margin-bottom: 0;
@@ -110,14 +110,62 @@ ul li {
         }
         .navbar-collapse {
           .nav {
-            li {
-              border-right: 1px solid $white-opacity;
-              a {
-                padding-top: 4px;
-                padding-bottom: 4px;
-                color: $white;
+            margin-left: -23px; // 1111
+              li {
+                border-right: 1px solid $white-opacity;
+                a {
+                  padding-top: 4px;
+                  padding-bottom: 4px;
+                  color: $white;
+                  &:hover, &:focus {
+                    background-color: $green-hover;
+                    text-decoration: none;
+                  }
+                }
+                .nav-clinics {
+                  padding-right: 23px;
+                  @include medium-desktop-lg {
+                    padding-left: 22px;
+                    padding-right: 10px;
+                  }
+                }
+                .nav-doctors {
+                  padding-left: 21px;
+                  padding-right: 21px;
+                }
+                .nav-medicines {
+                  padding-left: 22px;
+                  padding-right: 26px;
+                }
+                .nav-researches {
+                  padding-left: 21px;
+                  padding-right: 29px;
+                }
+                .nav-medtourism {
+                  padding-left: 21px;
+                  padding-right: 25px;
+                }
+                .nav-category {
+                  padding-left: 21px;
+                  padding-right: 24px;
+                }
+                .nav-library {
+                  padding-left: 22px;
+                  padding-right: 20px;
+                }
+                .nav-doctors, .nav-medicines, .nav-researches, .nav-medtourism, .nav-category, .nav-library {
+                  @include medium-desktop-lg {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                  @include small-devices {
+                    padding-left: 22px;
+                  }
+                }
               }
-            }
+              li:last-child {
+                border-right: none;
+              }
           }
           .navbar-right {
             li:last-child {
@@ -128,29 +176,76 @@ ul li {
               }
                 a {
                   padding: 0;
+                  &:hover {
+                    text-decoration: none;
+                    background-color: transparent;
+                  }
                     i {
                       margin-right: 6px;
                     }
                 }
             }
             li {
+              margin-top: 4px;
+              height: 20px;
               border-right: none;
+              @include small-devices {
+                margin-left: 22px;
+              }
             }
           }
         }
       }
 }
 .navbar-contacts {
+  margin-bottom: 11px;
   position: relative;
     .container {
       .navbar-header {
-        .navbar-toggle {
-          .icon-bar {
-            background-color: red;
+        margin-top: 13px;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        //background-color: rgba(0, 0, 0, .2);
+        padding-right: 85px;
+        @include small-devices {
+          padding-right: 0;
+          border-right: transparent;
+        }
+
+          .logo-top {
+            margin-left: -12px;
+            @include small-devices {
+              margin-left: 10px;
+            }
           }
+          .navbar-toggle {
+            .icon-bar {
+              background-color: $green;
+            }
+          }
+      }
+      .navbar-collapse {
+        ul {
+          margin-top: 20px;
+            li {
+              a {
+                font-size: 16px;
+                color: $black-darker;
+                &:hover, &:focus {
+                  background-color: transparent;
+                  text-decoration: underline;
+                }
+              }
+              .phone-number {
+                font-size: 20px;
+                font-family: $semibold;
+              }
+            }
         }
       }
     }
+}
+span.numbers {
+  color: $grey;
 }
 
 .bg-jumbotron {
@@ -168,24 +263,153 @@ ul li {
 .container {
   .how {
     text-align: center;
-      .col-lg-4 {
+      h2 {
+        margin-top: 53px;
+        margin-bottom: 52px;
+      }
+      /*.col-lg-3 {
+        margin-left: 44px;
+        padding: 0;
+
+        width: 24%;
+        @include large-desktop {
+          width: 28%;
+        }
+          .how-icon {
+            margin: 0 auto;
+            background-size: contain;
+          }
+          .how-icon-doc {
+            width: 121px;
+            height: 128px;
+            margin-left: 84px;
+            margin-top: 1px;
+            background: url('../img/icons/icon-xl-doc.png') no-repeat;
+            background-size: contain;
+          }
+          .how-icon-paper-pen {
+            margin-left: 80px;
+            width: 127px;
+            height: 132px;
+            margin-top: -5px;
+            background: url('../img/icons/icon-xl-paper-pen.png') no-repeat;
+            background-size: contain;
+          }
+          .how-icon-mark-geo {
+            margin-left: 42px;
+            width: 123px;
+            height: 128px;
+            margin-top: -3px;
+            background: url('../img/icons/icon-xl-mark-geo.png') no-repeat;
+            background-size: contain;
+          }
+          .how-number {
+            float: left;
+            font-family: $light;
+            font-size: 58px;
+            line-height: 40px;
+          }
+          .how-number-first {
+            margin-left: 15%;
+          }
+          .how-number-second {
+            margin-left: 12px;
+          }
+          h3 {
+            font-size: 20px;
+            font-family: $semibold;
+            color: $black-lighter;
+          }
+          .how-choose {
+            margin-left: 16px;
+            padding-top: 3px;
+          }
+          .how-sign-in {
+            margin-left: -26px;
+            padding-top: 5px;
+          }
+          .how-visit {
+            margin-left: -68px;
+            padding-top: 7px;
+          }
+          .text {
+            font-size: 14px;
+            font-family: $semibold;
+            color: $grey-darker;
+          }
+          .text-first {
+            width: 292px;
+            padding-top: 1px;
+          }
+          .text-second {
+            width: 350px;
+            margin-left: -49px;
+            padding-top: 1px;
+            @include large-desktop {
+              width: 250px;
+              margin-left: 0;
+            }
+          }
+          .text-third {
+            width: 272px;
+            margin-left: -34px;
+            padding-top: 1px;
+          }
+      }*/
+    .col-lg-3 {
+      margin-left: 44px;
+      padding: 0;
+      display: block;
+      width: 24%;
+
+      @include medium-desktop-lg {
+        display: flex;
+      }
+      @include large-desktop {
+        width: 28%;
+      }
+      @include small-devices {
+        display: flex;
+      }
+      @include phone-lg {
+        display: block;
+      }
+      .how-block-first {
         .how-icon {
-          width: 118px;
-          height: 126px;
-          margin-left: 30px;
+          margin: 0 auto;
           background-size: contain;
         }
         .how-icon-doc {
+          width: 121px;
+          height: 128px;
+          margin-left: 84px;
+          margin-top: 1px;
           background: url('../img/icons/icon-xl-doc.png') no-repeat;
           background-size: contain;
         }
         .how-icon-paper-pen {
+          margin-left: 80px;
+          width: 127px;
+          height: 132px;
+          margin-top: -5px;
           background: url('../img/icons/icon-xl-paper-pen.png') no-repeat;
           background-size: contain;
         }
         .how-icon-mark-geo {
+          margin-left: 42px;
+          width: 123px;
+          height: 128px;
+          margin-top: -3px;
           background: url('../img/icons/icon-xl-mark-geo.png') no-repeat;
           background-size: contain;
+          @include medium-desktop-lg {
+            margin-left: 82px;
+          }
+        }
+        .how-icon-doc, .how-icon-paper-pen, .how-icon-mark-geo {
+          @include medium-desktop-lg {
+            margin-right: 50px;
+          }
         }
         .how-number {
           float: left;
@@ -193,74 +417,297 @@ ul li {
           font-size: 58px;
           line-height: 40px;
         }
+        .how-number-first {
+          margin-left: 15%;
+          @include medium-desktop-lg {
+            margin-left: 6%;
+          }
+        }
+        .how-number-second {
+          margin-left: 12px;
+        }
+        .how-number-third {
+          @include medium-desktop-lg {
+            margin-left: 12px;
+          }
+        }
       }
+
+      .how-block-second {
+        h3 {
+          font-size: 20px;
+          font-family: $semibold;
+          color: $black-lighter;
+          @include phone {
+            width: 300px;
+          }
+        }
+        .how-choose {
+          margin-left: 16px;
+          padding-top: 3px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .how-sign-in {
+          margin-left: -26px;
+          padding-top: 5px;
+          @include medium-desktop-lg {
+            margin-left: -1px;
+            text-align: left;
+          }
+        }
+        .how-visit {
+          margin-left: -68px;
+          padding-top: 7px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .how-choose, .how-sign-in, .how-visit {
+          @include phone-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .text {
+          font-size: 14px;
+          font-family: $semibold;
+          color: $grey-darker;
+        }
+        .text-first {
+          width: 292px;
+          padding-top: 1px;
+          @include medium-desktop-lg {
+            text-align: left;
+          }
+        }
+        .text-second {
+          width: 350px;
+          margin-left: -49px;
+          padding-top: 1px;
+          @include large-desktop {
+            width: 250px;
+            margin-left: 0;
+          }
+          @include medium-desktop-lg {
+            text-align: left;
+          }
+        }
+        .text-third {
+          width: 272px;
+          margin-left: -34px;
+          padding-top: 1px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .text-second, .text-third {
+          @include phone-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+      }
+  }
+  .col-middle {
+    @include medium-desktop-lg {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+    .col-lg-1 {
+      .arrow-right {
+        width: 64px;
+        height: 33px;
+        margin-top: 48px;
+        background: url('../img/arrow-right.png') no-repeat;
+      }
+      .arrow-right-first {
+        margin-left: 2px;
+      }
+      .arrow-right-first, .arrow-right-second {
+        display: block;
+        @include large-desktop {
+          display: none;
+        }
+      }
+    }
   }
 }
 
 .medicines {
-  .container {
-    .row {
-      .medicines-pediatry {
-        padding-left: 0;
-        @include phone {
-          padding-left: 15px;
-          //display: none;
-        }
-        @include large-desktop {
-          padding-left: 15px;
-        }
-      }
-      .medicines-cardiology {
-        padding-left: 10px;
-        padding-right: 10px; // 1111
-        @include phone {
-          padding-left: 15px;
-        }
-        @include large-desktop {
-          padding-left: 15px;
-          padding-right: 15px; // 2222
-        }
-      }
-      .medicines-dent {
-        padding-left: 20px;
-        padding-right: 0; // 1111
-        @include phone {
-          padding-left: 15px;
-        }
-        @include large-desktop {
-          padding-left: 15px;
-          padding-right: 15px; // 2222
-        }
-      }
-      .col-lg-4 {
-        @include phone {
-          margin-top: 10px;
-        }
-        .medicines-bg {
-          position: relative;
-          max-width: 370px;
-          height: 200px;
-          box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
-          /*@include small-devices {
-            max-width: 370px;
-          }*/
-          @include large-desktop {
-            //width: 330px;
-            max-width: 748px;
-            margin: 10px auto 0;
+  margin-top: 58px;
+  margin-bottom: 43px;
+    .container {
+      .row {
+        .medicines-pediatry {
+          padding-left: 0;
+          @include phone {
+            padding-left: 15px;
+            //display: none;
           }
-            h3 {
-              display: inline-block;
-              padding: 10px;
-              background-color: $green-dark;
-              font-size: 20px;
-              font-family: $light;
-              color: $white;
+          @include large-desktop {
+            padding-left: 15px;
+          }
+        }
+        .medicines-cardiology {
+          padding-left: 10px;
+          padding-right: 10px; // 1111
+          @include phone {
+            padding-left: 15px;
+          }
+          @include large-desktop {
+            padding-left: 15px;
+            padding-right: 15px; // 2222
+          }
+        }
+        .medicines-dent {
+          padding-left: 20px;
+          padding-right: 0; // 1111
+          @include phone {
+            padding-left: 15px;
+          }
+          @include large-desktop {
+            padding-left: 15px;
+            padding-right: 15px; // 2222
+          }
+        }
+        .col-lg-4 {
+          @include phone {
+            margin-top: 10px;
+          }
+          .medicines-bg {
+            position: relative;
+            max-width: 370px;
+            height: 200px;
+            box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
+            /*@include small-devices {
+              max-width: 370px;
+            }*/
+            @include large-desktop {
+              //width: 330px;
+              max-width: 748px;
+              margin: 10px auto 0;
             }
-            ul {
-              padding-left: 0;
-                li {
-                  cursor: pointer;
+              h3 {
+                display: inline-block;
+                padding: 3px 19px;
+                background-color: $green-dark;
+                font-size: 20px;
+                font-family: $light;
+                color: $white;
+              }
+              ul {
+                margin-top: 10px;
+                padding-left: 0;
+                  li {
+                    padding: 2px 13px 3px 3px;
+                    cursor: pointer;
+                      .eye {
+                        width: 23px;
+                        height: 15px;
+                        background: url('../img/eye-white.png') no-repeat;
+                        float: left;
+                        margin-right: 5px;
+                        margin-top: 3px;
+                        visibility: hidden;
+                      }
+                      a {
+                        font-size: 15px;
+                        color: $white;
+                        &:hover {
+                          text-decoration: none;
+                        }
+                      }
+                      &:hover > div {
+                        visibility: visible;
+                      }
+                      &:hover {
+                        background-color: rgba(10, 164, 155, .2);
+                        display: inline-block;
+                      }
+                  }
+              }
+              .medicines-footer {
+                position: absolute;
+                padding: 10px 10px 11px 11px;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, .2);
+                  i {
+                    padding-right: 2px;
+                    color: $green;
+                  }
+                  a {
+                    color: $white;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+              }
+          }
+          .medicines-bg-pediatry {
+            background: url('../img/med-1.jpg') no-repeat;
+            background-size: cover;
+          }
+          .medicines-bg-cardiology {
+            background: url('../img/med-2.jpg') no-repeat;
+            background-size: cover;
+          }
+          .medicines-bg-dent {
+            background: url('../img/med-3.jpg') no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .med-large {
+      margin-top: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      @include medium-desktop {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      @include large-desktop {
+        margin-top: 10px;
+      }
+        .row {
+          .container-neurology {
+            @include large-desktop {
+              margin-bottom: 10px;
+            }
+          }
+          .col-lg-6 {
+            .medicines-bg {
+              position: relative;
+              max-width: 570px;
+              height: 200px;
+              box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
+              background-size: cover;
+              @include large-desktop {
+                max-width: 748px;
+                margin: 0 auto;
+              }
+                h3 {
+                  display: inline-block;
+                  padding: 3px 19px;
+                  background-color: $green-dark;
+                  font-size: 20px;
+                  font-family: $light;
+                  color: $white;
+                }
+                ul {
+                  margin-top: 10px;
+                  padding-left: 0;
+                  li {
+                    padding: 2px 13px 3px 3px;
+                    cursor: pointer;
                     .eye {
                       width: 23px;
                       height: 15px;
@@ -271,6 +718,7 @@ ul li {
                       visibility: hidden;
                     }
                     a {
+                      font-size: 15px;
                       color: $white;
                       &:hover {
                         text-decoration: none;
@@ -283,126 +731,32 @@ ul li {
                       background-color: rgba(10, 164, 155, .2);
                       display: inline-block;
                     }
+                  }
                 }
-            }
-            .medicines-footer {
-              position: absolute;
-              bottom: 0;
-              width: 100%;
-              background-color: rgba(0, 0, 0, .2);
-                i {
-                  color: $green;
-                }
-                a {
-                  color: $white;
-                }
-                a:hover {
-                  text-decoration: none;
-                }
-            }
-        }
-        .medicines-bg-pediatry {
-          background: url('../img/med-1.jpg') no-repeat;
-          background-size: cover;
-        }
-        .medicines-bg-cardiology {
-          background: url('../img/med-2.jpg') no-repeat;
-          background-size: cover;
-        }
-        .medicines-bg-dent {
-          background: url('../img/med-3.jpg') no-repeat;
-          background-size: cover;
-        }
-      }
-    }
-  }
-  .med-large {
-    margin-top: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    @include medium-desktop {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    @include large-desktop {
-      margin-top: 10px;
-    }
-      .row {
-        .container-neurology {
-          @include large-desktop {
-            margin-bottom: 10px;
-          }
-        }
-        .col-lg-6 {
-          .medicines-bg {
-            position: relative;
-            max-width: 570px;
-            height: 200px;
-            box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
-            background-size: cover;
-            @include large-desktop {
-              max-width: 748px;
-              margin: 0 auto;
-            }
-              h3 {
-                display: inline-block;
-                padding: 10px;
-                background-color: $green-dark;
-                font-size: 20px;
-                font-family: $light;
-                color: $white;
-              }
-              ul {
-                padding-left: 0;
-                li {
-                  cursor: pointer;
-                  .eye {
-                    width: 23px;
-                    height: 15px;
-                    background: url('../img/eye-white.png') no-repeat;
-                    float: left;
-                    margin-right: 5px;
-                    margin-top: 5px;
-                    visibility: hidden;
+                .medicines-footer {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  padding: 10px 10px 11px 11px;
+                  background-color: rgba(0, 0, 0, .2);
+                  i {
+                    color: $green;
                   }
                   a {
                     color: $white;
                     &:hover {
-                      text-decoration: none;
+                      text-decoration: underline;
                     }
                   }
-                  &:hover > div {
-                    visibility: visible;
-                  }
-                  &:hover {
-                    background-color: rgba(10, 164, 155, .2);
-                    display: inline-block;
-                  }
                 }
-              }
-              .medicines-footer {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                background-color: rgba(0, 0, 0, .2);
-                i {
-                  color: $green;
-                }
-                a {
-                  color: $white;
-                }
-                a:hover {
-                  text-decoration: none;
-                }
-              }
+            }
+          }
+          .medicines-bg-neurology {
+            background: url('../img/med-4.jpg') no-repeat;
+          }
+          .medicines-bg-diet {
+            background: url('../img/med-5.jpg') no-repeat;
           }
         }
-        .medicines-bg-neurology {
-          background: url('../img/med-4.jpg') no-repeat;
-        }
-        .medicines-bg-diet {
-          background: url('../img/med-5.jpg') no-repeat;
-        }
-      }
-  }
+    }
 }

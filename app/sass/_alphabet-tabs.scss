@@ -1,0 +1,38 @@
+@import '_variables';
+@import '_mixins';
+
+.container {
+  .row {
+    .nav-tabs {
+      margin-top: 37px;
+        li {
+          margin-left: 2px;
+          margin-right: 2px;
+          margin-bottom: 0;
+          vertical-align: bottom;
+            a {
+              padding: 13px 15px 13px 12px;
+              font-size: 16px;
+              color: $black-lighter;
+              border-top: 1px solid $grey-border-dark;
+              border-right: 1px solid $grey-border-dark;
+              border-bottom: transparent;
+              border-left: 1px solid $grey-border-dark;
+            }
+        }
+        li.assign {
+          margin-left: -52px;
+        }
+        li.active {
+            a {
+              padding: 17px 34px 15px 21px;
+              font-size: 18px;
+              border-top: 1px solid $green-darker;
+              border-right: 1px solid $green-darker;
+              border-bottom: transparent;
+              border-left: 1px solid $green-darker;
+            }
+        }
+    }
+  }
+}

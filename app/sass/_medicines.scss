@@ -1,106 +1,117 @@
 @import '_variables';
 @import '_mixins';
 
+.container-medicines {
+  padding-bottom: 40px;
+}
 .container {
-  .text-center {
-    .container-title {
-      .title-icon {
-        margin-top: 52px;
-        &:before {
-          width: 56px;
-          height: 57px;
-          margin-top: -24px;
-          background: url('../img/icons/drugs.png') no-repeat;
-          background-size: 93%;
-        }
+
+    .text-center {
+      .container-title {
+        margin-bottom: 34px;
+          .title-icon {
+            margin-top: 53px;
+            &:before {
+              width: 56px;
+              height: 57px;
+              margin-top: -24px;
+              background: url('../img/icons/drugs.png') no-repeat;
+              background-size: 93%;
+            }
+          }
       }
-    }
-    .col-lg-3 {
-      .card {
-        border: 1px solid $grey-border;
-        &:hover {
-          border: 1px solid $green-border-hover;
-        }
-          img {
-            width: 268px;
-            height: 154px;
-          }
-          .med-descr {
-            padding-top: 15px;
-            padding-left: 14px;
-            padding-right: 30px;
-            background-color: $olive;
-            border-top: 1px solid $grey-border;
-            text-align: left;
-              p {
-                font-size: 18px;
+      .col-lg-3 {
+        margin-bottom: 30px;
+          .card {
+            border: 1px solid $grey-border;
+            &:hover {
+              border: 1px solid $green-border-hover;
+            }
+              img {
+                width: 268px;
+                height: 154px;
               }
-              ul {
-                margin-top: 16px;
-                padding-left: 0;
-                height: 60px;
+              .med-descr {
+                padding-top: 15px;
+                padding-left: 14px;
+                padding-right: 30px;
                 background-color: $olive;
-                  li {
-                    float: left;
+                border-top: 1px solid $grey-border;
+                text-align: left;
+                  p {
+                    font-size: 18px;
+                    color: $black-btn-font;
                   }
-                  .med-company {
-                    font-family: $italic;
-                    color: $grey-dark;
-                  }
-                  .med-price {
-                    margin-right: -31px;
-                    margin-top: -5px;
-                    padding: 1px 33px 1px 15px;
-                    font-size: 20px;
-                    color: $white;
-                    background-color: $green-bg;
-                  }
-              }
-          }
-          .med-statistics {
-            clear: both;
-              ul {
-                padding: 1px 13px;
-                  li:first-child {
-                    margin-right: 16px;
-                  }
-                  li {
-                    float: left;
-                    margin-top: -3px;
-                    font-size: 12px;
-                    font-family: $semibold;
-                    color: $grey-lighter;
-                      i {
-                        margin-right: 5px;
+                  ul {
+                    margin-top: 14px;
+                    padding-left: 2px;
+                    height: 36px;
+                    background-color: $olive;
+                      li {
+                        float: left;
+                      }
+                      .med-company {
+                        font-size: 16px;
+                        font-family: $italic;
+                        color: $grey-dark;
+                      }
+                      .med-price {
+                        margin-right: -31px;
+                        margin-top: -5px;
+                        padding: 1px 33px 1px 15px;
+                        font-size: 20px;
+                        color: $white;
+                        background-color: $green-bg;
                       }
                   }
               }
-          }
-          .footer {
-            margin: 21px 0 0;
-            font-size: 18px;
-            &:hover {
-              margin: 21px 0 -2px;
-              background: #00c7bb; /* Old browsers */
-              background: linear-gradient(to bottom,  #00c7bb 0%,#00ae9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
-              border-bottom: 2px solid $green-border-dark;
-              border-radius: 0 0 20px 20px;
-                .btn-buy {
-                  color: $white;
+              .med-statistics {
+                clear: both;
+                  ul {
+                    padding: 1px 13px;
+                      li:first-child {
+                        margin-right: 9px;
+                      }
+                      li {
+                        float: left;
+                        margin-top: -3px;
+                        font-size: 12px;
+                        font-family: $semibold;
+                        color: $grey-lighter;
+                          i {
+                            margin-right: 4px;
+                            margin-left: 6px;
+                            font-size: 14px;
+                            color: $black;
+                          }
+                      }
+                  }
+              }
+              .footer {
+                margin: 21px 0 0;
+                font-size: 18px;
+                &:hover {
+                  margin: 21px 0 -2px;
+                  background: #00c7bb; /* Old browsers */
+                  background: linear-gradient(to bottom,  #00c7bb 0%,#00ae9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+                  border-bottom: 2px solid $green-border-dark;
+                  border-radius: 0 0 20px 20px;
+                    .btn-buy {
+                      color: $white;
+                    }
                 }
-            }
-            .btn-buy {
-              display: block;
-              border: 2px solid #00b6a7;
-              border-radius: 0 0 20px 20px;
-              padding: 9px 103px 12px;
-              margin: 0 -1px -1px;
-              font-size: 18px;
-              color: $black;
-            }
+                .btn-buy {
+                  display: block;
+                  border: 2px solid #00b6a7;
+                  border-radius: 0 0 20px 20px;
+                  padding: 9px 103px 12px;
+                  margin: 0 -1px -1px;
+                  font-size: 18px;
+                  color: $black;
+                }
+              }
           }
       }
     }
-  }
 }

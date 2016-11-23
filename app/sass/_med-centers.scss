@@ -10,6 +10,9 @@
     background-position-x: 55%;
   }
     .container {
+      .text-center {
+        margin-bottom: 30px;
+      }
       .row {
         //text-align: center;
           /*h2 {
@@ -36,12 +39,14 @@
           }*/
           .container-title {
             .title-icon {
-              margin-top: 50px;
+              margin-top: 54px;
+              margin-bottom: 26px;
             }
             .title-icon:before {
               width: 70px;
               height: 70px;
               margin-top: -32px;
+              margin-right: 8px;
               background: url('../img/icons/hospital.png') no-repeat;
               background-size: 93%;
             }
@@ -52,45 +57,95 @@
             background: url('../img/icons/hospital.png') no-repeat;
             background-size: 93%;
           }*/
+          .col-left {
+            padding-left: 0;
+            @include medium-desktop-lg {
+              margin-bottom: 30px;
+            }
+          }
+          .col-right {
+            padding-right: 0;
+          }
           .col-lg-6 {
-            padding: 7px;
             @include medium-desktop {
               padding: 0px 17px;
             }
               .card {
                 width: 100%;
                 margin: 1px;
+                box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.1);
                 box-sizing: content-box;
                 &:hover {
                   margin: 0;
                   border: 1px solid $green-darker;
+                  box-shadow: none;
                 }
                   .header {
                     .col-lg-6 {
                       .med-center-logo {
                         width: 192px;
                         height: 57px;
-                        margin-left: 20px;
+                        margin-top: 6px;
+                        margin-left: 21px;
                         background: url('../img/logo-transmed.png') no-repeat;
                         background-size: 60%;
                       }
                     }
                     .col-lg-6 {
                       .med-center-contacts {
-                        li {
-                          i {
-                            float: left;
-                            color: $blue-dark;
-                          }
+                        margin-top: 6px;
+                        margin-left: -22px;
+                        @include large-desktop {
+                          width: 300px;
+                          margin: 0 auto;
+                          padding-left: 0;
                         }
+                          li {
+                            i {
+                              float: left;
+                              color: $blue-dark;
+                            }
+                            .fa-map-marker {
+                              margin-left: 34px;
+                              margin-right: -8px;
+                            }
+                            .fa-phone {
+                              margin-left: 41px;
+                              margin-right: -14px;
+                              margin-top: -2px;
+                            }
+                            p {
+                              font-size: 14px;
+                              color: $grey-lighter;
+                            }
+                            .card-address {
+                              line-height: 16px;
+                            }
+                            .card-phone {
+                              line-height: 10px;
+                            }
+                          }
                       }
                     }
                   }
                 .content {
                   .col-lg-12 {
-                    .med-center-content {
-                      background-color: $olive-dark;
-                    }
+                    margin-top: -11px;
+                      .med-center-content {
+                        margin-top: 6px;
+                        padding: 12px 10px 8px;
+                        background-color: $olive-dark;
+                          .title {
+                            font-size: 18px;
+                            color: $black-btn-font;
+                          }
+                          .subtitle {
+                            margin-top: -5px;
+                            font-size: 14px;
+                            font-family: $italic;
+                            color: $grey-light;
+                          }
+                      }
                   }
                 }
                 .statistics {
@@ -101,10 +156,28 @@
                         ul {
                           //height: 32px;
                           display: inline-block;
-                          margin-bottom: 0;
+                          margin-bottom: -2px;
+                          margin-left: 2px;
+                          padding-left: 0;
+                          @include phone-lg {
+                            padding-left: 20px;
+                          }
                             li {
                               float: left;
-                              line-height: 27px;
+                              line-height: 30px;
+                              font-size: 12px;
+                              font-family: $semibold;
+                              color: $grey-font;
+                                i {
+                                  padding-right: 6px;
+                                  font-size: 14px;
+                                }
+                            }
+                            li:nth-child(1) {
+                              margin-right: 30px;
+                            }
+                            li:nth-child(2) {
+                              margin-right: 27px;
                             }
                         }
                     }
@@ -112,9 +185,16 @@
                 }
                 .footer {
                   .btn-sign-in {
-                    padding: 13px 46px;
+                    margin-top: 18px;
+                    margin-bottom: 19px;
+                    padding: 12px 46px;
+                    font-size: 18px;
+                    color: $black-btn-font;
+                    border-radius: 25px;
                     &:hover {
                       background-color: $green-bg-btn;
+                      box-shadow: 0 0 0 0px white, 0 2px 3px rgba(0, 0, 0, 0.22);
+                      color: $white;
                     }
                   }
                 }

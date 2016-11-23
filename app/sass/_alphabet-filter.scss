@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_mixins';
 
 .nav-tabs > li, .nav-pills > li {
   float: none;
@@ -72,6 +73,7 @@
     .assign, .choose-clinic, .find-medicine, .survey {
       a {
         border-radius: 0;
+
         font-size: 16px;
         background: url('../img/pattern-alphabet.jpg');
         color: $black-lighter;
@@ -113,6 +115,10 @@
     }
   }
 
+  .tab-content {
+    margin-bottom: 63px;
+  }
+
   .panel-group {
     padding: 0px 16px;
   }
@@ -121,21 +127,46 @@
     text-align: center;
       ul.alphabet-letters {
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 32px;
+        margin-bottom: 25px;
         padding-left: 0px;
         li {
-            float: left;
+          margin: 2px;
+          float: left;
+            a {
+              font-size: 17px;
+              color: $grey-lighter;
+              &:hover {
+                font-family: $light;
+                font-family: $extraBold;
+                color: $green;
+              }
+            }
           }
       }
   }
   .container {
     clear: both;
     .row {
-      .col-xs-3 {
+      .col-lg-3 {
         padding-left: 0;
           .alphabet-list {
             float: none;
             padding-left: 0;
+              li {
+                margin-bottom: 11px;
+                  a {
+                    font-size: 17px;
+                    color: $grey-lighter;
+                    text-decoration: none;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                    @include phone-lg {
+                      font-size: 12px;
+                    }
+                  }
+              }
           }
       }
     }

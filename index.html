@@ -21,13 +21,13 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Клиники</a></li>
-                    <li><a href="#">Врачи</a></li>
-                    <li><a href="#">Лекарства</a></li>
-                    <li><a href="#">Обследования</a></li>
-                    <li><a href="#">Медтуризм</a></li>
-                    <li><a href="#">Категория</a></li>
-                    <li><a href="#">Библиотека</a></li>
+                    <li class="active"><a class="nav-clinics" href="#">Клиники</a></li>
+                    <li><a class="nav-doctors" href="#">Врачи</a></li>
+                    <li><a class="nav-medicines" href="#">Лекарства</a></li>
+                    <li><a class="nav-researches" href="#">Обследования</a></li>
+                    <li><a class="nav-medtourism" href="#">Медтуризм</a></li>
+                    <li><a class="nav-category" href="#">Категория</a></li>
+                    <li><a class="nav-library" href="#">Библиотека</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><i class="fa fa-sign-in fa-2" aria-hidden="true"></i>Вход</a></li>
@@ -45,23 +45,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!--<a class="navbar-brand" href="#">-->
-                    <!--<div class="logo">Logo</div>-->
-                <!--</a>-->
+                <!--<a class="logo logo-top" href="#" title=""></a>-->
                 <a class="logo logo-top" href="#" title=""></a>
+                <div class="logo-border"></div>
             </div>
             <div id="navbar-contacts" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ваш город <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Единый центр записи</a></li>
-                            <li><a href="#">8 (800) 333-03-03</a></li>
-                            <li><a href="#">Регистрация</a></li>
+                            <li>111</li>
+                            <li>222</li>
+                            <li>333</li>
                         </ul>
                     </li>
                     <li class="active"><a href="#">Единый центр записи</a></li>
-                    <li><a href="#about">8 (800) 333-03-03</a></li>
+                    <li><a class="phone-number" href="#about"><span class="numbers">8 (800)</span> 333-03-03</a></li>
                     <li><a href="#contact">Регистрация</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -74,24 +73,70 @@
     <div class="container">
         <div class="row how">
             <h2>Как работает наш сервис</h2>
-            <div class="col-lg-4">
-                <p class="how-number">1.</p>
-                <div class="how-icon how-icon-doc"></div>
-                <h3>Выберите специалиста</h3>
-                <p>Сравните рейтинги врачей  и почитайте отзывы,чтобы определиться с выбором</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <p class="how-number">2.</p>
-                <div class="how-icon how-icon-paper-pen"></div>
-                <h3>Запишитесь на прием</h3>
-                <p>Заполните анкету, указав удобную для вас дату и время приёма</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <p class="how-number">3.</p>
-                <div class="how-icon how-icon-mark-geo"></div>
-                <h3>Посетите врача</h3>
-                <p>Мы пришлём вам sms - напоминание накануне визита к доктору</p>
-            </div><!-- /.col-lg-4 -->
+
+            <!--<div class="col-lg-3 col-md-4">-->
+                <!--<p class="how-number how-number-first">1.</p>-->
+                <!--<div class="how-icon how-icon-doc"></div>-->
+                <!--<h3 class="how-choose">Выберите специалиста</h3>-->
+                <!--<p class="text text-first">Сравните рейтинги врачей  и почитайте отзывы,чтобы определиться с выбором</p>-->
+            <!--</div>-->
+            <!--<div class="col-lg-1">-->
+                <!--<div class="arrow-right arrow-right-first"></div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-3 col-md-4">-->
+                <!--<p class="how-number how-number-second">2.</p>-->
+                <!--<div class="how-icon how-icon-paper-pen"></div>-->
+                <!--<h3 class="how-sign-in">Запишитесь на прием</h3>-->
+                <!--<p class="text text-second">Заполните анкету, указав удобную для вас дату и время приёма</p>-->
+            <!--</div>-->
+            <!--<div class="col-lg-1">-->
+                <!--<div class="arrow-right arrow-right-second"></div>-->
+            <!--</div>-->
+            <!--<div class="col-lg-3 col-md-4">-->
+                <!--<p class="how-number">3.</p>-->
+                <!--<div class="how-icon how-icon-mark-geo"></div>-->
+                <!--<h3 class="how-visit">Посетите врача</h3>-->
+                <!--<p class="text text-third">Мы пришлём вам sms - напоминание накануне визита к доктору</p>-->
+            <!--</div>-->
+
+            <div class="col-lg-3 col-md-4">
+                <div class="how-block-first">
+                    <p class="how-number how-number-first">1.</p>
+                    <div class="how-icon how-icon-doc"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-choose">Выберите специалиста</h3>
+                    <p class="text text-first">Сравните рейтинги врачей  и почитайте отзывы,чтобы определиться с выбором</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="arrow-right arrow-right-first"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-middle">
+                <div class="how-block-first">
+                    <p class="how-number how-number-second">2.</p>
+                    <div class="how-icon how-icon-paper-pen"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-sign-in">Запишитесь на прием</h3>
+                    <p class="text text-second">Заполните анкету, указав удобную для вас дату и время приёма</p>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <div class="arrow-right arrow-right-second"></div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="how-block-first">
+                    <p class="how-number how-number-third">3.</p>
+                    <div class="how-icon how-icon-mark-geo"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-visit">Посетите врача</h3>
+                    <p class="text text-third">Мы пришлём вам sms - напоминание накануне визита к доктору</p>
+                </div>
+            </div>
+
+
         </div>
     </div><!-- how -->
 
@@ -271,29 +316,29 @@
                       <div class="row">
                           <div class="col-lg-3 col-xs-6">
                               <ul class="alphabet-list">
-                                  <li>Акушер-гинеколог</li>
-                                  <li>Акушерка</li>
-                                  <li>Аллерголог</li>
+                                  <li><a href="#">Акушер-гинеколог</a></li>
+                                  <li><a href="#">Акушерка</a></li>
+                                  <li><a href="#">Аллерголог</a></li>
                               </ul>
                           </div>
                           <div class="col-lg-3 col-xs-6">
                               <ul class="alphabet-list">
-                                  <li>Андролог</li>
-                                  <li>Андролог-эндокринолог</li>
-                                  <li>Анестезиолог</li>
+                                  <li><a href="#">Андролог</a></li>
+                                  <li><a href="#">Андролог-эндокринолог</a></li>
+                                  <li><a href="#">Анестезиолог</a></li>
                               </ul>
                           </div>
                           <div class="col-lg-3 col-xs-6">
                               <ul class="alphabet-list">
-                                  <li>Артролог</li>
-                                  <li>Аллерголог-иммунолог</li>
-                                  <li>Ангиохирург</li>
+                                  <li><a href="#">Артролог</a></li>
+                                  <li><a href="#">Аллерголог-иммунолог</a></li>
+                                  <li><a href="#">Ангиохирург</a></li>
                               </ul>
                           </div>
                           <div class="col-lg-3 col-xs-6">
                               <ul class="alphabet-list">
-                                  <li>Аритмолог</li>
-                                  <li>Ароматерапевт</li>
+                                  <li><a href="#">Аритмолог</a></li>
+                                  <li><a href="#">Ароматерапевт</a></li>
                               </ul>
                           </div>
                       </div>
@@ -313,7 +358,7 @@
                 <div class="container-title">
                     <h2 class="title-icon">Медицинские центры и клиники</h2>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-left">
                     <div class="card">
                         <div class="row header">
                             <div class="col-lg-6">
@@ -323,11 +368,11 @@
                                 <ul class="med-center-contacts">
                                     <li>
                                         <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
                                     </li>
                                 </ul>
                             </div>
@@ -356,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-right">
                     <div class="card">
                         <div class="row header">
                             <div class="col-lg-6">
@@ -366,99 +411,11 @@
                                 <ul class="med-center-contacts">
                                     <li>
                                         <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row content">
-                            <div class="col-lg-12">
-                                <div class="med-center-content">
-                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
-                                    <p class="subtitle">Сетевая клиника</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row statistics">
-                            <div class="col-lg-12">
-                                <div class="med-center-statistics">
-                                    <ul>
-                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row footer">
-                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="row header">
-                            <div class="col-lg-6">
-                                <div class="med-center-logo"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="med-center-contacts">
-                                    <li>
-                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row content">
-                            <div class="col-lg-12">
-                                <div class="med-center-content">
-                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
-                                    <p class="subtitle">Сетевая клиника</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row statistics">
-                            <div class="col-lg-12">
-                                <div class="med-center-statistics">
-                                    <ul>
-                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row footer">
-                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="card">
-                        <div class="row header">
-                            <div class="col-lg-6">
-                                <div class="med-center-logo"></div>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="med-center-contacts">
-                                    <li>
-                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
                                     </li>
                                 </ul>
                             </div>
@@ -489,7 +446,7 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-left">
                     <div class="card">
                         <div class="row header">
                             <div class="col-lg-6">
@@ -499,11 +456,11 @@
                                 <ul class="med-center-contacts">
                                     <li>
                                         <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
                                     </li>
                                 </ul>
                             </div>
@@ -532,7 +489,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-right">
                     <div class="card">
                         <div class="row header">
                             <div class="col-lg-6">
@@ -542,11 +499,99 @@
                                 <ul class="med-center-contacts">
                                     <li>
                                         <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
-                                        <p>г. Москва, ул. Ростова, д. 16</p>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
                                     </li>
                                     <li>
                                         <i class="fa fa-phone fa-1" aria-hidden="true"></i>
-                                        <p>Телефон: 8 800 598 89 89</p>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-left">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row content">
+                            <div class="col-lg-12">
+                                <div class="med-center-content">
+                                    <p class="title">Европейский медицинский центр в Орловском переулке</p>
+                                    <p class="subtitle">Сетевая клиника</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row statistics">
+                            <div class="col-lg-12">
+                                <div class="med-center-statistics">
+                                    <ul>
+                                        <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                                        <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                                        <li><i class="fa fa-eye fa-1" aria-hidden="true"></i> 1 800 просмотров</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer">
+                            <a class="btn btn-custom btn-sign-in" href="#" role="button">Записаться на прием</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-right">
+                    <div class="card">
+                        <div class="row header">
+                            <div class="col-lg-6">
+                                <div class="med-center-logo"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul class="med-center-contacts">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                        <p class="card-address">г. Москва, ул. Ростова, д. 16</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-1" aria-hidden="true"></i>
+                                        <p class="card-phone">Телефон: 8 800 598 89 89</p>
                                     </li>
                                 </ul>
                             </div>
@@ -597,43 +642,12 @@
                         </div>
                         <div class="col-lg-9 col-xs-9">
                             <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
                             </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row specialization">
-                        <div class="col-lg-12">
-                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
-                        </div>
-                    </div>
-                    <div class="row statistics">
-                        <ul>
-                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                        </ul>
-                    </div>
-                    <div class="row footer">Записаться на прием</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="row profile-info">
-                        <div class="col-lg-3 col-xs-3">
-                            <div class="ava"></div>
-                        </div>
-                        <div class="col-lg-9 col-xs-9">
-                            <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
-                            </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
                             </ul>
                         </div>
                     </div>
@@ -659,45 +673,12 @@
                         </div>
                         <div class="col-lg-9 col-xs-9">
                             <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
                             </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row specialization">
-                        <div class="col-lg-12">
-                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
-                        </div>
-                    </div>
-                    <div class="row statistics">
-                        <ul>
-                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                        </ul>
-                    </div>
-                    <div class="row footer">Записаться на прием</div>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="row profile-info">
-                        <div class="col-lg-3 col-xs-3">
-                            <div class="ava"></div>
-                        </div>
-                        <div class="col-lg-9 col-xs-9">
-                            <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
-                            </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
                             </ul>
                         </div>
                     </div>
@@ -723,43 +704,12 @@
                         </div>
                         <div class="col-lg-9 col-xs-9">
                             <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
                             </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row specialization">
-                        <div class="col-lg-12">
-                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
-                        </div>
-                    </div>
-                    <div class="row statistics">
-                        <ul>
-                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                        </ul>
-                    </div>
-                    <div class="row footer">Записаться на прием</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="row profile-info">
-                        <div class="col-lg-3 col-xs-3">
-                            <div class="ava"></div>
-                        </div>
-                        <div class="col-lg-9 col-xs-9">
-                            <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
-                            </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
                             </ul>
                         </div>
                     </div>
@@ -787,43 +737,12 @@
                         </div>
                         <div class="col-lg-9 col-xs-9">
                             <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
                             </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row specialization">
-                        <div class="col-lg-12">
-                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
-                        </div>
-                    </div>
-                    <div class="row statistics">
-                        <ul>
-                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
-                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
-                        </ul>
-                    </div>
-                    <div class="row footer">Записаться на прием</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="row profile-info">
-                        <div class="col-lg-3 col-xs-3">
-                            <div class="ava"></div>
-                        </div>
-                        <div class="col-lg-9 col-xs-9">
-                            <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
-                            </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
                             </ul>
                         </div>
                     </div>
@@ -849,12 +768,138 @@
                         </div>
                         <div class="col-lg-9 col-xs-9">
                             <ul class="skill">
-                                <li>Стаж 15 лет</li>
-                                <li>Врач высшей категории</li>
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
                             </ul>
-                            <ul>
-                                <li>Гурвиц</li>
-                                <li>Леонид Андреевич</li>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row specialization">
+                        <div class="col-lg-12">
+                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
+                        </div>
+                    </div>
+                    <div class="row statistics">
+                        <ul>
+                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                        </ul>
+                    </div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">
+                        <div class="col-lg-3 col-xs-3">
+                            <div class="ava"></div>
+                        </div>
+                        <div class="col-lg-9 col-xs-9">
+                            <ul class="skill">
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
+                            </ul>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row specialization">
+                        <div class="col-lg-12">
+                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
+                        </div>
+                    </div>
+                    <div class="row statistics">
+                        <ul>
+                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                        </ul>
+                    </div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">
+                        <div class="col-lg-3 col-xs-3">
+                            <div class="ava"></div>
+                        </div>
+                        <div class="col-lg-9 col-xs-9">
+                            <ul class="skill">
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
+                            </ul>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row specialization">
+                        <div class="col-lg-12">
+                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
+                        </div>
+                    </div>
+                    <div class="row statistics">
+                        <ul>
+                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                        </ul>
+                    </div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">
+                        <div class="col-lg-3 col-xs-3">
+                            <div class="ava"></div>
+                        </div>
+                        <div class="col-lg-9 col-xs-9">
+                            <ul class="skill">
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
+                            </ul>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row specialization">
+                        <div class="col-lg-12">
+                            <p>Дерматолог, Дерматовенеролог, Косметолог, Трихолог, Венеролог</p>
+                        </div>
+                    </div>
+                    <div class="row statistics">
+                        <ul>
+                            <li><i class="fa fa-comments-o fa-1" aria-hidden="true"></i> 86 отзывов</li>
+                            <li><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 256 записей на прием</li>
+                        </ul>
+                    </div>
+                    <div class="row footer">Записаться на прием</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="row profile-info">
+                        <div class="col-lg-3 col-xs-3">
+                            <div class="ava"></div>
+                        </div>
+                        <div class="col-lg-9 col-xs-9">
+                            <ul class="skill">
+                                <li><span class="skill-bold">Стаж</span> <span class="years">15 лет</span></li>
+                                <li><span class="skill-bold">Врач высшей категории</span></li>
+                            </ul>
+                            <ul class="fio">
+                                <li class="name">Гурвиц</li>
+                                <li class="name">Леонид Андреевич</li>
                             </ul>
                         </div>
                     </div>
@@ -942,7 +987,7 @@
         </div>
     </div><!-- common-diseases -->
 
-    <div class="container">
+    <div class="container container-medicines">
         <div class="row text-center">
             <div class="container-title">
                 <h2 class="title-icon">Медикаменты</h2>
