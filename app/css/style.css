@@ -433,7 +433,7 @@
           background-color: #c5dbe0; }
           .med-centers .container .row .col-lg-6 .card .content .col-lg-12 .med-center-content .title {
             font-size: 18px;
-            color: #191717; }
+            color: #2a2323; }
           .med-centers .container .row .col-lg-6 .card .content .col-lg-12 .med-center-content .subtitle {
             margin-top: -5px;
             font-size: 14px;
@@ -468,7 +468,7 @@
         margin-bottom: 19px;
         padding: 12px 46px;
         font-size: 18px;
-        color: #191717;
+        color: #2a2323;
         -webkit-border-radius: 25px;
                 border-radius: 25px; }
         .med-centers .container .row .col-lg-6 .card .footer .btn-sign-in:hover {
@@ -614,7 +614,7 @@
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .fio .name {
           font-size: 20px;
           font-family: "Open Sans Semibold", Arial, sans-serif;
-          color: #191717; }
+          color: #2a2323; }
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .fio li:nth-child(2) {
           margin-top: -4px; }
         .best-doctors .text-center .col-lg-4 .card .specialization .col-lg-12 p {
@@ -651,7 +651,7 @@
           -webkit-border-radius: 0 0 25px 25px;
                   border-radius: 0 0 25px 25px;
           font-size: 18px;
-          color: #191717; }
+          color: #2a2323; }
           .best-doctors .text-center .col-lg-4 .card .footer:hover {
             background: #00c7bb;
             /* Old browsers */
@@ -763,7 +763,7 @@
     .common-diseases .container .text-center .col-lg-4 .title {
       font-size: 20px;
       font-family: "Open Sans Semibold", Arial, sans-serif;
-      color: #191717; }
+      color: #2a2323; }
     .common-diseases .container .text-center .col-lg-4 .descr {
       margin-top: 16px;
       font-size: 15px;
@@ -817,14 +817,14 @@
       margin-right: 19px;
       font-size: 16px;
       font-family: "Open Sans Semibold", Arial, sans-serif;
-      color: #191717; }
+      color: #2a2323; }
     .common-diseases .container .row .col-lg-12 ul li {
       float: left;
       margin-right: 10px; }
       .common-diseases .container .row .col-lg-12 ul li a {
         font-size: 16px;
         text-decoration: underline;
-        color: #191717; }
+        color: #2a2323; }
         .common-diseases .container .row .col-lg-12 ul li a:hover {
           text-decoration: none; }
 
@@ -929,7 +929,7 @@
       text-align: left; }
       .container .text-center .col-lg-3 .card .med-descr p {
         font-size: 18px;
-        color: #191717; }
+        color: #2a2323; }
       .container .text-center .col-lg-3 .card .med-descr ul {
         margin-top: 14px;
         padding-left: 2px;
@@ -1231,6 +1231,9 @@ h3 {
 ul li {
   list-style: none; }
 
+select {
+  outline: 0; }
+
 .card {
   display: inline-block;
   -webkit-border-radius: 0 0 20px 20px;
@@ -1249,7 +1252,7 @@ ul li {
   border: 1px solid #00b6a7;
   -webkit-border-radius: 22px;
           border-radius: 22px;
-  color: #191717; }
+  color: #2a2323; }
   .btn-custom:hover {
     color: #fff;
     text-decoration: none; }
@@ -1335,55 +1338,143 @@ ul li {
           padding-left: 22px; } }
     .navbar-main-menu .container .navbar-collapse .nav li:last-child {
       border-right: none; }
-  .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child {
-    border-bottom: 1px solid #66d7cf;
-    width: 53px; }
-    .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child:hover {
-      border-bottom: none; }
-    .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a {
-      padding: 0; }
-      .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a:hover {
-        text-decoration: none;
-        background-color: transparent; }
-      .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a i {
-        margin-right: 6px; }
-  .navbar-main-menu .container .navbar-collapse .navbar-right li {
-    margin-top: 4px;
-    height: 20px;
-    border-right: none; }
-    @media (max-width: 767px) {
-      .navbar-main-menu .container .navbar-collapse .navbar-right li {
-        margin-left: 22px; } }
+  .navbar-main-menu .container .navbar-collapse .navbar-right {
+    margin-right: 58px; }
+    @media (max-width: 991px) {
+      .navbar-main-menu .container .navbar-collapse .navbar-right {
+        margin-right: 0; } }
+    .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child {
+      border-bottom: 1px solid #66d7cf;
+      width: 53px; }
+      .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child:hover {
+        border-bottom: none; }
+      .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a {
+        padding: 0; }
+        .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a:hover {
+          text-decoration: none;
+          background-color: transparent; }
+        .navbar-main-menu .container .navbar-collapse .navbar-right li:last-child a i {
+          margin-right: 6px; }
+    .navbar-main-menu .container .navbar-collapse .navbar-right li {
+      margin-top: 4px;
+      height: 20px;
+      border-right: none; }
+      @media (max-width: 767px) {
+        .navbar-main-menu .container .navbar-collapse .navbar-right li {
+          margin-left: 22px; } }
 
 .navbar-contacts {
   margin-bottom: 11px;
   position: relative; }
-  .navbar-contacts .container .navbar-header {
-    margin-top: 13px;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-    padding-right: 85px; }
+  .navbar-contacts .container {
+    display: block; }
+    @media (max-width: 1201px) {
+      .navbar-contacts .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
     @media (max-width: 767px) {
-      .navbar-contacts .container .navbar-header {
-        padding-right: 0;
-        border-right: transparent; } }
-    .navbar-contacts .container .navbar-header .logo-top {
-      margin-left: -12px; }
+      .navbar-contacts .container {
+        display: block; } }
+    .navbar-contacts .container .navbar-header {
+      margin-top: 13px;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      padding-right: 85px; }
       @media (max-width: 767px) {
-        .navbar-contacts .container .navbar-header .logo-top {
-          margin-left: 10px; } }
-    .navbar-contacts .container .navbar-header .navbar-toggle .icon-bar {
-      background-color: #00bdaf; }
-  .navbar-contacts .container .navbar-collapse ul {
-    margin-top: 20px; }
-    .navbar-contacts .container .navbar-collapse ul li a {
-      font-size: 16px;
-      color: #4e565a; }
-      .navbar-contacts .container .navbar-collapse ul li a:hover, .navbar-contacts .container .navbar-collapse ul li a:focus {
-        background-color: transparent;
-        text-decoration: underline; }
-    .navbar-contacts .container .navbar-collapse ul li .phone-number {
-      font-size: 20px;
-      font-family: "Open Sans Semibold", Arial, sans-serif; }
+        .navbar-contacts .container .navbar-header {
+          padding-right: 0;
+          border-right: transparent; } }
+      .navbar-contacts .container .navbar-header .logo-top {
+        margin-left: -12px; }
+        @media (max-width: 767px) {
+          .navbar-contacts .container .navbar-header .logo-top {
+            margin-left: 10px; } }
+      .navbar-contacts .container .navbar-header .navbar-toggle .icon-bar {
+        background-color: #00bdaf; }
+    .navbar-contacts .container .navbar-collapse ul {
+      margin-top: 21px; }
+      .navbar-contacts .container .navbar-collapse ul li:first-child {
+        width: 307px;
+        margin-top: 13px;
+        margin-left: 19px; }
+        @media (max-width: 1201px) {
+          .navbar-contacts .container .navbar-collapse ul li:first-child {
+            margin-left: 15px; } }
+        .navbar-contacts .container .navbar-collapse ul li:first-child .lab {
+          float: left;
+          margin-right: 8px;
+          font-size: 16px;
+          color: #4e565a; }
+        .navbar-contacts .container .navbar-collapse ul li:first-child .box {
+          padding-top: 2px; }
+          .navbar-contacts .container .navbar-collapse ul li:first-child .box .selectpicker {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            border-bottom: 1px dotted #000;
+            -webkit-appearance: none;
+            -webkit-border-radius: 0px; }
+            .navbar-contacts .container .navbar-collapse ul li:first-child .box .selectpicker option {
+              font-size: 16px;
+              font-family: "Open Sans Semibold", Arial, sans-serif;
+              color: #1a1b1c; }
+          .navbar-contacts .container .navbar-collapse ul li:first-child .box i {
+            margin-left: -11px; }
+      .navbar-contacts .container .navbar-collapse ul li a {
+        font-size: 16px;
+        color: #4e565a; }
+        .navbar-contacts .container .navbar-collapse ul li a:hover, .navbar-contacts .container .navbar-collapse ul li a:focus {
+          background-color: transparent;
+          text-decoration: underline; }
+      .navbar-contacts .container .navbar-collapse ul li .phone-number {
+        font-size: 20px;
+        font-family: "Open Sans Semibold", Arial, sans-serif; }
+      .navbar-contacts .container .navbar-collapse ul li a.registration {
+        margin-left: 24px;
+        margin-top: 4px;
+        padding: 8px 30px;
+        font-size: 16px;
+        border: 2px solid #00b6a7;
+        -webkit-border-radius: 22px;
+                border-radius: 22px;
+        text-transform: uppercase;
+        color: #2a2323; }
+        .navbar-contacts .container .navbar-collapse ul li a.registration:hover {
+          background: #00c7bb;
+          /* Old browsers */
+          background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#00ae9f));
+          background: -webkit-linear-gradient(top, #00c7bb 0%, #00ae9f 100%);
+          background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+          border-bottom: 2px solid #008977;
+          color: #fff;
+          text-decoration: none;
+          cursor: pointer;
+          color: #fff; }
+        @media (max-width: 1201px) {
+          .navbar-contacts .container .navbar-collapse ul li a.registration {
+            margin-left: 17px; } }
+        @media (max-width: 767px) {
+          .navbar-contacts .container .navbar-collapse ul li a.registration {
+            width: 200px;
+            text-align: center; } }
+      .navbar-contacts .container .navbar-collapse ul .phone-number-descr {
+        margin-top: 15px;
+        padding-left: 15px;
+        font-size: 16px;
+        color: #4e565a; }
+      .navbar-contacts .container .navbar-collapse ul .divider-phone {
+        width: 5px;
+        height: 70px;
+        margin-bottom: -10px;
+        margin-top: -11px;
+        margin-left: 3px;
+        border-right: 1px solid rgba(0, 0, 0, 0.2); }
+        @media (max-width: 1201px) {
+          .navbar-contacts .container .navbar-collapse ul .divider-phone {
+            border-right: transparent; } }
 
 span.numbers {
   color: #aeaeae; }

@@ -33,6 +33,9 @@ h3 {
 ul li {
   list-style: none;
 }
+select {
+  outline: 0;
+}
 .card {
   display: inline-block;
   border-radius: 0 0 20px 20px;
@@ -110,7 +113,7 @@ ul li {
         }
         .navbar-collapse {
           .nav {
-            margin-left: -23px; // 1111
+            margin-left: -23px;
               li {
                 border-right: 1px solid $white-opacity;
                 a {
@@ -168,31 +171,35 @@ ul li {
               }
           }
           .navbar-right {
-            li:last-child {
-              border-bottom: 1px solid #66d7cf;
-              width: 53px;
-              &:hover {
-                border-bottom: none;
-              }
-                a {
-                  padding: 0;
-                  &:hover {
-                    text-decoration: none;
-                    background-color: transparent;
-                  }
-                    i {
-                      margin-right: 6px;
-                    }
+            margin-right: 58px;
+            @include medium-desktop-lg {
+              margin-right: 0;
+            }
+              li:last-child {
+                border-bottom: 1px solid #66d7cf;
+                width: 53px;
+                &:hover {
+                  border-bottom: none;
                 }
-            }
-            li {
-              margin-top: 4px;
-              height: 20px;
-              border-right: none;
-              @include small-devices {
-                margin-left: 22px;
+                  a {
+                    padding: 0;
+                    &:hover {
+                      text-decoration: none;
+                      background-color: transparent;
+                    }
+                      i {
+                        margin-right: 6px;
+                      }
+                  }
               }
-            }
+              li {
+                margin-top: 4px;
+                height: 20px;
+                border-right: none;
+                @include small-devices {
+                  margin-left: 22px;
+                }
+              }
           }
         }
       }
@@ -201,6 +208,14 @@ ul li {
   margin-bottom: 11px;
   position: relative;
     .container {
+      display: block;
+
+      @include large-desktop {
+        display: flex;
+      }
+      @include small-devices {
+        display: block;
+      }
       .navbar-header {
         margin-top: 13px;
         border-right: 1px solid rgba(0, 0, 0, .2);
@@ -225,21 +240,98 @@ ul li {
       }
       .navbar-collapse {
         ul {
-          margin-top: 20px;
-            li {
-              a {
+          margin-top: 21px;
+          li:first-child {
+            width: 307px;
+            margin-top: 13px;
+            margin-left: 19px;
+            @include large-desktop {
+              margin-left: 15px;
+            }
+              .lab {
+                float: left;
+                margin-right: 8px;
                 font-size: 16px;
                 color: $black-darker;
-                &:hover, &:focus {
+              }
+              .box {
+                padding-top: 2px;
+                .selectpicker {
+                  border: none;
                   background-color: transparent;
-                  text-decoration: underline;
+                  cursor: pointer;
+                  border-bottom: 1px dotted #000;
+                  -webkit-appearance: none;
+                  -webkit-border-radius: 0px;
+                  option {
+                    font-size: 16px;
+                    font-family: $semibold;
+                    color: $black-light;
+                  }
+                }
+                i {
+                  margin-left: -11px;
                 }
               }
-              .phone-number {
-                font-size: 20px;
-                font-family: $semibold;
+          }
+          li {
+            a {
+              font-size: 16px;
+              color: $black-darker;
+              &:hover, &:focus {
+                background-color: transparent;
+                text-decoration: underline;
               }
             }
+            .phone-number {
+              font-size: 20px;
+              font-family: $semibold;
+            }
+            a.registration {
+              margin-left: 24px;
+              margin-top: 4px;
+              padding: 8px 30px;
+              font-size: 16px;
+              border: 2px solid #00b6a7;
+              border-radius: 22px;
+              text-transform: $caps;
+              color: $black-btn-font;
+              &:hover {
+                background: #00c7bb; /* Old browsers */
+                background: linear-gradient(to bottom,  #00c7bb 0%,#00ae9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
+                border-bottom: 2px solid $green-border-dark;
+                color: $white;
+                text-decoration: none;
+                cursor: pointer;
+                color: $white;
+              }
+              @include large-desktop {
+                margin-left: 17px;
+              }
+              @include small-devices {
+                width: 200px;
+                text-align: center;
+              }
+            }
+          }
+          .phone-number-descr {
+            margin-top: 15px;
+            padding-left: 15px;
+            font-size: 16px;
+            color: $black-darker;
+          }
+          .divider-phone {
+            width: 5px;
+            height: 70px;
+            margin-bottom: -10px;
+            margin-top: -11px;
+            margin-left: 3px;
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            @include large-desktop {
+              border-right: transparent;
+            }
+          }
         }
       }
     }
