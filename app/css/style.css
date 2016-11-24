@@ -361,16 +361,18 @@
             background: url('../img/icons/hospital.png') no-repeat;
             background-size: 93%;
           }*/ }
-    .med-centers .container .row .container-title .title-icon {
-      margin-top: 54px;
-      margin-bottom: 26px; }
-    .med-centers .container .row .container-title .title-icon:before {
-      width: 70px;
-      height: 70px;
-      margin-top: -32px;
-      margin-right: 8px;
-      background: url("../img/icons/hospital.png") no-repeat;
-      background-size: 93%; }
+    .med-centers .container .row .container-title {
+      margin-bottom: 7px; }
+      .med-centers .container .row .container-title .title-icon {
+        margin-top: 54px;
+        margin-bottom: 26px; }
+      .med-centers .container .row .container-title .title-icon:before {
+        width: 70px;
+        height: 70px;
+        margin-top: -32px;
+        margin-right: 8px;
+        background: url("../img/icons/hospital.png") no-repeat;
+        background-size: 93%; }
     .med-centers .container .row .col-left {
       padding-left: 0; }
       @media (max-width: 991px) {
@@ -586,14 +588,16 @@
         @media (max-width: 1201px) {
           .best-doctors .text-center .col-lg-4 .card {
             margin-bottom: 30px; } }
-        .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 .ava {
-          width: 100px;
-          height: 110px;
-          background: url("../img/ava-gourvitz.jpg") no-repeat;
-          background-size: 124%;
-          background-position: 85% 12%;
-          -webkit-border-radius: 0 0 20px 0;
-                  border-radius: 0 0 20px 0; }
+        .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 {
+          margin-bottom: 0; }
+          .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 .ava {
+            width: 100px;
+            height: 110px;
+            background: url("../img/ava-gourvitz.jpg") no-repeat;
+            background-size: 124%;
+            background-position: 85% 12%;
+            -webkit-border-radius: 0 0 20px 0;
+                    border-radius: 0 0 20px 0; }
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 ul {
           margin-left: 17px;
           margin-top: -7px;
@@ -741,15 +745,17 @@
   @media (max-width: 1201px) {
     .common-diseases {
       padding-bottom: 25px; } }
-  .common-diseases .container .text-center .container-title h2 {
-    margin-top: 23px;
-    margin-bottom: 8px; }
-  .common-diseases .container .text-center .container-title .title-icon:before {
-    width: 55px;
-    height: 62px;
-    margin-top: -27px;
-    background: url(../img/icons/fonendoscope.png) no-repeat;
-    background-size: 100%; }
+  .common-diseases .container .text-center .container-title {
+    margin-bottom: 0; }
+    .common-diseases .container .text-center .container-title h2 {
+      margin-top: 23px;
+      margin-bottom: 8px; }
+    .common-diseases .container .text-center .container-title .title-icon:before {
+      width: 55px;
+      height: 62px;
+      margin-top: -27px;
+      background: url(../img/icons/fonendoscope.png) no-repeat;
+      background-size: 100%; }
   .common-diseases .container .text-center .col-lg-4 {
     margin-top: 31px;
     margin-bottom: 28px;
@@ -991,6 +997,10 @@
         margin: 0 -1px -1px;
         font-size: 18px;
         color: #000; }
+
+.container .link {
+  margin-top: 11px;
+  margin-bottom: 19px; }
 
 @font-face {
   font-family: 'Open Sans Light';
@@ -1480,14 +1490,175 @@ span.numbers {
   color: #aeaeae; }
 
 .bg-jumbotron {
-  height: 433px;
+  padding-bottom: 8.3vw;
   background: url("../img/bg-jumbotron.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.4); }
   .bg-jumbotron:before {
     content: " ";
     height: 100%;
     display: block;
     background-color: rgba(0, 0, 0, 0.4); }
+  .bg-jumbotron .container {
+    width: auto;
+    position: relative;
+    padding-bottom: 1vw; }
+    .bg-jumbotron .container .row-tabs {
+      margin-top: 4.6vw; }
+      @media (max-width: 991px) {
+        .bg-jumbotron .container .row-tabs {
+          margin-right: -12px;
+          margin-left: -40px;
+          padding-left: 30px; } }
+    .bg-jumbotron .container .row .nav {
+      border-bottom: none; }
+      .bg-jumbotron .container .row .nav li.active a {
+        border-top: transparent;
+        border-right: transparent;
+        border-bottom: 3px solid #18bdb2;
+        border-left: transparent; }
+      .bg-jumbotron .container .row .nav li.assign {
+        margin-left: 5px; }
+        .bg-jumbotron .container .row .nav li.assign a {
+          padding: 17px 34px 15px 25px; }
+      .bg-jumbotron .container .row .nav li.choose-clinic a {
+        padding: 13px 28px 13px 17px; }
+      .bg-jumbotron .container .row .nav li.find-medicine a {
+        padding: 13px 28px 13px 17px; }
+      .bg-jumbotron .container .row .nav li.survey a {
+        padding: 13px 28px 13px 17px; }
+    .bg-jumbotron .container .row .tab-content {
+      max-width: 970px;
+      margin: 0 auto;
+      padding-top: 3vw;
+      background-color: #fff; }
+
+/* JUMBOTRON INPUTS */
+.col-input {
+  margin-top: -5px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (max-width: 401px) {
+    .col-input {
+      padding: 0; } }
+
+.left-inner-addon {
+  position: relative; }
+  .left-inner-addon input {
+    max-width: 420px;
+    padding: 30px 0; }
+  .left-inner-addon input:focus::-webkit-input-placeholder {
+    color: transparent; }
+  .left-inner-addon input[placeholder] {
+    padding-left: 65px;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    color: #828282; }
+    @media (max-width: 401px) {
+      .left-inner-addon input[placeholder] {
+        padding-left: 5px; } }
+  .left-inner-addon p {
+    font-size: 14px;
+    font-family: "Open Sans Italic", Arial, sans-serif;
+    color: #494949; }
+  .left-inner-addon button {
+    padding: 15px 25px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    font-size: 18px;
+    color: #fff;
+    background-color: #00c3b6;
+    border-bottom: 4px solid #008977; }
+    .left-inner-addon button:hover {
+      background-color: #008977;
+      color: #fff; }
+
+.form-control {
+  padding: 25px;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0; }
+
+.btn-r {
+  position: relative;
+  display: table;
+  margin-right: 20px;
+  border-collapse: separate; }
+  .btn-r input {
+    margin-left: -37px;
+    max-width: 353px;
+    width: 330px;
+    border-right: 1px solid #858384; }
+    @media (max-width: 991px) {
+      .btn-r input {
+        max-width: 238px;
+        margin-left: 25px;
+        border-right: transparent; } }
+    @media (max-width: 571px) {
+      .btn-r input {
+        max-width: 204px; } }
+    @media (max-width: 401px) {
+      .btn-r input {
+        max-width: 160px; } }
+  .btn-r input[placeholder] {
+    padding-left: 50px; }
+    @media (max-width: 991px) {
+      .btn-r input[placeholder] {
+        padding-left: 65px; } }
+    @media (max-width: 401px) {
+      .btn-r input[placeholder] {
+        padding-left: 5px; } }
+  .btn-r span.input-group-btn {
+    margin-right: 0; }
+    .btn-r span.input-group-btn button {
+      margin-right: 6px;
+      padding: 15px 40px; }
+  .btn-r p {
+    position: absolute;
+    left: -36px;
+    top: 60px; }
+    @media (max-width: 991px) {
+      .btn-r p {
+        left: 26px; } }
+
+.left-input {
+  margin-left: 25px; }
+
+.left-inner-addon input {
+  padding-left: 30px; }
+
+.left-inner-addon i {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none; }
+
+.icon-user {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 33px;
+  height: 35px;
+  background: url("../img/icons/input-doc.png") no-repeat; }
+  @media (max-width: 401px) {
+    .icon-user {
+      display: none; } }
+
+.icon-geo {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -25px;
+  width: 33px;
+  height: 35px;
+  background: url("../img/icons/input-geo.png") no-repeat; }
+  @media (max-width: 991px) {
+    .icon-geo {
+      left: 45px; } }
+  @media (max-width: 401px) {
+    .icon-geo {
+      display: none; } }
 
 .container .how {
   text-align: center;

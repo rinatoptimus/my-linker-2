@@ -45,6 +45,7 @@
             }
               .profile-info {
                 .col-lg-3 {
+                  margin-bottom: 0;
                   .ava {
                     width: 100px;
                     height: 110px;
@@ -139,8 +140,6 @@
                 color: $black-btn-font;
                 &:hover {
                   background: #00c7bb; /* Old browsers */
-                  //background: -moz-linear-gradient(top,  #00c7bb 0%, #00c7bb 100%); /* FF3.6-15 */
-                  //background: -webkit-linear-gradient(top,  #00c7bb 0%,#00ae9f 100%); /* Chrome10-25,Safari5.1-6 */
                   background: linear-gradient(to bottom,  #00c7bb 0%,#00ae9f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c7bb', endColorstr='#00ae9f',GradientType=0 );
                   border-bottom: 2px solid $green-border-dark;
