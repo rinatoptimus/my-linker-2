@@ -1,0 +1,218 @@
+@import '_variables';
+@import '_mixins';
+
+.medicines {
+  margin-top: 58px;
+  margin-bottom: 43px;
+  .container {
+    .row {
+      .medicines-pediatry {
+        padding-left: 0;
+        @include phone {
+          padding-left: 15px;
+        }
+        @include large-desktop {
+          padding-left: 15px;
+        }
+      }
+      .medicines-cardiology {
+        padding-left: 10px;
+        padding-right: 10px;
+        @include phone {
+          padding-left: 15px;
+        }
+        @include large-desktop {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      .medicines-dent {
+        padding-left: 20px;
+        padding-right: 0;
+        @include phone {
+          padding-left: 15px;
+        }
+        @include large-desktop {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      .col-lg-4 {
+        @include phone {
+          margin-top: 10px;
+        }
+        .medicines-bg {
+          position: relative;
+          max-width: 370px;
+          height: 200px;
+          box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
+          @include large-desktop {
+            max-width: 748px;
+            margin: 10px auto 0;
+          }
+          h3 {
+            display: inline-block;
+            padding: 3px 19px;
+            background-color: $green-dark;
+            font-size: 20px;
+            font-family: $light;
+            color: $white;
+          }
+          ul {
+            margin-top: 10px;
+            padding-left: 0;
+            li {
+              padding: 2px 13px 3px 3px;
+              cursor: pointer;
+              .eye {
+                width: 23px;
+                height: 15px;
+                background: url('../img/eye-white.png') no-repeat;
+                float: left;
+                margin-right: 5px;
+                margin-top: 3px;
+                visibility: hidden;
+              }
+              a {
+                font-size: 15px;
+                color: $white;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+              &:hover > div {
+                visibility: visible;
+              }
+              &:hover {
+                background-color: rgba(10, 164, 155, .2);
+                display: inline-block;
+              }
+            }
+          }
+          .medicines-footer {
+            position: absolute;
+            padding: 10px 10px 11px 11px;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .2);
+            i {
+              padding-right: 2px;
+              color: $green;
+            }
+            a {
+              color: $white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .medicines-bg-pediatry {
+          background: url('../img/med-1.jpg') no-repeat;
+          background-size: cover;
+        }
+        .medicines-bg-cardiology {
+          background: url('../img/med-2.jpg') no-repeat;
+          background-size: cover;
+        }
+        .medicines-bg-dent {
+          background: url('../img/med-3.jpg') no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .med-large {
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    @include medium-desktop {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @include large-desktop {
+      margin-top: 10px;
+    }
+    .row {
+      .container-neurology {
+        @include large-desktop {
+          margin-bottom: 10px;
+        }
+      }
+      .col-lg-6 {
+        .medicines-bg {
+          position: relative;
+          max-width: 570px;
+          height: 200px;
+          box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
+          background-size: cover;
+          @include large-desktop {
+            max-width: 748px;
+            margin: 0 auto;
+          }
+          h3 {
+            display: inline-block;
+            padding: 3px 19px;
+            background-color: $green-dark;
+            font-size: 20px;
+            font-family: $light;
+            color: $white;
+          }
+          ul {
+            margin-top: 10px;
+            padding-left: 0;
+            li {
+              padding: 2px 13px 3px 3px;
+              cursor: pointer;
+              .eye {
+                width: 23px;
+                height: 15px;
+                background: url('../img/eye-white.png') no-repeat;
+                float: left;
+                margin-right: 5px;
+                margin-top: 5px;
+                visibility: hidden;
+              }
+              a {
+                font-size: 15px;
+                color: $white;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+              &:hover > div {
+                visibility: visible;
+              }
+              &:hover {
+                background-color: rgba(10, 164, 155, .2);
+                display: inline-block;
+              }
+            }
+          }
+          .medicines-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 10px 11px 11px;
+            background-color: rgba(0, 0, 0, .2);
+            i {
+              color: $green;
+            }
+            a {
+              color: $white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .medicines-bg-neurology {
+        background: url('../img/med-4.jpg') no-repeat;
+      }
+      .medicines-bg-diet {
+        background: url('../img/med-5.jpg') no-repeat;
+      }
+    }
+  }
+}

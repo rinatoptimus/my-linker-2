@@ -1,0 +1,194 @@
+@import '_variables';
+@import '_mixins';
+
+.container {
+  .how {
+    text-align: center;
+    h2 {
+      margin-top: 53px;
+      margin-bottom: 52px;
+    }
+
+    .col-lg-3 {
+      margin-left: 44px;
+      padding: 0;
+      display: block;
+      width: 24%;
+
+      @include medium-desktop-lg {
+        display: flex;
+      }
+      @include large-desktop {
+        width: 28%;
+      }
+      @include small-devices {
+        display: flex;
+      }
+      @include phone-lg {
+        display: block;
+      }
+      .how-block-first {
+        .how-icon {
+          margin: 0 auto;
+          background-size: contain;
+        }
+        .how-icon-doc {
+          width: 121px;
+          height: 128px;
+          margin-left: 84px;
+          margin-top: 1px;
+          background: url('../img/icons/icon-xl-doc.png') no-repeat;
+          background-size: contain;
+        }
+        .how-icon-paper-pen {
+          margin-left: 80px;
+          width: 127px;
+          height: 132px;
+          margin-top: -5px;
+          background: url('../img/icons/icon-xl-paper-pen.png') no-repeat;
+          background-size: contain;
+        }
+        .how-icon-mark-geo {
+          margin-left: 42px;
+          width: 123px;
+          height: 128px;
+          margin-top: -3px;
+          background: url('../img/icons/icon-xl-mark-geo.png') no-repeat;
+          background-size: contain;
+          @include medium-desktop-lg {
+            margin-left: 82px;
+          }
+        }
+        .how-icon-doc, .how-icon-paper-pen, .how-icon-mark-geo {
+          @include medium-desktop-lg {
+            margin-right: 50px;
+          }
+        }
+        .how-number {
+          float: left;
+          font-family: $light;
+          font-size: 58px;
+          line-height: 40px;
+        }
+        .how-number-first {
+          margin-left: 15%;
+          @include medium-desktop-lg {
+            margin-left: 6%;
+          }
+        }
+        .how-number-second {
+          margin-left: 12px;
+        }
+        .how-number-third {
+          @include medium-desktop-lg {
+            margin-left: 12px;
+          }
+        }
+      }
+
+      .how-block-second {
+        h3 {
+          font-size: 20px;
+          font-family: $semibold;
+          color: $black-lighter;
+          @include phone {
+            width: 300px;
+          }
+        }
+        .how-choose {
+          margin-left: 16px;
+          padding-top: 3px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .how-sign-in {
+          margin-left: -26px;
+          padding-top: 5px;
+          @include medium-desktop-lg {
+            margin-left: -1px;
+            text-align: left;
+          }
+        }
+        .how-visit {
+          margin-left: -68px;
+          padding-top: 7px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .how-choose, .how-sign-in, .how-visit {
+          @include phone-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .text {
+          font-size: 14px;
+          font-family: $semibold;
+          color: $grey-darker;
+        }
+        .text-first {
+          width: 292px;
+          padding-top: 1px;
+          @include medium-desktop-lg {
+            text-align: left;
+          }
+        }
+        .text-second {
+          width: 350px;
+          margin-left: -49px;
+          padding-top: 1px;
+          @include large-desktop {
+            width: 250px;
+            margin-left: 0;
+          }
+          @include medium-desktop-lg {
+            text-align: left;
+          }
+        }
+        .text-third {
+          width: 272px;
+          margin-left: -34px;
+          padding-top: 1px;
+          @include medium-desktop-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+        .text-second, .text-third {
+          @include phone-lg {
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .col-middle {
+      @include medium-desktop-lg {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .col-lg-1 {
+      .arrow-right {
+        width: 64px;
+        height: 33px;
+        margin-top: 48px;
+        background: url('../img/arrow-right.png') no-repeat;
+      }
+      .arrow-right-first {
+        margin-left: 2px;
+      }
+      .arrow-right-first, .arrow-right-second {
+        display: block;
+        @include large-desktop {
+          display: none;
+        }
+      }
+    }
+  }
+}

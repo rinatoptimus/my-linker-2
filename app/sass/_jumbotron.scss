@@ -1,0 +1,202 @@
+@import '_variables';
+@import '_mixins';
+
+.bg-jumbotron {
+  padding-bottom: 8.3vw;
+  background: url('../img/bg-jumbotron.jpg') no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.4);
+  &:before{
+    content: " ";
+    height: 100%;
+    display: block;
+    background-color: $overlay-light;
+  }
+  .container {
+    width: auto;
+    position: relative;
+    padding-bottom: 1vw;
+    .row-tabs {
+      margin-top: 4.6vw;
+      @include medium-desktop-lg {
+        margin-right: -12px;
+        margin-left: -40px;
+        padding-left: 30px;
+      }
+    }
+    .row {
+      .nav {
+        border-bottom: none;
+        li.active {
+          a {
+            border-top: transparent;
+            border-right: transparent;
+            border-bottom: 3px solid #18bdb2;
+            border-left: transparent;
+          }
+        }
+        li.assign {
+          margin-left: 5px;
+          a {
+            padding: 17px 34px 15px 25px;
+          }
+        }
+        li.choose-clinic {
+          a {
+            padding: 13px 28px 13px 17px;
+          }
+        }
+        li.find-medicine {
+          a {
+            padding: 13px 28px 13px 17px;
+          }
+        }
+        li.survey {
+          a {
+            padding: 13px 28px 13px 17px;
+          }
+        }
+      }
+      .tab-content {
+        max-width: 970px;
+        margin: 0 auto;
+        padding-top: 3vw;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+/* JUMBOTRON INPUTS */
+.col-input {
+  margin-top: -5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include phone {
+    padding: 0;
+  }
+}
+.left-inner-addon {
+  position: relative;
+  input {
+    max-width: 420px;
+    padding: 30px 0;
+  }
+  input:focus::-webkit-input-placeholder {color: transparent}
+  input[placeholder] {
+    padding-left: 65px;
+    text-overflow:ellipsis;
+    font-size: 17px;
+    color: $grey-dark;
+    @include phone {
+      padding-left: 5px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-family: $italic;
+    color: $grey-placeholder;
+  }
+  button {
+    padding: 15px 25px;
+    border-radius: 0;
+    font-size: 18px;
+    color: $white;
+    background-color: $green-btn;
+    border-bottom: 4px solid $green-border-dark;
+    &:hover {
+      background-color: $green-border-dark;
+      color: $white;
+    }
+  }
+}
+.form-control {
+  padding: 25px;
+  border: none;
+  border-radius: 0;
+}
+.btn-r {
+  position: relative;
+  display: table;
+  margin-right: 20px;
+  border-collapse: separate;
+  input {
+    margin-left: -37px;
+    max-width: 353px;
+    width: 330px;
+    border-right: 1px solid $grey-border-input;
+    @include medium-desktop-lg {
+      max-width: 238px;
+      margin-left: 25px;
+      border-right: transparent;
+    }
+    @include phone-lg {
+      max-width: 204px;
+    }
+    @include phone {
+      max-width: 160px;
+    }
+  }
+  input[placeholder] {
+    padding-left: 50px;
+    @include medium-desktop-lg {
+      padding-left: 65px;
+    }
+    @include phone {
+      padding-left: 5px;
+    }
+  }
+  span.input-group-btn {
+    margin-right: 0;
+    button {
+      margin-right: 6px;
+      padding: 15px 40px;
+    }
+  }
+  p {
+    position: absolute;
+    left: -36px;
+    top: 60px;
+    @include medium-desktop-lg {
+      left: 26px;
+    }
+  }
+}
+.left-input {
+  margin-left: 25px;
+}
+.left-inner-addon input {
+  padding-left: 30px;
+}
+.left-inner-addon i {
+  position: absolute;
+  padding: 10px 12px;
+  pointer-events: none;
+}
+.icon-user {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  width: 33px;
+  height: 35px;
+  background: url('../img/icons/input-doc.png') no-repeat;
+  @include phone {
+    display: none;
+  }
+}
+.icon-geo {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -25px;
+  width: 33px;
+  height: 35px;
+  background: url('../img/icons/input-geo.png') no-repeat;
+  @include medium-desktop-lg {
+    left: 45px;
+  }
+  @include phone {
+    display: none;
+  }
+}
