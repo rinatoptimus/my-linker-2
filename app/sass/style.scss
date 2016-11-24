@@ -72,7 +72,6 @@ select {
 /* TITLE WITH ICON */
 .title-icon {
   display: inline-block;
-  //line-height: 5.35vw;
   @include medium-desktop {
     line-height: 1.1;
   }
@@ -80,13 +79,9 @@ select {
     content: '';
     display: block;
     float: left;
-    //width: 70px;
-    //height: 70px;
     float: left;
     margin-right: 10px;
     margin-top: -5px;
-    //background: url('../img/icons/hospital.png') no-repeat;
-    //background-size: 93%;
     @include medium-desktop {
       display: none;
     }
@@ -219,7 +214,6 @@ select {
       .navbar-header {
         margin-top: 13px;
         border-right: 1px solid rgba(0, 0, 0, .2);
-        //background-color: rgba(0, 0, 0, .2);
         padding-right: 85px;
         @include small-devices {
           padding-right: 0;
@@ -341,7 +335,6 @@ span.numbers {
 }
 
 .bg-jumbotron {
-  //height: 433px;
   padding-bottom: 8.3vw;
   background: url('../img/bg-jumbotron.jpg') no-repeat;
   background-size: cover;
@@ -353,10 +346,8 @@ span.numbers {
       background-color: $overlay-light;
     }
   .container {
-    //box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
     width: auto;
     position: relative;
-    //height: 26vw;
     padding-bottom: 1vw;
       .row-tabs {
         margin-top: 4.6vw;
@@ -367,7 +358,6 @@ span.numbers {
         }
       }
       .row {
-        //margin-top: 4.6vw;
           .nav {
             border-bottom: none;
               li.active {
@@ -376,15 +366,12 @@ span.numbers {
                   border-right: transparent;
                   border-bottom: 3px solid #18bdb2;
                   border-left: transparent;
-
-                  //background: transparent;
                 }
               }
               li.assign {
-                //margin-left: 5px;
-                margin-left: 5px; //bbbb
+                margin-left: 5px;
                   a {
-                    padding: 17px 34px 15px 25px; /// bbbb
+                    padding: 17px 34px 15px 25px;
                   }
               }
               li.choose-clinic {
@@ -404,8 +391,7 @@ span.numbers {
               }
           }
           .tab-content {
-            //max-width: 945px;
-            max-width: 970px; // bbbb
+            max-width: 970px;
             margin: 0 auto;
             padding-top: 3vw;
             background-color: #fff;
@@ -465,18 +451,15 @@ span.numbers {
 .btn-r {
   position: relative;
   display: table;
-  margin-right: 20px; // cccc
+  margin-right: 20px;
   border-collapse: separate;
-    // cccc
     input {
       margin-left: -37px;
       max-width: 353px;
       width: 330px;
       border-right: 1px solid $grey-border-input;
       @include medium-desktop-lg {
-        //width: 100%;
         max-width: 238px;
-        //width: 402px;
         margin-left: 25px;
         border-right: transparent;
       }
@@ -489,7 +472,6 @@ span.numbers {
     }
     input[placeholder] {
       padding-left: 50px;
-      //text-overflow: ellipsis;
       @include medium-desktop-lg {
         padding-left: 65px;
       }
@@ -499,30 +481,23 @@ span.numbers {
     }
     span.input-group-btn {
       margin-right: 0;
-      @include medium-desktop-lg {
-        //right: 273px;
-      }
       button {
         margin-right: 6px;
         padding: 15px 40px;
       }
     }
-    // cccc
     p {
       position: absolute;
-      //left: 0;
-      left: -36px; // cccc
+      left: -36px;
       top: 60px;
       @include medium-desktop-lg {
         left: 26px;
       }
     }
 }
-// cccc
 .left-input {
   margin-left: 25px;
 }
-// cccc
 .left-inner-addon input {
   padding-left: 30px;
 }
@@ -566,95 +541,7 @@ span.numbers {
         margin-top: 53px;
         margin-bottom: 52px;
       }
-      /*.col-lg-3 {
-        margin-left: 44px;
-        padding: 0;
 
-        width: 24%;
-        @include large-desktop {
-          width: 28%;
-        }
-          .how-icon {
-            margin: 0 auto;
-            background-size: contain;
-          }
-          .how-icon-doc {
-            width: 121px;
-            height: 128px;
-            margin-left: 84px;
-            margin-top: 1px;
-            background: url('../img/icons/icon-xl-doc.png') no-repeat;
-            background-size: contain;
-          }
-          .how-icon-paper-pen {
-            margin-left: 80px;
-            width: 127px;
-            height: 132px;
-            margin-top: -5px;
-            background: url('../img/icons/icon-xl-paper-pen.png') no-repeat;
-            background-size: contain;
-          }
-          .how-icon-mark-geo {
-            margin-left: 42px;
-            width: 123px;
-            height: 128px;
-            margin-top: -3px;
-            background: url('../img/icons/icon-xl-mark-geo.png') no-repeat;
-            background-size: contain;
-          }
-          .how-number {
-            float: left;
-            font-family: $light;
-            font-size: 58px;
-            line-height: 40px;
-          }
-          .how-number-first {
-            margin-left: 15%;
-          }
-          .how-number-second {
-            margin-left: 12px;
-          }
-          h3 {
-            font-size: 20px;
-            font-family: $semibold;
-            color: $black-lighter;
-          }
-          .how-choose {
-            margin-left: 16px;
-            padding-top: 3px;
-          }
-          .how-sign-in {
-            margin-left: -26px;
-            padding-top: 5px;
-          }
-          .how-visit {
-            margin-left: -68px;
-            padding-top: 7px;
-          }
-          .text {
-            font-size: 14px;
-            font-family: $semibold;
-            color: $grey-darker;
-          }
-          .text-first {
-            width: 292px;
-            padding-top: 1px;
-          }
-          .text-second {
-            width: 350px;
-            margin-left: -49px;
-            padding-top: 1px;
-            @include large-desktop {
-              width: 250px;
-              margin-left: 0;
-            }
-          }
-          .text-third {
-            width: 272px;
-            margin-left: -34px;
-            padding-top: 1px;
-          }
-      }*/
     .col-lg-3 {
       margin-left: 44px;
       padding: 0;
@@ -848,7 +735,6 @@ span.numbers {
           padding-left: 0;
           @include phone {
             padding-left: 15px;
-            //display: none;
           }
           @include large-desktop {
             padding-left: 15px;
@@ -856,24 +742,24 @@ span.numbers {
         }
         .medicines-cardiology {
           padding-left: 10px;
-          padding-right: 10px; // 1111
+          padding-right: 10px;
           @include phone {
             padding-left: 15px;
           }
           @include large-desktop {
             padding-left: 15px;
-            padding-right: 15px; // 2222
+            padding-right: 15px;
           }
         }
         .medicines-dent {
           padding-left: 20px;
-          padding-right: 0; // 1111
+          padding-right: 0;
           @include phone {
             padding-left: 15px;
           }
           @include large-desktop {
             padding-left: 15px;
-            padding-right: 15px; // 2222
+            padding-right: 15px;
           }
         }
         .col-lg-4 {
@@ -885,11 +771,7 @@ span.numbers {
             max-width: 370px;
             height: 200px;
             box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
-            /*@include small-devices {
-              max-width: 370px;
-            }*/
             @include large-desktop {
-              //width: 330px;
               max-width: 748px;
               margin: 10px auto 0;
             }

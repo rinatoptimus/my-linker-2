@@ -29,11 +29,8 @@
           }
       }
       .col-lg-4 {
-        /*padding-right: 5px;
-        margin-right: 10px;*/
           .card {
             border: 1px solid $grey-border;
-            //box-shadow: 0 0 0 0px red, 0 2px 0px grey;
             border-radius: 0 0 25px 25px;
             box-shadow: 0 0px 0 0px white, 0 1px 3px rgba(0, 0, 0, 0.3);
             &:hover {
@@ -51,7 +48,6 @@
                     height: 110px;
                     background: url('../img/ava-gourvitz.jpg') no-repeat;
                     background-size: 124%;
-                    //background-position-x: 90%;
                     background-position: 85% 12%;
                     border-radius: 0 0 20px 0;
                   }
@@ -130,9 +126,6 @@
               }
               .footer {
                 border: 2px solid $green-border;
-                /*margin-left: -1px;
-                margin-right: -1px;
-                margin-bottom: -1px;*/
                 margin: 0 -1px -1px;
                 padding: 11px 10px;
                 border-radius: 0 0 25px 25px;

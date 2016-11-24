@@ -1661,96 +1661,7 @@ span.numbers {
       display: none; } }
 
 .container .how {
-  text-align: center;
-  /*.col-lg-3 {
-        margin-left: 44px;
-        padding: 0;
-
-        width: 24%;
-        @include large-desktop {
-          width: 28%;
-        }
-          .how-icon {
-            margin: 0 auto;
-            background-size: contain;
-          }
-          .how-icon-doc {
-            width: 121px;
-            height: 128px;
-            margin-left: 84px;
-            margin-top: 1px;
-            background: url('../img/icons/icon-xl-doc.png') no-repeat;
-            background-size: contain;
-          }
-          .how-icon-paper-pen {
-            margin-left: 80px;
-            width: 127px;
-            height: 132px;
-            margin-top: -5px;
-            background: url('../img/icons/icon-xl-paper-pen.png') no-repeat;
-            background-size: contain;
-          }
-          .how-icon-mark-geo {
-            margin-left: 42px;
-            width: 123px;
-            height: 128px;
-            margin-top: -3px;
-            background: url('../img/icons/icon-xl-mark-geo.png') no-repeat;
-            background-size: contain;
-          }
-          .how-number {
-            float: left;
-            font-family: $light;
-            font-size: 58px;
-            line-height: 40px;
-          }
-          .how-number-first {
-            margin-left: 15%;
-          }
-          .how-number-second {
-            margin-left: 12px;
-          }
-          h3 {
-            font-size: 20px;
-            font-family: $semibold;
-            color: $black-lighter;
-          }
-          .how-choose {
-            margin-left: 16px;
-            padding-top: 3px;
-          }
-          .how-sign-in {
-            margin-left: -26px;
-            padding-top: 5px;
-          }
-          .how-visit {
-            margin-left: -68px;
-            padding-top: 7px;
-          }
-          .text {
-            font-size: 14px;
-            font-family: $semibold;
-            color: $grey-darker;
-          }
-          .text-first {
-            width: 292px;
-            padding-top: 1px;
-          }
-          .text-second {
-            width: 350px;
-            margin-left: -49px;
-            padding-top: 1px;
-            @include large-desktop {
-              width: 250px;
-              margin-left: 0;
-            }
-          }
-          .text-third {
-            width: 272px;
-            margin-left: -34px;
-            padding-top: 1px;
-          }
-      }*/ }
+  text-align: center; }
   .container .how h2 {
     margin-top: 53px;
     margin-bottom: 52px; }
@@ -1943,10 +1854,7 @@ span.numbers {
     max-width: 370px;
     height: 200px;
     -webkit-box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
-            box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7);
-    /*@include small-devices {
-              max-width: 370px;
-            }*/ }
+            box-shadow: inset 0 0 0 100em rgba(0, 0, 0, 0.7); }
     @media (max-width: 1201px) {
       .medicines .container .row .col-lg-4 .medicines-bg {
         max-width: 748px;
