@@ -131,6 +131,7 @@
         margin-bottom: 25px;
         padding-left: 0px;
         li {
+          width: 14px;
           margin: 2px;
           float: left;
             a {
@@ -143,6 +144,10 @@
               }
             }
           }
+        li.letter-sch {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
       }
   }
   .container {

@@ -13,5 +13,8 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function () {
   //gulp.watch('app/sass/**/*.scss', ['sass']);
-  gulp.watch('app/sass/style.scss', ['sass']);
+  //gulp.watch('app/sass/style.scss', ['sass']);
+
+  //gulp.watch('app/sass/_*.scss', ['sass']);
+  gulp.watch('app/sass/*.scss', ['sass']);
 });

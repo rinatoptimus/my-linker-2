@@ -1340,6 +1340,7 @@ span.numbers {
     margin-bottom: 25px;
     padding-left: 0px; }
     .row .wrapper-alphabet-filter ul.alphabet-letters li {
+      width: 14px;
       margin: 2px;
       float: left; }
       .row .wrapper-alphabet-filter ul.alphabet-letters li a {
@@ -1349,6 +1350,9 @@ span.numbers {
           font-family: "Open Sans Light", Arial, sans-serif;
           font-family: "Open Sans ExtraBold", Arial, sans-serif;
           color: #00bdaf; }
+    .row .wrapper-alphabet-filter ul.alphabet-letters li.letter-sch {
+      margin-left: 5px;
+      margin-right: 5px; }
 
 .row .container {
   clear: both; }
