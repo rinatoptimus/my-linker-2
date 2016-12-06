@@ -623,6 +623,7 @@ span.numbers {
     font-family: "Open Sans Italic", Arial, sans-serif;
     color: #494949; }
   .left-inner-addon button {
+    margin-top: -14px;
     padding: 15px 25px;
     -webkit-border-radius: 0;
             border-radius: 0;
