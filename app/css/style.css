@@ -405,6 +405,7 @@ select {
         .navbar-contacts .container .navbar-collapse ul li:first-child .box {
           padding-top: 2px; }
           .navbar-contacts .container .navbar-collapse ul li:first-child .box .selectpicker {
+            margin-top: -2px;
             border: none;
             background-color: transparent;
             cursor: pointer;
@@ -671,7 +672,7 @@ span.numbers {
   .btn-r span.input-group-btn {
     margin-right: 0; }
     .btn-r span.input-group-btn button {
-      margin-right: 6px;
+      margin-right: 7px;
       padding: 15px 40px; }
   .btn-r p {
     position: absolute;
@@ -1481,38 +1482,57 @@ span.numbers {
       border: 1px solid #18bdb2;
       -webkit-box-shadow: none;
               box-shadow: none; }
-    .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-logo {
-      width: 192px;
-      height: 57px;
-      margin-top: 6px;
-      margin-left: 21px;
-      background: url("../img/logo-transmed.png") no-repeat;
-      background-size: 60%; }
-    .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts {
-      margin-top: 6px;
-      margin-left: -22px; }
-      @media (max-width: 1201px) {
-        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts {
-          width: 300px;
-          margin: 0 auto;
-          padding-left: 0; } }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li i {
-        float: left;
-        color: #1a5eab; }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .fa-map-marker {
-        margin-left: 34px;
-        margin-right: -8px; }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .fa-phone {
-        margin-left: 41px;
-        margin-right: -14px;
-        margin-top: -2px; }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li p {
-        font-size: 14px;
-        color: #565656; }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-address {
-        line-height: 16px; }
-      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-phone {
-        line-height: 10px; }
+    .med-centers .container .row .col-lg-6 .card .header {
+      /*.col-lg-6 {
+                    .med-center-logo {
+                      width: 192px;
+                      height: 57px;
+                      margin-top: 6px;
+                      margin-left: 21px;
+                      background: url('../img/logo-transmed.png') no-repeat;
+                      background-size: 60%;
+                    }
+                  }*/ }
+      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-logo {
+        /*width: 192px;
+                      height: 57px;
+                      margin-top: 6px;
+                      margin-left: 21px;
+                      background: url('../img/logo-transmed.png') no-repeat;
+                      background-size: 60%;*/
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 4px; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-logo img {
+          width: 122px; }
+      .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts {
+        margin-top: 6px;
+        margin-left: -22px; }
+        @media (max-width: 1201px) {
+          .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts {
+            width: 300px;
+            margin: 0 auto;
+            padding-left: 0; } }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li i {
+          float: left;
+          color: #1a5eab; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .fa-map-marker {
+          margin-left: 34px;
+          margin-right: -8px; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .fa-phone {
+          margin-left: 41px;
+          margin-right: -14px;
+          margin-top: -2px; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li p {
+          font-size: 14px;
+          color: #565656; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-address {
+          padding-left: 15px;
+          text-align: left;
+          overflow: hidden;
+          line-height: 16px; }
+        .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-phone {
+          line-height: 10px; }
     .med-centers .container .row .col-lg-6 .card .content .col-lg-12 {
       margin-top: -11px; }
       .med-centers .container .row .col-lg-6 .card .content .col-lg-12 .med-center-content {
@@ -1674,13 +1694,16 @@ span.numbers {
       .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 {
         margin-bottom: 0; }
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 .ava {
-          width: 100px;
-          height: 110px;
-          background: url("../img/ava-gourvitz.jpg") no-repeat;
-          background-size: 124%;
-          background-position: 85% 12%;
-          -webkit-border-radius: 0 0 20px 0;
-                  border-radius: 0 0 20px 0; }
+          /*width: 100px;
+                    height: 110px;
+                    background: url('../img/ava-gourvitz.jpg') no-repeat;
+                    background-size: 124%;
+                    background-position: 85% 12%;
+                    border-radius: 0 0 20px 0;*/ }
+          .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-3 .ava img {
+            width: 103px;
+            -webkit-border-radius: 0 0 20px 0;
+                    border-radius: 0 0 20px 0; }
       .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 ul {
         margin-left: 17px;
         margin-top: -7px;
@@ -1728,6 +1751,8 @@ span.numbers {
             margin-right: 3px; }
           .best-doctors .text-center .col-lg-4 .card .statistics ul li .fa-pencil-square-o {
             margin-right: 5px; }
+          .best-doctors .text-center .col-lg-4 .card .statistics ul li a {
+            color: #868686; }
       .best-doctors .text-center .col-lg-4 .card .footer {
         border: 2px solid #00baab;
         margin: 0 -1px -1px;
