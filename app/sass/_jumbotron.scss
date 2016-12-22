@@ -121,21 +121,38 @@
   display: table;
   margin-right: 20px;
   border-collapse: separate;
+  @include phone-lg {
+    display: flex;
+    flex-direction: column;
+  }
   input {
     margin-left: -37px;
     max-width: 353px;
     width: 330px;
     border-right: 1px solid $grey-border-input;
     @include medium-desktop-lg {
-      max-width: 238px;
+      //max-width: 238px;
+      max-width: 420px;
+      width: 420px;
+
       margin-left: 25px;
       border-right: transparent;
     }
+    @include small-devices {
+      max-width: 320px;
+      width: 320px;
+    }
     @include phone-lg {
-      max-width: 204px;
+      //max-width: 204px;
+      max-width: 325px;
+      margin-left: 0;
     }
     @include phone {
-      max-width: 160px;
+      //max-width: 305px;
+      max-width: 77vw;
+    }
+    @include phone-mini {
+      max-width: 250px;
     }
   }
   input[placeholder] {
@@ -152,6 +169,18 @@
     button {
       margin-right: 7px;
       padding: 15px 40px;
+      @include phone-lg {
+        padding: 15px 135px;
+      }
+      @include phone {
+        padding: 15px 125px;
+      }
+      @include phone-md {
+        padding: 15px 5.3em;
+      }
+      @include phone-mini {
+        padding: 15px 95px;
+      }
     }
   }
   p {
@@ -161,10 +190,16 @@
     @include medium-desktop-lg {
       left: 26px;
     }
+    @include phone-lg {
+      left: 0;
+    }
   }
 }
 .left-input {
   margin-left: 25px;
+  @include phone-lg {
+    margin-left: 0;
+  }
 }
 .left-inner-addon input {
   padding-left: 30px;
@@ -186,6 +221,9 @@
     display: none;
   }
 }
+.btn-alph-search {
+  margin-top: 30px;
+}
 .icon-geo {
   display: block;
   position: absolute;
@@ -196,6 +234,9 @@
   background: url('../img/icons/input-geo.png') no-repeat;
   @include medium-desktop-lg {
     left: 45px;
+  }
+  @include phone-lg {
+    left: 20px;
   }
   @include phone {
     display: none;

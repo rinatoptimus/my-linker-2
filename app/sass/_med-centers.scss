@@ -114,6 +114,9 @@
                           }
                           .card-phone {
                             line-height: 10px;
+                            @include large-desktop {
+                              width: 250px;
+                            }
                           }
                         }
                     }
@@ -182,6 +185,9 @@
                   font-size: 18px;
                   color: $black-btn-font;
                   border-radius: 25px;
+                  @include phone {
+                    padding: 12px 25px;
+                  }
                   &:hover {
                     background-color: $green-bg-btn;
                     box-shadow: 0 0 0 0px white, 0 2px 3px rgba(0, 0, 0, 0.22);

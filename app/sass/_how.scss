@@ -102,6 +102,9 @@
             margin-left: 0;
             text-align: left;
           }
+          @include phone-mini {
+            width: 275px;
+          }
         }
         .how-sign-in {
           margin-left: -26px;
@@ -110,6 +113,9 @@
             margin-left: -1px;
             text-align: left;
           }
+          @include phone-mini {
+            width: 260px;
+          }
         }
         .how-visit {
           margin-left: -68px;
@@ -117,6 +123,9 @@
           @include medium-desktop-lg {
             margin-left: 0;
             text-align: left;
+          }
+          @include phone-mini {
+            width: 260px;
           }
         }
         .how-choose, .how-sign-in, .how-visit {
@@ -136,6 +145,12 @@
           @include medium-desktop-lg {
             text-align: left;
           }
+          @include phone {
+            width: 280px;
+          }
+          @include phone-mini {
+            width: 260px;
+          }
         }
         .text-second {
           width: 350px;
@@ -148,6 +163,12 @@
           @include medium-desktop-lg {
             text-align: left;
           }
+          @include phone {
+            width: 275px;
+          }
+          @include phone-mini {
+            width: 260px;
+          }
         }
         .text-third {
           width: 272px;
@@ -156,6 +177,9 @@
           @include medium-desktop-lg {
             margin-left: 0;
             text-align: left;
+          }
+          @include phone {
+            width: 230px;
           }
         }
         .text-second, .text-third {

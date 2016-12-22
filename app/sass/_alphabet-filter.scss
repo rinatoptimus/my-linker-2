@@ -35,6 +35,9 @@
     .panel-heading {
       .panel-title:before {
         background: url('../img/icons-green/paper-pen-green.png') no-repeat;
+        @include medium-desktop {
+          margin-top: -8px;
+        }
       }
     }
   }
@@ -150,8 +153,11 @@
         }
       }
   }
-  .container {
+  .container-alphabet {
     clear: both;
+    @include medium-desktop {
+      width: 100%;
+    }
     .row {
       .col-lg-3 {
         padding-left: 0;

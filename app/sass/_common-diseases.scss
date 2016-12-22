@@ -16,6 +16,9 @@
           h2 {
             margin-top: 23px;
             margin-bottom: 8px;
+            @include phone {
+              font-size: 28px;
+            }
           }
           .title-icon:before {
             width: 55px;

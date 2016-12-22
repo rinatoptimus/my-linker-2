@@ -646,6 +646,17 @@ span.numbers {
   display: table;
   margin-right: 20px;
   border-collapse: separate; }
+  @media (max-width: 571px) {
+    .btn-r {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .btn-r input {
     margin-left: -37px;
     max-width: 353px;
@@ -653,15 +664,24 @@ span.numbers {
     border-right: 1px solid #858384; }
     @media (max-width: 991px) {
       .btn-r input {
-        max-width: 238px;
+        max-width: 420px;
+        width: 420px;
         margin-left: 25px;
         border-right: transparent; } }
+    @media (max-width: 767px) {
+      .btn-r input {
+        max-width: 320px;
+        width: 320px; } }
     @media (max-width: 571px) {
       .btn-r input {
-        max-width: 204px; } }
+        max-width: 325px;
+        margin-left: 0; } }
     @media (max-width: 401px) {
       .btn-r input {
-        max-width: 160px; } }
+        max-width: 77vw; } }
+    @media (max-width: 321px) {
+      .btn-r input {
+        max-width: 250px; } }
   .btn-r input[placeholder] {
     padding-left: 50px; }
     @media (max-width: 991px) {
@@ -675,6 +695,18 @@ span.numbers {
     .btn-r span.input-group-btn button {
       margin-right: 7px;
       padding: 15px 40px; }
+      @media (max-width: 571px) {
+        .btn-r span.input-group-btn button {
+          padding: 15px 135px; } }
+      @media (max-width: 401px) {
+        .btn-r span.input-group-btn button {
+          padding: 15px 125px; } }
+      @media (max-width: 376px) {
+        .btn-r span.input-group-btn button {
+          padding: 15px 5.3em; } }
+      @media (max-width: 321px) {
+        .btn-r span.input-group-btn button {
+          padding: 15px 95px; } }
   .btn-r p {
     position: absolute;
     left: -36px;
@@ -682,9 +714,15 @@ span.numbers {
     @media (max-width: 991px) {
       .btn-r p {
         left: 26px; } }
+    @media (max-width: 571px) {
+      .btn-r p {
+        left: 0; } }
 
 .left-input {
   margin-left: 25px; }
+  @media (max-width: 571px) {
+    .left-input {
+      margin-left: 0; } }
 
 .left-inner-addon input {
   padding-left: 30px; }
@@ -706,6 +744,9 @@ span.numbers {
     .icon-user {
       display: none; } }
 
+.btn-alph-search {
+  margin-top: 30px; }
+
 .icon-geo {
   display: block;
   position: absolute;
@@ -717,6 +758,9 @@ span.numbers {
   @media (max-width: 991px) {
     .icon-geo {
       left: 45px; } }
+  @media (max-width: 571px) {
+    .icon-geo {
+      left: 20px; } }
   @media (max-width: 401px) {
     .icon-geo {
       display: none; } }
@@ -877,6 +921,9 @@ span.numbers {
         .container .how .col-lg-3 .how-block-second .how-choose {
           margin-left: 0;
           text-align: left; } }
+      @media (max-width: 321px) {
+        .container .how .col-lg-3 .how-block-second .how-choose {
+          width: 275px; } }
     .container .how .col-lg-3 .how-block-second .how-sign-in {
       margin-left: -26px;
       padding-top: 5px; }
@@ -884,6 +931,9 @@ span.numbers {
         .container .how .col-lg-3 .how-block-second .how-sign-in {
           margin-left: -1px;
           text-align: left; } }
+      @media (max-width: 321px) {
+        .container .how .col-lg-3 .how-block-second .how-sign-in {
+          width: 260px; } }
     .container .how .col-lg-3 .how-block-second .how-visit {
       margin-left: -68px;
       padding-top: 7px; }
@@ -891,6 +941,9 @@ span.numbers {
         .container .how .col-lg-3 .how-block-second .how-visit {
           margin-left: 0;
           text-align: left; } }
+      @media (max-width: 321px) {
+        .container .how .col-lg-3 .how-block-second .how-visit {
+          width: 260px; } }
     @media (max-width: 571px) {
       .container .how .col-lg-3 .how-block-second .how-choose, .container .how .col-lg-3 .how-block-second .how-sign-in, .container .how .col-lg-3 .how-block-second .how-visit {
         margin-left: 0;
@@ -905,6 +958,12 @@ span.numbers {
       @media (max-width: 991px) {
         .container .how .col-lg-3 .how-block-second .text-first {
           text-align: left; } }
+      @media (max-width: 401px) {
+        .container .how .col-lg-3 .how-block-second .text-first {
+          width: 280px; } }
+      @media (max-width: 321px) {
+        .container .how .col-lg-3 .how-block-second .text-first {
+          width: 260px; } }
     .container .how .col-lg-3 .how-block-second .text-second {
       width: 350px;
       margin-left: -49px;
@@ -916,6 +975,12 @@ span.numbers {
       @media (max-width: 991px) {
         .container .how .col-lg-3 .how-block-second .text-second {
           text-align: left; } }
+      @media (max-width: 401px) {
+        .container .how .col-lg-3 .how-block-second .text-second {
+          width: 275px; } }
+      @media (max-width: 321px) {
+        .container .how .col-lg-3 .how-block-second .text-second {
+          width: 260px; } }
     .container .how .col-lg-3 .how-block-second .text-third {
       width: 272px;
       margin-left: -34px;
@@ -924,6 +989,9 @@ span.numbers {
         .container .how .col-lg-3 .how-block-second .text-third {
           margin-left: 0;
           text-align: left; } }
+      @media (max-width: 401px) {
+        .container .how .col-lg-3 .how-block-second .text-third {
+          width: 230px; } }
     @media (max-width: 571px) {
       .container .how .col-lg-3 .how-block-second .text-second, .container .how .col-lg-3 .how-block-second .text-third {
         margin-left: 0;
@@ -1285,6 +1353,9 @@ span.numbers {
 
 .panel-group .assign .panel-heading .panel-title:before {
   background: url("../img/icons-green/paper-pen-green.png") no-repeat; }
+  @media (max-width: 969px) {
+    .panel-group .assign .panel-heading .panel-title:before {
+      margin-top: -8px; } }
 
 .panel-group .choose-clinic .panel-heading .panel-title:before {
   background: url("../img/icons-green/bed-hospital-green.png") no-repeat; }
@@ -1355,23 +1426,26 @@ span.numbers {
       margin-left: 5px;
       margin-right: 5px; }
 
-.row .container {
+.row .container-alphabet {
   clear: both; }
-  .row .container .row .col-lg-3 {
+  @media (max-width: 969px) {
+    .row .container-alphabet {
+      width: 100%; } }
+  .row .container-alphabet .row .col-lg-3 {
     padding-left: 0; }
-    .row .container .row .col-lg-3 .alphabet-list {
+    .row .container-alphabet .row .col-lg-3 .alphabet-list {
       float: none;
       padding-left: 0; }
-      .row .container .row .col-lg-3 .alphabet-list li {
+      .row .container-alphabet .row .col-lg-3 .alphabet-list li {
         margin-bottom: 11px; }
-        .row .container .row .col-lg-3 .alphabet-list li a {
+        .row .container-alphabet .row .col-lg-3 .alphabet-list li a {
           font-size: 17px;
           color: #565656;
           text-decoration: none; }
-          .row .container .row .col-lg-3 .alphabet-list li a:hover {
+          .row .container-alphabet .row .col-lg-3 .alphabet-list li a:hover {
             text-decoration: underline; }
           @media (max-width: 571px) {
-            .row .container .row .col-lg-3 .alphabet-list li a {
+            .row .container-alphabet .row .col-lg-3 .alphabet-list li a {
               font-size: 12px; } }
 
 @font-face {
@@ -1538,6 +1612,9 @@ span.numbers {
           line-height: 16px; }
         .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-phone {
           line-height: 10px; }
+          @media (max-width: 1201px) {
+            .med-centers .container .row .col-lg-6 .card .header .col-lg-6 .med-center-contacts li .card-phone {
+              width: 250px; } }
     .med-centers .container .row .col-lg-6 .card .content .col-lg-12 {
       margin-top: -11px; }
       .med-centers .container .row .col-lg-6 .card .content .col-lg-12 .med-center-content {
@@ -1584,6 +1661,9 @@ span.numbers {
       color: #2a2323;
       -webkit-border-radius: 25px;
               border-radius: 25px; }
+      @media (max-width: 401px) {
+        .med-centers .container .row .col-lg-6 .card .footer .btn-sign-in {
+          padding: 12px 25px; } }
       .med-centers .container .row .col-lg-6 .card .footer .btn-sign-in:hover {
         background-color: #00beb0;
         -webkit-box-shadow: 0 0 0 0px white, 0 2px 3px rgba(0, 0, 0, 0.22);
@@ -1720,12 +1800,19 @@ span.numbers {
         margin-left: 17px;
         margin-top: 6px;
         padding-bottom: 6px; }
+        @media (max-width: 401px) {
+          .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .skill {
+            width: 175px;
+            margin-left: 30px; } }
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .skill li .skill-bold {
           font-size: 14px;
           font-family: "Open Sans Semibold", Arial, sans-serif;
           color: #565656; }
         .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .skill li .years {
           font-family: "Open Sans", Arial, sans-serif; }
+      @media (max-width: 401px) {
+        .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .fio {
+          margin-left: 30px; } }
       .best-doctors .text-center .col-lg-4 .card .profile-info .col-lg-9 .fio .name {
         font-size: 20px;
         font-family: "Open Sans Semibold", Arial, sans-serif;
@@ -1860,6 +1947,9 @@ span.numbers {
     .common-diseases .container .text-center .container-title h2 {
       margin-top: 23px;
       margin-bottom: 8px; }
+      @media (max-width: 401px) {
+        .common-diseases .container .text-center .container-title h2 {
+          font-size: 28px; } }
     .common-diseases .container .text-center .container-title .title-icon:before {
       width: 55px;
       height: 62px;
