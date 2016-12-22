@@ -1,20 +1,16 @@
 @import '_variables';
 @import '_mixins';
 
-.container {
-  .how {
-    text-align: center;
-    h2 {
+.container-how {
+    .title-how {
       margin-top: 53px;
       margin-bottom: 52px;
     }
-
-    .col-lg-3 {
+    .col-how {
       margin-left: 44px;
       padding: 0;
       display: block;
       width: 24%;
-
       @include medium-desktop-lg {
         display: flex;
       }
@@ -197,7 +193,7 @@
       }
     }
 
-    .col-lg-1 {
+    .col-arrow {
       .arrow-right {
         width: 64px;
         height: 33px;
@@ -214,5 +210,4 @@
         }
       }
     }
-  }
 }

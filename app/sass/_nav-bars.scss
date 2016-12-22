@@ -14,7 +14,7 @@
         }
       }
     }
-    .navbar-collapse {
+    .navbar-collapse-custom {
       .nav {
         margin-left: -23px;
         li {
@@ -110,7 +110,7 @@
 .navbar-contacts {
   margin-bottom: 11px;
   position: relative;
-  .container {
+  .navbar-container {
     display: block;
 
     @include large-desktop {
@@ -140,8 +140,8 @@
         }
       }
     }
-    .navbar-collapse {
-      ul {
+    .navbar-collapse-dropdown {
+      ul.nav {
         margin-top: 21px;
         li:first-child {
           width: 307px;

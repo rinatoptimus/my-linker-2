@@ -5,7 +5,7 @@ footer {
   height: 100px;
   width: 100%;
   background: $green-dark;
-  .container {
+  .container-footer {
     padding-top: 50px;
       .row {
         .col-logo {
@@ -30,7 +30,7 @@ footer {
               background-color: transparent;
             }
           }
-          ul {
+          .footer-list {
             margin-top: -4px;
             padding-left: 0;
               li {

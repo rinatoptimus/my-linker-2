@@ -1,27 +1,30 @@
 @import '_variables';
 @import '_mixins';
 
-.nav-tabs > li, .nav-pills > li {
+.nav-tabs-jumbotron > li, .nav-pills > li,
+.nav-alph-filter > li, .nav-pills > li {
   float: none;
   display: inline-block;
   *display: inline; /* ie7 fix */
   zoom: 1; /* hasLayout ie7 trigger */
 }
-.nav-tabs, .nav-pills {
-  text-align: center;
-}
 
-.panel-group {
-  .panel-default {
-    border: 1px solid $green-darker;
-    border-radius: 0;
-      .panel-heading {
-        background: url('../img/pattern-alphabet.jpg') transparent;
-        border: $green-darker;
-        border-radius: 0;
-        padding-bottom: 15px;
-      }
-      .panel-title:before {
+.nav-tabs-jumbotron, .nav-alph-filter {
+  border-bottom: 1px solid $green-light;
+  li.active {
+    a {
+      font-size: 18px;
+      border: 1px solid $green-darker;
+    }
+  }
+  .assign, .choose-clinic, .find-medicine, .survey {
+    a {
+      border-radius: 0;
+
+      font-size: 16px;
+      background: url('../img/pattern-alphabet.jpg');
+      color: $black-lighter;
+      &:before {
         content: '';
         display: block;
         float: left;
@@ -31,160 +34,88 @@
         margin-right: 10px;
         margin-top: -5px;
       }
+    }
   }
   .assign {
-    .panel-heading {
-      .panel-title:before {
-        background: url('../img/icons-green/paper-pen-green.png') no-repeat;
-        @include medium-desktop {
-          margin-top: -8px;
-        }
-      }
+    a:before {
+      background: url('../img/icons-green/paper-pen-green.png') no-repeat;
     }
   }
   .choose-clinic {
-    .panel-heading {
-      .panel-title:before {
-        background: url('../img/icons-green/bed-hospital-green.png') no-repeat;
-      }
+    a:before {
+      background: url('../img/icons-green/bed-hospital-green.png') no-repeat;
     }
   }
   .find-medicine {
-    .panel-heading {
-      .panel-title:before {
-        background: url('../img/icons-green/needle-green.png') no-repeat;
-      }
+    a:before {
+      background: url('../img/icons-green/needle-green.png') no-repeat;
     }
   }
   .survey {
-    .panel-heading {
-      .panel-title:before {
-        background: url('../img/icons-green/cardio-green.png') no-repeat;
-      }
+    a:before {
+      background: url('../img/icons-green/cardio-green.png') no-repeat;
     }
   }
-}
-.tab-pane-researches {
-  @include medium-desktop {
-    padding-left: 30px
+  .alphabet-tabs-icon {
+    width: 33px;
+    height: 33px;
   }
 }
 
-.row {
-  .nav-tabs {
-    border-bottom: 1px solid $green-light;
-    li.active {
-      a {
-        font-size: 18px;
-        border: 1px solid $green-darker;
-      }
-    }
-    .assign, .choose-clinic, .find-medicine, .survey {
-      a {
-        border-radius: 0;
+.tab-content {
+  margin-bottom: 63px;
+}
 
-        font-size: 16px;
-        background: url('../img/pattern-alphabet.jpg');
-        color: $black-lighter;
-        &:before {
-          content: '';
-          display: block;
-          float: left;
-          width: 33px;
-          height: 33px;
-          float: left;
-          margin-right: 10px;
-          margin-top: -5px;
-        }
-      }
-    }
-    .assign {
-      a:before {
-        background: url('../img/icons-green/paper-pen-green.png') no-repeat;
-      }
-    }
-    .choose-clinic {
-      a:before {
-        background: url('../img/icons-green/bed-hospital-green.png') no-repeat;
-      }
-    }
-    .find-medicine {
-      a:before {
-        background: url('../img/icons-green/needle-green.png') no-repeat;
-      }
-    }
-    .survey {
-      a:before {
-        background: url('../img/icons-green/cardio-green.png') no-repeat;
-      }
-    }
-    .alphabet-tabs-icon {
-      width: 33px;
-      height: 33px;
-    }
-  }
+.panel-group {
+  padding: 0px 16px;
+}
 
-  .tab-content {
-    margin-bottom: 63px;
-  }
-
-  .panel-group {
-    padding: 0px 16px;
-  }
-
-  .wrapper-alphabet-filter {
-    text-align: center;
-      ul.alphabet-letters {
-        display: inline-block;
-        margin-top: 32px;
-        margin-bottom: 25px;
-        padding-left: 0px;
-        li {
-          width: 14px;
-          margin: 2px;
-          float: left;
-            a {
-              font-size: 17px;
-              color: $grey-lighter;
-              &:hover {
-                font-family: $light;
-                font-family: $extraBold;
-                color: $green;
-              }
+.wrapper-alphabet-filter {
+    ul.alphabet-letters {
+      display: inline-block;
+      margin-top: 32px;
+      margin-bottom: 25px;
+      padding-left: 0px;
+      li {
+        width: 14px;
+        margin: 2px;
+        float: left;
+          a {
+            font-size: 17px;
+            color: $grey-lighter;
+            &:hover {
+              font-family: $light;
+              font-family: $extraBold;
+              color: $green;
             }
           }
-        li.letter-sch {
-          margin-left: 5px;
-          margin-right: 5px;
         }
+      li.letter-sch {
+        margin-left: 5px;
+        margin-right: 5px;
       }
-  }
-  .container-alphabet {
-    clear: both;
-    @include medium-desktop {
-      width: 100%;
     }
-    .row {
-      .col-lg-3 {
-        padding-left: 0;
-          .alphabet-list {
-            float: none;
-            padding-left: 0;
-              li {
-                margin-bottom: 11px;
-                  a {
-                    font-size: 17px;
-                    color: $grey-lighter;
-                    text-decoration: none;
-                    &:hover {
-                      text-decoration: underline;
-                    }
-                    @include phone-lg {
-                      font-size: 12px;
-                    }
-                  }
-              }
-          }
+}
+.container-alphabet {
+  clear: both;
+  @include medium-desktop {
+    width: 100%;
+  }
+  .alphabet-list {
+    float: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 11px;
+      a {
+        font-size: 17px;
+        color: $grey-lighter;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        @include phone-lg {
+          font-size: 12px;
+        }
       }
     }
   }

@@ -13,7 +13,7 @@
       .text-center {
         .container-title {
           margin-bottom: 0;
-          h2 {
+          .title-icon {
             margin-top: 23px;
             margin-bottom: 8px;
             @include phone {
@@ -28,7 +28,7 @@
             background-size: 100%;
           }
         }
-        .col-lg-4 {
+        .col-disease {
           margin-top: 31px;
           margin-bottom: 28px;
           @include phone {
@@ -51,7 +51,7 @@
               line-height: 25px;
             }
 
-            ul {
+            .col-disease-list {
               margin-top: 14px;
               padding-left: 0px;
                 li:first-child {
@@ -101,7 +101,7 @@
       }
       .row {
         .col-lg-12 {
-          ul {
+          .see-also-list {
             margin-bottom: 5vw;
             margin-top: 5px;
             padding-left: 0;

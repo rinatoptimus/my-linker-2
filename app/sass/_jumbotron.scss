@@ -25,7 +25,7 @@
       }
     }
     .row {
-      .nav {
+      .nav-tabs-jumbotron {
         border-bottom: none;
         li.active {
           a {
@@ -58,7 +58,7 @@
         }
       }
       .tab-content {
-        max-width: 970px;
+        max-width: 968px;
         margin: 0 auto;
         padding-top: 3vw;
         background-color: #fff;
@@ -111,7 +111,7 @@
     }
   }
 }
-.form-control {
+.form-control-jumbotron {
   padding: 25px;
   border: none;
   border-radius: 0;
