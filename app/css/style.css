@@ -1340,7 +1340,8 @@ span.numbers {
     background: url("../img/pattern-alphabet.jpg") transparent;
     border: #18bdb2;
     -webkit-border-radius: 0;
-            border-radius: 0; }
+            border-radius: 0;
+    padding-bottom: 15px; }
   .panel-group .panel-default .panel-title:before {
     content: '';
     display: block;
@@ -1365,6 +1366,10 @@ span.numbers {
 
 .panel-group .survey .panel-heading .panel-title:before {
   background: url("../img/icons-green/cardio-green.png") no-repeat; }
+
+@media (max-width: 969px) {
+  .tab-pane-researches {
+    padding-left: 30px; } }
 
 .row .nav-tabs {
   border-bottom: 1px solid #99e5df; }

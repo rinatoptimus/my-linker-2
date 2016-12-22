@@ -19,6 +19,7 @@
         background: url('../img/pattern-alphabet.jpg') transparent;
         border: $green-darker;
         border-radius: 0;
+        padding-bottom: 15px;
       }
       .panel-title:before {
         content: '';
@@ -61,6 +62,11 @@
         background: url('../img/icons-green/cardio-green.png') no-repeat;
       }
     }
+  }
+}
+.tab-pane-researches {
+  @include medium-desktop {
+    padding-left: 30px
   }
 }
 
