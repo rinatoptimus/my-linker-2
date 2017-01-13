@@ -30,34 +30,35 @@
           }
           .nav-clinics {
             padding-right: 23px;
-            @include medium-desktop-lg {
-              padding-left: 22px;
-              padding-right: 10px;
-            }
+            padding-left: 22px;
+            //@include medium-desktop-lg {
+            //  padding-left: 22px;
+            //  padding-right: 10px;
+            //}
           }
           .nav-doctors {
-            padding-left: 21px;
-            padding-right: 21px;
+            //padding-left: 21px;
+            //padding-right: 21px;
           }
           .nav-medicines {
-            padding-left: 22px;
-            padding-right: 26px;
+            //padding-left: 22px;
+            //padding-right: 26px;
           }
           .nav-researches {
-            padding-left: 21px;
-            padding-right: 29px;
+            //padding-left: 21px;
+            //padding-right: 29px;
           }
           .nav-medtourism {
-            padding-left: 21px;
-            padding-right: 25px;
+            //padding-left: 21px;
+            //padding-right: 25px;
           }
           .nav-category {
-            padding-left: 21px;
-            padding-right: 24px;
+            //padding-left: 21px;
+            //padding-right: 24px;
           }
           .nav-library {
-            padding-left: 22px;
-            padding-right: 20px;
+            //padding-left: 22px;
+            //padding-right: 20px;
           }
           .nav-doctors, .nav-medicines, .nav-researches, .nav-medtourism, .nav-category, .nav-library {
             @include medium-desktop-lg {
@@ -108,7 +109,7 @@
   }
 }
 .navbar-contacts {
-  margin-bottom: 11px;
+  margin-bottom: 0;
   position: relative;
   .navbar-container {
     display: block;

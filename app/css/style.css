@@ -161,29 +161,8 @@ select {
           background-color: #008a77;
           text-decoration: none; }
       .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
-        padding-right: 23px; }
-        @media (max-width: 991px) {
-          .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
-            padding-left: 22px;
-            padding-right: 10px; } }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors {
-        padding-left: 21px;
-        padding-right: 21px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines {
-        padding-left: 22px;
-        padding-right: 26px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches {
-        padding-left: 21px;
-        padding-right: 29px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism {
-        padding-left: 21px;
-        padding-right: 25px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category {
-        padding-left: 21px;
-        padding-right: 24px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
-        padding-left: 22px;
-        padding-right: 20px; }
+        padding-right: 23px;
+        padding-left: 22px; }
       @media (max-width: 991px) {
         .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
           padding-left: 10px;
@@ -219,7 +198,7 @@ select {
           margin-left: 22px; } }
 
 .navbar-contacts {
-  margin-bottom: 11px;
+  margin-bottom: 0;
   position: relative; }
   .navbar-contacts .navbar-container {
     display: block; }
