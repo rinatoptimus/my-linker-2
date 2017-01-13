@@ -1,3 +1,20 @@
+/*
+$light: 'Open Sans Light', Arial, sans-serif;
+$lightItalic: 'Open Sans LightItalic', Arial, sans-serif;
+$condLight: 'Open Sans CondLight', Arial, sans-serif;
+$condLightItalic: 'Open Sans CondLightItalic', Arial, sans-serif;
+$regular: 'Open Sans', Arial, sans-serif;
+$italic: 'Open Sans Italic', Arial, sans-serif;
+$semibold: 'Open Sans Semibold', Arial, sans-serif;
+$semiboldItalic: 'Open Sans SemiboldItalic', Arial, sans-serif;
+$bold: 'Open Sans Bold', Arial, sans-serif;
+$boldItalic: 'Open Sans Bold Italic', Arial, sans-serif;
+$condBold_0: 'Open Sans CondBold_0', Arial, sans-serif;
+$extraBold: 'Open Sans ExtraBold', Arial, sans-serif;
+$extraBoldItalic: 'Open Sans ExtraBoldItalic', Arial, sans-serif;*/
+/* FONT SIZES */
+/* COLORS */
+/* CLINIC PAGE */
 @font-face {
   font-family: 'Open Sans Light';
   font-style: normal;
@@ -64,10 +81,6 @@
   font-style: normal;
   src: local("Open Sans ExtraBoldItalic"), local("Open-Sans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
 
-/* FONTS */
-/* FONT SIZES */
-/* COLORS */
-/* CLINIC PAGE */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -330,6 +343,16 @@ select {
 
 span.numbers {
   color: #aeaeae; }
+
+.navbar-nav .pull-right-custom {
+  float: left; }
+  @media (max-width: 1201px) {
+    .navbar-nav .pull-right-custom {
+      float: right;
+      margin-right: 32px; } }
+  @media (max-width: 991px) {
+    .navbar-nav .pull-right-custom {
+      float: left; } }
 
 .bg-jumbotron {
   padding-bottom: 8.3vw;
