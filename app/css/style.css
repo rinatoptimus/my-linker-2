@@ -97,15 +97,7 @@ select {
   display: inline-block;
   -webkit-border-radius: 0 0 20px 20px;
           border-radius: 0 0 20px 20px;
-  background-color: #fff;
-  /*transition: all 200ms ease-in;
-  transform: scale(1);*/
-  /*&:hover {
-    transition: all 200ms ease-in;
-    transform: scale(1.01);
-    box-shadow: 0px 0px 10px #999;
-    z-index: 2;
-  }*/ }
+  background-color: #fff; }
 
 .btn-custom {
   border: 1px solid #00b6a7;
@@ -158,11 +150,32 @@ select {
         padding-bottom: 4px;
         color: #fff; }
         .navbar-main-menu .container .navbar-collapse-custom .nav li a:hover, .navbar-main-menu .container .navbar-collapse-custom .nav li a:focus {
-          background-color: #008a77;
-          text-decoration: none; }
+          background-color: transparent;
+          text-decoration: underline; }
       .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
-        padding-right: 23px;
-        padding-left: 22px; }
+        padding-right: 12px;
+        padding-left: 12px; }
+        @media (max-width: 767px) {
+          .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
+            padding-left: 21px; } }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
+        padding-left: 15px;
+        padding-right: 15px; }
       @media (max-width: 991px) {
         .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
           padding-left: 10px;
@@ -1017,60 +1030,43 @@ span.numbers {
       border: 1px solid #18bdb2;
       -webkit-box-shadow: none;
               box-shadow: none; }
-    .med-centers .container .row .col-med-centers .card .header {
-      /*.col-lg-6 {
-                    .med-center-logo {
-                      width: 192px;
-                      height: 57px;
-                      margin-top: 6px;
-                      margin-left: 21px;
-                      background: url('../img/logo-transmed.png') no-repeat;
-                      background-size: 60%;
-                    }
-                  }*/ }
-      .med-centers .container .row .col-med-centers .card .header .col-logo .med-center-logo {
-        /*width: 192px;
-                      height: 57px;
-                      margin-top: 6px;
-                      margin-left: 21px;
-                      background: url('../img/logo-transmed.png') no-repeat;
-                      background-size: 60%;*/
+    .med-centers .container .row .col-med-centers .card .header .col-logo .med-center-logo {
+      text-align: left;
+      padding-left: 20px;
+      padding-top: 4px; }
+      .med-centers .container .row .col-med-centers .card .header .col-logo .med-center-logo img {
+        width: 122px; }
+    .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts {
+      margin-top: 6px;
+      margin-left: -22px; }
+      @media (max-width: 1201px) {
+        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts {
+          width: 300px;
+          margin: 0 auto;
+          padding-left: 0; } }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li i {
+        float: left;
+        color: #1a5eab; }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .fa-map-marker {
+        margin-left: 34px;
+        margin-right: -8px; }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .fa-phone {
+        margin-left: 41px;
+        margin-right: -14px;
+        margin-top: -2px; }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li p {
+        font-size: 14px;
+        color: #565656; }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-address {
+        padding-left: 15px;
         text-align: left;
-        padding-left: 20px;
-        padding-top: 4px; }
-        .med-centers .container .row .col-med-centers .card .header .col-logo .med-center-logo img {
-          width: 122px; }
-      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts {
-        margin-top: 6px;
-        margin-left: -22px; }
+        overflow: hidden;
+        line-height: 16px; }
+      .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-phone {
+        line-height: 10px; }
         @media (max-width: 1201px) {
-          .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts {
-            width: 300px;
-            margin: 0 auto;
-            padding-left: 0; } }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li i {
-          float: left;
-          color: #1a5eab; }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .fa-map-marker {
-          margin-left: 34px;
-          margin-right: -8px; }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .fa-phone {
-          margin-left: 41px;
-          margin-right: -14px;
-          margin-top: -2px; }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li p {
-          font-size: 14px;
-          color: #565656; }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-address {
-          padding-left: 15px;
-          text-align: left;
-          overflow: hidden;
-          line-height: 16px; }
-        .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-phone {
-          line-height: 10px; }
-          @media (max-width: 1201px) {
-            .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-phone {
-              width: 250px; } }
+          .med-centers .container .row .col-med-centers .card .header .col-contacts .med-center-contacts li .card-phone {
+            width: 250px; } }
     .med-centers .container .row .col-med-centers .card .content .col-lg-12 {
       margin-top: -11px; }
       .med-centers .container .row .col-med-centers .card .content .col-lg-12 .med-center-content {

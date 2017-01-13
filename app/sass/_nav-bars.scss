@@ -21,14 +21,42 @@
             padding-bottom: 4px;
             color: $white;
             &:hover, &:focus {
-              background-color: $green-hover;
-              text-decoration: none;
+              background-color: transparent;
+              text-decoration: underline;
             }
           }
           .nav-clinics {
-            padding-right: 23px;
-            padding-left: 22px;
+            padding-right: 12px;
+            padding-left: 12px;
+            @include small-devices {
+              padding-left: 21px;
+            }
           }
+          .nav-doctors {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .nav-medicines {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .nav-researches {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .nav-medtourism {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .nav-category {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .nav-library {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+
           .nav-doctors, .nav-medicines, .nav-researches, .nav-medtourism, .nav-category, .nav-library {
             @include medium-desktop-lg {
               padding-left: 10px;
