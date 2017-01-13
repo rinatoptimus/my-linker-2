@@ -1,0 +1,518 @@
+//@import '_variables';
+//@import '_mixins';
+@import '_popup-clinics';
+@import '_sticky-sidebar';
+
+body {
+  background-color: $bg-body;
+  color: $header-h4;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: $bold;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 16px;
+  font-family: $semibold;
+}
+
+.navbar-contacts {
+  padding-bottom: 10px;
+  background-color: $white;
+}
+
+.col-sidebar {
+  margin-top: 19px;
+    .well {
+      background-color: $white;
+    }
+}
+
+.col-lg-9.bg-white {
+  padding: {
+    left: 25px;
+    right: 25px;
+  }
+  @include phone-lg {
+    margin-top: -10px;
+    padding-top: 15px;
+  }
+}
+
+.sidebar-logo {
+  width: 103px;
+  height: 36px;
+  margin-top: 11px;
+  margin-left: 15px;
+  background-color: grey;
+}
+
+.breadcrumb {
+  margin-left: -7px;
+  padding: 13px 8px 0px;
+  background-color: transparent;
+    .breadcrumb-first {
+      color: $breadcrumb-first;
+    }
+    li {
+      a, span {
+        font-size: 11px;
+        color: $breadcrumb-links;
+      }
+      .fa-angle-down {
+        padding-left: 4px;
+        font-size: 10px;
+      }
+    }
+}
+
+.breadcrumb > li + li:before {
+  padding: 0;
+  color: $breadcrumb-links;
+}
+
+.row-img {
+  //padding-top: 15px;
+  border-radius: 7px 7px 0 0;
+    .col-lg-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.clinic-img {
+  height: 200px;
+  border-radius: 7px 7px 0 0;
+  //background-color: #124761;
+  background: url('../img/clinic-img.jpg') no-repeat;
+  background-position: 100% 78%;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $img-overlay;
+    border-radius: 7px 7px 0 0;
+    opacity: .3;
+  }
+  .clinic-img-list {
+    position: relative;
+    padding-top: 20px;
+    li.li-logo {
+      float: left;
+      margin-right: 50px;
+      background-color: $white;
+      border-radius: 7px;
+      @include phone-lg {
+        float: none;
+        margin-bottom: 15px;
+      }
+        .clinic-logo {
+          width: 142px;
+          height: 60px;
+          background-color: grey;
+          background: url('../img/logo-ctbc-corel.png') no-repeat;
+          background-position: 53% 31%;
+          @include phone-lg {
+            width: 100%;
+          }
+        }
+    }
+    li.li-divider {
+      position: absolute;
+      @include phone-lg {
+        display: none;
+      }
+        .logo-divider {
+          position: relative;
+          width: 1px;
+          height: 70px;
+          margin-left: 12.4em;
+          margin-top: -5px;
+          background-color: $white;
+        }
+    }
+    li.li-address {
+      float: none;
+      .clinic-address {
+        margin-top: -5px;
+        @include phone-lg {
+          padding-left: 0;
+        }
+        li {
+          line-height: 23px;
+          .fa-map-marker, a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.col-clinic-desc {
+  float: right;
+    .header-list {
+      margin-top: 18px;
+      margin-bottom: 0;
+      li {
+        float: left;
+        padding-right: 15px;
+        font-size: 11px;
+        a {
+          color: $header-list;
+        }
+        .fa-comment {
+          color: $sidebar-link;
+        }
+      }
+    }
+}
+
+.col-right {
+  float: right;
+  border-radius: 0 0 7px 7px;
+}
+.col-clinic-desc {
+  float: right;
+  @include small-devices { // 1111
+    float: none;
+  }
+}
+.col-images {
+  float: right;
+  @include small-devices { // 1111
+    float: none;
+  }
+}
+.row-images {
+  padding-bottom: 15px;
+  border-radius: 0 0 7px 7px;
+    div {
+      img {
+        display: inline;
+        margin: 0;
+        @include large-desktop {
+          margin: 10px auto;
+          display: block;
+        }
+        @include phone-lg {
+          width: 373px;
+        }
+        @include phone {
+          width: 325px;
+        }
+        @include phone-mini-l {
+          width: 270px;
+        }
+      }
+    }
+}
+
+.card {
+  position: relative;
+}
+
+//.col-persons {
+//  margin-top: 20px;
+//  padding-left: 0;
+//  padding-right: 0;
+//}
+
+.col-persons {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  @include phone-lg {
+    display: block;
+  }
+  @include small-devices {
+    float: none;
+  }
+  .col-left {
+    float: right;
+
+    width: 298px;
+    margin-left: -15px;
+    @include medium-desktop-lg {
+      width: 258px;
+    }
+    @include small-devices {
+      float: none;
+      display: inline;
+    }
+  }
+  .col-center {
+    width: 298px;
+    margin-left: 5px;
+    @include medium-desktop-lg {
+      width: 258px;
+    }
+    @include small-devices {
+      display: inline;
+    }
+  }
+  .col-right {
+    width: 285px;
+    margin-left: -5px;
+    padding-right: 0;
+    @include medium-desktop-lg {
+      width: 245px;
+    }
+    @include small-devices { // 1111
+      width: 200px;
+      float: none;
+      display: inline;
+    }
+  }
+}
+
+.thumbnail {
+  border: none;
+  &:hover {
+    background-color: $bg-thumbnail;
+    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    transition: .5s ease-in-out;
+  }
+  text-align: center;
+  .thumbnail-info {
+    position: absolute;
+    width: 260px;
+    margin-top: 10px;
+    padding-left: 0;
+    @include large-desktop {
+      //width: 210px;
+    }
+    @include medium-desktop-lg {
+      width: 220px;
+    }
+    @include phone-lg {
+      width: 420px; // 1111
+    }
+    @include phone {
+      width: 315px; // 1111
+    }
+    li {
+      float: left;
+      .thumbnail-profession-tags {
+        padding-left: 6px;
+        li {
+          float: none;
+          margin-bottom: 5px;
+          width: 100px;
+          text-align: center;
+          background-color: #bdbdbd;
+          border-radius: 11px;
+          line-height: 19px;
+          &:hover {
+            background-color: $tags-hover;
+          }
+          a {
+            font-size: 10px;
+            color: $white;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    li {
+      .thumbnail-statistics {
+        float: left;
+        width: 82px;
+        padding-left: 0;
+        @include large-desktop {
+          //margin-top: -75px;
+        }
+        @include small-devices {
+          margin-top: -75px; //1111
+        }
+        @include phone-lg {
+          margin-top: 0;
+        }
+        li {
+          padding-right: 5px;
+          font-size: 11px;
+          .fa {
+            font-size: 11px;
+          }
+          a {
+            color: $header-list;
+          }
+        }
+        .request {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    margin: 17px auto 0;
+      img {
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+      }
+  }
+  .caption {
+    padding: 9px 9px 20px;
+    h3 {
+      font-size: 16px;
+      font-family: $semibold;
+    }
+    .skill {
+      margin: 0;
+      font-size: 13px;
+      line-height: 20px;
+      color: $thumbnail-light;
+    }
+    .btn-sign-in {
+      margin-top: 15px;
+      padding: 8px 15px;
+      font-size: 9px;
+      background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+      color: $white;
+      border: none;
+      border-radius: 17px;
+      &:hover {
+        background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%);
+      }
+    }
+  }
+}
+
+.container-show-all {
+  float: right;
+}
+.show-all-doctors {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  text-decoration: underline;
+  font-size: 16px;
+  color: $header-h4;
+  &:hover {
+    color: $header-h4;
+    text-decoration: none;
+  }
+}
+
+.col-diseases {
+  padding-bottom: 25px;
+  border-radius: 7px;
+
+  float: right;
+  @include small-devices {
+    float: none;
+    margin-top: 60px;
+    padding-top: 15px;
+  }
+  h4 {
+    display: block;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/icons-green/cardio-green.png) no-repeat;
+      width: 25px;
+      height: 25px;
+      float: left;
+      margin: 0 6px 0 0;
+      background-size: 130%;
+      background-position: 44% 57%;
+      @include phone {
+        margin-top: 14px;
+      }
+    }
+  }
+  .row {
+    .col-lg-3 {
+      ul {
+        padding: 0;
+        li {
+          line-height: 25px;
+          color: $grey-lighter;
+        }
+      }
+    }
+  }
+}
+
+.col-requisites {
+  border-radius: 7px;
+  margin: {
+    top: 10px;
+    bottom: 30px;
+  }
+  h4 {
+    display: block;
+    margin: {
+      top: 20px;
+      bottom: 25px;
+    }
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/icons-green/note-pen-green.png) no-repeat;
+      width: 25px;
+      height: 25px;
+      float: left;
+      margin: 0 6px 0 0;
+      background: {
+        size: 100%;
+        position: 44% 57%;
+      }
+    }
+  }
+  address {
+    p {
+      font-size: 16px;
+      color: $grey-lighter;
+      strong {
+        color: $black;
+      }
+    }
+  }
+}
+
+.col-certificates {
+  margin-bottom: 30px;
+  @include medium-desktop-lg {
+    float: none;
+  }
+  .row {
+    div {
+      text-align: center;
+      @include phone-lg {
+        text-align: center;
+      }
+      img {
+        cursor: zoom-in;
+        @include large-desktop {
+          width: 200px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
