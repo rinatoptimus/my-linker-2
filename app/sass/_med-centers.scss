@@ -1,6 +1,3 @@
-//@import '_variables';
-//@import '_mixins';
-
 .med-centers {
   height: 1055px;
   background: url('../img/bg-med-centers.jpg') no-repeat;
@@ -53,24 +50,8 @@
                 box-shadow: none;
               }
                 .header {
-                  /*.col-lg-6 {
-                    .med-center-logo {
-                      width: 192px;
-                      height: 57px;
-                      margin-top: 6px;
-                      margin-left: 21px;
-                      background: url('../img/logo-transmed.png') no-repeat;
-                      background-size: 60%;
-                    }
-                  }*/
                   .col-logo {
                     .med-center-logo {
-                      /*width: 192px;
-                      height: 57px;
-                      margin-top: 6px;
-                      margin-left: 21px;
-                      background: url('../img/logo-transmed.png') no-repeat;
-                      background-size: 60%;*/
                       text-align: left;
                       padding-left: 20px;
                       padding-top: 4px;
@@ -148,7 +129,6 @@
                     margin-top: -10px;
                     background-color: $olive;
                       ul {
-                        //height: 32px;
                         display: inline-block;
                         margin-bottom: -2px;
                         margin-left: 2px;
