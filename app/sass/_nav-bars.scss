@@ -244,3 +244,16 @@
 span.numbers {
   color: $grey;
 }
+.navbar-nav {
+  .pull-right-custom {
+    float: left;
+
+    @include large-desktop {
+      float: right;
+      margin-right: 32px;
+    }
+    @include medium-desktop-lg {
+      float: left;
+    }
+  }
+}
