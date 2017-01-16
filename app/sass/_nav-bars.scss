@@ -13,7 +13,7 @@
     }
     .navbar-collapse-custom {
       .nav {
-        margin-left: -23px;
+        //margin-left: -23px;
         li {
           border-right: 1px solid $white-opacity;
           a {
@@ -72,13 +72,15 @@
         }
       }
       .navbar-right {
-        margin-right: 58px;
+        //margin-right: 58px;
+        margin-right: 66px;
         @include medium-desktop-lg {
           margin-right: 0;
         }
         li:last-child {
           border-bottom: 1px solid #66d7cf;
-          width: 53px;
+          //width: 53px;
+          width: 100%;
           &:hover {
             border-bottom: none;
           }
@@ -127,7 +129,8 @@
       }
 
       .logo-top {
-        margin-left: -12px;
+        //margin-left: -12px;
+        margin-left: 10px;
         @include small-devices {
           margin-left: 10px;
         }
@@ -172,10 +175,13 @@
               }
             }
             i {
-              margin-left: -11px;
+              //margin-left: -11px;
+              margin-left: -9px;
               margin-bottom: 2px;
               font-size: 10px;
               vertical-align: middle;
+
+              color: $black;
             }
           }
         }
@@ -223,6 +229,9 @@
         .phone-number-descr {
           margin-top: 15px;
           padding-left: 15px;
+
+          padding-right: 12px;
+
           font-size: 16px;
           color: $black-darker;
         }

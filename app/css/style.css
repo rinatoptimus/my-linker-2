@@ -1,20 +1,3 @@
-/*
-$light: 'Open Sans Light', Arial, sans-serif;
-$lightItalic: 'Open Sans LightItalic', Arial, sans-serif;
-$condLight: 'Open Sans CondLight', Arial, sans-serif;
-$condLightItalic: 'Open Sans CondLightItalic', Arial, sans-serif;
-$regular: 'Open Sans', Arial, sans-serif;
-$italic: 'Open Sans Italic', Arial, sans-serif;
-$semibold: 'Open Sans Semibold', Arial, sans-serif;
-$semiboldItalic: 'Open Sans SemiboldItalic', Arial, sans-serif;
-$bold: 'Open Sans Bold', Arial, sans-serif;
-$boldItalic: 'Open Sans Bold Italic', Arial, sans-serif;
-$condBold_0: 'Open Sans CondBold_0', Arial, sans-serif;
-$extraBold: 'Open Sans ExtraBold', Arial, sans-serif;
-$extraBoldItalic: 'Open Sans ExtraBoldItalic', Arial, sans-serif;*/
-/* FONT SIZES */
-/* COLORS */
-/* CLINIC PAGE */
 @font-face {
   font-family: 'Open Sans Light';
   font-style: normal;
@@ -81,6 +64,9 @@ $extraBoldItalic: 'Open Sans ExtraBoldItalic', Arial, sans-serif;*/
   font-style: normal;
   src: local("Open Sans ExtraBoldItalic"), local("Open-Sans-ExtraBoldItalic"), url("../fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"); }
 
+/* FONT SIZES */
+/* COLORS */
+/* CLINIC PAGE */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -154,58 +140,56 @@ select {
   background-color: #00bdaf; }
   .navbar-main-menu .container .navbar-header .navbar-toggle .icon-bar {
     background-color: #fff; }
-  .navbar-main-menu .container .navbar-collapse-custom .nav {
-    margin-left: -23px; }
-    .navbar-main-menu .container .navbar-collapse-custom .nav li {
-      border-right: 1px solid rgba(255, 255, 255, 0.3); }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li a {
-        padding-top: 4px;
-        padding-bottom: 4px;
-        color: #fff; }
-        .navbar-main-menu .container .navbar-collapse-custom .nav li a:hover, .navbar-main-menu .container .navbar-collapse-custom .nav li a:focus {
-          background-color: transparent;
-          text-decoration: underline; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
-        padding-right: 12px;
-        padding-left: 12px; }
-        @media (max-width: 767px) {
-          .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
-            padding-left: 21px; } }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors {
-        padding-left: 15px;
-        padding-right: 15px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines {
-        padding-left: 15px;
-        padding-right: 15px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches {
-        padding-left: 15px;
-        padding-right: 15px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism {
-        padding-left: 15px;
-        padding-right: 15px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category {
-        padding-left: 15px;
-        padding-right: 15px; }
-      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
-        padding-left: 15px;
-        padding-right: 15px; }
-      @media (max-width: 991px) {
-        .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
-          padding-left: 10px;
-          padding-right: 10px; } }
+  .navbar-main-menu .container .navbar-collapse-custom .nav li {
+    border-right: 1px solid rgba(255, 255, 255, 0.3); }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li a {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      color: #fff; }
+      .navbar-main-menu .container .navbar-collapse-custom .nav li a:hover, .navbar-main-menu .container .navbar-collapse-custom .nav li a:focus {
+        background-color: transparent;
+        text-decoration: underline; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
+      padding-right: 12px;
+      padding-left: 12px; }
       @media (max-width: 767px) {
-        .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
-          padding-left: 22px; } }
-    .navbar-main-menu .container .navbar-collapse-custom .nav li:last-child {
-      border-right: none; }
+        .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-clinics {
+          padding-left: 21px; } }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
+      padding-left: 15px;
+      padding-right: 15px; }
+    @media (max-width: 991px) {
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media (max-width: 767px) {
+      .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-doctors, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medicines, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-researches, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-medtourism, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-category, .navbar-main-menu .container .navbar-collapse-custom .nav li .nav-library {
+        padding-left: 22px; } }
+  .navbar-main-menu .container .navbar-collapse-custom .nav li:last-child {
+    border-right: none; }
   .navbar-main-menu .container .navbar-collapse-custom .navbar-right {
-    margin-right: 58px; }
+    margin-right: 66px; }
     @media (max-width: 991px) {
       .navbar-main-menu .container .navbar-collapse-custom .navbar-right {
         margin-right: 0; } }
     .navbar-main-menu .container .navbar-collapse-custom .navbar-right li:last-child {
       border-bottom: 1px solid #66d7cf;
-      width: 53px; }
+      width: 100%; }
       .navbar-main-menu .container .navbar-collapse-custom .navbar-right li:last-child:hover {
         border-bottom: none; }
       .navbar-main-menu .container .navbar-collapse-custom .navbar-right li:last-child a {
@@ -246,7 +230,7 @@ select {
           padding-right: 0;
           border-right: transparent; } }
       .navbar-contacts .navbar-container .navbar-header .logo-top {
-        margin-left: -12px; }
+        margin-left: 10px; }
         @media (max-width: 767px) {
           .navbar-contacts .navbar-container .navbar-header .logo-top {
             margin-left: 10px; } }
@@ -282,10 +266,11 @@ select {
               font-family: "Open Sans Semibold", Arial, sans-serif;
               color: #1a1b1c; }
           .navbar-contacts .navbar-container .navbar-collapse-dropdown ul.nav li:first-child .box i {
-            margin-left: -11px;
+            margin-left: -9px;
             margin-bottom: 2px;
             font-size: 10px;
-            vertical-align: middle; }
+            vertical-align: middle;
+            color: #000; }
       .navbar-contacts .navbar-container .navbar-collapse-dropdown ul.nav li a {
         font-size: 16px;
         color: #4e565a; }
@@ -328,6 +313,7 @@ select {
       .navbar-contacts .navbar-container .navbar-collapse-dropdown ul.nav .phone-number-descr {
         margin-top: 15px;
         padding-left: 15px;
+        padding-right: 12px;
         font-size: 16px;
         color: #4e565a; }
       .navbar-contacts .navbar-container .navbar-collapse-dropdown ul.nav .divider-phone {
@@ -1144,6 +1130,13 @@ span.numbers {
         -webkit-box-shadow: 0 0 0 0px white, 0 2px 3px rgba(0, 0, 0, 0.22);
                 box-shadow: 0 0 0 0px white, 0 2px 3px rgba(0, 0, 0, 0.22);
         color: #fff; }
+
+header.one-row-header-with-cart .nav {
+  padding: 0; }
+
+.phone-number {
+  padding-bottom: 15px !important;
+  padding-top: 15px !important; }
 
 .best-doctors {
   padding: 0 0 2vw; }
