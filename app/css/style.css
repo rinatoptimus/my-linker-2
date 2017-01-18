@@ -2257,6 +2257,8 @@ a.btn-picture {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
     color: #fff; }
+  .label-btn-upload span:hover > i {
+    color: #fff; }
 
 .green-icon {
   color: #68a697; }
@@ -2295,6 +2297,8 @@ input {
   .btn-ghost:hover {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
+    color: #fff; }
+  .btn-ghost:hover > i {
     color: #fff; }
 
 .form-control-custom {
