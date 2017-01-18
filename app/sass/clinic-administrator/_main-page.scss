@@ -1,0 +1,94 @@
+.dl-horizontal {
+  .dt-left {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+.logo-clinic {
+  float: left;
+  width: 140px;
+  height: 90px;
+  background: url('../img/logo-ctbc-corel.png') no-repeat;
+  background-position: center;
+  border: 1px solid #ccc;
+  @include phone {
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+}
+.logo-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 200px;
+  padding-left: 20px;
+  @include small-devices {
+    width: 140px;
+  }
+  @include phone {
+    padding-left: 0;
+  }
+}
+.pictures-grid {
+  display: flex;
+  @include phone-lg {
+    flex-direction: column;
+  }
+}
+.photo-container {
+  margin: 0px 25px 0 0;
+  @include small-devices {
+    margin: 0px 10px 0 0;
+  }
+  @include phone-lg {
+    margin: 0 auto;
+  }
+}
+.photo-block {
+  width: 250px;
+}
+.photo-block:hover > .photo-header {
+  display: flex;
+}
+.photo-header {
+  display: none;
+  position: absolute;
+  height: 35px;
+  width: 250px;
+  justify-content: space-between;
+  padding: 5px;
+  z-index: 10;
+  border-radius: 5px 5px 0 0;
+  background-color: green;
+}
+.clinic-picture {
+  width: 100%;
+  height: 150px;
+  margin: 0 0 25px 0;
+  background: url('./../img/150.jpg') no-repeat;
+  background-size: cover;
+  @include small-devices {
+    margin: 0px 10px 10px 0;
+  }
+}
+.clinic-video {
+  margin-top: 10px;
+  max-width: 440px;
+  height: 300px;
+  background-color: $black;
+}
+.video-container {
+  position: relative;
+  //height: 0;
+  min-width: 250px;
+  min-height: 188px;
+  padding-bottom: 56.25%;
+}
+.video-container > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

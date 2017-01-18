@@ -1,0 +1,38 @@
+.bg-white {
+  margin-top: 20px;
+  margin: 20px 0 0 0;
+  padding: {
+    top: 15px;
+    right: 50px;
+    bottom: 10px;
+    left: 30px;
+  }
+  @include medium-desktop-lg {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+  @include small-devices {
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  @include phone-md {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+input {
+  font-style: italic;
+}
+.btn-ghost {
+  border-radius: 0;
+}
+.form-control-custom {
+  border-radius: 0;
+}
+.clinic-photo {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
