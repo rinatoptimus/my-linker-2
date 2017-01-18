@@ -2081,7 +2081,9 @@ h5 {
   height: 90px;
   background: url("../img/logo-ctbc-corel.png") no-repeat;
   background-position: center;
-  border: 1px solid #ccc; }
+  border: 1px solid #f0e2e2;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
   @media (max-width: 401px) {
     .logo-clinic {
       margin-right: 5px;
@@ -2155,7 +2157,17 @@ h5 {
   z-index: 10;
   -webkit-border-radius: 5px 5px 0 0;
           border-radius: 5px 5px 0 0;
-  background-color: green; }
+  background-color: #00bdaf; }
+
+a.btn-picture {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff; }
+  a.btn-picture:hover {
+    background-color: #fff;
+    color: #adadad; }
+  a.btn-picture:hover > i {
+    color: #68a697; }
 
 .clinic-picture {
   width: 100%;
@@ -2186,6 +2198,72 @@ h5 {
   height: 100%;
   width: 100%; }
 
+/**
+ * bootstrap-imageupload v1.1.2
+ * https://github.com/egonolieux/bootstrap-imageupload
+ * Copyright 2016 Egon Olieux
+ * Released under the MIT license
+ */
+.imageupload.imageupload-disabled {
+  cursor: not-allowed;
+  opacity: 0.60; }
+
+.imageupload.imageupload-disabled > * {
+  pointer-events: none; }
+
+.imageupload .panel-title {
+  margin-right: 15px;
+  padding-top: 8px; }
+
+.imageupload .alert {
+  margin-bottom: 10px; }
+
+.imageupload .btn-file {
+  overflow: hidden;
+  position: relative; }
+
+.imageupload .btn-file input[type="file"] {
+  cursor: inherit;
+  display: block;
+  font-size: 100px;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0; }
+
+.imageupload .file-tab button {
+  display: none; }
+
+.imageupload .file-tab .thumbnail {
+  margin-bottom: 10px; }
+
+.imageupload .url-tab {
+  display: none; }
+
+.imageupload .url-tab .thumbnail {
+  margin: 10px 0; }
+
+.input-upload[type="file"] {
+  display: none; }
+
+.label-btn-upload {
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
+  border: 1px solid #b3d2cb; }
+  .label-btn-upload:hover {
+    background-color: #b3d2cb;
+    border: 1px solid #b3d2cb;
+    color: #fff; }
+
+.green-icon {
+  color: #68a697; }
+
+.btn-default-upload {
+  display: none; }
+
 .bg-white {
   margin-top: 20px;
   margin: 20px 0 0 0;
@@ -2214,10 +2292,22 @@ input {
 .btn-ghost {
   -webkit-border-radius: 0;
           border-radius: 0; }
+  .btn-ghost:hover {
+    background-color: #b3d2cb;
+    border: 1px solid #b3d2cb;
+    color: #fff; }
 
 .form-control-custom {
-  -webkit-border-radius: 0;
-          border-radius: 0; }
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border-color: #f0e2e2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #393939; }
+  .form-control-custom:focus {
+    border-color: #f0e2e2;
+    -webkit-box-shadow: 0px 7px 24px -5px #949194;
+            box-shadow: 0px 7px 24px -5px #949194; }
 
 .clinic-photo {
   margin-right: 25px;

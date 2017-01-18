@@ -27,9 +27,21 @@ input {
 }
 .btn-ghost {
   border-radius: 0;
+  &:hover {
+    background-color: $bg-ghost-input;
+    border: 1px solid $bg-ghost-input;
+    color: $white;
+  }
 }
 .form-control-custom {
-  border-radius: 0;
+  border-radius: 3px;
+  border-color: $input;
+  box-shadow: none;
+  color: $clinic-placeholder;
+  &:focus {
+    border-color: $input;
+    box-shadow: 0px 7px 24px -5px rgba(148,145,148,1);
+  }
 }
 .clinic-photo {
   margin-right: 25px;

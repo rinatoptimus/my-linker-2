@@ -44,7 +44,15 @@
                                 <dd>
                                     <div class="logo-clinic"></div>
                                     <div class="logo-buttons">
-                                        <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Обзор</a>
+                                        <!--<a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Обзор</a>-->
+                                        <label class="btn btn-default btn-file label-btn-upload">
+                                            <span><i class="fa fa-folder-open fa-1 green-icon" aria-hidden="true"></i> Обзор</span>
+                                            <!-- The file is stored here. -->
+                                            <input class="input-upload" type="file" name="image-file">
+                                        </label>
+                                        <button type="button" class="btn btn-default btn-default-upload">Remove</button>
+
+
                                         <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
                                     </div>
                                 </dd>
@@ -63,15 +71,15 @@
                                         <div class="photo-container">
                                             <div class="photo-block">
                                                 <div class="photo-header">
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
                                                 </div>
                                                 <div class="clinic-picture"></div>
                                             </div>
                                             <div class="photo-block">
                                                 <div class="photo-header">
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
                                                 </div>
                                                 <div class="clinic-picture"></div>
                                             </div>
@@ -79,15 +87,15 @@
                                         <div class="photo-container">
                                             <div class="photo-block">
                                                 <div class="photo-header">
-                                                <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
-                                                <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
+                                                <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
+                                                <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
                                             </div>
                                                 <div class="clinic-picture"></div>
                                             </div>
                                             <div class="photo-block">
                                                 <div class="photo-header">
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
-                                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-folder-open fa-1" aria-hidden="true"></i> Изменить</a>
+                                                    <a class="btn btn-default btn-ghost text-uppercase btn-picture" href="#" role="button"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a>
                                                 </div>
                                                 <div class="clinic-picture"></div>
                                             </div>
@@ -118,5 +126,7 @@
     <script src="app/js/scrollspy-sidebar.js"></script>
     <script src="app/js/popup-clinics.js"></script>
     <script src="app/js/scroll-animation.js"></script>
+
+    <script src="app/js/vendor/btn-upload.js"></script>
 </body>
 </html>
