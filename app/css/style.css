@@ -2291,6 +2291,58 @@ a.btn-picture {
 input {
   font-style: italic; }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+input::-webkit-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input::-moz-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:-moz-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:-ms-input-placeholder {
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:focus::-moz-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:focus:-moz-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
+input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease; }
+
 .btn-ghost {
   -webkit-border-radius: 0;
           border-radius: 0; }
@@ -2302,6 +2354,7 @@ input {
     color: #fff; }
 
 .form-control-custom {
+  margin-bottom: 10px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   border-color: #f0e2e2;
@@ -2309,7 +2362,7 @@ input {
           box-shadow: none;
   color: #393939; }
   .form-control-custom:focus {
-    border-color: #f0e2e2;
+    border-color: #68a697;
     -webkit-box-shadow: 0px 7px 24px -5px #949194;
             box-shadow: 0px 7px 24px -5px #949194; }
 
@@ -2318,6 +2371,88 @@ input {
   margin-bottom: 25px;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
+
+.address-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 969px) {
+    .address-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.map {
+  width: 350px;
+  max-width: 100%;
+  height: 200px;
+  background-color: grey; }
+
+.table-schedule tbody td {
+  border-top: transparent; }
+  .table-schedule tbody td input {
+    font-style: normal; }
+
+.table > tbody > tr > td {
+  border-top: transparent;
+  line-height: 34px; }
+
+.dt-schedule {
+  margin-top: 15px; }
+
+.row-btn-save {
+  height: 410px; }
+  @media (max-width: 1201px) {
+    .row-btn-save {
+      height: 40px; } }
+
+.btn-schedule-save {
+  position: absolute;
+  bottom: 7px; }
+
+input.form-control-custom[type=number] {
+  -moz-appearance: textfield !important; }
+
+input.form-control-custom[type=number]::-webkit-outer-spin-button,
+input.form-control-custom[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; }
+
+.clearable {
+  background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
+  border: 1px solid #999;
+  padding: 3px 18px 3px 4px;
+  /* Use the same right padding (18) in jQ! */
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  font-style: normal; }
+
+.clearable.x {
+  background-position: right 5px center; }
+
+.clearable::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0; }
+
+.clearable::-webkit-input-placeholder {
+  font-style: italic; }
+
+.clearable:-moz-placeholder {
+  font-style: italic; }
+
+.clearable:-ms-input-placeholder {
+  font-style: italic; }
 
 .modal, .modal2, .modal3 {
   display: none;

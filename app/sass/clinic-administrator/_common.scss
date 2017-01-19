@@ -25,6 +25,20 @@
 input {
   font-style: italic;
 }
+input:focus::-webkit-input-placeholder {color: transparent}
+input:focus::-moz-placeholder          {color: transparent}
+input:focus:-moz-placeholder           {color: transparent}
+input:focus:-ms-input-placeholder      {color: transparent}
+
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
 .btn-ghost {
   border-radius: 0;
   &:hover {
@@ -37,12 +51,13 @@ input {
   }
 }
 .form-control-custom {
+  margin-bottom: 10px;
   border-radius: 3px;
   border-color: $input;
   box-shadow: none;
   color: $clinic-placeholder;
   &:focus {
-    border-color: $input;
+    border-color: $sidebar-link;
     box-shadow: 0px 7px 24px -5px rgba(148,145,148,1);
   }
 }
