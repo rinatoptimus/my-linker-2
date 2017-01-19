@@ -1,3 +1,17 @@
+.ui-select{width: 100%}
+/* This is to remove the arrow of select element in IE */
+select::-ms-expand {	display: none; }
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+select.form-control {
+  padding: 6px 12px 6px 5px;
+}
+@-moz-document url-prefix(){
+  .ui-select{height: 36px;border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+  .ui-select select { width: 102%; background-position: right 30px center !important; border: none !important;}
+}
 select.form-control-custom {
   font-style: italic;
   color: #393939;
@@ -7,7 +21,7 @@ select.form-control-custom {
 //  color: #989494;
 //}
 select, option { background: #fff;font-style:italic;color: #393939; }
-select.default, option[value="default"] { background: #fff;font-style:italic;color: #989494; }
+select.default, option[value="default"] { background: #fff;font-style:italic;color: #989494 !important; }
 select.proktolog, option[value="proktolog"] { font-style:normal;color: #393939; }
 select.venerolog, option[value="venerolog"] { font-style:normal;color: #393939; }
 select.stomatolog, option[value="stomatolog"] { font-style:normal;color: #393939; }

@@ -55,26 +55,6 @@
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Отчество">
 
 
-                                    <!--<select class="form-control form-control-custom">-->
-                                        <!--<option value="default form-control form-control-custom">Выберите специальность</option>-->
-                                        <!--<option value="proktolog form-control form-control-custom">Проктолог</option>-->
-                                        <!--<option value="venerolog form-control form-control-custom">Венеролог</option>-->
-                                        <!--<option value="stomatolog form-control form-control-custom">Стоматолог</option>-->
-                                    <!--</select>-->
-
-                                    <style>
-                                        .ui-select{width: 100%}
-                                        /* This is to remove the arrow of select element in IE */
-                                        select::-ms-expand {	display: none; }
-                                        select{
-                                            -webkit-appearance: none;
-                                            appearance: none;
-                                        }
-                                        @-moz-document url-prefix(){
-                                            .ui-select{height: 36px;border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
-                                            .ui-select select { width: 102%; background-position: right 30px center !important; border: none !important;}
-                                        }
-                                    </style>
                                     <div class="ui-select">
                                         <select class="form-control form-control-custom">
                                             <option value="default form-control form-control-custom">Выберите специальность</option>
@@ -83,7 +63,6 @@
                                             <option value="stomatolog form-control form-control-custom">Стоматолог</option>
                                         </select>
                                     </div>
-
 
                                 </div>
                             </dd>
@@ -133,10 +112,6 @@
 <script src="app/js/vendor/btn-upload.js"></script>
 <script src="app/js/input-validation-icon.js"></script>
 
-<script>
-    $('select').on('change', function(ev) {
-        $(this).attr('class', '').addClass($(this).children(':selected').val());
-    });
-</script>
+<script src="app/js/input-select-styles.js"></script>
 </body>
 </html>
