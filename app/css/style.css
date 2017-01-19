@@ -2289,6 +2289,7 @@ a.btn-picture {
       padding-left: 10px; } }
 
 input {
+  padding-left: 10px;
   font-style: italic; }
 
 input:focus::-webkit-input-placeholder {
@@ -2429,7 +2430,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 .clearable {
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
   border: 1px solid #999;
-  padding: 3px 18px 3px 4px;
+  padding: 3px 18px 3px 10px;
   /* Use the same right padding (18) in jQ! */
   -webkit-border-radius: 3px;
           border-radius: 3px;
@@ -2456,6 +2457,32 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 
 .clearable:-ms-input-placeholder {
   font-style: italic; }
+
+select.form-control-custom {
+  font-style: italic;
+  color: #393939; }
+
+select, option {
+  background: #fff;
+  font-style: italic;
+  color: #393939; }
+
+select.default, option[value="default"] {
+  background: #fff;
+  font-style: italic;
+  color: #989494; }
+
+select.proktolog, option[value="proktolog"] {
+  font-style: normal;
+  color: #393939; }
+
+select.venerolog, option[value="venerolog"] {
+  font-style: normal;
+  color: #393939; }
+
+select.stomatolog, option[value="stomatolog"] {
+  font-style: normal;
+  color: #393939; }
 
 .modal, .modal2, .modal3 {
   display: none;

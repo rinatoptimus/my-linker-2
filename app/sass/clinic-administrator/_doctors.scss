@@ -1,0 +1,13 @@
+select.form-control-custom {
+  font-style: italic;
+  color: #393939;
+}
+//select.form-control-custom {
+//  padding-left: 5px;
+//  color: #989494;
+//}
+select, option { background: #fff;font-style:italic;color: #393939; }
+select.default, option[value="default"] { background: #fff;font-style:italic;color: #989494; }
+select.proktolog, option[value="proktolog"] { font-style:normal;color: #393939; }
+select.venerolog, option[value="venerolog"] { font-style:normal;color: #393939; }
+select.stomatolog, option[value="stomatolog"] { font-style:normal;color: #393939; }

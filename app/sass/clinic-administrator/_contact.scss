@@ -50,11 +50,27 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+
+
+//select.form-control-custom {
+//  -moz-appearance: textfield !important;
+//}
+//select.form-control-custom::-webkit-outer-spin-button,
+//select.form-control-custom::-webkit-inner-spin-button {
+//  -webkit-appearance: none;
+//  appearance: none;
+//  margin: 0;
+//}
+
+
+
+
+
 // add icon after input validation
 .clearable{
   background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
   border: 1px solid #999;
-  padding: 3px 18px 3px 4px; /* Use the same right padding (18) in jQ! */
+  padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
   border-radius: 3px;
   transition: background 0.4s;
   font-style: normal;
