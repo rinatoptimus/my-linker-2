@@ -36,16 +36,71 @@
                         <dl class="dl-horizontal">
                             <dt class="dt-left text-uppercase">Врачи клиники</dt>
                             <dd>
-                                <p>Lorem ipsum</p>
+                                <ul class="clinics-doctors-list">
+                                    <li class="li-doctor-tag">
+                                        <span class="doctor-tag text-center text-uppercase">Кардиолог</span>
+                                        <a class="text-uppercase link-doctor" href="#">Абликов О. Г.</a>
+                                        <div class="block-edit-doctor">
+                                            <i class="fa fa-pencil-square-o green-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-times green-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                    <li class="li-doctor-tag">
+                                        <span class="doctor-tag text-center text-uppercase">Кардиолог</span>
+                                        <a class="text-uppercase link-doctor" href="#">Абликов О. Г.</a>
+                                        <div class="block-edit-doctor">
+                                            <i class="fa fa-pencil-square-o green-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-times green-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                    <li class="li-doctor-tag">
+                                        <span class="doctor-tag text-center text-uppercase">Кардиолог</span>
+                                        <a class="text-uppercase link-doctor" href="#">Гайдай О. Г.</a>
+                                        <div class="block-edit-doctor">
+                                            <i class="fa fa-pencil-square-o green-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-times green-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                    <li class="li-doctor-tag">
+                                        <span class="doctor-tag text-center text-uppercase">Дерматолог</span>
+                                        <a class="text-uppercase link-doctor" href="#">Гайдай О. Г.</a>
+                                        <div class="block-edit-doctor">
+                                            <i class="fa fa-pencil-square-o green-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-times green-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                    <li class="li-doctor-tag">
+                                        <span class="doctor-tag text-center text-uppercase">Венеролог</span>
+                                        <a class="text-uppercase link-doctor" href="#">Абликов О. Г.</a>
+                                        <div class="block-edit-doctor">
+                                            <i class="fa fa-pencil-square-o green-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-times green-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--<label class="btn btn-default btn-file label-btn-upload btn-add-specs">-->
+                                    <!--<span class="text-uppercase"><i class="fa fa-user-md green-icon"></i> Добавить врача</span>-->
+                                    <!--<input class="input-upload" type="file" name="">-->
+                                <!--</label>-->
+                                <label class="btn btn-default btn-file label-btn-upload btn-add-specs">
+                                    <i class="fa fa-user-md green-icon"></i>
+                                    <span class="text-uppercase"> Добавить врача</span>
+                                    <input class="input-upload" type="file" name="">
+                                </label>
+
                             </dd>
                         </dl>
                     </form>
                 </div>
             </div>
 
+            <div class="lead-block">
+                <p class="lead lead-custom text-center">Добавление врача в клинику <span class="lead-title">"Звезда на Чистопольской"</span></p>
+            </div>
+
             <div class="row bg-white">
-                <form action="" method="">
-                    <div class="col-lg-8">
+                <form class="form-clinic" action="" method="">
+                    <div class="form-block form-block-characteristics">
                         <dl class="dl-horizontal">
                             <dt class="dt-left text-uppercase">Данные</dt>
                             <dd>
@@ -53,7 +108,6 @@
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Фамилия">
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Имя">
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Отчество">
-
 
                                     <div class="ui-select">
                                         <select class="form-control form-control-custom">
@@ -64,33 +118,78 @@
                                         </select>
                                     </div>
 
+                                    <div class="ui-select">
+                                        <select class="form-control form-control-custom">
+                                            <option value="default form-control form-control-custom">Выберите специальность</option>
+                                            <option value="proktolog form-control form-control-custom">Иммунолог</option>
+                                            <option value="venerolog form-control form-control-custom">Хирург</option>
+                                            <option value="stomatolog form-control form-control-custom">Лор</option>
+                                        </select>
+                                    </div>
+
+                                    <label class="btn btn-default btn-file label-btn-upload btn-add-specs">
+                                        <i class="fa fa-user-md green-icon"></i>
+                                        <span class="text-uppercase"> Добавить специализацию</span>
+                                        <input class="input-upload" type="file" name="image-file">
+                                    </label>
+
+                                    <div class="block-checkboxes">
+                                        <div class="checkbox checkbox-success">
+                                            <input id="checkbox-adults" type="checkbox">
+                                            <label for="checkbox-adults">Взрослый</label>
+                                        </div>
+                                        <div class="checkbox checkbox-success block-checkbox-children">
+                                            <input id="checkbox-children" type="checkbox">
+                                            <label for="checkbox-children">Детский</label>
+                                        </div>
+                                    </div>
+
+                                    <input type="text" class="clearable form-control form-control-custom" placeholder="Введите стаж работы">
                                 </div>
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt class="dt-left text-uppercase">Образование</dt>
                             <dd>
-                                <input type="text" class="form-control form-control-custom" placeholder="Фамилия">
-                                <input type="text" class="form-control form-control-custom" placeholder="Имя">
-                                <input type="text" class="form-control form-control-custom" placeholder="Отчество">
+                                <div class="form-group">
+                                    <input name="" type="text" class="clearable form-control form-control-custom" placeholder="Город">
+                                    <input name="" type="text" class="clearable form-control form-control-custom" placeholder="ВУЗ">
+                                    <input name="" type="text" class="clearable form-control form-control-custom" placeholder="Год окончания">
+                                </div>
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
                             <dt class="dt-left text-uppercase">Описание</dt>
                             <dd>
-                                <input type="text" class="form-control form-control-custom" placeholder="Фамилия">
-                                <input type="text" class="form-control form-control-custom" placeholder="Имя">
-                                <input type="text" class="form-control form-control-custom" placeholder="Отчество">
+                                <textarea class="form-control form-control-custom" name="" id="" cols="30" rows="10"></textarea>
+                                <label class="btn btn-default btn-ghost btn-file label-btn-upload btn-add-specs">
+                                    <i class="fa fa-floppy-o green-icon" aria-hidden="true"></i>
+                                    <span class="text-uppercase"> Сохранить</span>
+                                    <input class="input-upload" type="file" name="image-file">
+                                </label>
                             </dd>
                         </dl>
                     </div>
-                    <div class="col-lg-4">
-                        <dl class="dl-horizontal">
+                    <div class="form-block block-avatar">
+                        <dl class="dl-horizontal dl-avatar">
                             <dt class="dt-left text-uppercase">Фотография</dt>
-                            <dd>
-                                <input type="text" class="form-control form-control-custom" placeholder="Фамилия">
-                                <input type="text" class="form-control form-control-custom" placeholder="Имя">
-                                <input type="text" class="form-control form-control-custom" placeholder="Отчество">
+                            <dd class="dd-avatar">
+                                <div class="media media-avatar">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img src="app/img/doctor-ava.jpg" class="media-object img-circle admin-avatar" alt="" title="">
+                                        </a>
+                                    </div>
+                                    <div class="media-body btns-upload-block">
+                                        <label class="btn btn-default btn-file label-btn-upload">
+                                            <i class="fa fa-folder-open fa-1 green-icon" aria-hidden="true"></i>
+                                            <span class="text-uppercase"> Обзор</span>
+                                            <input class="input-upload" type="file" name="image-file">
+                                        </label>
+                                        <button type="button" class="btn btn-default btn-default-upload">Удалить</button>
+                                        <a class="btn btn-default btn-ghost text-uppercase btn-remove-avatar" href="#" role="button"><i class="fa fa-times green-icon" aria-hidden="true"></i> Удалить</a>
+                                    </div>
+                                </div>
                             </dd>
                         </dl>
                     </div>
@@ -111,6 +210,7 @@
 
 <script src="app/js/vendor/btn-upload.js"></script>
 <script src="app/js/input-validation-icon.js"></script>
+<script src="app/js/input-validation-icon-long.js"></script>
 
 <script src="app/js/input-select-styles.js"></script>
 </body>

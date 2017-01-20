@@ -166,12 +166,18 @@ a.btn-picture {
     border: 1px solid $bg-ghost-input;
     color: $white;
   }
-  span {
-    &:hover > i {
-      color: $white;
-    }
-  }
+  //span {
+  //  &:hover > i {
+  //    color: $white;
+  //  }
+  //}
 }
+
+.label-btn-upload:hover > i {
+  color: $white;
+}
+
+
 .green-icon {
   color: $sidebar-link;
 }

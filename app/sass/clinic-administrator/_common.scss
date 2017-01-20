@@ -42,6 +42,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 
 .btn-ghost {
   border-radius: 0;
+  font-size: 13px;
   &:hover {
     background-color: $bg-ghost-input;
     border: 1px solid $bg-ghost-input;
@@ -51,19 +52,108 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
     color: $white;
   }
 }
+
+// remove arrows from number input
+input.form-control-custom[type=number] {
+  -moz-appearance: textfield !important;
+}
+input.form-control-custom[type=number]::-webkit-outer-spin-button,
+input.form-control-custom[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+// add icon after input validation
+.clearable{
+  background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
+  padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
+  border-radius: 0;
+  transition: background 0.4s;
+  //font-style: normal;
+}
+.clearable.x  { background-position: right 5px center; }
+.clearable::-ms-clear {display: none; width:0; height:0;}
+
+//.clearable::-webkit-input-placeholder {font-style: italic}
+.clearable::-webkit-input-placeholder {font-style: normal}
+
+.clearable:-moz-placeholder {font-style: italic}
+.clearable::-moz-placeholder {font-style: italic}
+.clearable:-ms-input-placeholder {font-style: italic}
+
+.clearable-long {
+  background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
+  padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
+  border-radius: 0;
+  transition: background 0.4s;
+  font-style: normal;
+}
+.clearable-long.x  { background-position: right 10px center; }
+
 .form-control-custom {
   margin-bottom: 10px;
-  border-radius: 3px;
+  border-radius: 0;
   border-color: $input;
   box-shadow: none;
   color: $clinic-placeholder;
+  //font-style: italic;
+  font-style: normal;
+  font-style: -webkit-normal;
   &:focus {
     border-color: $sidebar-link;
     box-shadow: 0px 7px 24px -5px rgba(148,145,148,1);
+    font-style: normal;
   }
 }
+.form-control-custom::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $clinic-placeholder;
+  font-style: italic;
+}
+.form-control-custom::-moz-placeholder { /* Firefox 19+ */
+  color: $clinic-placeholder;
+}
+.form-control-custom:-ms-input-placeholder { /* IE 10+ */
+  color: $clinic-placeholder;
+}
+.form-control-custom:-moz-placeholder { /* Firefox 18- */
+  color: $clinic-placeholder;
+}
+
+//
+.form-control-custom::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $clinic-placeholder;
+  font-style: italic;
+}
+.form-control-custom::-moz-placeholder { /* Firefox 19+ */
+  color: $clinic-placeholder;
+}
+.form-control-custom:-ms-input-placeholder { /* IE 10+ */
+  color: $clinic-placeholder;
+}
+.form-control-custom:-moz-placeholder { /* Firefox 18- */
+  color: $clinic-placeholder;
+}
+
+.btn-default:focus {
+  background-color: $white;
+}
+
 .clinic-photo {
   margin-right: 25px;
   margin-bottom: 25px;
   border-radius: 5px;
+}
+
+// remove dots in FF
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+.checkbox label::before {
+  outline: none !important;
+}
+// remove dotted outline from select in FF
+select.form-control-custom {
+  color: $clinic-placeholder !important;
+  color: rgba(0,0,0,0) !important;
+  text-shadow: 0 0 0 $clinic-placeholder !important;
 }

@@ -1,6 +1,136 @@
-.ui-select{width: 100%}
+.form-block-characteristics {
+  width: 58%;
+  @include large-desktop {
+    width: 100%;
+  }
+}
+.block-avatar {
+  width: 42%;
+  @include large-desktop {
+    width: 100%;
+  }
+}
+.form-block {
+  padding-right: 15px;
+  padding-left: 15px;
+  @include large-desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.btn-remove-avatar {
+  max-width: 105px;
+  margin-top: 10px;
+}
+.media-avatar {
+  display: flex;
+}
+.form-clinic {
+  display: flex;
+  @include large-desktop {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.clinics-doctors-list {
+  margin-bottom: 15px;
+  padding-left: 0;
+    li {
+      .link-doctor {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $black;
+        font-size: 13px;
+        @include phone {
+          font-size: 10px;
+        }
+        &:hover {
+          color: $sidebar-link;
+        }
+      }
+    }
+}
+.li-doctor-tag {
+  margin-bottom: 10px;
+}
+.doctor-tag {
+  padding: 3px 15px;
+  background-color: $thumbnail-profession-tags;
+  border-radius: 15px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: $white;
+  @include phone {
+    padding: 3px 7px;
+  }
+}
+.lead-block {
+  margin-bottom: -20px;
+  margin-top: 20px;
+  padding: 0;
+  background-color: $sidebar-link;
+  color: $white;
+}
+.lead-custom {
+  font-size: 17px;
+  line-height: 35px;
+}
+.lead-title {
+  font-weight: bold;
+}
+.btn-add-specs {
+  padding: 6px 14px;
+  font-size: 13px;
+}
+.dl-avatar {
+  display: flex;
+  flex-direction: column;
+  @include large-desktop {
+    display: block;
+  }
+  .dd-avatar {
+    margin-left: 0;
+    @include large-desktop {
+      margin-left: 180px;
+    }
+    @include small-devices {
+      margin-left: 0;
+    }
+  }
+}
+.admin-avatar {
+  width: 130px;
+  height: 130px;
+}
+.btns-upload-block {
+  vertical-align: middle;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  .label-btn-upload {
+    width: 105px;
+    @include large-desktop {
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+    @include phone-lg {
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+      span {
+        font-size: 13px;
+      }
+  }
+}
+
+// *********************** SELECT STYLES *********************** //
+.ui-select{width: 100%; margin-bottom:10px;}
 /* This is to remove the arrow of select element in IE */
-select::-ms-expand {	display: none; }
+select::-ms-expand { display: none; }
 select{
   -webkit-appearance: none;
   appearance: none;
@@ -9,19 +139,137 @@ select.form-control {
   padding: 6px 12px 6px 5px;
 }
 @-moz-document url-prefix(){
-  .ui-select{height: 36px;border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+  .ui-select{height: 36px;border: 1px solid $input; /*border-radius: 4px;*/ box-sizing: border-box; position: relative; overflow: hidden;}
   .ui-select select { width: 102%; background-position: right 30px center !important; border: none !important;}
 }
 select.form-control-custom {
   font-style: italic;
   color: #393939;
 }
-//select.form-control-custom {
-//  padding-left: 5px;
-//  color: #989494;
-//}
+
 select, option { background: #fff;font-style:italic;color: #393939; }
-select.default, option[value="default"] { background: #fff;font-style:italic;color: #989494 !important; }
+select.default, option[value="default"] { background: #fff;font-style:italic;/*color: #989494 !important;*/ }
 select.proktolog, option[value="proktolog"] { font-style:normal;color: #393939; }
 select.venerolog, option[value="venerolog"] { font-style:normal;color: #393939; }
 select.stomatolog, option[value="stomatolog"] { font-style:normal;color: #393939; }
+
+.btn span.glyphicon {
+  opacity: 0;
+}
+.btn.active span.glyphicon {
+  opacity: 1;
+}
+.btn-checkbox-custom {
+  background-color: $sidebar-link;
+  border-color: $sidebar-link;
+}
+.glyphicon-checkbox {
+  color: $white;
+}
+.block-checkboxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  @include large-desktop {
+    justify-content: flex-start;
+  }
+}
+.block-edit-doctor {
+  display: inline-block;
+    i {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+}
+
+// *********************** CHECKBOX STYLES *********************** //
+.checkbox {
+  padding-left: 30px;
+  line-height: 23px;
+}
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  margin-left: 0;
+  border: 1px solid #969292;
+  border-radius: 3px;
+  background-color: #969292;
+  -moz-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 1px;
+  margin-left: 0;
+  padding-left: 3px;
+  padding-top: 2px;
+  font-size: 15px;
+  color: #555555;
+}
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  z-index: 1;
+}
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+}
+.checkbox input[type="checkbox"]:disabled + label {
+  opacity: 0.65;
+}
+.checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: $sidebar-link;
+  border-color: $sidebar-link;
+}
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.checkbox-success input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-success input[type="checkbox"] + label {
+  opacity: .6;
+}
+.checkbox-success input[type="checkbox"]:checked + label {
+  opacity: 1;
+}
+.checkbox+.block-checkbox-children {
+  margin-top: 10px;
+  @include large-desktop {
+    margin-left: 45px;
+  }
+}
