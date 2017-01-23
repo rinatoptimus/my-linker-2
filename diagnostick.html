@@ -31,7 +31,7 @@
         </div>
         <div class="col-lg-9">
             <div class="row bg-white">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
 
                     <form action="" method="POST">
                         <div class="form-group block-mrt">
@@ -52,6 +52,76 @@
                                 </ul>
                             </div>
                         </div>
+
+
+
+
+
+                        <table class="table table-schedule">
+                            <thead>
+                            <tr class="diagnostick-header">
+                                <td class="diagnostick-table-title-left text-uppercase">Цена, руб</td>
+                                <td class="diagnostick-table-title-right text-uppercase" colspan="2">Тип диагностики</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <style>
+                                    .bootstrap-switch {
+                                        width: 70px;
+                                        border-radius: 18px;
+                                        height: 38px;
+                                        padding-top: 2px;
+                                        padding-left: 2px;
+
+                                        width: 74px;
+                                        height: 36px;
+                                    }
+                                    .bootstrap-switch .bootstrap-switch-handle-on {
+                                        width: 32px;
+                                        border-radius: 15px;
+
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                    .fa-check {
+                                        margin-left: -2px;
+                                    }
+                                    .bootstrap-switch-label {
+                                        width: 38px;
+                                    }
+                                    .bootstrap-switch .bootstrap-switch-handle-off {
+                                        width: 32px;
+                                        border-radius: 15px;
+
+                                        width: 30px;
+                                        height: 30px;
+                                    }
+                                    .bootstrap-switch-container {
+                                        //width: 102px;
+                                        margin-left: -32px !important;
+                                    }
+                                </style>
+                                <td class="col-md-6">
+                                    <input type="number">
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                </td>
+                                <td class="col-md-6">
+                                    <input class="make-switch" type="checkbox" data-on-text="<i class='fa fa-unlock'></i>" data-off-text="<i class='fa fa-lock'></i>"/>
+                                </td>
+                                <td class="col-md-6 td-inputs">
+                                    <span>Гипофиза</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+
                     </form>
 
                 </div>
@@ -63,7 +133,7 @@
 
             <div class="row bg-white">
                 <div class="col-lg-7">
-                    <form class="" action="" method="">
+                    <form action="" method="">
                         <table class="table table-schedule">
                             <thead>
                                 <tr class="diagnostick-header">
@@ -133,8 +203,6 @@
                         <div class="mrt-table-bottom">
                             <p class="text-uppercase"><span id="interval">Интервал приема</span></p>
                             <input class="form-control form-control-custom input-diagnostick-time interval" name="" type="number" value="00" min="0" max="24">
-                            <!--<a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</a>-->
-
                             <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
                         </div>
                     </form>
@@ -161,5 +229,8 @@
 
 <script src="app/js/dropdown-arrow.js"></script>
 <script src="app/js/doctor-visit-time.js"></script>
+
+<script src="app/js/vendor/bootstrap-switch.js"></script>
+<script src="app/js/bootstrap-switch-init.js"></script>
 </body>
 </html>
