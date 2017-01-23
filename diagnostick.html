@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagnostick page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body data-target=".scrollspy">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sidebar scrollspy-sidebar">
+            <div class="well affix-top" id="sidebar">
+                <div class="sidebar-logo"></div>
+                <nav class="bs-docs-sidebar">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="text-uppercase"><a href="#clinics-biomed">Клиника Биомед</a></li>
+                        <li><a href="#doctors" class="text-uppercase">Врачи</a></li>
+                        <li><a href="#" class="text-uppercase">Описание</a></li>
+                        <li><a href="#" class="text-uppercase">Фотографии</a></li>
+                        <li><a href="#researches" class="text-uppercase">Исследования</a></li>
+                        <li><a href="#" class="text-uppercase">Документы</a></li>
+                        <li><a href="#requisites" class="text-uppercase">Реквизиты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="row bg-white">
+                <div class="col-lg-12">
+
+                    <form action="" method="POST">
+                        <div class="form-group block-mrt">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">МРТ</button>
+                                <button type="button" class="btn btn-default">КТ</button>
+                                <button type="button" class="btn btn-default">УЗИ</button>
+                                <button type="button" class="btn btn-default">РЕНТГЕН</button>
+                            </div>
+
+                            <p class="choose-mrt-title text-uppercase">Выберите направление</p>
+                            <div class="btn-group">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">МРТ головы <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">МРТ суставов</a></li>
+                                    <li><a href="#">IМРТ органа</a></li>
+                                    <li><a href="#">МРТ головы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="lead-block">
+                <p class="lead lead-custom text-center">МРТ Гипофиза</p>
+            </div>
+
+            <div class="row bg-white">
+                <div class="col-lg-7">
+                    <form class="" action="" method="">
+                        <table class="table table-schedule">
+                            <thead>
+                                <tr class="diagnostick-header">
+                                    <td class="diagnostick-table-title-left text-uppercase">Календарь приема</td>
+                                    <td class="diagnostick-table-title-right text-uppercase" colspan="2">Время приема</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6">Понедельник</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Вторник</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Среда</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Четверг</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Пятница</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Суббота</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6">Воскресенье</td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="mrt-table-bottom">
+                            <p class="text-uppercase">Интервал приема</p>
+                            <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                            <!--<a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</a>-->
+
+                            <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="app/js/sticky-sidebar.js"></script>
+<script src="app/js/scrollspy-sidebar.js"></script>
+<script src="app/js/popup-clinics.js"></script>
+<script src="app/js/scroll-animation.js"></script>
+
+<script src="app/js/vendor/btn-upload.js"></script>
+<script src="app/js/input-validation-icon.js"></script>
+<script src="app/js/input-validation-icon-long.js"></script>
+
+<script src="app/js/input-select-styles.js"></script>
+
+
+<!-- first variant -->
+<script>
+    $(function(){
+        $(".dropdown").click(
+            function() {
+                $('span', this).toggleClass("caret caret-up");
+            },
+            function() {
+                $('span', this).toggleClass("caret caret-up");
+            });
+    });
+</script>
+
+<!-- second variant -->
+<script>
+    $(".dropdown-menu li a").click(function(){
+        var selText = $(this).text();
+        $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+    })
+
+    $(function(){
+        $(".btn").click(
+            function() {
+                $('span', this).toggleClass("caret caret-up");
+            },
+            function() {
+                $('span', this).toggleClass("caret caret-up");
+            });
+    });
+</script>
+</body>
+</html>

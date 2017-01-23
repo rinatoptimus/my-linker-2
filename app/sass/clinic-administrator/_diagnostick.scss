@@ -1,0 +1,53 @@
+.block-mrt {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.choose-mrt-title {
+  padding: 20px 0 0;
+}
+.caret-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.td-inputs {
+  display: flex !important;
+}
+.diagnostick-time-colon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.input-diagnostick-time {
+  width: 43px;
+}
+.table>thead>tr>.diagnostick-table-title-left,
+.table>thead>tr>.diagnostick-table-title-right {
+  padding-left: 0;
+}
+.diagnostick-header {
+  border-bottom: 1px solid grey;
+}
+
+.mrt-table-bottom {
+  display: flex;
+  justify-content: center;
+}
+.mrt-table-bottom p {
+  display: block;
+  margin-top: 8px;
+}
+.mrt-table-bottom input {
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.mrt-table-bottom a {
+  height: 34px;
+}

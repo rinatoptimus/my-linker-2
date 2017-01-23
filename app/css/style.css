@@ -2289,6 +2289,9 @@ a.btn-picture {
       padding-right: 10px;
       padding-left: 10px; } }
 
+button.btn-ghost {
+  height: 34px; }
+
 input {
   padding-left: 10px;
   font-style: italic; }
@@ -2853,6 +2856,73 @@ select.stomatolog, option[value="stomatolog"] {
   @media (max-width: 1201px) {
     .checkbox + .block-checkbox-children {
       margin-left: 45px; } }
+
+.block-mrt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100px; }
+
+.choose-mrt-title {
+  padding: 20px 0 0; }
+
+.caret-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle; }
+
+.td-inputs {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.diagnostick-time-colon {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.input-diagnostick-time {
+  width: 43px; }
+
+.table > thead > tr > .diagnostick-table-title-left,
+.table > thead > tr > .diagnostick-table-title-right {
+  padding-left: 0; }
+
+.diagnostick-header {
+  border-bottom: 1px solid grey; }
+
+.mrt-table-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.mrt-table-bottom p {
+  display: block;
+  margin-top: 8px; }
+
+.mrt-table-bottom input {
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 10px; }
+
+.mrt-table-bottom a {
+  height: 34px; }
 
 .modal, .modal2, .modal3 {
   display: none;
