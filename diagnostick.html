@@ -73,55 +73,55 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="col-md-6">Понедельник</td>
+                                <td class="col-md-6"><span id="mon">Понедельник</span></td>
                                 <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <input class="form-control form-control-custom input-diagnostick-time mon" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time mon" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="tue">Вторник</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time tue" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time tue" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="wed">Среда</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time wed" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>
                                     <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-6">Вторник</td>
+                                <td class="col-md-6"><span id="thu">Четверг</span></td>
                                 <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <input class="form-control form-control-custom input-diagnostick-time thu" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>
                                     <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-6">Среда</td>
+                                <td class="col-md-6"><span id="fri">Пятница</span></td>
                                 <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <input class="form-control form-control-custom input-diagnostick-time fri" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>
                                     <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-6">Четверг</td>
+                                <td class="col-md-6"><span id="sat">Суббота</span></td>
                                 <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                                    <input class="form-control form-control-custom input-diagnostick-time sat" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>
                                     <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="col-md-6">Пятница</td>
-                                <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
-                                    <span class="diagnostick-time-colon">:</span>
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-6">Суббота</td>
-                                <td class="col-md-6 td-inputs">
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
-                                    <span class="diagnostick-time-colon">:</span>
-                                    <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-6">Воскресенье</td>
+                                <td class="col-md-6"><span id="sun">Воскресенье</span></td>
                                 <td class="col-md-6 td-inputs">
                                     <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>
@@ -131,8 +131,8 @@
                             </tbody>
                         </table>
                         <div class="mrt-table-bottom">
-                            <p class="text-uppercase">Интервал приема</p>
-                            <input class="form-control form-control-custom input-diagnostick-time" name="" type="number" value="00" min="0" max="24">
+                            <p class="text-uppercase"><span id="interval">Интервал приема</span></p>
+                            <input class="form-control form-control-custom input-diagnostick-time interval" name="" type="number" value="00" min="0" max="24">
                             <!--<a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</a>-->
 
                             <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
@@ -159,36 +159,7 @@
 
 <script src="app/js/input-select-styles.js"></script>
 
-
-<!-- first variant -->
-<script>
-    $(function(){
-        $(".dropdown").click(
-            function() {
-                $('span', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('span', this).toggleClass("caret caret-up");
-            });
-    });
-</script>
-
-<!-- second variant -->
-<script>
-    $(".dropdown-menu li a").click(function(){
-        var selText = $(this).text();
-        $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
-    })
-
-    $(function(){
-        $(".btn").click(
-            function() {
-                $('span', this).toggleClass("caret caret-up");
-            },
-            function() {
-                $('span', this).toggleClass("caret caret-up");
-            });
-    });
-</script>
+<script src="app/js/dropdown-arrow.js"></script>
+<script src="app/js/doctor-visit-time.js"></script>
 </body>
 </html>
