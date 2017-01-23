@@ -55,21 +55,27 @@
 .photo-header {
   display: none;
   position: absolute;
-  height: 35px;
+  height: 40px;
   width: 250px;
   justify-content: space-between;
-  padding: 5px;
+  padding: 8px 11px;
   z-index: 10;
   border-radius: 5px 5px 0 0;
   background-color: $breadcrumb-first;
 }
 a.btn-picture {
+  padding: 5px 7px;
   border: 1px solid $white;
   background-color: transparent;
+  font-size: 12px;
+  font-family: $semibold;
   color: $white;
+  line-height: 13px;
   &:hover {
     background-color: $white;
-    color: $btn-picture-text;
+    border: 1px solid $white;
+    //color: $btn-picture-text;
+    color: $tags-hover;
   }
   &:hover > i {
     color: $sidebar-link;
