@@ -2385,6 +2385,9 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   width: 0;
   height: 0; }
 
+.clearable::-ms-clear {
+  display: none; }
+
 .clearable::-webkit-input-placeholder {
   font-style: normal; }
 
@@ -2408,7 +2411,10 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   font-style: normal; }
 
 .clearable-long.x {
-  background-position: right 10px center; }
+  background-position: right 20px center; }
+
+.clearable-long::-ms-clear {
+  display: none; }
 
 .form-control-custom {
   margin-bottom: 10px;

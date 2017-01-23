@@ -73,10 +73,13 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
   border-radius: 0;
   transition: background 0.4s;
-  //font-style: normal;
 }
 .clearable.x  { background-position: right 5px center; }
 .clearable::-ms-clear {display: none; width:0; height:0;}
+
+.clearable::-ms-clear {
+  display: none;
+}
 
 //.clearable::-webkit-input-placeholder {font-style: italic}
 .clearable::-webkit-input-placeholder {font-style: normal}
@@ -92,7 +95,11 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   transition: background 0.4s;
   font-style: normal;
 }
-.clearable-long.x  { background-position: right 10px center; }
+.clearable-long.x  { background-position: right 20px center; }
+
+.clearable-long::-ms-clear {
+  display: none;
+}
 
 .form-control-custom {
   margin-bottom: 10px;
