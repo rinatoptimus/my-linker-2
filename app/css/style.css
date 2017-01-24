@@ -1613,8 +1613,8 @@ footer {
           border-radius: 7px;
   border: none; }
   .well nav .nav-pills {
-    margin-top: 23px;
-    margin-left: 5px;
+    margin-top: 29px;
+    margin-left: 8px;
     text-align: left; }
     .well nav .nav-pills li.active a {
       margin-left: 3px;
@@ -1626,13 +1626,22 @@ footer {
         color: #68a697; }
     .well nav .nav-pills li {
       display: block;
-      margin-bottom: 5px; }
+      margin-bottom: 15px;
+      padding-left: 0; }
       .well nav .nav-pills li:hover {
-        background-color: #f6f6f6; }
-      .well nav .nav-pills li a {
+        background-color: #f6f6f6;
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
+      .well nav .nav-pills li .sidebar-link {
+        padding: 5px 15px 5px 26px;
+        font-size: 14px;
         color: #68a697; }
-        .well nav .nav-pills li a:hover {
+        .well nav .nav-pills li .sidebar-link:hover {
+          background-color: transparent;
+          font-family: "Open Sans Bold", Arial, sans-serif;
           color: #68a697; }
+        .well nav .nav-pills li .sidebar-link:focus {
+          background-color: #f6f6f6; }
   @media (max-width: 1201px) {
     .well nav .nav-stacked > li {
       float: left; } }
@@ -1643,11 +1652,13 @@ footer {
 @media (min-width: 1200px) {
   #sidebar.affix-top {
     position: static;
-    width: 228px; }
+    padding-left: 11px;
+    width: 270px;
+    height: 530px; }
   #sidebar.affix {
     position: fixed;
     top: 30px;
-    width: 228px; } }
+    width: 270px; } }
 
 body {
   background-color: #f6f6f6;
@@ -1667,15 +1678,28 @@ h5 {
   background-color: #fff; }
 
 .col-sidebar {
-  margin-top: 19px; }
+  margin-top: 19px;
+  margin-right: 0;
+  padding-left: 0; }
+  @media (max-width: 1201px) {
+    .col-sidebar {
+      padding-left: 15px; } }
   .col-sidebar .well {
     background-color: #fff; }
 
-.col-lg-9.bg-white {
+.col-content {
+  padding-right: 0;
+  padding-left: 5px; }
+  @media (max-width: 1201px) {
+    .col-content {
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+.col-content.bg-white {
   padding-left: 25px;
   padding-right: 25px; }
   @media (max-width: 571px) {
-    .col-lg-9.bg-white {
+    .col-content.bg-white {
       margin-top: -10px;
       padding-top: 15px; } }
 
@@ -1683,8 +1707,8 @@ h5 {
   width: 103px;
   height: 36px;
   margin-top: 11px;
-  margin-left: 15px;
-  background-color: grey; }
+  margin-left: 29px;
+  background: url("../img/logo-clinic.png") no-repeat; }
 
 .breadcrumb {
   margin-left: -7px;
@@ -1703,12 +1727,9 @@ h5 {
   padding: 0;
   color: #6d6d6d; }
 
-.row-img {
-  -webkit-border-radius: 7px 7px 0 0;
-          border-radius: 7px 7px 0 0; }
-  .row-img .col-lg-12 {
-    padding-left: 0;
-    padding-right: 0; }
+.row-img .col-lg-12 {
+  padding-left: 0;
+  padding-right: 0; }
 
 .bg-white {
   background-color: #fff; }
@@ -2071,10 +2092,29 @@ h5 {
           width: 200px;
           margin-bottom: 5px; } }
 
+form .dl-horizontal-custom {
+  margin-bottom: 6px; }
+  @media (max-width: 767px) {
+    form .dl-horizontal-custom {
+      margin-bottom: 30px; } }
+  form .dl-horizontal-custom .dt-title-logo {
+    margin-top: -5px; }
+  form .dl-horizontal-custom .dt-title-descr {
+    margin-top: 6px; }
+  form .dl-horizontal-custom .dt-title-photos {
+    margin-top: -1px; }
+
+form .dl-video {
+  margin-top: -15px; }
+
+.descr-text {
+  padding-top: 5px;
+  line-height: 22px; }
+
 .logo-clinic {
   float: left;
-  width: 140px;
-  height: 90px;
+  width: 142px;
+  height: 80px;
   background: url("../img/logo-ctbc-corel.png") no-repeat;
   background-position: center;
   border: 1px solid #f0e2e2;
@@ -2099,9 +2139,9 @@ h5 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80px;
-  width: 200px;
-  padding-left: 20px; }
+  height: 71px;
+  width: 100px;
+  padding-left: 14px; }
   @media (max-width: 767px) {
     .logo-buttons {
       width: 140px; } }
@@ -2171,7 +2211,7 @@ h5 {
   background-color: #00bdaf; }
 
 a.btn-picture {
-  padding: 5px 7px;
+  padding: 6px 2px 5px 6px;
   border: 1px solid #fff;
   background-color: transparent;
   font-size: 12px;
@@ -2266,6 +2306,9 @@ a.btn-picture {
   display: none; }
 
 .label-btn-upload {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 0px;
   -webkit-border-radius: 0 !important;
           border-radius: 0 !important;
   border: 1px solid #b3d2cb; }
@@ -2273,11 +2316,15 @@ a.btn-picture {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
     color: #fff; }
+  .label-btn-upload span {
+    font-size: 11px;
+    font-family: "Open Sans Semibold", Arial, sans-serif; }
 
 .label-btn-upload:hover > i {
   color: #fff; }
 
 .green-icon {
+  padding-right: 3px;
   color: #68a697; }
 
 .btn-default-upload {
@@ -2286,8 +2333,8 @@ a.btn-picture {
 .bg-white {
   margin-top: 20px;
   margin: 20px 0 0 0;
-  padding-top: 15px;
-  padding-right: 50px;
+  padding-top: 17px;
+  padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px; }
   @media (max-width: 991px) {
@@ -2297,7 +2344,7 @@ a.btn-picture {
       padding-left: 5px; } }
   @media (max-width: 767px) {
     .bg-white {
-      padding-right: 50px;
+      padding-right: 30px;
       padding-bottom: 10px;
       padding-left: 30px; } }
   @media (max-width: 376px) {
@@ -2307,8 +2354,16 @@ a.btn-picture {
 
 .dl-horizontal .dt-left {
   margin-bottom: 10px;
+  margin-top: 7px;
+  font-size: 16px;
   text-align: left;
   font-family: "Open Sans ExtraBold", Arial, sans-serif; }
+
+.dl-horizontal .dd-custom {
+  margin-left: 170px; }
+  @media (max-width: 767px) {
+    .dl-horizontal .dd-custom {
+      margin-left: 0; } }
 
 button.btn-ghost {
   height: 34px; }
@@ -2370,9 +2425,13 @@ input:focus:-ms-input-placeholder {
   transition: text-indent 0.3s ease; }
 
 .btn-ghost {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 9px;
   -webkit-border-radius: 0;
           border-radius: 0;
-  font-size: 13px; }
+  font-size: 11px;
+  font-family: "Open Sans Semibold", Arial, sans-serif; }
   .btn-ghost:hover {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
@@ -2422,8 +2481,9 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   font-style: italic; }
 
 .clearable-long {
+  max-width: 600px;
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
-  padding: 3px 18px 3px 10px;
+  padding: 3px 18px 3px 20px;
   /* Use the same right padding (18) in jQ! */
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -2441,7 +2501,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   margin-bottom: 10px;
   -webkit-border-radius: 0;
           border-radius: 0;
-  border-color: #f0e2e2;
+  border-color: #b3d2cb;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #393939;
@@ -2455,8 +2515,23 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 
 .form-control-custom::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #393939;
-  font-style: italic; }
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  color: #393939; }
+
+.form-control-custom::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  color: #393939; }
+
+.form-control-custom:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  color: #393939; }
+
+.form-control-custom:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  color: #393939; }
 
 .form-control-custom::-moz-placeholder {
   /* Firefox 19+ */
@@ -3229,8 +3304,8 @@ select.stomatolog, option[value="stomatolog"] {
           border-radius: 7px;
   border: none; }
   .well nav .nav-pills {
-    margin-top: 23px;
-    margin-left: 5px;
+    margin-top: 29px;
+    margin-left: 8px;
     text-align: left; }
     .well nav .nav-pills li.active a {
       margin-left: 3px;
@@ -3242,13 +3317,22 @@ select.stomatolog, option[value="stomatolog"] {
         color: #68a697; }
     .well nav .nav-pills li {
       display: block;
-      margin-bottom: 5px; }
+      margin-bottom: 15px;
+      padding-left: 0; }
       .well nav .nav-pills li:hover {
-        background-color: #f6f6f6; }
-      .well nav .nav-pills li a {
+        background-color: #f6f6f6;
+        -webkit-border-radius: 5px;
+                border-radius: 5px; }
+      .well nav .nav-pills li .sidebar-link {
+        padding: 5px 15px 5px 26px;
+        font-size: 14px;
         color: #68a697; }
-        .well nav .nav-pills li a:hover {
+        .well nav .nav-pills li .sidebar-link:hover {
+          background-color: transparent;
+          font-family: "Open Sans Bold", Arial, sans-serif;
           color: #68a697; }
+        .well nav .nav-pills li .sidebar-link:focus {
+          background-color: #f6f6f6; }
   @media (max-width: 1201px) {
     .well nav .nav-stacked > li {
       float: left; } }
@@ -3259,8 +3343,10 @@ select.stomatolog, option[value="stomatolog"] {
 @media (min-width: 1200px) {
   #sidebar.affix-top {
     position: static;
-    width: 228px; }
+    padding-left: 11px;
+    width: 270px;
+    height: 530px; }
   #sidebar.affix {
     position: fixed;
     top: 30px;
-    width: 228px; } }
+    width: 270px; } }

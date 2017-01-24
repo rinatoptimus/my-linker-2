@@ -3,8 +3,8 @@
   border: none;
   nav {
     .nav-pills {
-      margin-top: 23px;
-      margin-left: 5px;
+      margin-top: 29px;
+      margin-left: 8px;
       text-align: left;
       li.active {
         a {
@@ -19,14 +19,23 @@
       }
       li {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
+        padding-left: 0;
         &:hover {
           background-color: $bg-body;
+          border-radius: 5px;
         }
-        a {
+        .sidebar-link {
+          padding: 5px 15px 5px 26px;
+          font-size: 14px;
           color: $sidebar-link;
           &:hover {
+            background-color: transparent;
+            font-family: $bold;
             color: $sidebar-link;
+          }
+          &:focus {
+            background-color: $bg-body;
           }
         }
       }
@@ -46,12 +55,16 @@
 @media (min-width: 1200px) {
   #sidebar.affix-top {
     position: static;
-    width: 228px;
+    //padding-left: 25px;
+    padding-left: 11px;
+
+    width: 270px;
+    height: 530px;
   }
 
   #sidebar.affix {
     position: fixed;
     top: 30px;
-    width: 228px;
+    width: 270px;
   }
 }
