@@ -11,56 +11,60 @@
 </head>
 <body data-target=".scrollspy">
 
-    <div class="container">
-        <div class="row">
+    <div class="container qwerty">
+        <div class="row row-wrapper">
+
 
             <div class="col-lg-3 col-sidebar scrollspy-sidebar">
                 <div class="well affix-top" id="sidebar">
                     <div class="sidebar-logo"></div>
                     <nav class="bs-docs-sidebar">
                         <ul class="nav nav-pills nav-stacked">
-                            <li class="text-uppercase"><a href="#clinics-biomed">Клиника Биомед</a></li>
-                            <li><a href="#doctors" class="text-uppercase">Врачи</a></li>
-                            <li><a href="#" class="text-uppercase">Описание</a></li>
-                            <li><a href="#" class="text-uppercase">Фотографии</a></li>
-                            <li><a href="#researches" class="text-uppercase">Исследования</a></li>
-                            <li><a href="#" class="text-uppercase">Документы</a></li>
-                            <li><a href="#requisites" class="text-uppercase">Реквизиты</a></li>
+                            <li><a class="text-uppercase sidebar-link" href="#clinics-biomed">Клиника Биомед</a></li>
+                            <li><a href="#doctors" class="text-uppercase sidebar-link">Врачи</a></li>
+                            <li><a href="#" class="text-uppercase sidebar-link">Описание</a></li>
+                            <li><a href="#" class="text-uppercase sidebar-link">Фотографии</a></li>
+                            <li><a href="#researches" class="text-uppercase sidebar-link">Исследования</a></li>
+                            <li><a href="#" class="text-uppercase sidebar-link">Документы</a></li>
+                            <li><a href="#requisites" class="text-uppercase sidebar-link">Реквизиты</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-content-clinic">
                 <div class="row">
                     <div class="col-lg-12">
-                        <ul class="breadcrumb">
+                        <ul class="breadcrumb breadcrumb-custom">
                             <li><a class="breadcrumb-first" href="#">Оформление заказа</a></li>
                             <li><a href="#">Методы оплаты и доставки</a></li>
                             <li class="active"><span>Оплата</span><i class="fa fa-angle-down fa-1" aria-hidden="true"></i></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row row-img bg-white">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="clinic-img">
                             <ul class="clinic-img-list">
-                                <li class="li-logo">
-                                    <div class="clinic-logo"></div>
-                                </li>
-                                <li class="li-divider">
-                                    <div class="logo-divider"></div>
-                                </li>
+                                <!--<li class="li-logo">-->
+                                    <!--<div class="clinic-logo"></div>-->
+                                <!--</li>-->
+                                <!--<li class="li-divider">-->
+                                    <!--<div class="logo-divider"></div>-->
+                                <!--</li>-->
                                 <li class="li-address">
                                     <ul class="clinic-address">
                                         <li>
-                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i> <a href="#">Казань, ул. Четаева, 19</a>
+                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                            <a class="address-first" href="#">Казань, ул. Четаева, 19</a>
                                         </li>
                                         <li>
-                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i> <a href="#">Казань, ул. Чистопольская, 19</a>
+                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                            <a class="address-second" href="#">Казань, ул. Чистопольская, 19</a>
                                         </li>
                                         <li>
-                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i> <a href="#">Казань, ул. Ямашева, 33</a>
+                                            <i class="fa fa-map-marker fa-1" aria-hidden="true"></i>
+                                            <a class="address-third" href="#">Казань, ул. Ямашева, 33</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -70,84 +74,107 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 bg-white col-clinic-desc" id="clinics-biomed">
-                <ul class="header-list pull-right">
-                    <li><a href="#" class="reviews"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
-                    <li><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
-                    <li><a href="#"><i class="fa fa-share-alt fa-1" aria-hidden="true"></i></a></li>
-                </ul>
-                <h4 class="text-uppercase">Клиника Биомед</h4>
-                <p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа новых предложений. Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития. Товарищи! рамки и место обучения кадров играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.</p>
+            <div class="col-lg-9 col-clinic-desc" id="clinics-biomed">
+                <div class="test">
+                    <ul class="header-list pull-right">
+                        <li class="li-comment">
+                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                            <a class="link-comment" href="#" class="reviews">17</a>
+                        </li>
+                        <li class="li-edit">
+                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                            <a class="link-edit" href="#">219</a>
+                        </li>
+                        <li class="li-share">
+                            <i class="fa fa-share-alt fa-1" aria-hidden="true"></i>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <h4 class="text-uppercase">Клиника Биомед</h4>
+                    <p class="clinic-about">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа новых предложений.
+                        Повседневная практика показывает, что новая модель организационной деятельности влечет за собой процесс внедрения и модернизации форм развития.
+                        Товарищи! рамки и место обучения кадров играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                        Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание систем массового участия.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-lg-9 col-md-12 bg-white col-images">
+            <div class="col-lg-9 col-md-12 col-images">
                 <div class="row row-images">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="app/img/150.jpg" alt="" title="">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive clinic-photo" src="app/img/150.jpg" alt="" title="">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="app/img/150.jpg" alt="" title="">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive clinic-photo" src="app/img/150.jpg" alt="" title="">
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="app/img/150.jpg" alt="" title="">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <img class="img-responsive clinic-photo" src="app/img/150.jpg" alt="" title="">
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-9 col-md-12 col-persons">
-                <!--<div class="row">-->
+                <div class="row row-images row-images-persons">
                     <div class="col-lg-4 col-md-4 col-sm-4 col-left" id="doctors">
                         <div class="thumbnail">
-
                             <ul class="thumbnail-info">
-                                <li>
-                                    <ul class="thumbnail-profession-tags">
-                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
-                                    </ul>
-                                </li>
-                                <li class="pull-right">
+                                <li class="profile-stat pull-right">
                                     <ul class="thumbnail-statistics">
-                                        <li><a href="#"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
-                                        <li class="request"><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
 
                             <div class="round">
-                                <img src="app/img/doctor-ava.png" alt="">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
                             </div>
                             <div class="caption">
-                                <h3>Евгений Гуляев</h3>
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
                                 <p class="skill">20 лет опыта</p>
                                 <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-md-4 col-sm-4 col-center">
                         <div class="thumbnail">
                             <ul class="thumbnail-info">
-                                <li>
-                                    <ul class="thumbnail-profession-tags">
-                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
-                                    </ul>
-                                </li>
-                                <li class="pull-right">
+                                <li class="profile-stat pull-right">
                                     <ul class="thumbnail-statistics">
-                                        <li><a href="#"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
-                                        <li class="request"><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                             <div class="round">
-                                <img src="app/img/doctor-ava.png" alt="">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
                             </div>
                             <div class="caption">
-                                <h3>Евгений Гуляев</h3>
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
                                 <p class="skill">20 лет опыта</p>
                                 <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
@@ -157,35 +184,137 @@
                     <div class="col-lg-4 col-md-4 col-sm-4 col-right">
                         <div class="thumbnail">
                             <ul class="thumbnail-info">
-                                <li>
-                                    <ul class="thumbnail-profession-tags">
-                                        <li><a href="#" class="text-uppercase">Кардиолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Дерматолог</a></li>
-                                        <li><a href="#" class="text-uppercase">Венеролог</a></li>
-                                    </ul>
-                                </li>
-                                <li class="pull-right">
+                                <li class="profile-stat pull-right">
                                     <ul class="thumbnail-statistics">
-                                        <li><a href="#"><i class="fa fa-comment fa-1" aria-hidden="true"></i> 17</a></li>
-                                        <li class="request"><a href="#"><i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i> 219</a></li>
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                             <div class="round">
-                                <img src="app/img/doctor-ava.png" alt="">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
                             </div>
                             <div class="caption">
-                                <h3>Евгений Гуляев</h3>
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
                                 <p class="skill">Заслуженный врач-кардиолог.</p>
                                 <p class="skill">20 лет опыта</p>
                                 <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
                             </div>
                         </div>
                     </div>
-                <!--</div>-->
-                <!--<div class="row">-->
-                    <!--<a class="show-all-doctors pull-right" href="#">Посмотреть всех</a>-->
-                <!--</div>-->
+                </div>
+
+                <div class="row row-images row-images-persons">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-left" id="doctors">
+                        <div class="thumbnail">
+                            <ul class="thumbnail-info">
+                                <li class="profile-stat pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <div class="round">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
+                            </div>
+                            <div class="caption">
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-center">
+                        <div class="thumbnail">
+                            <ul class="thumbnail-info">
+                                <li class="profile-stat pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="round">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
+                            </div>
+                            <div class="caption">
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-right">
+                        <div class="thumbnail">
+                            <ul class="thumbnail-info">
+                                <li class="profile-stat pull-right">
+                                    <ul class="thumbnail-statistics">
+                                        <li class="stat-comments">
+                                            <i class="fa fa-comment fa-1" aria-hidden="true"></i>
+                                            <a href="#">17</a>
+                                        </li>
+                                        <li class="request">
+                                            <i class="fa fa-pencil-square-o fa-1" aria-hidden="true"></i>
+                                            <a href="#">219</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="round">
+                                <img class="img-responsive" src="app/img/doctor-ava.png" alt="">
+                            </div>
+                            <div class="caption">
+                                <h3 class="title-profile">Евгений Гуляев</h3>
+                                <div class="block-profile-tags">
+                                    <a href="#" class="text-uppercase">Кардиолог</a>
+                                    <a href="#" class="text-uppercase">Дерматолог</a>
+                                    <a href="#" class="text-uppercase">Венеролог</a>
+                                </div>
+                                <p class="skill">Заслуженный врач-кардиолог.</p>
+                                <p class="skill">20 лет опыта</p>
+                                <a href="#" class="btn btn-default btn-sign-in text-uppercase" role="button">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -196,69 +325,96 @@
             </div>
 
 
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-diseases" id="researches">
 
 
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-diseases bg-white" id="researches">
-                <h4 class="text-uppercase">Исследования</h4>
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h5>УЗИ</h5>
-                        <ul>
-                            <li>- при беременности</li>
-                            <li>- при брюшной полости</li>
-                            <li>- малого таза</li>
-                            <li>- почек</li>
-                            <li>- сердца</li>
-                        </ul>
+
+
+
+
+
+
+
+            <!--
+            у col-lg-9 убрать bg-white и добавить - padding-left: 5px;
+            у col-diseases добавить - padding-left: 8px;
+            у div -
+                background-color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+            -->
+                <div class="test2">
+                    <h4 class="text-uppercase">Исследования</h4>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <h5 class="researches-title-first">УЗИ</h5>
+                            <ul class="researches-list researches-list-first">
+                                <li>- при беременности</li>
+                                <li>- при брюшной полости</li>
+                                <li>- малого таза</li>
+                                <li>- почек</li>
+                                <li>- сердца</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <h5 class="researches-title-second">КТ</h5>
+                            <ul class="researches-list researches-list-second">
+                                <li>- головного мозга</li>
+                                <li>- при брюшной полости</li>
+                                <li>- малого таза</li>
+                                <li>- почек</li>
+                                <li>- сердца</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-researches">
+                            <h5 class="researches-title-third">МРТ</h5>
+                            <ul class="researches-list researches-list-third">
+                                <li>- головного мозга</li>
+                                <li>- при брюшной полости</li>
+                                <li>- малого таза</li>
+                                <li>- почек</li>
+                                <li>- сердца</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-researches">
+                            <h5 class="researches-title-fourth">Рентген</h5>
+                            <ul class="researches-list researches-list-fourth">
+                                <li>- головного мозга</li>
+                                <li>- при брюшной полости</li>
+                                <li>- малого таза</li>
+                                <li>- почек</li>
+                                <li>- сердца</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h5>КТ</h5>
-                        <ul>
-                            <li>- головного мозга</li>
-                            <li>- при брюшной полости</li>
-                            <li>- малого таза</li>
-                            <li>- почек</li>
-                            <li>- сердца</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h5>МРТ</h5>
-                        <ul>
-                            <li>- головного мозга</li>
-                            <li>- при брюшной полости</li>
-                            <li>- малого таза</li>
-                            <li>- почек</li>
-                            <li>- сердца</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
-                        <h5>Рентген</h5>
-                        <ul>
-                            <li>- головного мозга</li>
-                            <li>- при брюшной полости</li>
-                            <li>- малого таза</li>
-                            <li>- почек</li>
-                            <li>- сердца</li>
-                        </ul>
-                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-requisites" id="requisites">
+                <div class="test2">
+                    <h4 class="title-requisites text-uppercase">Реквизиты</h4>
+                    <address class="clinic-address">
+                        <p><strong>ООО "Барс Медицина"</strong></p>
+                        <p class="inn">ИНН/КПП 16552770/165501001</p>
+                        <p>ОРГН 1151690019975</p>
+                        <p class="jur-addr">Юр. адрес: 420111, РТ, г. Казань, ул. Карла Маркса, д. 14</p>
+                        <p>Адрес: 420111, РТ, г. Казань, ул. Чистопольская, д. 71А</p>
+                    </address>
                 </div>
             </div>
 
-            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-right col-requisites bg-white" id="requisites">
-                <h4 class="text-uppercase">Реквизиты</h4>
-                <address>
-                    <p><strong>ООО "Барс Медицина"</strong></p>
-                    <p>ИНН/КПП 16552770/165501001</p>
-                    <p>ОРГН 1151690019975</p>
-                    <p>Юр. адрес: 420111, РТ, г. Казань, ул. Карла Маркса, д. 14</p>
-                    <p>Адрес: 420111, РТ, г. Казань, ул. Чистопольская, д. 71А</p>
-                </address>
-            </div>
-
-            <div class="col-lg-9 col-md-12 col-right col-certificates">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img id="myImg" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+            <div class="col-lg-9 col-md-12 col-certificates">
+                <div class="row row-cert">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="img-responsive" id="myImg" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span class="close">×</span>
@@ -266,8 +422,8 @@
                             <div id="caption"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img id="myImg2" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="img-responsive" id="myImg2" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
                         <!-- The Modal -->
                         <div id="myModal2" class="modal2">
                             <span class="close2">×</span>
@@ -275,8 +431,8 @@
                             <div id="caption2"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        <img id="myImg3" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <img class="img-responsive" id="myImg3" src="app/img/frame.jpg" alt="Сертификат" title="Сертификат">
                         <!-- The Modal -->
                         <div id="myModal3" class="modal3">
                             <span class="close3">×</span>

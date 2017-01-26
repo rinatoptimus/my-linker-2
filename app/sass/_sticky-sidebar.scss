@@ -3,14 +3,16 @@
   border: none;
   nav {
     .nav-pills {
-      margin-top: 29px;
-      margin-left: 8px;
+      margin-top: 25px;
+      margin-left: 10px;
       text-align: left;
       li.active {
+        background-color: $bg-body;
+        border-radius: 5px;
         a {
           margin-left: 3px;
           background-color: transparent;
-          text-decoration: underline;
+          //text-decoration: underline;
           transition: all 600ms ease-out;
           &:focus {
             color: $sidebar-link;
@@ -19,7 +21,7 @@
       }
       li {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         padding-left: 0;
         &:hover {
           background-color: $bg-body;
@@ -64,7 +66,7 @@
 
   #sidebar.affix {
     position: fixed;
-    top: 30px;
+    top: 19px;
     width: 270px;
   }
 }

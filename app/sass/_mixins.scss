@@ -7,6 +7,7 @@ $small-devices: 768px;
 $medium-desktop: 970px;
 $medium-desktop-lg: 992px;
 $large-desktop: 1200px;
+$large-desktop-md: 1250px;
 $large-desktop-lg: 1400px;
 
 @mixin phone-mini {
@@ -51,6 +52,11 @@ $large-desktop-lg: 1400px;
 }
 @mixin large-desktop {
   @media (max-width: #{$large-desktop + 1px}) {
+    @content;
+  }
+}
+@mixin large-desktop-md {
+  @media (max-width: #{$large-desktop-md - 1px}) {
     @content;
   }
 }
