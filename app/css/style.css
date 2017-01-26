@@ -2222,7 +2222,15 @@ h5 {
       margin: 0 auto;
       -webkit-box-shadow: 10px 7px 12px -1px rgba(0, 0, 0, 0.6);
               box-shadow: 10px 7px 12px -1px rgba(0, 0, 0, 0.6);
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+      .col-certificates .row-cert div img:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-box-shadow: none;
+                box-shadow: none; }
       @media (max-width: 1201px) {
         .col-certificates .row-cert div img {
           width: 200px;
