@@ -40,7 +40,8 @@ h5 {
   margin-right: 0;
   padding-left: 0;
   @include large-desktop {
-    padding-left: 15px;
+    padding-left: 7px;
+    padding-right: 0;
   }
     .well {
       background-color: $white;

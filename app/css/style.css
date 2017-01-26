@@ -1699,7 +1699,8 @@ h5 {
   padding-left: 0; }
   @media (max-width: 1201px) {
     .col-sidebar {
-      padding-left: 15px; } }
+      padding-left: 7px;
+      padding-right: 0; } }
   .col-sidebar .well {
     background-color: #fff; }
 
