@@ -636,6 +636,12 @@ h5 {
         transition: all .2s ease-in-out;
         &:hover {
           transform: scale(1.1); box-shadow: none;
+
+          image-rendering: -moz-crisp-edges;         /* Firefox */
+          image-rendering:   -o-crisp-edges;         /* Opera */
+          image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+          image-rendering: crisp-edges;
+          -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
         }
         @include large-desktop {
           width: 200px;
