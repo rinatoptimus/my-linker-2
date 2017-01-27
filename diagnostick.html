@@ -18,112 +18,172 @@
                 <div class="sidebar-logo"></div>
                 <nav class="bs-docs-sidebar">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="text-uppercase"><a href="#clinics-biomed">Клиника Биомед</a></li>
-                        <li><a href="#doctors" class="text-uppercase">Врачи</a></li>
-                        <li><a href="#" class="text-uppercase">Описание</a></li>
-                        <li><a href="#" class="text-uppercase">Фотографии</a></li>
-                        <li><a href="#researches" class="text-uppercase">Исследования</a></li>
-                        <li><a href="#" class="text-uppercase">Документы</a></li>
-                        <li><a href="#requisites" class="text-uppercase">Реквизиты</a></li>
+                        <li><a class="text-uppercase sidebar-link" href="#clinics-biomed">Клиника Биомед</a></li>
+                        <li><a href="#doctors" class="text-uppercase sidebar-link">Врачи</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Описание</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Фотографии</a></li>
+                        <li><a href="#researches" class="text-uppercase sidebar-link">Исследования</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Документы</a></li>
+                        <li><a href="#requisites" class="text-uppercase sidebar-link">Реквизиты</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9 col-content">
             <div class="row bg-white">
-                <div class="col-lg-8">
+                <div class="col-lg-12 col-diagnostick-select">
 
                     <form action="" method="POST">
                         <div class="form-group block-mrt">
                             <div class="btn-group" role="group" aria-label="...">
-                                <button type="button" class="btn btn-default">МРТ</button>
-                                <button type="button" class="btn btn-default">КТ</button>
-                                <button type="button" class="btn btn-default">УЗИ</button>
-                                <button type="button" class="btn btn-default">РЕНТГЕН</button>
+                                <button type="button" class="btn btn-default block-mrt-btn">МРТ</button>
+                                <button type="button" class="btn btn-default block-mrt-btn">КТ</button>
+                                <button type="button" class="btn btn-default block-mrt-btn">УЗИ</button>
+                                <button type="button" class="btn btn-default block-mrt-btn">РЕНТГЕН</button>
                             </div>
 
                             <p class="choose-mrt-title text-uppercase">Выберите направление</p>
                             <div class="btn-group">
-                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">МРТ головы <span class="caret"></span></a>
+                                <a class="btn btn-default dropdown-toggle diagnostick-dropdown" data-toggle="dropdown" href="#">МРТ головы <span class="caret pull-right"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">МРТ суставов</a></li>
-                                    <li><a href="#">IМРТ органа</a></li>
+                                    <li><a href="#">МРТ органа</a></li>
                                     <li><a href="#">МРТ головы</a></li>
                                 </ul>
                             </div>
                         </div>
 
 
-
-
-
-                        <table class="table table-schedule">
+                        <table class="table table-schedule table-diagnostick">
                             <thead>
                             <tr class="diagnostick-header">
-                                <td class="diagnostick-table-title-left text-uppercase">Цена, руб</td>
+                                <td class="diagnostick-table-title-left text-uppercase col-xs-3">Цена, руб</td>
                                 <td class="diagnostick-table-title-right text-uppercase" colspan="2">Тип диагностики</td>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <style>
-                                    .bootstrap-switch {
-                                        width: 70px;
-                                        border-radius: 18px;
-                                        height: 38px;
-                                        padding-top: 2px;
-                                        padding-left: 2px;
+                                <tr>
+                                    <td class="col-xs-3 td-price">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type">
+                                        <span class="text-uppercase">Гипофиза</span>
+                                    </td>
+                                </tr>
 
-                                        width: 74px;
-                                        height: 36px;
-                                    }
-                                    .bootstrap-switch .bootstrap-switch-handle-on {
-                                        width: 32px;
-                                        border-radius: 15px;
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Головного мозга</span>
+                                    </td>
+                                </tr>
 
-                                        width: 30px;
-                                        height: 30px;
-                                    }
-                                    .fa-check {
-                                        margin-left: -2px;
-                                    }
-                                    .bootstrap-switch-label {
-                                        width: 38px;
-                                    }
-                                    .bootstrap-switch .bootstrap-switch-handle-off {
-                                        width: 32px;
-                                        border-radius: 15px;
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Глазных орбит и зрительных нервов</span>
+                                    </td>
+                                </tr>
 
-                                        width: 30px;
-                                        height: 30px;
-                                    }
-                                    .bootstrap-switch-container {
-                                        //width: 102px;
-                                        margin-left: -32px !important;
-                                    }
-                                </style>
-                                <td class="col-md-6">
-                                    <input type="number">
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
-                                </td>
-                                <td class="col-md-6">
-                                    <input class="make-switch" type="checkbox" data-on-text="<i class='fa fa-unlock'></i>" data-off-text="<i class='fa fa-lock'></i>"/>
-                                </td>
-                                <td class="col-md-6 td-inputs">
-                                    <span>Гипофиза</span>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Сосудов головного мозга</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Гипофиза</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Головного мозга</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Глазных орбит и зрительных нервов</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Сосудов головного мозга</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Глазных орбит и зрительных нервов</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <i class="fa fa-calendar green-icon" aria-hidden="true"></i>
+                                        <input class="input-diagnosticks-price" type="number">
+                                        <input type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-check' aria-hidden='true'></i>" data-off-text="<i class='fa fa-times' aria-hidden='true'></i>">
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                        <span class="text-uppercase">Сосудов головного мозга</span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="col-xs-3 td-price td-price-narrow">
+                                        <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
+                                    </td>
+                                    <td class="td-diagnosticks-type td-diagnosticks-type-narrow">
+                                    </td>
+                                </tr>
+
                             </tbody>
                         </table>
 
-
-
-
-
                     </form>
-
                 </div>
             </div>
 
@@ -131,8 +191,8 @@
                 <p class="lead lead-custom text-center">МРТ Гипофиза</p>
             </div>
 
-            <div class="row bg-white">
-                <div class="col-lg-7">
+            <div class="row bg-white diagnoctick-price">
+                <div class="col-lg-7 col-diagnostick-select">
                     <form action="" method="">
                         <table class="table table-schedule">
                             <thead>
@@ -143,7 +203,7 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="col-md-6"><span id="mon">Понедельник</span></td>
+                                <td class="col-md-6 first-row"><span id="mon">Понедельник</span></td>
                                 <td class="col-md-6 td-inputs">
                                     <input class="form-control form-control-custom input-diagnostick-time mon" name="" type="number" value="00" min="0" max="24">
                                     <span class="diagnostick-time-colon">:</span>

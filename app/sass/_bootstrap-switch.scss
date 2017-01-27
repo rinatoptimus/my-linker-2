@@ -172,3 +172,49 @@
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
+
+
+// my styles
+.bootstrap-switch {
+  border-radius: 17px;
+  width: 66px;
+  height: 28px;
+  background: #5cb85c;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
+  width: 35px;
+  //line-height: 1px;
+}
+//.bootstrap-switch .bootstrap-switch-label {
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label{
+  width: 29px !important;
+  border: 3px solid #5cb85c !important;
+  height: 28px !important;
+  padding-top: 4px;
+  border-radius: 14px;
+  padding-left: 9px;
+  background-color: white;
+}
+.bootstrap-switch-danger {
+  position: absolute;
+  background: #5cb85c;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  background: #5cb85c;
+}
+.fa-check {
+  position: relative;
+  left: -3px;
+  top: -3px;
+}
+.fa-times {
+  position: relative;
+  left: -3px;
+  top: -3px;
+}
+
+
+.highlight {
+  background: yellow;
+}

@@ -67,6 +67,7 @@
 /* FONT SIZES */
 /* COLORS */
 /* CLINIC PAGE */
+/* DIAGNOSTICK PAGE */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -2694,7 +2695,8 @@ input:focus:-ms-input-placeholder {
           border-radius: 0;
   font-size: 11px;
   font-family: "Open Sans Semibold", Arial, sans-serif;
-  border-color: #b3d2cb; }
+  border-color: #b3d2cb;
+  color: #898989; }
   .btn-ghost:hover {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
@@ -3026,18 +3028,22 @@ select.form-control-custom {
       padding: 3px 7px; } }
 
 .lead-block {
+  height: 30px;
   margin-bottom: -20px;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0;
   background-color: #68a697;
   color: #fff; }
 
 .lead-custom {
-  font-size: 17px;
-  line-height: 35px; }
+  font-size: 16px;
+  line-height: 30px; }
 
 .lead-title {
   font-weight: bold; }
+
+.diagnoctick-price {
+  padding-top: 6px; }
 
 .btn-add-specs {
   padding: 6px 14px;
@@ -3275,6 +3281,11 @@ select.stomatolog, option[value="stomatolog"] {
     .checkbox + .block-checkbox-children {
       margin-left: 45px; } }
 
+.col-diagnostick-select {
+  padding-left: 0; }
+  .col-diagnostick-select form .table-schedule {
+    width: 100%; }
+
 .block-mrt {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3285,26 +3296,102 @@ select.stomatolog, option[value="stomatolog"] {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 12px;
   height: 100px; }
 
+.block-mrt-btn {
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 11px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  color: #68a697;
+  border-color: #e5e5e5; }
+  .block-mrt-btn:hover {
+    border-color: #e5e5e5;
+    color: #000; }
+  .block-mrt-btn:focus {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5; }
+
 .choose-mrt-title {
-  padding: 20px 0 0; }
+  margin-bottom: 5px;
+  padding: 15px 0 0; }
+
+.diagnostick-dropdown {
+  width: 200px;
+  height: 31px;
+  padding-top: 5px;
+  padding-left: 17px;
+  text-align: left;
+  font-size: 13px;
+  border: none;
+  background-color: #292929;
+  color: #7a7a7a; }
+  .diagnostick-dropdown .caret {
+    margin-top: 7px;
+    left: 90%;
+    top: 22%;
+    position: absolute; }
 
 .caret-up {
   width: 0;
   height: 0;
+  margin-top: 7px;
+  margin-left: 2px;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-bottom: 4px solid;
   display: inline-block;
-  margin-left: 2px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  left: 89%;
+  top: 22%;
+  position: absolute; }
+
+.table-diagnostick {
+  margin-top: -7px; }
+  .table-diagnostick tbody tr .first-row {
+    padding-top: 20px; }
+  .table-diagnostick tbody tr td {
+    padding-top: 14px; }
+  .table-diagnostick tbody tr .td-price {
+    padding-right: 0;
+    padding-left: 3px; }
+  .table-diagnostick tbody tr .td-price-narrow {
+    padding-top: 5px; }
+    .table-diagnostick tbody tr .td-price-narrow .btn-ghost {
+      margin-top: 20px;
+      margin-left: 35px; }
+  .table-diagnostick tbody tr .td-diagnosticks-type {
+    padding-top: 11px;
+    padding-left: 23px; }
+    .table-diagnostick tbody tr .td-diagnosticks-type span {
+      font-size: 12px; }
+  .table-diagnostick tbody tr .td-diagnosticks-type-narrow {
+    padding-top: 3px; }
+
+thead .diagnostick-header {
+  border-bottom: 1px solid #dfdfdf; }
+  thead .diagnostick-header td {
+    padding-bottom: 5px; }
 
 .td-inputs {
   display: -webkit-box !important;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important; }
+
+.input-diagnosticks-price {
+  width: 74px;
+  height: 30px;
+  margin-left: 14px;
+  margin-right: 12px;
+  padding-left: 20px;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #f0f1f3;
+  font-size: 13px; }
 
 .diagnostick-time-colon {
   margin-left: 5px;
@@ -3313,12 +3400,16 @@ select.stomatolog, option[value="stomatolog"] {
 .input-diagnostick-time {
   width: 43px; }
 
-.table > thead > tr > .diagnostick-table-title-left,
-.table > thead > tr > .diagnostick-table-title-right {
-  padding-left: 0; }
+.table > thead > tr > .diagnostick-table-title-left {
+  padding-left: 38px; }
 
-.diagnostick-header {
-  border-bottom: 1px solid grey; }
+.table > thead > tr > .diagnostick-table-title-right {
+  padding-left: 23px; }
+
+.td-price {
+  padding-top: 13px; }
+  .td-price .fa-calendar {
+    font-size: 17px; }
 
 .mrt-table-bottom {
   display: -webkit-box;
@@ -3533,6 +3624,47 @@ select.stomatolog, option[value="stomatolog"] {
           border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
           border-top-left-radius: 3px; }
+
+.bootstrap-switch {
+  -webkit-border-radius: 17px;
+          border-radius: 17px;
+  width: 66px;
+  height: 28px;
+  background: #5cb85c; }
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success {
+  width: 35px; }
+
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label {
+  width: 29px !important;
+  border: 3px solid #5cb85c !important;
+  height: 28px !important;
+  padding-top: 4px;
+  -webkit-border-radius: 14px;
+          border-radius: 14px;
+  padding-left: 9px;
+  background-color: white; }
+
+.bootstrap-switch-danger {
+  position: absolute;
+  background: #5cb85c; }
+
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger {
+  background: #5cb85c; }
+
+.fa-check {
+  position: relative;
+  left: -3px;
+  top: -3px; }
+
+.fa-times {
+  position: relative;
+  left: -3px;
+  top: -3px; }
+
+.highlight {
+  background: yellow; }
 
 .modal, .modal2, .modal3 {
   display: none;

@@ -1,24 +1,128 @@
+.col-diagnostick-select {
+  padding-left: 0;
+    form {
+      .table-schedule {
+        width: 100%;
+      }
+    }
+}
 .block-mrt {
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
   height: 100px;
 }
-.choose-mrt-title {
-  padding: 20px 0 0;
+.block-mrt-btn {
+  padding-top: 7px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 11px;
+  font-family: $bold;
+  color: $sidebar-link;
+  border-color: $btn-group;
+  &:hover {
+    border-color: $btn-group;
+    color: $black;
+  }
+  &:focus {
+    background-color: $btn-group;
+    border-color: $btn-group;
+  }
 }
+.choose-mrt-title {
+  margin-bottom: 5px;
+  padding: 15px 0 0;
+}
+.diagnostick-dropdown {
+  width: 200px;
+  height: 31px;
+  padding-top: 5px;
+  padding-left: 17px;
+  text-align: left;
+  font-size: 13px;
+  border: none;
+  background-color: $dropdown;
+  color: $grey-text;
+    .caret {
+      margin-top: 7px;
+
+      left: 90%;
+      top: 22%;
+      position: absolute;
+    }
+}
+
 .caret-up {
   width: 0;
   height: 0;
+  margin-top: 7px;
+  margin-left: 2px;
   border-left: 4px solid rgba(0, 0, 0, 0);
   border-right: 4px solid rgba(0, 0, 0, 0);
   border-bottom: 4px solid;
   display: inline-block;
-  margin-left: 2px;
   vertical-align: middle;
+
+  left: 89%;
+  top: 22%;
+  position: absolute;
 }
 
+.table-diagnostick {
+  margin-top: -7px;
+    tbody {
+      tr {
+        .first-row {
+          padding-top: 20px;
+        }
+        td {
+          padding-top: 14px;
+        }
+        .td-price {
+          padding-right: 0;
+          padding-left: 3px;
+        }
+        .td-price-narrow {
+          padding-top: 5px;
+            .btn-ghost {
+              margin-top: 20px;
+              margin-left: 35px;
+            }
+        }
+        .td-diagnosticks-type {
+          padding-top: 11px;
+          padding-left: 23px;
+            span {
+              font-size: 12px;
+            }
+        }
+        .td-diagnosticks-type-narrow {
+          padding-top: 3px;
+        }
+      }
+    }
+}
+thead {
+  .diagnostick-header {
+    border-bottom: 1px solid $divider;
+    td {
+      padding-bottom: 5px;
+    }
+  }
+}
 .td-inputs {
   display: flex !important;
+}
+.input-diagnosticks-price {
+  width: 74px;
+  height: 30px;
+  margin-left: 14px;
+  margin-right: 12px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: $input-grey;
+  font-size: 13px;
 }
 .diagnostick-time-colon {
   margin-left: 5px;
@@ -27,12 +131,18 @@
 .input-diagnostick-time {
   width: 43px;
 }
-.table>thead>tr>.diagnostick-table-title-left,
-.table>thead>tr>.diagnostick-table-title-right {
-  padding-left: 0;
+.table>thead>tr>.diagnostick-table-title-left {
+  padding-left: 38px;
 }
-.diagnostick-header {
-  border-bottom: 1px solid grey;
+.table>thead>tr>.diagnostick-table-title-right {
+  padding-left: 23px;
+}
+.td-price {
+  padding-top: 13px;
+    .fa-calendar {
+      font-size: 17px;
+      //color: $sidebar-link;
+    }
 }
 
 .mrt-table-bottom {
