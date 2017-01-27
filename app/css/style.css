@@ -3328,11 +3328,26 @@ select.stomatolog, option[value="stomatolog"] {
   border: none;
   background-color: #292929;
   color: #7a7a7a; }
+  .diagnostick-dropdown:hover {
+    background-color: #292929;
+    color: #7a7a7a; }
   .diagnostick-dropdown .caret {
     margin-top: 7px;
     left: 90%;
     top: 22%;
     position: absolute; }
+
+.open > .dropdown-toggle.diagnostick-dropdown:focus {
+  background-color: #292929;
+  color: #7a7a7a; }
+
+.open > .dropdown-toggle.diagnostick-dropdown {
+  background-color: #292929;
+  color: #7a7a7a; }
+
+.btn-group > .diagnostick-dropdown:active {
+  background-color: #292929;
+  color: #7a7a7a; }
 
 .caret-up {
   width: 0;

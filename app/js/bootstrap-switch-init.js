@@ -9,6 +9,6 @@ $("[name='my-checkbox']").bootstrapSwitch();
 //     $( this ).toggleClass( "highlight" ); console.log('1111');
 // });
 
-// $( ".bootstrap-switch" ).click(function() {
-//     $( this ).toggleClass( "highlight" );
-// });
+$( ".bootstrap-switch" ).click(function() {
+    $( this ).toggleClass( "highlight" );
+});

@@ -43,6 +43,10 @@
   border: none;
   background-color: $dropdown;
   color: $grey-text;
+  &:hover {
+    background-color: $dropdown;
+    color: $grey-text;
+  }
     .caret {
       margin-top: 7px;
 
@@ -50,6 +54,18 @@
       top: 22%;
       position: absolute;
     }
+}
+.open>.dropdown-toggle.diagnostick-dropdown:focus {
+  background-color: $dropdown;
+  color: $grey-text;
+}
+.open>.dropdown-toggle.diagnostick-dropdown {
+  background-color: $dropdown;
+  color: $grey-text;
+}
+.btn-group>.diagnostick-dropdown:active {
+  background-color: $dropdown;
+  color: $grey-text;
 }
 
 .caret-up {
