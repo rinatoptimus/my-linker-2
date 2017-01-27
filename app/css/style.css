@@ -2628,7 +2628,7 @@ a.btn-picture {
       margin-left: 0; } }
 
 button.btn-ghost {
-  height: 34px; }
+  height: 25px; }
 
 input {
   padding-left: 10px;
@@ -2693,7 +2693,8 @@ input:focus:-ms-input-placeholder {
   -webkit-border-radius: 0;
           border-radius: 0;
   font-size: 11px;
-  font-family: "Open Sans Semibold", Arial, sans-serif; }
+  font-family: "Open Sans Semibold", Arial, sans-serif;
+  border-color: #b3d2cb; }
   .btn-ghost:hover {
     background-color: #b3d2cb;
     border: 1px solid #b3d2cb;
@@ -2759,11 +2760,14 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 .clearable-long::-ms-clear {
   display: none; }
 
+.form-group-custom {
+  width: 202px; }
+
 .form-control-custom {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   -webkit-border-radius: 0;
           border-radius: 0;
-  border-color: #b3d2cb;
+  border-color: #f0e2e2;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #393939;
@@ -2865,33 +2869,83 @@ select.form-control-custom {
               flex-direction: column; } }
 
 .map {
-  width: 350px;
+  width: 370px;
+  height: 245px;
   max-width: 100%;
-  height: 200px;
-  background-color: grey; }
+  margin-right: 40px;
+  border: 1px solid #f0e2e2; }
 
-.table-schedule tbody td {
-  border-top: transparent; }
-  .table-schedule tbody td input {
-    font-style: normal; }
+.dl-horizontal-phone {
+  margin-bottom: 4px; }
+  .dl-horizontal-phone dd .form-group-custom .add-phone-number {
+    margin-top: 3px; }
+  .dl-horizontal-phone dd .clearable[type="tel"] {
+    padding-top: 1px;
+    font-size: 17px; }
+
+.table-schedule {
+  width: 189px;
+  margin-top: 1px; }
+  .table-schedule tbody td {
+    border-top: transparent; }
+    .table-schedule tbody td input {
+      font-style: normal; }
 
 .table > tbody > tr > td {
   padding: 8px 8px 8px 0px;
   border-top: transparent;
   line-height: 34px; }
 
+.table-schedule tbody tr td {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.table-schedule tbody tr .week-day {
+  padding-right: 5px; }
+
+.table-schedule tbody tr .time-start {
+  padding-right: 3px;
+  padding-left: 3px; }
+
+.table-schedule tbody tr .time-start-input {
+  width: 37px;
+  padding-right: 6px;
+  padding-left: 9px;
+  font-size: 16px; }
+
+.table-schedule tbody tr .td-comma {
+  padding-right: 4px;
+  padding-left: 0; }
+
+.table-schedule tbody tr .time-stop {
+  padding-right: 0;
+  padding-left: 2px; }
+
+.table-schedule tbody tr .time-stop-input {
+  width: 37px;
+  padding-right: 6px;
+  padding-left: 8px;
+  font-size: 16px; }
+
+.dl-horizontal-schedule {
+  margin-bottom: 0; }
+
 .dt-schedule {
   margin-top: 15px; }
 
 .row-btn-save {
-  height: 409px; }
+  height: 277px; }
   @media (max-width: 1201px) {
     .row-btn-save {
       height: 40px; } }
 
 .btn-schedule-save {
   position: absolute;
-  bottom: 7px; }
+  bottom: 7px;
+  left: -5px; }
+
+.input-phone:focus {
+  border-color: #c9c9c9; }
 
 .form-block-characteristics {
   width: 58%; }
