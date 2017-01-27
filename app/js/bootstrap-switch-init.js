@@ -5,6 +5,10 @@ $("[name='my-checkbox']").bootstrapSwitch();
 
 
 // my code
-$( ".bootstrap-switch" ).click(function() {
-    $( this ).toggleClass( "highlight" ); console.log('1111');
-});
+// $( ".bootstrap-switch" ).click(function() {
+//     $( this ).toggleClass( "highlight" ); console.log('1111');
+// });
+
+// $( ".bootstrap-switch" ).click(function() {
+//     $( this ).toggleClass( "highlight" );
+// });
