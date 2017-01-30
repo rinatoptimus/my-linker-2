@@ -78,6 +78,16 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
   }
 }
 
+//select {
+//  font-style: italic !important;
+//    option {
+//      font-style: italic !important;
+//    }
+//}
+//.empty {
+//  font-style: normal !important;
+//}
+
 // remove arrows from number input
 input.form-control-custom[type=number] {
   -moz-appearance: textfield !important;
@@ -204,4 +214,5 @@ select.form-control-custom {
   color: $clinic-placeholder !important;
   color: rgba(0,0,0,0) !important;
   text-shadow: 0 0 0 $clinic-placeholder !important;
+  font-style: italic;
 }
