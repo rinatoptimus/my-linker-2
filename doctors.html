@@ -18,24 +18,24 @@
                 <div class="sidebar-logo"></div>
                 <nav class="bs-docs-sidebar">
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="text-uppercase"><a href="#clinics-biomed">Клиника Биомед</a></li>
-                        <li><a href="#doctors" class="text-uppercase">Врачи</a></li>
-                        <li><a href="#" class="text-uppercase">Описание</a></li>
-                        <li><a href="#" class="text-uppercase">Фотографии</a></li>
-                        <li><a href="#researches" class="text-uppercase">Исследования</a></li>
-                        <li><a href="#" class="text-uppercase">Документы</a></li>
-                        <li><a href="#requisites" class="text-uppercase">Реквизиты</a></li>
+                        <li><a class="text-uppercase sidebar-link" href="#clinics-biomed">Клиника Биомед</a></li>
+                        <li><a href="#doctors" class="text-uppercase sidebar-link">Врачи</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Описание</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Фотографии</a></li>
+                        <li><a href="#researches" class="text-uppercase sidebar-link">Исследования</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Документы</a></li>
+                        <li><a href="#requisites" class="text-uppercase sidebar-link">Реквизиты</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="col-lg-9">
-            <div class="row bg-white">
+        <div class="col-lg-9 col-content">
+            <div class="row row-img bg-white">
                 <div class="col-lg-12">
                     <form action="" method="">
                         <dl class="dl-horizontal">
-                            <dt class="dt-left text-uppercase">Врачи клиники</dt>
-                            <dd>
+                            <dt class="dt-left dt-left-custom text-uppercase">Врачи клиники</dt>
+                            <dd class="doctors-dd-custom">
                                 <ul class="clinics-doctors-list">
                                     <li class="li-doctor-tag">
                                         <span class="doctor-tag text-center text-uppercase">Кардиолог</span>
@@ -78,10 +78,6 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <!--<label class="btn btn-default btn-file label-btn-upload btn-add-specs">-->
-                                    <!--<span class="text-uppercase"><i class="fa fa-user-md green-icon"></i> Добавить врача</span>-->
-                                    <!--<input class="input-upload" type="file" name="">-->
-                                <!--</label>-->
                                 <label class="btn btn-default btn-file label-btn-upload btn-add-specs">
                                     <i class="fa fa-user-md green-icon"></i>
                                     <span class="text-uppercase"> Добавить врача</span>
@@ -94,16 +90,16 @@
                 </div>
             </div>
 
-            <div class="lead-block">
+            <div class="lead-block lead-block-doctors">
                 <p class="lead lead-custom text-center">Добавление врача в клинику <span class="lead-title">"Звезда на Чистопольской"</span></p>
             </div>
 
-            <div class="row bg-white">
+            <div class="row row-img bg-white">
                 <form class="form-clinic" action="" method="">
                     <div class="form-block form-block-characteristics">
                         <dl class="dl-horizontal">
-                            <dt class="dt-left text-uppercase">Данные</dt>
-                            <dd>
+                            <dt class="dt-left dt-left-custom text-uppercase">Данные</dt>
+                            <dd class="doctors-dd-custom">
                                 <div class="form-group">
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Фамилия">
                                     <input type="text" class="clearable form-control form-control-custom" placeholder="Имя">
@@ -116,9 +112,6 @@
                                             <option value="venerolog form-control form-control-custom">Венеролог</option>
                                             <option value="stomatolog form-control form-control-custom">Стоматолог</option>
                                         </select>
-                                    </div>
-
-                                    <div class="ui-select">
                                         <select class="form-control form-control-custom">
                                             <option value="default form-control form-control-custom">Выберите специальность</option>
                                             <option value="proktolog form-control form-control-custom">Иммунолог</option>
@@ -127,6 +120,7 @@
                                         </select>
                                     </div>
 
+                                    <!-- КНОПКУ И ЧЕКБОКСЫ РЕШЕНО БЫЛО ПОМЕНЯТЬ МЕСТАМИ -->
                                     <label class="btn btn-default btn-file label-btn-upload btn-add-specs">
                                         <i class="fa fa-user-md green-icon"></i>
                                         <span class="text-uppercase"> Добавить специализацию</span>
@@ -134,7 +128,7 @@
                                     </label>
 
                                     <div class="block-checkboxes">
-                                        <div class="checkbox checkbox-success">
+                                        <div class="checkbox checkbox-success block-checkbox-adults">
                                             <input id="checkbox-adults" type="checkbox">
                                             <label for="checkbox-adults">Взрослый</label>
                                         </div>
@@ -144,13 +138,13 @@
                                         </div>
                                     </div>
 
-                                    <input type="text" class="clearable form-control form-control-custom" placeholder="Введите стаж работы">
+                                    <input type="text" class="clearable form-control form-control-custom experience" placeholder="Введите стаж работы">
                                 </div>
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt class="dt-left text-uppercase">Образование</dt>
-                            <dd>
+                            <dt class="dt-left dt-left-custom text-uppercase">Образование</dt>
+                            <dd class="doctors-dd-custom">
                                 <div class="form-group">
                                     <input name="" type="text" class="clearable form-control form-control-custom" placeholder="Город">
                                     <input name="" type="text" class="clearable form-control form-control-custom" placeholder="ВУЗ">
@@ -159,8 +153,8 @@
                             </dd>
                         </dl>
                         <dl class="dl-horizontal">
-                            <dt class="dt-left text-uppercase">Описание</dt>
-                            <dd>
+                            <dt class="dt-left dt-left-custom text-uppercase">Описание</dt>
+                            <dd class="doctors-dd-custom">
                                 <textarea class="form-control form-control-custom" name="" id="" cols="30" rows="10"></textarea>
                                 <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
                             </dd>
@@ -168,7 +162,7 @@
                     </div>
                     <div class="form-block block-avatar">
                         <dl class="dl-horizontal dl-avatar">
-                            <dt class="dt-left text-uppercase">Фотография</dt>
+                            <dt class="dt-left dt-left-custom text-uppercase">Фотография</dt>
                             <dd class="dd-avatar">
                                 <div class="media media-avatar">
                                     <div class="media-left">
