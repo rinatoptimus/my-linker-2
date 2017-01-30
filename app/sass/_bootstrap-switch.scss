@@ -187,7 +187,7 @@
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label,
-.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label{
+.bootstrap-switch.bootstrap-switch-off .bootstrap-switch-label {
   width: 29px !important;
   border: 3px solid #5cb85c !important;
   height: 28px !important;
@@ -214,7 +214,17 @@
   top: -3px;
 }
 
-
+// тест для смены цвета чекбокса
 .highlight {
-  background: yellow;
+  background: red;
+}
+.highlight2 {
+  width: 29px !important;
+  border: 3px solid red !important;
+  height: 28px !important;
+  padding-top: 4px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  padding-left: 9px;
+  background-color: white;
 }

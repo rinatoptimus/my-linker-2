@@ -3364,9 +3364,7 @@ select.stomatolog, option[value="stomatolog"] {
   position: absolute; }
 
 .table-diagnostick {
-  margin-top: -7px; }
-  .table-diagnostick tbody tr .first-row {
-    padding-top: 20px; }
+  margin-top: -11px; }
   .table-diagnostick tbody tr td {
     padding-top: 14px; }
   .table-diagnostick tbody tr .td-price {
@@ -3390,12 +3388,6 @@ thead .diagnostick-header {
   thead .diagnostick-header td {
     padding-bottom: 5px; }
 
-.td-inputs {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important; }
-
 .input-diagnosticks-price {
   width: 74px;
   height: 30px;
@@ -3413,12 +3405,16 @@ thead .diagnostick-header {
   margin-right: 5px; }
 
 .input-diagnostick-time {
-  width: 43px; }
+  width: 37px; }
 
 .table > thead > tr > .diagnostick-table-title-left {
+  padding-top: 12px;
+  padding-bottom: 5px;
   padding-left: 38px; }
 
 .table > thead > tr > .diagnostick-table-title-right {
+  padding-top: 12px;
+  padding-bottom: 5px;
   padding-left: 23px; }
 
 .td-price {
@@ -3427,26 +3423,72 @@ thead .diagnostick-header {
     font-size: 17px; }
 
 .mrt-table-bottom {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  margin-top: -20px; }
 
 .mrt-table-bottom p {
+  float: left;
   display: block;
-  margin-top: 8px; }
+  margin-top: 8px;
+  padding-left: 40px;
+  font-size: 13px; }
 
 .mrt-table-bottom input {
+  float: left;
   margin-right: 10px;
   margin-bottom: 0;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-right: 3px;
+  padding-left: 9px;
+  font-size: 15px; }
+
+.mrt-table-bottom .btn-ghost {
+  margin-top: 4px;
+  margin-left: 6px; }
 
 .mrt-table-bottom a {
   height: 34px; }
+
+.table-schedule-bottom {
+  width: 100%;
+  margin-top: 0; }
+  .table-schedule-bottom tbody tr .first-row {
+    padding-top: 20px; }
+  .table-schedule-bottom tbody tr td {
+    padding: 0; }
+    .table-schedule-bottom tbody tr td input {
+      padding-right: 3px;
+      padding-left: 10px;
+      font-size: 15px; }
+  .table-schedule-bottom tbody tr .td-inputs {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    padding-left: 10px; }
+
+.table > thead > tr .diagnostick-left {
+  padding-top: 9px;
+  padding-bottom: 5px;
+  padding-left: 0; }
+
+.table > thead > tr .diagnostick-right {
+  padding-top: 9px;
+  padding-bottom: 5px; }
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance: textfield !important; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  -moz-appearance: textfield !important; }
+
+input[type="number"]::-webkit-inner-spin-button {
+  -moz-appearance: textfield !important; }
 
 .bootstrap-switch {
   display: inline-block;
@@ -3679,7 +3721,17 @@ thead .diagnostick-header {
   top: -3px; }
 
 .highlight {
-  background: yellow; }
+  background: red; }
+
+.highlight2 {
+  width: 29px !important;
+  border: 3px solid red !important;
+  height: 28px !important;
+  padding-top: 4px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  padding-left: 9px;
+  background-color: white; }
 
 .modal, .modal2, .modal3 {
   display: none;
