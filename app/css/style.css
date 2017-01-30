@@ -3011,18 +3011,23 @@ div.form-block-characteristics {
 
 .dl-horizontal .doctors-dd-custom {
   margin-left: 170px; }
+  @media (max-width: 767px) {
+    .dl-horizontal .doctors-dd-custom {
+      margin-left: 0; } }
   .dl-horizontal .doctors-dd-custom div {
     margin-bottom: 6px;
     padding-top: 1px; }
     .dl-horizontal .doctors-dd-custom div input {
-      width: 270px;
+      max-width: 270px;
       padding-top: 1px; }
     .dl-horizontal .doctors-dd-custom div div {
       margin-top: 14px; }
       .dl-horizontal .doctors-dd-custom div div select {
-        width: 270px;
+        max-width: 270px;
         padding-left: 9px;
         font-size: 14px; }
+    .dl-horizontal .doctors-dd-custom div .ui-select-second {
+      margin-top: 0; }
     .dl-horizontal .doctors-dd-custom div .block-checkbox-adults {
       margin-top: 5px; }
     .dl-horizontal .doctors-dd-custom div .block-checkbox-children {
@@ -3075,6 +3080,9 @@ div.form-block-characteristics {
   padding: 0;
   background-color: #68a697;
   color: #fff; }
+  @media (max-width: 767px) {
+    .lead-block {
+      height: auto; } }
 
 .lead-custom {
   font-size: 16px;
@@ -3145,8 +3153,14 @@ div.form-block-characteristics {
       font-size: 11px; }
 
 .ui-select {
-  width: 100%;
-  margin-bottom: 10px; }
+  max-width: 100%;
+  margin-bottom: 10px;
+  width: 270px;
+  max-width: 270px; }
+  @media (max-width: 376px) {
+    .ui-select {
+      width: 240px;
+      max-width: 240px; } }
 
 /* This is to remove the arrow of select element in IE */
 select::-ms-expand {
@@ -3418,6 +3432,9 @@ select.stomatolog, option[value="stomatolog"] {
   .table-diagnostick tbody tr .td-price {
     padding-right: 0;
     padding-left: 3px; }
+    @media (max-width: 991px) {
+      .table-diagnostick tbody tr .td-price {
+        padding-bottom: 15px; } }
   .table-diagnostick tbody tr .td-price-narrow {
     padding-top: 5px; }
     .table-diagnostick tbody tr .td-price-narrow .btn-ghost {
@@ -3426,6 +3443,9 @@ select.stomatolog, option[value="stomatolog"] {
   .table-diagnostick tbody tr .td-diagnosticks-type {
     padding-top: 11px;
     padding-left: 23px; }
+    @media (max-width: 991px) {
+      .table-diagnostick tbody tr .td-diagnosticks-type {
+        line-height: 20px; } }
     .table-diagnostick tbody tr .td-diagnosticks-type span {
       font-size: 12px; }
   .table-diagnostick tbody tr .td-diagnosticks-type-narrow {
@@ -3479,6 +3499,9 @@ thead .diagnostick-header {
   margin-top: 8px;
   padding-left: 40px;
   font-size: 13px; }
+  @media (max-width: 991px) {
+    .mrt-table-bottom p {
+      padding-left: 0; } }
 
 .mrt-table-bottom input {
   float: left;
@@ -3488,10 +3511,16 @@ thead .diagnostick-header {
   padding-right: 3px;
   padding-left: 9px;
   font-size: 15px; }
+  @media (max-width: 991px) {
+    .mrt-table-bottom input {
+      margin-left: 18px; } }
 
 .mrt-table-bottom .btn-ghost {
   margin-top: 4px;
   margin-left: 6px; }
+  @media (max-width: 991px) {
+    .mrt-table-bottom .btn-ghost {
+      margin-left: 18px; } }
 
 .mrt-table-bottom a {
   height: 34px; }
@@ -3561,6 +3590,9 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s; }
+  @media (max-width: 991px) {
+    .bootstrap-switch {
+      margin-left: 40px; } }
 
 .bootstrap-switch .bootstrap-switch-container {
   display: inline-block;

@@ -94,6 +94,9 @@
         .td-price {
           padding-right: 0;
           padding-left: 3px;
+          @include medium-desktop-lg {
+            padding-bottom: 15px;
+          }
         }
         .td-price-narrow {
           padding-top: 5px;
@@ -105,6 +108,9 @@
         .td-diagnosticks-type {
           padding-top: 11px;
           padding-left: 23px;
+          @include medium-desktop-lg {
+            line-height: 20px;
+          }
             span {
               font-size: 12px;
             }
@@ -168,6 +174,9 @@ thead {
     margin-top: 8px;
     padding-left: 40px;
     font-size: 13px;
+    @include medium-desktop-lg {
+      padding-left: 0;
+    }
   }
 }
 .mrt-table-bottom {
@@ -179,11 +188,17 @@ thead {
     padding-right: 3px;
     padding-left: 9px;
     font-size: 15px;
+    @include medium-desktop-lg {
+      margin-left: 18px;
+    }
   }
 }
 .mrt-table-bottom .btn-ghost {
   margin-top: 4px;
   margin-left: 6px;
+  @include medium-desktop-lg {
+    margin-left: 18px;
+  }
 }
 .mrt-table-bottom a {
   height: 34px;

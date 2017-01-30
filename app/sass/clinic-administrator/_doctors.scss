@@ -49,20 +49,26 @@ div.form-block-characteristics {
   }
   .doctors-dd-custom {
     margin-left: 170px;
+    @include small-devices {
+      margin-left: 0;
+    }
       div {
         margin-bottom: 6px;
         padding-top: 1px;
           input {
-            width: 270px;
+            max-width: 270px;
             padding-top: 1px;
           }
           div {
             margin-top: 14px;
             select {
-              width: 270px;
+              max-width: 270px;
               padding-left: 9px;
               font-size: 14px;
             }
+          }
+          .ui-select-second {
+            margin-top: 0;
           }
           .block-checkbox-adults {
             margin-top: 5px;
@@ -87,6 +93,7 @@ div.form-block-characteristics {
       }
   }
 }
+
 .clinics-doctors-list {
   margin-top: 6px;
   margin-bottom: 15px;
@@ -127,6 +134,9 @@ div.form-block-characteristics {
   padding: 0;
   background-color: $sidebar-link;
   color: $white;
+  @include small-devices {
+    height: auto;
+  }
 }
 .lead-custom {
   font-size: 16px;
@@ -190,7 +200,17 @@ div.form-block-characteristics {
 }
 
 // *********************** SELECT STYLES *********************** //
-.ui-select{width: 100%; margin-bottom:10px;}
+.ui-select{
+  max-width: 100%;
+  margin-bottom: 10px;
+
+  width: 270px;
+  max-width: 270px;
+  @include phone-md {
+    width: 240px;
+    max-width: 240px;
+  }
+}
 /* This is to remove the arrow of select element in IE */
 select::-ms-expand { display: none; }
 select{
