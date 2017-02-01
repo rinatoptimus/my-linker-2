@@ -1481,7 +1481,9 @@ header.one-row-header-with-cart .nav {
 footer {
   height: 100px;
   width: 100%;
-  background: #049d91; }
+  background: #049d91;
+  position: absolute;
+  bottom: 0; }
   footer .container-footer {
     padding-top: 50px; }
     footer .container-footer .row .col-logo {
@@ -2861,6 +2863,18 @@ select.form-control-custom {
   color: transparent !important;
   text-shadow: 0 0 0 #393939 !important;
   font-style: italic; }
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden; }
+
+body {
+  margin-bottom: 100px; }
+
+footer {
+  position: absolute;
+  bottom: 0; }
 
 .address-block {
   display: -webkit-box;

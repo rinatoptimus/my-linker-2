@@ -216,3 +216,17 @@ select.form-control-custom {
   text-shadow: 0 0 0 $clinic-placeholder !important;
   font-style: italic;
 }
+
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin-bottom: 100px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
