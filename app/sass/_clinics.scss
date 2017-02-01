@@ -285,8 +285,13 @@ h5 {
 .col-persons {
   float: right;
   margin-top: -2px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-right: -4px;
+  //padding-left: 15px;
+  //padding-right: 15px;
+
+  display: flex;
+  padding: 2px;
+  justify-content: space-between;
   @include phone-lg {
     display: block;
   }
@@ -326,7 +331,8 @@ h5 {
 }
 
 .thumbnail {
-  margin-bottom: 0;
+  //margin-bottom: 0;
+  margin: 5px;
   border: none;
   &:hover {
     background-color: $bg-thumbnail;

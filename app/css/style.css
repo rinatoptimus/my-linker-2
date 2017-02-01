@@ -1899,8 +1899,16 @@ h5 {
 .col-persons {
   float: right;
   margin-top: -2px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  margin-right: -4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 571px) {
     .col-persons {
       display: block; } }
@@ -1933,7 +1941,7 @@ h5 {
       margin-left: -30px; } }
 
 .thumbnail {
-  margin-bottom: 0;
+  margin: 5px;
   border: none;
   text-align: center; }
   .thumbnail:hover {
