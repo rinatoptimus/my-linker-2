@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Врач</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body data-target=".scrollspy">
+
+
+<div class="container container-wide">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="breadcrumb breadcrumb-custom breadcrumb-doc">
+                <li><a class="breadcrumb-first" href="#">Главная</a></li>
+                <li class="active"><span>Кардиологи</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-lg-9">
+            <div class="col-lg-12 col-tabs overlay black">
+                <ul class="nav nav-tabs responsive nav-tabs-custom" id="myTab">
+                    <li class="active"><a class="tab-link text-uppercase text-center" href="#home">Записаться к врачу</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#profile">Подобрать клинику</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#messages">Найти лекарство</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#messages2">Обследование</a></li>
+                </ul>
+
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="home">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input input-region">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p>Например «метро Кремлёвская»</p>
+                                            </div>
+                                            <!--<p>Например «метро Кремлёвская»</p>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-1">
+                                        <span class="input-group-btn btn-alph-search tab-btn-search">
+                                            <button class="btn tab-input" type="submit">Найти</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input input-region">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p>Например «метро Кремлёвская»</p>
+                                            </div>
+                                            <!--<p>Например «метро Кремлёвская»</p>-->
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-1">
+                                        <span class="input-group-btn btn-alph-search tab-btn-search">
+                                            <button class="btn tab-input" type="submit">Найти</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        <div class="tab-content-footer">
+                            Здесь будет "Найти лекарство"
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input input-region">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                            </div>
+                                            <p>Например «метро Кремлёвская»</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-1">
+                                        <span class="input-group-btn btn-alph-search tab-btn-search">
+                                            <button class="btn tab-input" type="submit">Найти</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages2">
+                        <div class="tab-content-footer">
+                            Здесь будет "Обс"
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input input-region">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                            </div>
+                                            <p>Например «метро Кремлёвская»</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-1">
+                                        <span class="input-group-btn btn-alph-search tab-btn-search">
+                                            <button class="btn tab-input" type="submit">Найти</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 scrollspy-sidebar">
+            <div class="well affix-top" id="sidebar">
+                <div class="sidebar-logo"></div>
+                <nav class="bs-docs-sidebar">
+                    <ul class="nav nav-pills nav-stacked nav-sidebar">
+                        <li><a class="text-uppercase sidebar-link" href="#clinics-biomed">Клиника Биомед</a></li>
+                        <li><a href="#doctors" class="text-uppercase sidebar-link">Врачи</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Описание</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Фотографии</a></li>
+                        <li><a href="#researches" class="text-uppercase sidebar-link">Исследования</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Документы</a></li>
+                        <li><a href="#requisites" class="text-uppercase sidebar-link">Реквизиты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-overlay">
+        <div class="container container-footer">
+            <div class="row">
+                <div class="col-lg-3 col-logo">
+                    <a class="logo logo-bottom" href="#" title=""></a>
+                    <div class="logo-border"></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Вы врач</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Медицинская библиотека</a></li>
+                        <li><a href="#">Симптомы</a></li>
+                        <li><a href="#">Болезни</a></li>
+                        <li><a href="#">Рейтинги</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Сетевые клиники</a></li>
+                        <li><a href="#">Вызов врача на дом</a></li>
+                        <li><a href="#">Календарь беременности</a></li>
+                        <li><a href="#">Календарь развития ребенка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="app/js/sticky-sidebar.js"></script>
+<script src="app/js/scrollspy-sidebar.js"></script>
+<script src="app/js/popup-clinics.js"></script>
+<script src="app/js/scroll-animation.js"></script>
+
+<script src="app/js/vendor/responsive-tabs.js"></script>
+<script src="app/js/tabs.js"></script>
+</body>
+</html>
