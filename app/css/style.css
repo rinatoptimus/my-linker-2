@@ -4212,11 +4212,16 @@ button.tab-input {
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-weight: 800; }
 
-.dostors-found-list li {
-  float: left; }
+.dostors-found-list {
+  margin-left: 13px; }
+  .dostors-found-list li {
+    float: left;
+    line-height: 15px; }
 
 .results-list-icon {
-  font-size: 16px; }
+  margin-right: 10px;
+  font-size: 16px;
+  color: #00bdaf; }
 
 .found-results-text {
   margin-top: 39px;
@@ -4229,8 +4234,34 @@ button.tab-input {
   font-family: "Open Sans Semibold", Arial, sans-serif;
   color: #898989; }
 
-body {
-  background-color: #fff; }
+.found-quantity {
+  margin-left: 5px;
+  font-size: 11px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 600;
+  color: #00bdaf; }
+
+.found-doctors {
+  margin-left: 3px;
+  font-size: 11px;
+  color: #898989; }
+
+.col-doctors-filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .col-doctors-filter .block-checkboxes {
+    margin-left: auto; }
+
+.label-sort {
+  float: left; }
+
+.btn-default:focus {
+  border-bottom: 1px solid #00bdaf; }
+
+textarea:focus, input:focus, .btn:focus {
+  outline: none; }
 
 .bg-top {
   margin-top: -20px;
@@ -4300,10 +4331,17 @@ body {
   margin: 13px auto 0;
   background: url("../img/colonoscopy/bg-mibs.png") no-repeat;
   background-position: 110% 0;
-  background-size: contain; }
+  background-size: contain;
+  height: 429px; }
+  @media (max-width: 969px) {
+    .bg-mibs {
+      height: 300px; } }
   @media (max-width: 767px) {
     .bg-mibs {
       background: transparent; } }
+  @media (max-width: 571px) {
+    .bg-mibs {
+      height: 200px; } }
 
 .colonoscopy-text {
   margin-top: 15px;
@@ -4327,7 +4365,20 @@ body {
   @media (max-width: 1401px) {
     .about-colonoscopy {
       max-width: 485px;
-      padding: 20px; } }
+      padding: 10px; } }
+
+@media (max-width: 1401px) {
+  .col-about-colonoscopy {
+    padding: 10px; } }
+
+@media (max-width: 1401px) {
+  .col-about-colonoscopy .colonoscopy-text {
+    margin-top: 5px;
+    font-size: 15px; } }
+
+@media (max-width: 1201px) {
+  .colonoscopy-text-block {
+    margin-top: 80px; } }
 
 .colonoscopy-sign-in {
   margin-top: 90px;
@@ -4432,7 +4483,6 @@ body {
 .safety {
   margin-top: 23px; }
 
-/**/
 .footer-colonoscopy {
   height: auto;
   padding-top: 20px;

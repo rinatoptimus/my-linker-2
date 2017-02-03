@@ -293,12 +293,19 @@ button.tab-input {
   font-weight: 800;
 }
 .dostors-found-list {
-  li {
-    float: left;
-  }
+  margin-left: 13px;
+    li {
+      float: left;
+      line-height: 15px;
+    }
 }
 .results-list-icon {
+  margin-right: 10px;
   font-size: 16px;
+  color: $green;
+}
+.li-found {
+  //line-height: 15px;
 }
 .found-results-text {
   margin-top: 39px;
@@ -313,8 +320,33 @@ button.tab-input {
   color: $header-list;
 }
 .found-quantity {
-
+  margin-left: 5px;
+  font-size: 11px;
+  font-family: $bold;
+  font-weight: 600;
+  color: $green;
 }
 .found-doctors {
+  margin-left: 3px;
+  font-size: 11px;
+  color: $header-list;
+}
 
+.col-doctors-filter {
+  display: flex;
+    .block-checkboxes {
+      margin-left: auto;
+    }
+}
+.label-sort {
+  float: left;
+}
+
+
+
+.btn-default:focus {
+  border-bottom: 1px solid $green;
+}
+textarea:focus, input:focus, .btn:focus {
+  outline: none;
 }
