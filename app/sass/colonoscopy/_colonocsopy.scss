@@ -106,6 +106,9 @@
     max-width: 485px;
     padding: 10px;
   }
+  @include large-desktop {
+    max-width: 990px;
+  }
     //.colonoscopy-text {
     //  @include large-desktop-lg {
     //    margin-top: 5px;

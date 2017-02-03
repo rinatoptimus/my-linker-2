@@ -334,12 +334,16 @@ button.tab-input {
 
 .col-doctors-filter {
   display: flex;
+  @include medium-desktop-lg {
+    flex-direction: column;
+  }
     .block-checkboxes {
       margin-left: auto;
     }
 }
 .label-sort {
   float: left;
+  font-size: 10px;
 }
 
 
@@ -349,4 +353,30 @@ button.tab-input {
 }
 textarea:focus, input:focus, .btn:focus {
   outline: none;
+}
+.col-doctors-filter {
+  .block-checkboxes {
+    .block-checkbox-adults {
+      margin-right: 10px;
+      label[for="checkbox-adults"] {
+        width: 100px;
+      }
+    }
+    .block-checkbox-children {
+      margin-right: 10px;
+      label[for="checkbox-children"] {
+        width: 100px;
+      }
+    }
+  }
+}
+.btn-group-sm {
+  .doctors-filter-name {
+    background-color: $bg-body;
+    font-size: 10px;
+    font-family: $bold;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: $breadcrumb-first;
+  }
 }
