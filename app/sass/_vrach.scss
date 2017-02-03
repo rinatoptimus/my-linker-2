@@ -11,13 +11,6 @@
 .breadcrumb-doc {
   margin-left: -9px;
 }
-.col-persons-vrachi {
-  // для макета Врачи
-  //float: right;
-  //margin-top: -2px;
-  //padding-left: 10px;
-  //padding-right: 10px;
-}
 .row-images-persons {
   .col-lg-4 {
     padding-right: 5px;
@@ -36,7 +29,6 @@
     background: none;
   }
 }
-
 
 /*---------------- WIDGET TABS ----------------*/
 .overlay {
@@ -100,7 +92,6 @@
         border-radius: 0;
         border: none;
         border-right: 1px solid $green-lighter;
-        //border: none;
         &:hover {
           border: none;
            border-right: 1px solid $green-lighter;
@@ -175,7 +166,7 @@
 }
 .form-group {
   @include phone-lg {
-    margin: 0 auto; // 1111
+    margin: 0 auto;
   }
   .tab-icon-user {
     top: 15px;
@@ -184,7 +175,6 @@
   }
   .tab-icon-geo {
     top: 17px;
-    //left: -24px;
     background-size: 70%;
     @include medium-desktop-lg {
       left: 15px;
@@ -204,16 +194,11 @@ input.tab-input {
   padding-left: 3px;
 }
 
-
 .left-inner-addon {
   @include medium-desktop-lg {
     margin: 0 auto;
   }
   @include phone-md {
-    margin-right: 5px;
-    //margin-left: 5px;
-    margin-left: 0;
-
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -233,12 +218,10 @@ input.tab-input {
     }
     @include phone-md {
       margin-right: 5px;
-      //margin-left: 5px;
       margin-left: 0;
     }
   }
 }
-
 
 .left-inner-addon input.tab-input[placeholder] {
   padding-right: 0;
@@ -300,4 +283,38 @@ button.tab-input {
     padding-top: 35px;
     text-align: center;
   }
+}
+/*---------------- WIDGET TABS END ----------------*/
+
+.doctor-page-results {
+  margin-top: 35px;
+  font-size: 22px;
+  font-family: $extraBold;
+  font-weight: 800;
+}
+.dostors-found-list {
+  li {
+    float: left;
+  }
+}
+.results-list-icon {
+  font-size: 16px;
+}
+.found-results-text {
+  margin-top: 39px;
+  margin-left: 53px;
+    i {
+      font-size: 16px;
+    }
+}
+.found {
+  font-size: 11px;
+  font-family: $semibold;
+  color: $header-list;
+}
+.found-quantity {
+
+}
+.found-doctors {
+
 }

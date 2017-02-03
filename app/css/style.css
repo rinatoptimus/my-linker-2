@@ -4133,8 +4133,6 @@ input.tab-input {
 
 @media (max-width: 376px) {
   .left-inner-addon {
-    margin-right: 5px;
-    margin-left: 0;
     margin-left: 20px;
     margin-right: 20px; } }
 
@@ -4206,3 +4204,285 @@ button.tab-input {
   .tab-btn-search {
     padding-top: 35px;
     text-align: center; } }
+
+/*---------------- WIDGET TABS END ----------------*/
+.doctor-page-results {
+  margin-top: 35px;
+  font-size: 22px;
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-weight: 800; }
+
+.dostors-found-list li {
+  float: left; }
+
+.results-list-icon {
+  font-size: 16px; }
+
+.found-results-text {
+  margin-top: 39px;
+  margin-left: 53px; }
+  .found-results-text i {
+    font-size: 16px; }
+
+.found {
+  font-size: 11px;
+  font-family: "Open Sans Semibold", Arial, sans-serif;
+  color: #898989; }
+
+body {
+  background-color: #fff; }
+
+.bg-top {
+  margin-top: -20px;
+  padding-bottom: 28px;
+  background: url("../img/colonoscopy/bg-top.jpg") no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .bg-top h1 {
+    position: relative;
+    padding-top: 27px;
+    font-size: 35px;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    color: #fff; }
+
+.top-overlay {
+  position: relative; }
+
+.top-overlay:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0; }
+  @media (max-width: 991px) {
+    .top-overlay:before {
+      position: relative; } }
+
+.top-black:before {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.bg-description {
+  position: relative;
+  margin-top: 27px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background: rgba(31, 156, 146, 0.63); }
+
+.description {
+  max-width: 590px;
+  margin: 0 auto;
+  line-height: 26px;
+  font-size: 19px;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  color: #fff; }
+
+.colonoscopy-phone-number {
+  margin-top: 14px;
+  font-size: 56px;
+  color: #457e75; }
+  @media (max-width: 571px) {
+    .colonoscopy-phone-number {
+      font-size: 45px; } }
+  @media (max-width: 376px) {
+    .colonoscopy-phone-number {
+      font-size: 25px; } }
+
+.call-to-action {
+  margin-top: 28px;
+  font-size: 41px;
+  text-transform: none; }
+
+.bg-mibs {
+  max-width: 1284px;
+  margin: 13px auto 0;
+  background: url("../img/colonoscopy/bg-mibs.png") no-repeat;
+  background-position: 110% 0;
+  background-size: contain; }
+  @media (max-width: 767px) {
+    .bg-mibs {
+      background: transparent; } }
+
+.colonoscopy-text {
+  margin-top: 15px;
+  margin-bottom: 26px;
+  line-height: 26px;
+  font-size: 19px; }
+
+.hidden-pic {
+  max-width: 1284px;
+  height: 170px;
+  display: none;
+  background: url("../img/colonoscopy/bg-mibs.png") no-repeat;
+  background-size: contain; }
+  @media (max-width: 767px) {
+    .hidden-pic {
+      display: block; } }
+
+.about-colonoscopy {
+  max-width: 485px;
+  margin-bottom: 8px; }
+  @media (max-width: 1401px) {
+    .about-colonoscopy {
+      max-width: 485px;
+      padding: 20px; } }
+
+.colonoscopy-sign-in {
+  margin-top: 90px;
+  margin-bottom: 122px;
+  text-align: center; }
+  @media (max-width: 991px) {
+    .colonoscopy-sign-in {
+      margin-bottom: 0; } }
+  .colonoscopy-sign-in .form-group input.clearable {
+    margin-top: -9px;
+    height: 58px;
+    font-size: 20px; }
+
+.h3-colonoscopy {
+  margin-top: 48px;
+  font-size: 55px;
+  font-weight: lighter;
+  font-family: "Open Sans Light", Arial, sans-serif; }
+  @media (max-width: 571px) {
+    .h3-colonoscopy {
+      font-size: 40px; } }
+
+.hr-thick {
+  margin-bottom: 0;
+  margin-top: 0;
+  border-top: 1px solid #1f9c92; }
+
+.hr-thin {
+  margin-top: 3px;
+  margin-bottom: 50px;
+  border-top: 1px solid #d9eeed; }
+
+.form-group-colonoscopy {
+  width: 404px;
+  margin-left: -8px; }
+  @media (max-width: 767px) {
+    .form-group-colonoscopy {
+      width: 100%;
+      max-width: 100%;
+      margin-left: auto; } }
+  .form-group-colonoscopy input.clearable {
+    width: 100%;
+    border: 1px solid #186cba; }
+
+.btn-colonoscopy-submit {
+  margin-top: -15px;
+  margin-left: 16px;
+  padding: 18px 67px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #eda342;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: bold;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .btn-colonoscopy-submit {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 0; } }
+  .btn-colonoscopy-submit:hover {
+    background-color: #c58736;
+    color: #fff; }
+
+.advantages {
+  font-size: 53px; }
+  @media (max-width: 571px) {
+    .advantages {
+      font-size: 40px; } }
+
+.colonoscopy-feature {
+  margin-top: -19px;
+  margin-bottom: -14px;
+  font-size: 50px;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 200;
+  color: #457e75; }
+  @media (max-width: 571px) {
+    .colonoscopy-feature {
+      font-size: 30px; } }
+
+.colonoscopy-descr {
+  margin-bottom: 43px; }
+
+.safety {
+  margin-top: 23px; }
+
+/**/
+.footer-colonoscopy {
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 11px;
+  background-color: #111;
+  border-top: 1px solid #119cd4;
+  color: #fff; }
+  .footer-colonoscopy .container {
+    padding-right: 0;
+    padding-left: 0; }
+    @media (max-width: 991px) {
+      .footer-colonoscopy .container {
+        padding-left: 10px; } }
+
+.footer-colonoscopy-list {
+  max-width: 225px;
+  display: block;
+  margin: 0 auto;
+  padding: 0; }
+  .footer-colonoscopy-list li {
+    float: left; }
+    .footer-colonoscopy-list li a {
+      margin: 0 10px;
+      font-size: 10px;
+      font-family: "Open Sans Bold", Arial, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff; }
+      .footer-colonoscopy-list li a:hover {
+        text-decoration: underline; }
+
+.colonoscopy-copyright {
+  font-size: 11px; }
+
+.footer-socials-list {
+  margin-top: 23px;
+  padding-left: 0; }
+  .footer-socials-list li {
+    display: inline; }
+    .footer-socials-list li a {
+      width: 35px;
+      display: inline-block;
+      text-align: center;
+      padding: 5px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 3px solid #fff;
+      color: #fff;
+      -webkit-transition: .5s;
+      transition: .5s; }
+      .footer-socials-list li a:hover {
+        border: 3px solid transparent;
+        background-color: #fff;
+        color: #000; }
+
+.form-second {
+  padding-top: 11px; }
+  .form-second .colonoscopy-sign-in {
+    margin-top: 20px;
+    margin-bottom: 80px; }
+
+.colonoscopy-scroll-top {
+  display: block;
+  margin-top: -7px;
+  margin-right: 33px;
+  font-size: 11px;
+  color: #fff; }
+  .colonoscopy-scroll-top:hover {
+    color: #fff; }
