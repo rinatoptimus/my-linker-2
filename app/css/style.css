@@ -3474,7 +3474,7 @@ select.stomatolog, option[value="stomatolog"] {
     padding-top: 3px; }
 
 thead .diagnostick-header {
-  border-bottom: 1px solid #dfdfdf; }
+  border-bottom: 1px solid #e5d7d7; }
   thead .diagnostick-header td {
     padding-bottom: 5px; }
 
@@ -3957,6 +3957,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .container-wide {
   padding-right: 0;
   padding-left: 0; }
+  @media (max-width: 767px) {
+    .container-wide {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
 .breadcrumb-doc {
   margin-left: -9px; }
@@ -4214,6 +4218,10 @@ button.tab-input {
 
 .dostors-found-list {
   margin-left: 13px; }
+  @media (max-width: 1201px) {
+    .dostors-found-list {
+      margin-left: 0;
+      padding-left: 0; } }
   .dostors-found-list li {
     float: left;
     line-height: 15px; }
@@ -4260,33 +4268,107 @@ button.tab-input {
               flex-direction: column; } }
   .col-doctors-filter .block-checkboxes {
     margin-left: auto; }
+    .col-doctors-filter .block-checkboxes .checkbox label {
+      margin-top: 5px; }
 
 .label-sort {
+  margin-top: 6px;
+  margin-right: 9px;
   float: left;
   font-size: 10px; }
-
-.btn-default:focus {
-  border-bottom: 1px solid #00bdaf; }
+  @media (max-width: 767px) {
+    .label-sort {
+      float: none; } }
 
 textarea:focus, input:focus, .btn:focus {
   outline: none; }
 
-.col-doctors-filter .block-checkboxes .block-checkbox-adults {
-  margin-right: 10px; }
-  .col-doctors-filter .block-checkboxes .block-checkbox-adults label[for="checkbox-adults"] {
-    width: 100px; }
-
-.col-doctors-filter .block-checkboxes .block-checkbox-children {
-  margin-right: 10px; }
-  .col-doctors-filter .block-checkboxes .block-checkbox-children label[for="checkbox-children"] {
-    width: 100px; }
+.col-doctors-filter {
+  height: 39px; }
+  .col-doctors-filter .doctors-filter-buttons {
+    margin-top: 14px; }
+  .col-doctors-filter .block-checkboxes .block-checkbox-adults {
+    margin-right: 10px; }
+    .col-doctors-filter .block-checkboxes .block-checkbox-adults label[for="checkbox-adults"] {
+      width: 100px; }
+  .col-doctors-filter .block-checkboxes .block-checkbox-children {
+    margin-right: 10px; }
+    .col-doctors-filter .block-checkboxes .block-checkbox-children label[for="checkbox-children"] {
+      width: 100px; }
 
 .btn-group-sm .doctors-filter-name {
+  background-color: #f6f6f6;
+  border-color: transparent;
+  border-bottom: 1px solid #e5d7d7;
   font-size: 10px;
   font-family: "Open Sans Bold", Arial, sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #00bdaf; }
+  .btn-group-sm .doctors-filter-name:hover {
+    color: #2c2525; }
+  .btn-group-sm .doctors-filter-name:focus {
+    border-bottom: 1px solid #00bdaf;
+    color: #2c2525; }
+    .btn-group-sm .doctors-filter-name:focus .fa-long-arrow-up {
+      display: inline-block; }
+  .btn-group-sm .doctors-filter-name:active {
+    background-color: transparent;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    outline: none;
+    color: #2c2525; }
+  .btn-group-sm .doctors-filter-name .fa-long-arrow-up {
+    font-size: 11px;
+    display: none; }
+
+.filter-block-divider {
+  margin-top: 1px;
+  border-top: 1px solid #e5d7d7; }
+  @media (max-width: 991px) {
+    .filter-block-divider {
+      margin-bottom: 60px; } }
+  @media (max-width: 767px) {
+    .filter-block-divider {
+      visibility: hidden;
+      margin-bottom: 80px; } }
+  @media (max-width: 571px) {
+    .filter-block-divider {
+      margin-bottom: 100px; } }
+
+.row-doctors-grid {
+  margin-right: 0;
+  margin-left: 0; }
+  .row-doctors-grid .col-persons {
+    float: none;
+    padding: 0; }
+    .row-doctors-grid .col-persons .thumbnail {
+      max-width: 270px; }
+      @media (max-width: 1201px) {
+        .row-doctors-grid .col-persons .thumbnail {
+          max-width: 100%; } }
+      @media (max-width: 767px) {
+        .row-doctors-grid .col-persons .thumbnail {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      @media (max-width: 1201px) {
+        .row-doctors-grid .col-persons .thumbnail .thumbnail-info-doctors-grid {
+          margin-left: -20px; } }
+    .row-doctors-grid .col-persons .thumbnail-left {
+      margin-left: 0; }
+    @media (max-width: 571px) {
+      .row-doctors-grid .col-persons .thumbnail-center {
+        margin-left: 0; } }
+    .row-doctors-grid .col-persons .thumbnail-right {
+      margin-right: 0; }
+      @media (max-width: 571px) {
+        .row-doctors-grid .col-persons .thumbnail-right {
+          margin-right: 5px;
+          margin-left: 0; } }
 
 .bg-top {
   margin-top: -20px;
@@ -4385,7 +4467,7 @@ textarea:focus, input:focus, .btn:focus {
       display: block; } }
 
 .about-colonoscopy {
-  max-width: 485px;
+  max-width: 450px;
   margin-bottom: 8px; }
   @media (max-width: 1401px) {
     .about-colonoscopy {
@@ -4580,3 +4662,82 @@ textarea:focus, input:focus, .btn:focus {
   color: #fff; }
   .colonoscopy-scroll-top:hover {
     color: #fff; }
+
+.sidebar-right #sidebar.well {
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #fff; }
+  .sidebar-right #sidebar.well hr {
+    margin-top: 15px;
+    margin-bottom: 24px; }
+  .sidebar-right #sidebar.well nav .sidebar-right {
+    margin-top: -19px;
+    margin-left: 0; }
+    .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li {
+      margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #e4e4e4;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+      .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li:hover {
+        background-color: transparent; }
+      @media (max-width: 1201px) {
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li {
+          padding-left: 5px;
+          padding-right: 5px;
+          border-bottom: 1px solid transparent; } }
+      .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a {
+        padding-right: 8px;
+        padding-left: 0;
+        line-height: 16px;
+        letter-spacing: 1.3px;
+        border: 1px solid transparent;
+        font-size: 12px;
+        font-family: "Open Sans Bold", Arial, sans-serif;
+        font-weight: 600;
+        color: #00bdaf; }
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a:hover {
+          background-color: transparent;
+          padding-left: 1px; }
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a:focus {
+          background-color: transparent; }
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a:active {
+          background-color: transparent; }
+        @media (max-width: 1201px) {
+          .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a {
+            padding-right: 15px; } }
+      .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li a[aria-expanded="true"] {
+        color: #000; }
+      .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li .sidebar-right-submenu li {
+        margin-bottom: -2px; }
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li .sidebar-right-submenu li:hover {
+          background-color: transparent; }
+        .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li .sidebar-right-submenu li a {
+          padding-top: 4px;
+          padding-bottom: 4px;
+          font-size: 12px;
+          text-transform: none;
+          letter-spacing: 0;
+          color: #2b2b2b; }
+
+.sidebar-title {
+  margin-top: -3px;
+  font-size: 15px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 600; }
+
+.rotate {
+  margin-top: -5px;
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #959595; }
+
+.rotate.down {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #3c3c3c; }
