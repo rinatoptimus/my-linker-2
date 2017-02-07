@@ -173,11 +173,13 @@
     margin: 0 auto;
   }
   .tab-icon-user {
+    z-index: 11;
     top: 15px;
     left: 14px;
     background-size: 70%;
   }
   .tab-icon-geo {
+    z-index: 11;
     top: 17px;
     background-size: 70%;
     @include medium-desktop-lg {
@@ -185,12 +187,10 @@
     }
   }
   .tab-input {
-    //padding: 27px;
     position: relative;
     z-index: 10;
     border-radius: 30px !important;
     font-style: normal;
-
     padding: 0 5px 0 45px;
     height: 53px;
   }
@@ -252,12 +252,12 @@ button.tab-input {
   }
   @include medium-desktop-lg {
     margin-top: 10px;
-    padding-right: 125px;
-    padding-left: 125px;
+    padding-right: 115px;
+    padding-left: 115px;
   }
   @include phone-md {
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 85px;
+    padding-left: 85px;
   }
 }
 .input-region {
@@ -317,9 +317,7 @@ button.tab-input {
   font-size: 16px;
   color: $green;
 }
-.li-found {
-  //line-height: 15px;
-}
+
 .found-results-text {
   margin-top: 39px;
   margin-left: 53px;
@@ -370,10 +368,6 @@ button.tab-input {
 }
 
 
-
-//.btn-default:focus {
-//  border-bottom: 1px solid $green;
-//}
 textarea:focus, input:focus, .btn:focus {
   outline: none;
 }
@@ -438,8 +432,8 @@ textarea:focus, input:focus, .btn:focus {
     }
   }
   .doctors-filter-reset {
-    margin-top: -2px;
-    padding: 0 10px 2px;
+    margin-top: 0;
+    padding: 0 10px 0;
     font-size: 17px;
   }
 }
@@ -458,10 +452,13 @@ textarea:focus, input:focus, .btn:focus {
   }
 }
 .row-doctors-grid {
-  margin-right: 0;
-  margin-left: 0;
-    .col-persons {
-      float: none;
+  margin-right: -25px;
+  margin-left: -5px;
+  padding-bottom: 15px;
+  @include large-desktop {
+    margin-right: -5px;
+  }
+    .col-doctors {
       padding: 0;
         .thumbnail {
           max-width: 270px;
@@ -473,7 +470,14 @@ textarea:focus, input:focus, .btn:focus {
           }
             .thumbnail-info-doctors-grid {
               @include large-desktop {
-                margin-left: -20px;
+                width: 390px;
+              }
+              @include medium-desktop-lg {
+                width: 222px;
+                padding-bottom: 5px;
+              }
+              @include small-devices {
+                width: auto;
               }
             }
         }
