@@ -4119,10 +4119,13 @@ input[type="number"]::-webkit-inner-spin-button {
       left: 15px; } }
 
 .form-group .tab-input {
-  padding: 27px;
+  position: relative;
+  z-index: 10;
   -webkit-border-radius: 30px !important;
           border-radius: 30px !important;
-  font-style: normal; }
+  font-style: normal;
+  padding: 0 5px 0 45px;
+  height: 53px; }
 
 input.tab-input {
   font-size: 14px; }
@@ -4297,6 +4300,8 @@ textarea:focus, input:focus, .btn:focus {
       width: 100px; }
 
 .btn-group-sm .doctors-filter-name {
+  padding-right: 7px;
+  padding-left: 0;
   background-color: #f6f6f6;
   border-color: transparent;
   border-bottom: 1px solid #e5d7d7;
@@ -4311,7 +4316,7 @@ textarea:focus, input:focus, .btn:focus {
     border-bottom: 1px solid #00bdaf;
     color: #2c2525; }
     .btn-group-sm .doctors-filter-name:focus .fa-long-arrow-up {
-      display: inline-block; }
+      visibility: visible; }
   .btn-group-sm .doctors-filter-name:active {
     background-color: transparent;
     border-color: transparent;
@@ -4321,7 +4326,17 @@ textarea:focus, input:focus, .btn:focus {
     color: #2c2525; }
   .btn-group-sm .doctors-filter-name .fa-long-arrow-up {
     font-size: 11px;
-    display: none; }
+    visibility: hidden; }
+  .btn-group-sm .doctors-filter-name .fa-long-arrow-down {
+    padding-top: 3px;
+    padding-right: 3px;
+    float: left;
+    font-size: 11px; }
+
+.btn-group-sm .doctors-filter-reset {
+  margin-top: -2px;
+  padding: 0 10px 2px;
+  font-size: 17px; }
 
 .filter-block-divider {
   margin-top: 1px;
@@ -4369,6 +4384,16 @@ textarea:focus, input:focus, .btn:focus {
         .row-doctors-grid .col-persons .thumbnail-right {
           margin-right: 5px;
           margin-left: 0; } }
+
+@media (max-width: 376px) {
+  .subtext {
+    padding-left: 15px; } }
+
+.hide {
+  display: none; }
+
+.show {
+  display: inline-block; }
 
 .bg-top {
   margin-top: -20px;
@@ -4664,9 +4689,8 @@ textarea:focus, input:focus, .btn:focus {
     color: #fff; }
 
 .sidebar-right #sidebar.well {
-  padding-top: 28px;
-  padding-right: 30px;
-  padding-left: 30px;
+  height: auto;
+  padding: 28px 30px 30px;
   background-color: #fff; }
   .sidebar-right #sidebar.well hr {
     margin-top: 15px;

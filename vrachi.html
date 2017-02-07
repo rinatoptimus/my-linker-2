@@ -52,9 +52,8 @@
                                             <div class="form-group">
                                                 <span class="icon-geo tab-icon-geo"></span>
                                                 <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
-                                                <p>Например «метро Кремлёвская»</p>
+                                                <p class="subtext">Например «метро Кремлёвская»</p>
                                             </div>
-                                            <!--<p>Например «метро Кремлёвская»</p>-->
                                         </div>
                                     </div>
                                     <div class="col-lg-2 col-md-1">
@@ -100,7 +99,6 @@
                     </div>
                     <div class="tab-pane" id="messages">
                         <div class="tab-content-footer">
-                            Здесь будет "Найти лекарство"
                             <form action="" method="" class="tab-form">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
@@ -132,7 +130,6 @@
                     </div>
                     <div class="tab-pane" id="messages2">
                         <div class="tab-content-footer">
-                            Здесь будет "Обс"
                             <form action="" method="" class="tab-form">
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
@@ -193,11 +190,29 @@
                 <div class="col-lg-12 col-doctors-filter">
                     <div class="btn-group btn-group-sm doctors-filter-buttons" role="group" aria-label="Small button group">
                         <p class="label-sort text-uppercase">Сортировка по:</p>
-                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> По популярности</button>
-                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> Рейтингу</button>
-                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> Стажу</button>
-                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> Стоимости</button>
-                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> Отзывам</button>
+                        <!--<button type="button" class="btn btn-default text-uppercase doctors-filter-name"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> По популярности</button>-->
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            По популярности</button>
+
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Рейтингу</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Стажу</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Стоимости</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Отзывам</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name doctors-filter-reset"><i class="fa fa-window-close" aria-hidden="true"></i></button>
                     </div>
                     <div class="block-checkboxes">
                         <div class="checkbox checkbox-success block-checkbox-adults">

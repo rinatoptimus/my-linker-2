@@ -1,8 +1,11 @@
 .sidebar-right {
   #sidebar.well {
-    padding-top: 28px;
-    padding-right: 30px;
-    padding-left: 30px;
+    height: auto;
+    //padding-top: 28px;
+    //padding-right: 30px;
+    //padding-bottom: 30px;
+    //padding-left: 30px;
+    padding: 28px 30px 30px;
     background-color: $white;
       hr {
         margin-top: 15px;

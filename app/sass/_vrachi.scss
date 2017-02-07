@@ -185,9 +185,14 @@
     }
   }
   .tab-input {
-    padding: 27px;
+    //padding: 27px;
+    position: relative;
+    z-index: 10;
     border-radius: 30px !important;
     font-style: normal;
+
+    padding: 0 5px 0 45px;
+    height: 53px;
   }
 }
 input.tab-input {
@@ -394,7 +399,8 @@ textarea:focus, input:focus, .btn:focus {
 }
 .btn-group-sm {
   .doctors-filter-name {
-    //padding-right: 3px;
+    padding-right: 7px;
+    padding-left: 0;
     background-color: $bg-body;
     border-color: transparent;
     border-bottom: 1px solid $divider;
@@ -410,7 +416,7 @@ textarea:focus, input:focus, .btn:focus {
       border-bottom: 1px solid $green;
       color: $black-filter-tabs;
       .fa-long-arrow-up {
-        display: inline-block;
+        visibility: visible;
       }
     }
     &:active {
@@ -422,8 +428,19 @@ textarea:focus, input:focus, .btn:focus {
     }
     .fa-long-arrow-up {
       font-size: 11px;
-      display: none;
+      visibility: hidden;
     }
+    .fa-long-arrow-down {
+      padding-top: 3px;
+      padding-right: 3px;
+      float: left;
+      font-size: 11px;
+    }
+  }
+  .doctors-filter-reset {
+    margin-top: -2px;
+    padding: 0 10px 2px;
+    font-size: 17px;
   }
 }
 .filter-block-divider {
@@ -476,4 +493,18 @@ textarea:focus, input:focus, .btn:focus {
           }
         }
     }
+}
+
+.subtext {
+  @include phone-md {
+    padding-left: 15px;
+  }
+}
+
+// для стрелок в фильтре
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
 }
