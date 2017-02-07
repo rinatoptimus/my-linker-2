@@ -1,0 +1,200 @@
+/* ----------------- SIDEBAR STYLES BEGIN ----------------- */
+.sidebar-right {
+  color: $header-h4;
+  #sidebar.affix {
+    position: relative;
+  }
+  #sidebar.affix-top {
+    padding-left: 0;
+      .sidebar-title {
+        padding-top: 25px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+      }
+  }
+  #sidebar.well {
+    padding: 0;
+    nav {
+      .sidebar-right {
+        li {
+          padding-left: 20px;
+        }
+        .sidebar-right-li-places {
+          display: flex;
+          border-bottom: none;
+            a {
+              letter-spacing: 0;
+              font-family: $regular;
+              font-size: 12px;
+              color: $header-h4;
+            }
+        }
+      }
+    }
+  }
+}
+.container-geo-mark {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.sidebar-map {
+  width: 100%;
+  height: 270px;
+  background-color: red;
+  border-radius: 7px;
+}
+
+.doctor-info-title {
+  margin-top: 25px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.doctor-name {
+  padding-left: 20px;
+  font-size: 16px;
+  color: $green-name;
+}
+.doctor-info-divider {
+  margin-right: 15px;
+  margin-left: 15px;
+  border-top: 1px solid $divider;
+}
+.sidebar-subtitle {
+  padding-left: 20px;
+  font-family: $bold;
+  font-size: 12px;
+  font-weight: 600;
+}
+.specification-text {
+  padding-left: 20px;
+  font-size: 12px;
+}
+.specification-list {
+  padding-right: 20px;
+  list-style: none;
+  font-size: 12px;
+    li::before {
+      content: "•";
+      color: $green-name;
+      display: inline-block;
+      width: 1em;
+      margin-right: -4px;
+      margin-left: -1em;
+      font-size: 17px;
+      vertical-align: sub;
+    }
+}
+/* ----------------- SIDEBAR STYLES END ----------------- */
+
+.col-thumbnail {
+  padding-right: 5px;
+}
+/* ----------------- THUMBNAIL STYLES BEGIN ----------------- */
+.thumbnail {
+  max-width: 270px;
+  @include large-desktop {
+    max-width: 100%;
+  }
+  @include small-devices {
+    flex-direction: column;
+  }
+  .thumbnail-info-doctors-grid {
+    @include large-desktop {
+      width: 390px;
+    }
+    @include medium-desktop-lg {
+      width: 222px;
+      padding-bottom: 5px;
+    }
+    @include small-devices {
+      width: auto;
+    }
+  }
+}
+.thumbnail-numbers-list {
+  padding-left: 10px;
+    li {
+      float: left;
+      text-align: right;
+    }
+}
+.thumbnail-number {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: $bold;
+  font-weight: 400;
+}
+.signed-number-text {
+  font-size: 10px;
+  color: $header-list;
+}
+.numbers-divider {
+  width: 1px;
+  height: 26px;
+  margin-top: 5px;
+  margin-right: 21px;
+  margin-left: 25px;
+  background-color: $divider;
+}
+.price-number-text {
+  font-size: 12px;
+  color: $header-list;
+}
+.thumbnail-text {
+  padding-right: 18px;
+  padding-left: 18px;
+  font-size: 12px;
+  color: $header-list;
+  text-align: center;
+}
+/* ----------------- THUMBNAIL STYLES END ----------------- */
+
+/* ----------------- CALENDAR STYLES BEGIN ----------------- */
+.calendar {
+  display: flex;
+    .black {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .black:before {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .black > * {
+      position: relative;
+    }
+}
+.calendar-left {
+  width: 270px;
+  height: 320px;
+  background: url('../img/bg-calendar.jpg') no-repeat;
+}
+.calendar-divider {
+  margin-right: 30px;
+  margin-left: 30px;
+  border-top: 1px solid $divider-calendar;
+}
+.calendar-text {
+  color: $white;
+}
+.calendar-table {
+  tr {
+    td {
+      background-color: $white;
+      border-radius: 7px;
+      text-align: center;
+        a {
+          font-size: 10px;
+          color: $calendar-time;
+        }
+    }
+  }
+}
+.calendar-right {
+  width: 270px;
+  height: 320px;
+  background-color: $bg-calendar;
+  border-radius: 0 6px 6px 0;
+  color: $white;
+}
+/* ----------------- CALENDAR STYLES END ----------------- */

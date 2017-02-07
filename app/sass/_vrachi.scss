@@ -34,7 +34,7 @@
   }
 }
 
-/*---------------- WIDGET TABS ----------------*/
+/*---------------- WIDGET TABS BEGIN ----------------*/
 .overlay {
   position: relative;
 }
@@ -343,6 +343,7 @@ button.tab-input {
   color: $header-list;
 }
 
+/* --------------- СТИЛИ ФИЛЬТРА (НАЧАЛО) --------------- */
 .col-doctors-filter {
   display: flex;
   @include medium-desktop-lg {
@@ -365,11 +366,6 @@ button.tab-input {
   @include small-devices {
     float: none;
   }
-}
-
-
-textarea:focus, input:focus, .btn:focus {
-  outline: none;
 }
 .col-doctors-filter {
   height: 39px;
@@ -451,6 +447,8 @@ textarea:focus, input:focus, .btn:focus {
     margin-bottom: 100px;
   }
 }
+/* --------------- СТИЛИ ФИЛЬТРА (КОНЕЦ) --------------- */
+
 .row-doctors-grid {
   margin-right: -25px;
   margin-left: -5px;
@@ -503,6 +501,9 @@ textarea:focus, input:focus, .btn:focus {
   @include phone-md {
     padding-left: 15px;
   }
+}
+textarea:focus, input:focus, .btn:focus {
+  outline: none;
 }
 
 // для стрелок в фильтре
