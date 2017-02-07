@@ -4642,11 +4642,25 @@ textarea:focus, input:focus, .btn:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 991px) {
+    .calendar {
+      display: block; } }
+  @media (max-width: 767px) {
+    .calendar {
+      display: block; } }
   .calendar .black {
     -webkit-border-top-right-radius: 0;
             border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
             border-bottom-right-radius: 0; }
+    @media (max-width: 991px) {
+      .calendar .black {
+        -webkit-border-top-right-radius: 6px;
+                border-top-right-radius: 6px;
+        -webkit-border-top-left-radius: 6px;
+                border-top-left-radius: 6px;
+        -webkit-border-bottom-left-radius: 0;
+                border-bottom-left-radius: 0; } }
   .calendar .black:before {
     background-color: rgba(0, 0, 0, 0.1); }
   .calendar .black > * {
@@ -4656,6 +4670,16 @@ textarea:focus, input:focus, .btn:focus {
   width: 270px;
   height: 320px;
   background: url("../img/bg-calendar.jpg") no-repeat; }
+  @media (max-width: 991px) {
+    .calendar-left {
+      width: 100%;
+      height: auto;
+      background-size: cover; } }
+  @media (max-width: 767px) {
+    .calendar-left {
+      width: 100%;
+      height: auto;
+      background-size: cover; } }
 
 .calendar-divider {
   margin-right: 30px;
@@ -4664,6 +4688,15 @@ textarea:focus, input:focus, .btn:focus {
 
 .calendar-text {
   color: #fff; }
+
+@media (max-width: 991px) {
+  .calendar-table {
+    margin: 0 auto; } }
+
+@media (max-width: 767px) {
+  .calendar-table {
+    height: 100px;
+    margin: 0 auto; } }
 
 .calendar-table tr td {
   background-color: #fff;
@@ -4681,8 +4714,165 @@ textarea:focus, input:focus, .btn:focus {
   -webkit-border-radius: 0 6px 6px 0;
           border-radius: 0 6px 6px 0;
   color: #fff; }
+  @media (max-width: 991px) {
+    .calendar-right {
+      width: 100%;
+      height: auto;
+      -webkit-border-radius: 0 0 6px 6px;
+              border-radius: 0 0 6px 6px; } }
+  @media (max-width: 767px) {
+    .calendar-right {
+      width: 100%; } }
 
 /* ----------------- CALENDAR STYLES END ----------------- */
+/* ----------------- LEAVE-TESTIMONIAL STYLES BEGIN ----------------- */
+.leave-testimonial {
+  margin-top: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+  .leave-testimonial:hover {
+    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .leave-testimonial form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 245px; }
+
+.testimonial-divider {
+  border-top: 1px solid #e4e4e4; }
+
+.form-testimonial-list li {
+  float: left; }
+  .form-testimonial-list li .form-group textarea {
+    width: 240px;
+    height: 140px; }
+
+.form-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px; }
+
+.btn-doctor-page {
+  margin-top: 15px;
+  padding: 12px 30px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#00ae9f));
+  background: -webkit-linear-gradient(top, #00c7bb 0%, #00ae9f 100%);
+  background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
+  .btn-doctor-page:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#01867a));
+    background: -webkit-linear-gradient(top, #00c7bb 0%, #01867a 100%);
+    background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%); }
+
+/* ----------------- LEAVE-TESTIMONIAL STYLES END ----------------- */
+/* ----------------- TESTIMONIALS-LIST STYLES BEGIN ----------------- */
+.block-testimonials {
+  margin: 25px 0 0 5px;
+  padding: 27px 40px 30px 23px;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+          border-radius: 6px; }
+  .block-testimonials:hover {
+    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .block-testimonials h4 {
+    font-size: 15px; }
+
+@media (max-width: 571px) {
+  .testimonial-first-level,
+  .testimonial-second-level,
+  .testimonial-third-level {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.testimonial-avatar {
+  float: left;
+  width: 65px;
+  height: 65px;
+  background: url("../img/testimonial-avatar.jpg") no-repeat;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  @media (max-width: 571px) {
+    .testimonial-avatar {
+      float: none;
+      margin: 0 auto; } }
+
+.testimonial-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.testimonial-bordered {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4; }
+
+/* ----------------- TESTIMONIALS-LIST STYLES END ----------------- */
+/* ----------------- TESTIMONIALS PAGINATION STYLES BEGIN ----------------- */
+.pagination-numbers-list li {
+  float: left;
+  width: 26px;
+  height: 26px;
+  padding-top: 2px;
+  text-align: center; }
+  .pagination-numbers-list li:hover {
+    background-color: #00bdaf;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .pagination-numbers-list li a {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 11px;
+    color: #898989; }
+    .pagination-numbers-list li a:hover {
+      text-decoration: none;
+      color: #fff; }
+
+.col-prev,
+.col-numbers,
+.col-next {
+  margin-top: 30px;
+  text-align: right; }
+
+/* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
 .bg-top {
   margin-top: -20px;
   padding-bottom: 28px;

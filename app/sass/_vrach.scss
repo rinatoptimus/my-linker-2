@@ -153,9 +153,20 @@
 /* ----------------- CALENDAR STYLES BEGIN ----------------- */
 .calendar {
   display: flex;
+  @include medium-desktop-lg {
+    display: block;
+  }
+  @include small-devices {
+    display: block;
+  }
     .black {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      @include medium-desktop-lg {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 0;
+      }
     }
     .black:before {
       background-color: rgba(0, 0, 0, 0.1);
@@ -168,16 +179,33 @@
   width: 270px;
   height: 320px;
   background: url('../img/bg-calendar.jpg') no-repeat;
+  @include medium-desktop-lg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  @include small-devices {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
 }
 .calendar-divider {
   margin-right: 30px;
   margin-left: 30px;
-  border-top: 1px solid $divider-calendar;
+  border-top: 1px solid $grey-divider-light;
 }
 .calendar-text {
   color: $white;
 }
 .calendar-table {
+  @include medium-desktop-lg {
+    margin: 0 auto;
+  }
+  @include small-devices {
+    height: 100px;
+    margin: 0 auto;
+  }
   tr {
     td {
       background-color: $white;
@@ -196,5 +224,146 @@
   background-color: $bg-calendar;
   border-radius: 0 6px 6px 0;
   color: $white;
+  @include medium-desktop-lg {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 6px 6px;
+  }
+  @include small-devices {
+    width: 100%;
+  }
 }
 /* ----------------- CALENDAR STYLES END ----------------- */
+
+/* ----------------- LEAVE-TESTIMONIAL STYLES BEGIN ----------------- */
+.leave-testimonial {
+  margin-top: 20px;
+  background-color: $white;
+  border-radius: 6px;
+  &:hover {
+    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    transition: .5s ease-in-out;
+  }
+    form {
+      display: flex;
+      flex-direction: column;
+      height: 245px;
+    }
+}
+.testimonial-divider {
+  border-top: 1px solid $grey-divider-light;
+}
+.form-testimonial-list {
+  li {
+    float: left;
+      .form-group {
+        textarea {
+          width: 240px;
+          height: 140px;
+        }
+      }
+  }
+}
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.btn-doctor-page {
+  margin-top: 15px;
+  padding: 12px 30px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(to bottom, #00c7bb 0%, #00ae9f 100%);
+  color: $white;
+  border: none;
+  border-radius: 20px;
+  &:hover {
+    background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%);
+  }
+}
+/* ----------------- LEAVE-TESTIMONIAL STYLES END ----------------- */
+
+/* ----------------- TESTIMONIALS-LIST STYLES BEGIN ----------------- */
+.block-testimonials {
+  margin: 25px 0 0 5px;
+  padding: 27px 40px 30px 23px;
+  background-color: $white;
+  border-radius: 6px;
+  &:hover {
+    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    transition: .5s ease-in-out;
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
+.testimonial-first-level {
+
+}
+.testimonial-second-level {
+
+}
+.testimonial-first-level,
+.testimonial-second-level,
+.testimonial-third-level {
+  @include phone-lg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.testimonial-avatar {
+  float: left;
+  width: 65px;
+  height:65px;
+  background: url('../img/testimonial-avatar.jpg') no-repeat;
+  border-radius: 50%;
+  @include phone-lg {
+    float: none;
+    margin: 0 auto;
+  }
+}
+.testimonial-text {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-bordered {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $grey-divider-light;
+  border-bottom: 1px solid $grey-divider-light;
+}
+/* ----------------- TESTIMONIALS-LIST STYLES END ----------------- */
+
+/* ----------------- TESTIMONIALS PAGINATION STYLES BEGIN ----------------- */
+.pagination-numbers-list {
+  li {
+    float: left;
+    width: 26px;
+    height: 26px;
+    padding-top: 2px;
+    text-align: center;
+    &:hover {
+      background-color: $green;
+      border-radius: 50%;
+    }
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 11px;
+        color: $header-list;
+        &:hover {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+  }
+}
+.col-prev,
+.col-numbers,
+.col-next {
+  margin-top: 30px;
+  text-align: right;
+}
+/* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
