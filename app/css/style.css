@@ -4585,6 +4585,7 @@ textarea:focus, input:focus, .btn:focus {
   padding-left: 20px; }
 
 .doctor-name {
+  padding-right: 30px;
   padding-left: 20px;
   font-size: 16px;
   color: #00bcae; }
@@ -4599,17 +4600,19 @@ textarea:focus, input:focus, .btn:focus {
   clear: both; }
 
 .sidebar-subtitle {
+  padding-right: 30px;
   padding-left: 20px;
   font-family: "Open Sans Bold", Arial, sans-serif;
   font-size: 12px;
   font-weight: 600; }
 
 .specification-text {
+  padding-right: 30px;
   padding-left: 20px;
   font-size: 12px; }
 
 .specification-list {
-  padding-right: 20px;
+  padding-right: 30px;
   list-style: none;
   font-size: 12px; }
   .specification-list li::before {
@@ -4714,7 +4717,8 @@ textarea:focus, input:focus, .btn:focus {
       display: block; } }
   @media (max-width: 767px) {
     .calendar {
-      display: block; } }
+      display: block;
+      margin-top: 25px; } }
   .calendar .black {
     -webkit-border-top-right-radius: 0;
             border-top-right-radius: 0;

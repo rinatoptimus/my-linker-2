@@ -101,6 +101,7 @@
   padding-left: 20px;
 }
 .doctor-name {
+  padding-right: 30px;
   padding-left: 20px;
   font-size: 16px;
   color: $green-name;
@@ -115,17 +116,19 @@
   clear: both;
 }
 .sidebar-subtitle {
+  padding-right: 30px;
   padding-left: 20px;
   font-family: $bold;
   font-size: 12px;
   font-weight: 600;
 }
 .specification-text {
+  padding-right: 30px;
   padding-left: 20px;
   font-size: 12px;
 }
 .specification-list {
-  padding-right: 20px;
+  padding-right: 30px;
   list-style: none;
   font-size: 12px;
     li::before {
@@ -229,6 +232,7 @@
   }
   @include small-devices {
     display: block;
+    margin-top: 25px;
   }
     .black {
       border-top-right-radius: 0;
