@@ -5014,7 +5014,7 @@ textarea:focus, input:focus, .btn:focus {
 /* ----------------- LEAVE-TESTIMONIAL STYLES END ----------------- */
 /* ----------------- TESTIMONIALS-LIST STYLES BEGIN ----------------- */
 .block-testimonials {
-  margin: 30px 0 40px 5px;
+  margin: 30px 0 40px 0;
   padding: 33px 25px 30px 23px;
   background-color: #fff;
   -webkit-border-radius: 6px;
