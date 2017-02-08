@@ -4521,37 +4521,23 @@ textarea:focus, input:focus, .btn:focus {
     .sidebar-right #sidebar.well nav .sidebar-right li {
       padding-left: 20px; }
     .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li-places {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
       border-bottom: none; }
       .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li-places a {
+        overflow: hidden;
         letter-spacing: 0;
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 12px;
         color: #2b2b2b; }
 
 .container-geo-mark {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-right: 5px; }
+  .container-geo-mark i {
+    float: left;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 10px; }
 
 .sidebar-map {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 270px;
   background-color: red;
@@ -4563,6 +4549,7 @@ textarea:focus, input:focus, .btn:focus {
   width: 180px;
   height: 85px;
   top: 65px;
+  margin: 0 auto;
   padding: 0px;
   background: #00bdaf;
   -webkit-border-radius: 5px;
@@ -4656,7 +4643,7 @@ textarea:focus, input:focus, .btn:focus {
               flex-direction: column; } }
   @media (max-width: 1201px) {
     .thumbnail .thumbnail-info-doctors-grid {
-      width: 390px; } }
+      width: 295px; } }
   @media (max-width: 991px) {
     .thumbnail .thumbnail-info-doctors-grid {
       width: 222px;
@@ -4715,10 +4702,8 @@ textarea:focus, input:focus, .btn:focus {
 /* ----------------- THUMBNAIL STYLES END ----------------- */
 /* ----------------- CALENDAR STYLES BEGIN ----------------- */
 .calendar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out; }
@@ -4754,6 +4739,7 @@ textarea:focus, input:focus, .btn:focus {
     position: relative; }
 
 .calendar-left {
+  float: left;
   width: 270px;
   height: 340px;
   padding-top: 26px;
@@ -4840,7 +4826,9 @@ textarea:focus, input:focus, .btn:focus {
   -webkit-border-radius: 0 6px 6px 0;
           border-radius: 0 6px 6px 0;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  position: absolute;
+  right: 0; }
   @media (max-width: 1201px) {
     .calendar-right {
       width: 370px; } }
@@ -4857,6 +4845,7 @@ textarea:focus, input:focus, .btn:focus {
 /* ----------------- CALENDAR STYLES END ----------------- */
 /* ----------------- LEAVE-TESTIMONIAL STYLES BEGIN ----------------- */
 .leave-testimonial {
+  clear: both;
   margin-top: 20px;
   background-color: #fff;
   -webkit-border-radius: 6px;
@@ -4870,33 +4859,13 @@ textarea:focus, input:focus, .btn:focus {
         -ms-transform: translateY(-1px);
             transform: translateY(-1px); }
   .leave-testimonial form {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 245px;
+    overflow: hidden;
     height: auto;
     padding-bottom: 30px; }
 
 .testimonial-header {
   padding-top: 18px;
   padding-left: 27px; }
-  @media (max-width: 571px) {
-    .testimonial-header {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
   .testimonial-header .title {
     font-size: 22px;
     font-family: "Open Sans ExtraBold", Arial, sans-serif;
@@ -4910,7 +4879,9 @@ textarea:focus, input:focus, .btn:focus {
   border-top: 1px solid #e4e4e4; }
 
 .form-testimonial-list {
+  float: left;
   margin-top: -7px;
+  margin-bottom: 0;
   padding-left: 29px; }
   .form-testimonial-list .name-phone {
     margin-right: 30px; }
@@ -4948,20 +4919,17 @@ textarea:focus, input:focus, .btn:focus {
       max-width: 385px; } }
 
 .form-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  clear: both;
+  overflow: hidden;
+  padding-top: 15px;
   margin-top: 5px;
   margin-right: 20px; }
+  @media (max-width: 991px) {
+    .form-footer {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .form-footer {
+      padding-left: 30px; } }
   @media (max-width: 571px) {
     .form-footer {
       -webkit-box-orient: vertical;
@@ -4975,6 +4943,7 @@ textarea:focus, input:focus, .btn:focus {
               align-items: center;
       margin: 0 auto; } }
   .form-footer p {
+    float: left;
     margin-right: 30px;
     margin-left: 135px;
     font-size: 12px;
@@ -4989,6 +4958,9 @@ textarea:focus, input:focus, .btn:focus {
     margin-top: -10px;
     margin-right: 10px;
     padding: 12px 35px; }
+    @media (max-width: 991px) {
+      .form-footer .btn-doctor-page {
+        margin-top: 0; } }
 
 .btn-doctor-page {
   margin-top: 15px;
@@ -5062,20 +5034,6 @@ textarea:focus, input:focus, .btn:focus {
   margin-bottom: 0;
   padding-left: 27px; }
 
-@media (max-width: 571px) {
-  .testimonial-first-level,
-  .testimonial-second-level,
-  .testimonial-third-level {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
 .testimonial-avatar {
   float: left;
   width: 65px;
@@ -5091,15 +5049,7 @@ textarea:focus, input:focus, .btn:focus {
       margin: 0 auto 15px; } }
 
 .testimonial-text {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  overflow: hidden; }
   .testimonial-text p {
     text-align: justify; }
 
@@ -5134,21 +5084,8 @@ textarea:focus, input:focus, .btn:focus {
     font-size: 11px;
     color: #898989; }
 
-.li-last-number {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .li-last-number .last-number {
-    margin-top: -3px; }
+.li-last-number .last-number {
+  margin-top: -3px; }
 
 .col-prev,
 .col-numbers,

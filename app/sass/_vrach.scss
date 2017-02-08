@@ -36,9 +36,9 @@
           padding-left: 20px;
         }
         .sidebar-right-li-places {
-          display: flex;
           border-bottom: none;
             a {
+              overflow: hidden;
               letter-spacing: 0;
               font-family: $regular;
               font-size: 12px;
@@ -50,13 +50,15 @@
   }
 }
 .container-geo-mark {
-  display: flex;
-  align-items: center;
   margin-right: 5px;
+    i {
+      float: left;
+      height: 20px;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
 }
 .sidebar-map {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 270px;
   background-color: red;
@@ -68,6 +70,7 @@
   width: 180px;
   height: 85px;
   top: 65px;
+  margin: 0 auto;
   padding: 0px;
   background: #00bdaf;
   -webkit-border-radius: 5px;
@@ -164,7 +167,7 @@
   }
   .thumbnail-info-doctors-grid {
     @include large-desktop {
-      width: 390px;
+      width: 295px;
     }
     @include medium-desktop-lg {
       width: 222px;
@@ -227,7 +230,8 @@
 
 /* ----------------- CALENDAR STYLES BEGIN ----------------- */
 .calendar {
-  display: flex;
+  position: relative;
+  overflow: hidden;
   margin-bottom: 30px;
   transition: .1s ease-in-out;
   &:hover {
@@ -258,6 +262,7 @@
     }
 }
 .calendar-left {
+  float: left;
   width: 270px;
   height: 340px;
   padding-top: 26px;
@@ -346,6 +351,10 @@
   border-radius: 0 6px 6px 0;
   text-align: center;
   color: $white;
+
+
+  position: absolute;
+  right: 0;
   @include large-desktop {
     width: 370px;
   }
@@ -362,6 +371,7 @@
 
 /* ----------------- LEAVE-TESTIMONIAL STYLES BEGIN ----------------- */
 .leave-testimonial {
+  clear: both;
   margin-top: 20px;
   background-color: $white;
   border-radius: 6px;
@@ -371,10 +381,7 @@
     transform: translateY(-1px);
   }
     form {
-      display: flex;
-      flex-direction: column;
-      height: 245px;
-
+      overflow: hidden;
       height: auto;
       padding-bottom: 30px;
     }
@@ -382,10 +389,6 @@
 .testimonial-header {
   padding-top: 18px;
   padding-left: 27px;
-  @include phone-lg {
-    display: flex;
-    flex-direction: column;
-  }
     .title {
       font-size: 22px;
       font-family: $extraBold;
@@ -404,7 +407,9 @@
   border-top: 1px solid $grey-divider-light;
 }
 .form-testimonial-list {
+  float: left;
   margin-top: -7px;
+  margin-bottom: 0;
   padding-left: 29px;
     .name-phone {
       margin-right: 30px;
@@ -451,17 +456,24 @@
   }
 }
 .form-footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  clear: both;
+  overflow: hidden;
+  padding-top: 15px;
   margin-top: 5px;
   margin-right: 20px;
+  @include medium-desktop-lg {
+    text-align: center;
+  }
+  @include small-devices {
+    padding-left: 30px;
+  }
   @include phone-lg {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
   }
     p {
+      float: left;
       margin-right: 30px;
       margin-left: 135px;
       font-size: 12px;
@@ -477,6 +489,9 @@
       margin-top: -10px;
       margin-right: 10px;
       padding: 12px 35px;
+      @include medium-desktop-lg {
+        margin-top: 0;
+      }
     }
 }
 .btn-doctor-page {
@@ -551,14 +566,6 @@
   margin-bottom: 0;
   padding-left: 27px;
 }
-.testimonial-first-level,
-.testimonial-second-level,
-.testimonial-third-level {
-  @include phone-lg {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .testimonial-avatar {
   float: left;
   width: 65px;
@@ -573,8 +580,7 @@
   }
 }
 .testimonial-text {
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
     p {
       text-align: justify;
     }
@@ -615,9 +621,6 @@
   }
 }
 .li-last-number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
     .last-number {
       margin-top: -3px;
     }
