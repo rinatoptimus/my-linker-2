@@ -1,21 +1,36 @@
 /* ----------------- SIDEBAR STYLES BEGIN ----------------- */
 .sidebar-right {
   color: $header-h4;
+  .overlay:before {
+    @include medium-desktop-lg {
+      position: absolute;
+    }
+  }
   #sidebar.affix {
     position: relative;
+    //@include large-desktop {
+    //  padding-top: 20px;
+    //}
   }
-  #sidebar.affix-top {
+  #sidebar {
     padding-left: 0;
       .sidebar-title {
-        padding-top: 25px;
+        padding-top: 20px;
         padding-bottom: 10px;
         padding-left: 25px;
+        @include large-desktop {
+          padding-top: 20px;
+          //padding-left: 20px;
+        }
       }
   }
   #sidebar.well {
-    padding: 0;
+    padding: 0 0 30px;
     nav {
       .sidebar-right {
+        @include large-desktop {
+          margin-left: 20px;
+        }
         li {
           padding-left: 20px;
         }
@@ -46,11 +61,12 @@
   background-color: red;
   border-radius: 7px;
 }
+
 .bubble {
   position: relative;
   width: 180px;
   height: 85px;
-  top: 40px;
+  top: 65px;
   padding: 0px;
   background: #00bdaf;
   -webkit-border-radius: 5px;
@@ -91,8 +107,12 @@
 }
 .doctor-info-divider {
   margin-right: 15px;
+  margin-bottom: 25px;
   margin-left: 15px;
   border-top: 1px solid $divider;
+}
+.info-text-divider{
+  clear: both;
 }
 .sidebar-subtitle {
   padding-left: 20px;
@@ -151,10 +171,18 @@
   }
 }
 .thumbnail-numbers-list {
+  padding-bottom: 42px;
   padding-left: 10px;
+  @include medium-desktop-lg {
+    padding-right: 20px;
+    padding-bottom: 0;
+  }
     li {
       float: left;
       text-align: right;
+      @include medium-desktop-lg {
+        float: none;
+      }
     }
 }
 .thumbnail-number {
@@ -174,12 +202,16 @@
   margin-right: 21px;
   margin-left: 25px;
   background-color: $divider;
+  @include medium-desktop-lg {
+    display: none;
+  }
 }
 .price-number-text {
   font-size: 12px;
   color: $header-list;
 }
 .thumbnail-text {
+  margin-top: -15px;
   padding-right: 18px;
   padding-left: 18px;
   font-size: 12px;
@@ -303,11 +335,15 @@
   }
 }
 .calendar-right {
-  width: 270px;
+  width: 300px;
   height: 340px;
   background-color: $bg-calendar;
   border-radius: 0 6px 6px 0;
+  text-align: center;
   color: $white;
+  @include large-desktop {
+    width: 370px;
+  }
   @include medium-desktop-lg {
     width: 100%;
     height: auto;
@@ -332,15 +368,29 @@
       display: flex;
       flex-direction: column;
       height: 245px;
+
+      height: auto;
+      padding-bottom: 30px; //1111
     }
 }
 .testimonial-header {
   padding-top: 18px;
   padding-left: 27px;
+  @include phone-lg {
+    display: flex;
+    flex-direction: column;
+  }
     .title {
       font-size: 22px;
       font-family: $extraBold;
       font-weight: 600;
+    }
+    p {
+      .bootstrap-switch {
+        @include medium-desktop-lg {
+          margin-left: 0;
+        }
+      }
     }
 }
 .testimonial-divider {
@@ -352,6 +402,10 @@
   padding-left: 29px;
     .name-phone {
       margin-right: 30px;
+      @include phone-lg {
+        margin-bottom: 15px;
+
+      }
         .block-name {
           margin-bottom: 23px;
         }
@@ -362,6 +416,18 @@
           textarea {
             width: 240px;
             height: 140px;
+            @include large-desktop {
+              width: 305px;
+            }
+            @include medium-desktop-lg {
+              max-width: 385px;
+            }
+            //@include small-devices {
+            //  width: 670px;
+            //}
+            @include phone {
+              width: 240px;
+            }
           }
         }
     }
@@ -376,18 +442,36 @@
   input {
     width: 240px;
     height: 45px;
+    @include medium-desktop-lg {
+      max-width: 385px;
+    }
+    //@include small-devices {
+    //  width: 670px;
+    //}
   }
 }
 .form-footer {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start; // 1111
   margin-top: 5px;
   margin-right: 20px;
+  @include phone-lg {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
     p {
       margin-right: 30px;
-      margin-left: 140px;
+      margin-left: 135px;
       font-size: 12px;
       color: $header-list;
+      @include small-devices {
+        margin-left: 0;
+      }
+      @include phone-lg {
+        margin-bottom: 20px;
+      }
     }
     .btn-doctor-page {
       margin-top: -10px;
@@ -405,6 +489,9 @@
   color: $white;
   border: none;
   border-radius: 20px;
+  @include phone-lg {
+    margin-right: 0;
+  }
   &:hover {
     background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%);
   }
@@ -481,7 +568,7 @@
   border-radius: 50%;
   @include phone-lg {
     float: none;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
 }
 .testimonial-text {
@@ -501,6 +588,9 @@
 
 /* ----------------- TESTIMONIALS PAGINATION STYLES BEGIN ----------------- */
 .pagination-numbers-list {
+  @include phone {
+    padding-left: 0;
+  }
   li {
     float: left;
     width: 26px;
@@ -558,6 +648,16 @@
           margin-left: 12px;
         }
     }
+  }
+}
+.col-prev {
+  @include small-devices {
+    text-align: left;
+  }
+}
+.col-next {
+  @include small-devices {
+    text-align: right;
   }
 }
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
