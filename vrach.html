@@ -137,7 +137,7 @@
                             <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title text-uppercase">Оставьте отзыв</p>
                             <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-uppercase">
                                 <input id="boxid" type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-thumbs-up' aria-hidden='true'></i>" data-off-text="<i class='fa fa-thumbs-down' aria-hidden='true'></i>">
-                                <span class="test show-me toggle red"></span>
+                                <span class="test show-me toggle affirmative"></span>
                             </p>
                         </div>
                         <hr class="testimonial-divider">
@@ -370,71 +370,6 @@
 <script src="app/js/vendor/bootstrap-switch.js"></script>
 <script src="app/js/bootstrap-switch-init.js"></script>
 
-<script>
-//    $('#boxid').click(function() {
-//        if ($('#boxid').is(':checked')) {
-//            $('.test').html('Положительный');
-//        } else {
-//            $('.test').html('Отрицательный');
-//        }
-//    });
-
-
-//$('#boxid').click(function() {
-//    if ($(this).is(':checked')) {
-//        $('.test').html('Отрицательный');
-//    } else {
-//        $('.test').html('Положительный');
-//    }
-//});
-
-//$('#boxid').click(function() {
-//    if ($(this).is(':checked')) {
-//        $('.test').html('checked');
-//    } else {
-//        $('.test').html('Положительный');
-//    }
-//});
-
-
-//$('.bootstrap-switch-success').click(function() {
-//    $('.test').css('visibility', 'hidden');
-//});
-
-
-
-//$(function(){
-//    $(".bootstrap-switch-success").click(
-//            function() {
-//                $('.test', this).toggleClass("hide-me");
-//            },
-//            function() {
-//                $('.test', this).toggleClass("show-me");
-//            });
-//});
-
-//РАбюотает $('.bootstrap-switch-success').click(function() {
-//    $('.test').hide();
-//    $(this).find('.test').toggle();
-//});
-
-/* РАБОЧИЙ!
-$('.bootstrap-switch-success').click(function(){
-    $('.test').toggleClass('red green');
-});
-
-$('.bootstrap-switch-danger').click(function(){
-    $('.test').toggleClass('green red');
-});
-*/
-
-$('.bootstrap-switch-success').click(function(){
-    $('.test').toggleClass('red green');
-});
-
-$('.bootstrap-switch-danger').click(function(){
-    $('.test').toggleClass('green red');
-});
-</script>
+<script src="app/js/checkbox-label-toggler.js"></script>
 </body>
 </html>

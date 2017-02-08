@@ -5184,10 +5184,10 @@ textarea:focus, input:focus, .btn:focus {
     text-align: right; } }
 
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
-.red:before {
+.affirmative:before {
   content: 'Положительный'; }
 
-.green:before {
+.negative:before {
   content: 'Отрицательный'; }
 
 .bg-top {
