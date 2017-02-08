@@ -8,9 +8,6 @@
   }
   #sidebar.affix {
     position: relative;
-    //@include large-desktop {
-    //  padding-top: 20px;
-    //}
   }
   #sidebar {
     padding-left: 0;
@@ -20,7 +17,6 @@
         padding-left: 25px;
         @include large-desktop {
           padding-top: 20px;
-          //padding-left: 20px;
         }
       }
   }
@@ -147,6 +143,7 @@
 .col-thumbnail {
   padding-right: 5px;
 }
+
 /* ----------------- THUMBNAIL STYLES BEGIN ----------------- */
 .thumbnail-doctor {
   margin-top: 0;
@@ -272,9 +269,6 @@
   margin-left: 30px;
   border-top: 1px solid $grey-divider-light;
 }
-.calendar-text {
-  //color: $white;
-}
 .calendar-day {
   letter-spacing: 2px;
   font-size: 11px;
@@ -310,9 +304,6 @@
       border-radius: 10px;
       text-align: center;
         a {
-          //padding: 3px 11px;
-          //background-color: #fff;
-          //border-radius: 10px;
           font-size: 10px;
           color: $calendar-time;
         }
@@ -374,7 +365,7 @@
       height: 245px;
 
       height: auto;
-      padding-bottom: 30px; //1111
+      padding-bottom: 30px;
     }
 }
 .testimonial-header {
@@ -426,9 +417,6 @@
             @include medium-desktop-lg {
               max-width: 385px;
             }
-            //@include small-devices {
-            //  width: 670px;
-            //}
             @include phone {
               width: 240px;
             }
@@ -449,15 +437,12 @@
     @include medium-desktop-lg {
       max-width: 385px;
     }
-    //@include small-devices {
-    //  width: 670px;
-    //}
   }
 }
 .form-footer {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-start; // 1111
+  align-items: flex-start;
   margin-top: 5px;
   margin-right: 20px;
   @include phone-lg {
