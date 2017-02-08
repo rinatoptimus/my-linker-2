@@ -26,7 +26,7 @@
         <div class="col-lg-9">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-thumbnail">
-                    <div class="thumbnail">
+                    <div class="thumbnail thumbnail-doctor">
                         <ul class="thumbnail-info thumbnail-info-doctors-grid">
                             <li class="profile-stat pull-right">
                                 <ul class="thumbnail-statistics">
@@ -79,50 +79,56 @@
                 <div class="col-lg-8 col-md-8 col-sm-8">
                     <div class="calendar">
                         <div class="calendar-left black overlay">
-                            <p class="calendar-text text-uppercase text-center">Понедельник, 23 янв</p>
-                            <p class="calendar-text text-uppercase text-center">Москва</p>
+                            <p class="text-uppercase text-center calendar-day">Понедельник, 23 янв</p>
+                            <p class="text-uppercase text-center calendar-title calendar-city">Москва</p>
                             <hr class="calendar-divider">
-                            <p class="calendar-text text-uppercase text-center">Клиника инновационной медицины</p>
+                            <p class="text-uppercase text-center calendar-title calendar-name">Клиника инновационной медицины</p>
                             <hr class="calendar-divider">
                             <table class="calendar-table">
                                 <tbody>
-                                <tr>
-                                    <td><a href="#">9:00</a></td>
-                                    <td><a href="#">9:30</a></td>
-                                    <td><a href="#">10:00</a></td>
-                                    <td><a href="#">10:30</a></td>
-                                    <td><a href="#">11:00</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">11:30</a></td>
-                                    <td><a href="#">12:00</a></td>
-                                    <td><a href="#">12:30</a></td>
-                                    <td><a href="#">13:30</a></td>
-                                    <td><a href="#">14:00</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">14:30</a></td>
-                                    <td><a href="#">15:00</a></td>
-                                    <td><a href="#">15:30</a></td>
-                                    <td><a href="#">16:00</a></td>
-                                    <td><a href="#">16:30</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">17:00</a></td>
-                                    <td><a href="#">17:30</a></td>
-                                    <td><a href="#">18:00</a></td>
-                                    <td><a href="#">18:30</a></td>
-                                    <td><a href="#">19:00</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">19:30</a></td>
-                                    <td><a href="#">20:00</a></td>
-                                    <td><a href="#">20:30</a></td>
-                                    <td><a href="#">21:00</a></td>
-                                    <td><a href="#">21:30</a></td>
-                                </tr>
+                                    <tr>
+                                        <td><a href="#">9:00</a></td>
+                                        <td><a href="#">9:30</a></td>
+                                        <td><a href="#">10:00</a></td>
+                                        <td><a href="#">10:30</a></td>
+                                        <td><a href="#">11:00</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">11:30</a></td>
+                                        <td><a href="#">12:00</a></td>
+                                        <td><a href="#">12:30</a></td>
+                                        <td><a href="#">13:30</a></td>
+                                        <td><a href="#">14:00</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">14:30</a></td>
+                                        <td><a href="#">15:00</a></td>
+                                        <td><a href="#">15:30</a></td>
+                                        <td><a href="#">16:00</a></td>
+                                        <td><a href="#">16:30</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">17:00</a></td>
+                                        <td><a href="#">17:30</a></td>
+                                        <td><a href="#">18:00</a></td>
+                                        <td><a href="#">18:30</a></td>
+                                        <td><a href="#">19:00</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">19:30</a></td>
+                                        <td><a href="#">20:00</a></td>
+                                        <td><a href="#">20:30</a></td>
+                                        <td><a href="#">21:00</a></td>
+                                        <td><a href="#">21:30</a></td>
+                                    </tr>
                                 </tbody>
                             </table>
+                            <div class="calendar-footer">
+                                <div>
+                                    <i class="fa fa-location-arrow calendar-location" aria-hidden="true"></i>
+                                </div>
+                                <p class="address">г. Казань, ул. Гаврилова, д. 1</p>
+                            </div>
                         </div>
                         <div class="calendar-right">tytyty</div>
                     </div>
@@ -130,32 +136,40 @@
 
 
                     <div class="leave-testimonial">
-                        <div class="testimonial-header">
-                            <p class="title text-uppercase">Оставьте отзыв</p>
-                            <p class="text-uppercase">Положительный</p>
+                        <!--<div class="testimonial-header">-->
+                            <!--<p class="title text-uppercase">Оставьте отзыв</p>-->
+                            <!--<p class="text-uppercase">Положительный</p>-->
+                        <!--</div>-->
+                        <div class="row testimonial-header">
+                            <p class="col-lg-6 title text-uppercase">Оставьте отзыв</p>
+                            <p class="col-lg-6 text-uppercase">
+                                <input id="boxid" type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-thumbs-up' aria-hidden='true'></i>" data-off-text="<i class='fa fa-thumbs-down' aria-hidden='true'></i>">
+                                <span class="test">Положительный</span>
+                            </p>
                         </div>
+
                         <hr class="testimonial-divider">
                         <form action="" method="POST">
                             <ul class="form-testimonial-list">
-                                <li>
-                                    <div class="form-group">
+                                <li class="name-phone">
+                                    <div class="form-group form-group-testimonial block-name">
                                         <label class="text-uppercase" for="">Имя</label>
-                                        <input type="text" id="" name="" class="clearable form-control form-control-custom" placeholder="Сергей Иванов">
+                                        <input type="text" id="" name="" class="clearable form-control form-control-custom" placeholder="Ваше имя">
                                     </div>
-                                    <div class="form-group">
+                                    <div class="form-group form-group-testimonial">
                                         <label class="text-uppercase" for="">Телефон</label>
                                         <input name="" type="tel" id="" name="" class="clearable form-control form-control-custom input-phone" id="" placeholder="+7 000 000 000">
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="form-group">
+                                    <div class="form-group form-group-testimonial">
                                         <label class="text-uppercase" for="">Ваш отзыв</label>
-                                        <textarea class="form-control form-control-custom" name="" id="" cols="30" rows="7"></textarea>
+                                        <textarea class="form-control form-control-custom" name="" id="" cols="30" rows="7" placeholder="Напишите о враче"></textarea>
                                     </div>
                                 </li>
                             </ul>
                             <div class="form-footer">
-                                <p>обязательно для заполнения -</p>
+                                <p>обязательно для заполнения —</p>
                                 <a class="btn btn-custom btn-doctor-page text-uppercase" href="#" role="button">Оставить отзыв</a>
                             </div>
                         </form>
@@ -168,47 +182,55 @@
 
             <div class="row block-testimonials">
                 <h4 class="text-uppercase">Отзывы</h4>
+                <div>
+                    <div class="col-lg-12 testimonial-first-level">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-text">
+                            <p class="text-uppercase testimonial-author"> От <span class="author-name">Генрих Иванов</span>, 3 дня назад</p>
+                            <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
+                                интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
+                                планирование семьи, ведение беременности.
+                            </p>
+                            <a class="text-uppercase btn-answer" href="#">Ответить</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-11 col-lg-offset-1 testimonial-second-level">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-text">
+                            <p class="text-uppercase testimonial-author"> От <span class="author-name">Генрих Иванов</span>, 3 дня назад</p>
+                            <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
+                                интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
+                                планирование семьи, ведение беременности.
+                            </p>
+                            <a class="text-uppercase btn-answer" href="#">Ответить</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-lg-offset-2 testimonial-third-level">
+                        <div class="testimonial-avatar"></div>
+                        <div class="testimonial-text">
+                            <p class="text-uppercase testimonial-author"> От <span class="author-name">Генрих Иванов</span>, 3 дня назад</p>
+                            <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
+                                интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
+                                планирование семьи, ведение беременности.
+                            </p>
+                            <a class="text-uppercase btn-answer" href="#">Ответить</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="testimonial-divider">
+
                 <div class="col-lg-12 testimonial-first-level">
                     <div class="testimonial-avatar"></div>
                     <div class="testimonial-text">
-                        <p class="text-uppercase"> От <span>Генрих Иванов</span>, 3 дня назад</p>
-                        <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
-                           интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
-                            планирование семьи, ведение беременности.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-11 col-lg-offset-1 testimonial-second-level">
-                    <div class="testimonial-avatar"></div>
-                    <div class="testimonial-text">
-                        <p class="text-uppercase"> От <span>Генрих Иванов</span>, 3 дня назад</p>
+                        <p class="text-uppercase testimonial-author"> От <span class="author-name">Генрих Иванов</span>, 3 дня назад</p>
                         <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
                             интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
                             планирование семьи, ведение беременности.
                         </p>
+                        <a class="text-uppercase btn-answer" href="#">Ответить</a>
                     </div>
                 </div>
-                <div class="col-lg-10 col-lg-offset-2 testimonial-second-level">
-                    <div class="testimonial-avatar"></div>
-                    <div class="testimonial-text">
-                        <p class="text-uppercase"> От <span>Генрих Иванов</span>, 3 дня назад</p>
-                        <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
-                            интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
-                            планирование семьи, ведение беременности.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 testimonial-first-level testimonial-bordered">
-                    <div class="testimonial-avatar"></div>
-                    <div class="testimonial-text">
-                        <p class="text-uppercase"> От <span>Генрих Иванов</span>, 3 дня назад</p>
-                        <p>Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний: проблемы недержание мочи,
-                            интимная пластика, коррекция гормональных нарушений, лечение воспалительных заболеваний органов малого таза,
-                            планирование семьи, ведение беременности.
-                        </p>
-                    </div>
-                </div>
+                <hr class="testimonial-divider">
 
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-prev">
                     <p class="text-uppercase">
@@ -230,7 +252,7 @@
                         <li><a href="#">9</a></li>
                         <li><a href="#">10</a></li>
                         <li><a href="#">...</a></li>
-                        <li><a href="#">457</a></li>
+                        <li class="li-last-number"><a class="last-number" href="#">457</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-next">
@@ -240,12 +262,8 @@
                         </a>
                     </p>
                 </div>
-
-
             </div>
         </div>
-
-
 
         <div class="col-lg-3 scrollspy-sidebar sidebar-right">
             <div class="well affix-top" id="sidebar">
@@ -265,7 +283,16 @@
                             <a href="#">г. Казань, ул. Сибирский Тракт, д. 34, корп. 5</a>
                         </li>
                     </ul>
-                    <div class="sidebar-map black overlay"></div>
+                    <div class="sidebar-map black overlay">
+                        <div class="bubble">
+                            <ul>
+                                <li>г. Казань,</li>
+                                <li>ул. Тельмана, д. 23</li>
+                                <li>085578</li>
+                            </ul>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <p class="doctor-info-title text-uppercase">Информация о враче</p>
                     <p class="doctor-name">Евгений Гуляев</p>
                     <hr class="doctor-info-divider">
@@ -301,23 +328,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -426,5 +436,28 @@
 <script src="app/js/tabs.js"></script>
 
 <script src="app/js/sidebar-rotate-icon.js"></script>
+
+<script src="app/js/input-validation-icon.js"></script>
+<script src="app/js/vendor/bootstrap-switch.js"></script>
+<script src="app/js/bootstrap-switch-init.js"></script>
+
+<script>
+//    $('#boxid').click(function() {
+//        if ($('#boxid').is(':checked')) {
+//            $('.test').html('Положительный');
+//        } else {
+//            $('.test').html('Отрицательный');
+//        }
+//    });
+
+
+//$('#boxid').click(function() {
+//    if ($(this).is(':checked')) {
+//        $('.test').html('Отрицательный');
+//    } else {
+//        $('.test').html('Положительный');
+//    }
+//});
+</script>
 </body>
 </html>

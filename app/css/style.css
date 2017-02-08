@@ -4527,11 +4527,48 @@ textarea:focus, input:focus, .btn:focus {
   margin-right: 5px; }
 
 .sidebar-map {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 270px;
   background-color: red;
   -webkit-border-radius: 7px;
           border-radius: 7px; }
+
+.bubble {
+  position: relative;
+  width: 180px;
+  height: 85px;
+  top: 40px;
+  padding: 0px;
+  background: #00bdaf;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff; }
+  .bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 9px 0;
+    border-color: #00bdaf transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -6px;
+    left: 81px; }
+  .bubble ul {
+    padding-top: 10px;
+    padding-left: 0; }
+  .bubble i {
+    margin-top: 15px;
+    font-size: 30px; }
 
 .doctor-info-title {
   margin-top: 25px;
@@ -4577,6 +4614,10 @@ textarea:focus, input:focus, .btn:focus {
   padding-right: 5px; }
 
 /* ----------------- THUMBNAIL STYLES BEGIN ----------------- */
+.thumbnail-doctor {
+  margin-top: 0;
+  margin-left: -2px; }
+
 .thumbnail {
   max-width: 270px; }
   @media (max-width: 1201px) {
@@ -4641,7 +4682,8 @@ textarea:focus, input:focus, .btn:focus {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 30px; }
   @media (max-width: 991px) {
     .calendar {
       display: block; } }
@@ -4668,8 +4710,10 @@ textarea:focus, input:focus, .btn:focus {
 
 .calendar-left {
   width: 270px;
-  height: 320px;
-  background: url("../img/bg-calendar.jpg") no-repeat; }
+  height: 340px;
+  padding-top: 26px;
+  background: url("../img/bg-calendar.jpg") no-repeat;
+  color: #fff; }
   @media (max-width: 991px) {
     .calendar-left {
       width: 100%;
@@ -4686,8 +4730,25 @@ textarea:focus, input:focus, .btn:focus {
   margin-left: 30px;
   border-top: 1px solid #e4e4e4; }
 
-.calendar-text {
-  color: #fff; }
+.calendar-day {
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 400; }
+
+.calendar-title {
+  font-size: 15px;
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-weight: 800; }
+
+.calendar-city {
+  margin-top: -6px;
+  margin-bottom: -5px; }
+
+.calendar-name {
+  margin-top: -11px;
+  margin-bottom: -6px;
+  line-height: 18px; }
 
 @media (max-width: 991px) {
   .calendar-table {
@@ -4699,17 +4760,37 @@ textarea:focus, input:focus, .btn:focus {
     margin: 0 auto; } }
 
 .calendar-table tr td {
+  padding: 0 8px 1px;
   background-color: #fff;
-  -webkit-border-radius: 7px;
-          border-radius: 7px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   text-align: center; }
   .calendar-table tr td a {
     font-size: 10px;
     color: #181818; }
 
+.calendar-footer div {
+  float: left;
+  margin-right: 7px;
+  padding: 0 6px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .calendar-footer div .calendar-location {
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+    color: #000;
+    font-size: 11px; }
+
+.calendar-footer .address {
+  font-family: "Open Sans Semibold", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400; }
+
 .calendar-right {
   width: 270px;
-  height: 320px;
+  height: 340px;
   background-color: #2a2a2a;
   -webkit-border-radius: 0 6px 6px 0;
           border-radius: 0 6px 6px 0;
@@ -4748,14 +4829,40 @@ textarea:focus, input:focus, .btn:focus {
             flex-direction: column;
     height: 245px; }
 
+.testimonial-header {
+  padding-top: 18px;
+  padding-left: 27px; }
+  .testimonial-header .title {
+    font-size: 22px;
+    font-family: "Open Sans ExtraBold", Arial, sans-serif;
+    font-weight: 600; }
+
 .testimonial-divider {
+  margin-top: 14px;
   border-top: 1px solid #e4e4e4; }
 
-.form-testimonial-list li {
-  float: left; }
-  .form-testimonial-list li .form-group textarea {
-    width: 240px;
-    height: 140px; }
+.form-testimonial-list {
+  margin-top: -7px;
+  padding-left: 29px; }
+  .form-testimonial-list .name-phone {
+    margin-right: 30px; }
+    .form-testimonial-list .name-phone .block-name {
+      margin-bottom: 23px; }
+  .form-testimonial-list li {
+    float: left; }
+    .form-testimonial-list li .form-group textarea {
+      width: 240px;
+      height: 140px; }
+
+.form-group-testimonial label {
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: bold; }
+
+.form-group-testimonial input {
+  width: 240px;
+  height: 45px; }
 
 .form-footer {
   display: -webkit-box;
@@ -4766,7 +4873,17 @@ textarea:focus, input:focus, .btn:focus {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 5px;
   margin-right: 20px; }
+  .form-footer p {
+    margin-right: 30px;
+    margin-left: 140px;
+    font-size: 12px;
+    color: #898989; }
+  .form-footer .btn-doctor-page {
+    margin-top: -10px;
+    margin-right: 10px;
+    padding: 12px 35px; }
 
 .btn-doctor-page {
   margin-top: 15px;
@@ -4789,8 +4906,8 @@ textarea:focus, input:focus, .btn:focus {
 /* ----------------- LEAVE-TESTIMONIAL STYLES END ----------------- */
 /* ----------------- TESTIMONIALS-LIST STYLES BEGIN ----------------- */
 .block-testimonials {
-  margin: 25px 0 0 5px;
-  padding: 27px 40px 30px 23px;
+  margin: 30px 0 40px 5px;
+  padding: 33px 25px 30px 23px;
   background-color: #fff;
   -webkit-border-radius: 6px;
           border-radius: 6px; }
@@ -4800,7 +4917,39 @@ textarea:focus, input:focus, .btn:focus {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out; }
   .block-testimonials h4 {
-    font-size: 15px; }
+    margin-bottom: 29px;
+    font-size: 15px;
+    font-family: "Open Sans ExtraBold", Arial, sans-serif;
+    font-weight: 800; }
+
+.testimonial-author {
+  margin-bottom: 6px;
+  font-size: 11px;
+  color: #898989; }
+  .testimonial-author .author-name {
+    font-size: 11px;
+    font-family: "Open Sans ExtraBold", Arial, sans-serif;
+    font-weight: 800;
+    color: #00bdaf; }
+
+.btn-answer {
+  margin-top: -9px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 600;
+  color: #00bdaf; }
+  .btn-answer:hover {
+    color: #00bdaf; }
+  .btn-answer:focus {
+    color: #00bdaf;
+    outline: none; }
+
+.testimonial-second-level,
+.testimonial-third-level {
+  margin-top: 19px;
+  margin-bottom: 0;
+  padding-left: 27px; }
 
 @media (max-width: 571px) {
   .testimonial-first-level,
@@ -4820,6 +4969,8 @@ textarea:focus, input:focus, .btn:focus {
   float: left;
   width: 65px;
   height: 65px;
+  margin-right: 16px;
+  margin-left: -15px;
   background: url("../img/testimonial-avatar.jpg") no-repeat;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
@@ -4838,12 +4989,14 @@ textarea:focus, input:focus, .btn:focus {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .testimonial-text p {
+    text-align: justify; }
 
-.testimonial-bordered {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #e4e4e4;
-  border-bottom: 1px solid #e4e4e4; }
+.testimonial-divider {
+  display: inline-block;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 14px; }
 
 /* ----------------- TESTIMONIALS-LIST STYLES END ----------------- */
 /* ----------------- TESTIMONIALS PAGINATION STYLES BEGIN ----------------- */
@@ -4857,20 +5010,55 @@ textarea:focus, input:focus, .btn:focus {
     background-color: #00bdaf;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
+  .pagination-numbers-list li:hover a {
+    text-decoration: none;
+    color: #fff; }
   .pagination-numbers-list li a {
     padding-left: 5px;
     padding-right: 5px;
     font-size: 11px;
     color: #898989; }
-    .pagination-numbers-list li a:hover {
-      text-decoration: none;
-      color: #fff; }
+
+.li-last-number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .li-last-number .last-number {
+    margin-top: -3px; }
 
 .col-prev,
 .col-numbers,
 .col-next {
   margin-top: 30px;
   text-align: right; }
+
+.col-prev p a,
+.col-next p a {
+  color: #00bdaf;
+  font-size: 12px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 600; }
+  .col-prev p a:hover > i,
+  .col-next p a:hover > i {
+    color: #00bdaf; }
+  .col-prev p a i,
+  .col-next p a i {
+    color: #898989; }
+  .col-prev p a .fa-arrow-left,
+  .col-next p a .fa-arrow-left {
+    margin-right: 12px; }
+  .col-prev p a .fa-arrow-right,
+  .col-next p a .fa-arrow-right {
+    margin-left: 12px; }
 
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
 .bg-top {
