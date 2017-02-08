@@ -3002,30 +3002,13 @@ div.form-block-characteristics {
   .btn-remove-avatar i {
     top: -1px; }
 
-.media-avatar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+.media-left {
+  float: left; }
 
-.form-clinic {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  @media (max-width: 1201px) {
-    .form-clinic {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: column-reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      padding-right: 15px;
-      padding-left: 15px; } }
+@media (max-width: 1201px) {
+  .form-clinic {
+    padding-right: 15px;
+    padding-left: 15px; } }
 
 .dl-horizontal .dt-left-custom {
   width: 130px;
@@ -3120,27 +3103,18 @@ div.form-block-characteristics {
 .lead-block-doctors {
   margin-top: 21px; }
 
-.dl-avatar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+@media (max-width: 1201px) {
+  .dl-avatar {
+    display: block; } }
+
+.dl-avatar .dd-avatar {
+  margin-left: 0; }
   @media (max-width: 1201px) {
-    .dl-avatar {
-      display: block; } }
-  .dl-avatar .dd-avatar {
-    margin-left: 0; }
-    @media (max-width: 1201px) {
-      .dl-avatar .dd-avatar {
-        margin-left: 180px; } }
-    @media (max-width: 767px) {
-      .dl-avatar .dd-avatar {
-        margin-left: 0; } }
+    .dl-avatar .dd-avatar {
+      margin-left: 180px; } }
+  @media (max-width: 767px) {
+    .dl-avatar .dd-avatar {
+      margin-left: 0; } }
 
 .admin-avatar {
   width: 130px;
@@ -3250,10 +3224,7 @@ select.stomatolog, option[value="stomatolog"] {
   color: #fff; }
 
 .block-checkboxes {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-top: 0;
   margin-bottom: 10px; }
   @media (max-width: 1201px) {
@@ -3274,6 +3245,7 @@ select.stomatolog, option[value="stomatolog"] {
     top: -1px; }
 
 .block-checkbox-adults {
+  display: inline;
   margin-right: 32px; }
 
 .checkbox {
@@ -3284,6 +3256,7 @@ select.stomatolog, option[value="stomatolog"] {
   display: inline-block;
   vertical-align: middle;
   margin-left: -8px;
+  padding-top: 6px;
   padding-left: 5px;
   font-size: 13px; }
 
@@ -3361,6 +3334,7 @@ select.stomatolog, option[value="stomatolog"] {
   opacity: 1; }
 
 .checkbox + .block-checkbox-children {
+  display: inline;
   margin-top: 10px; }
   @media (max-width: 1201px) {
     .checkbox + .block-checkbox-children {
@@ -4020,18 +3994,13 @@ input[type="number"]::-webkit-inner-spin-button {
           transform: rotate(180deg);
   color: #3c3c3c; }
 
-.row-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  @media (max-width: 1201px) {
-    .row-content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: column-reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse; } }
+@media (max-width: 1201px) {
+  .row-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
 
 .container-wide {
   padding-right: 0;
@@ -4339,22 +4308,21 @@ button.tab-input {
   color: #898989; }
 
 /* --------------- СТИЛИ ФИЛЬТРА (НАЧАЛО) --------------- */
-.col-doctors-filter {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  @media (max-width: 991px) {
-    .col-doctors-filter {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
-  .col-doctors-filter .block-checkboxes {
-    margin-left: auto; }
-    .col-doctors-filter .block-checkboxes .checkbox label {
-      margin-top: 5px; }
+.row-doc-filter {
+  overflow: hidden; }
+
+@media (max-width: 991px) {
+  .col-doctors-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.col-doctors-filter .block-checkboxes {
+  margin-left: auto; }
+  .col-doctors-filter .block-checkboxes .checkbox label {
+    margin-top: 5px; }
 
 .label-sort {
   margin-top: 6px;
@@ -4367,16 +4335,47 @@ button.tab-input {
 
 .col-doctors-filter {
   height: 39px; }
+  @media (max-width: 991px) {
+    .col-doctors-filter {
+      height: 90px; } }
+  @media (max-width: 767px) {
+    .col-doctors-filter {
+      height: 125px; } }
+  @media (max-width: 571px) {
+    .col-doctors-filter {
+      height: 140px; } }
+  @media (max-width: 401px) {
+    .col-doctors-filter {
+      height: 155px; } }
   .col-doctors-filter .doctors-filter-buttons {
-    margin-top: 14px; }
-  .col-doctors-filter .block-checkboxes .block-checkbox-adults {
-    margin-right: 10px; }
-    .col-doctors-filter .block-checkboxes .block-checkbox-adults label[for="checkbox-adults"] {
-      width: 100px; }
-  .col-doctors-filter .block-checkboxes .block-checkbox-children {
-    margin-right: 10px; }
-    .col-doctors-filter .block-checkboxes .block-checkbox-children label[for="checkbox-children"] {
-      width: 100px; }
+    float: left;
+    margin-top: 14px;
+    margin-right: 25px; }
+  .col-doctors-filter .block-checkboxes {
+    position: absolute;
+    top: 5px;
+    right: 0px; }
+    @media (max-width: 991px) {
+      .col-doctors-filter .block-checkboxes {
+        top: 41px;
+        left: 15px; } }
+    @media (max-width: 767px) {
+      .col-doctors-filter .block-checkboxes {
+        top: 75px; } }
+    @media (max-width: 571px) {
+      .col-doctors-filter .block-checkboxes {
+        top: 95px; } }
+    @media (max-width: 401px) {
+      .col-doctors-filter .block-checkboxes {
+        top: 120px; } }
+    .col-doctors-filter .block-checkboxes .block-checkbox-adults {
+      margin-right: 10px; }
+      .col-doctors-filter .block-checkboxes .block-checkbox-adults label[for="checkbox-adults"] {
+        width: 100px; }
+    .col-doctors-filter .block-checkboxes .block-checkbox-children {
+      margin-right: 10px; }
+      .col-doctors-filter .block-checkboxes .block-checkbox-children label[for="checkbox-children"] {
+        width: 100px; }
 
 .btn-group-sm .doctors-filter-name {
   padding-right: 7px;
@@ -4420,16 +4419,9 @@ button.tab-input {
 .filter-block-divider {
   margin-top: 1px;
   border-top: 1px solid #e0e0e0; }
-  @media (max-width: 991px) {
+  @media (max-width: 1201px) {
     .filter-block-divider {
-      margin-bottom: 60px; } }
-  @media (max-width: 767px) {
-    .filter-block-divider {
-      visibility: hidden;
-      margin-bottom: 80px; } }
-  @media (max-width: 571px) {
-    .filter-block-divider {
-      margin-bottom: 100px; } }
+      border-top: 1px solid transparent; } }
 
 /* --------------- СТИЛИ ФИЛЬТРА (КОНЕЦ) --------------- */
 .row-doctors-grid {
@@ -4490,15 +4482,7 @@ textarea:focus, input:focus, .btn:focus {
 
 /* ----------------- SIDEBAR STYLES BEGIN ----------------- */
 .sidebar-right {
-  color: #2b2b2b;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out; }
-  .sidebar-right:hover {
-    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
+  color: #2b2b2b; }
   @media (max-width: 991px) {
     .sidebar-right .overlay:before {
       position: absolute; } }

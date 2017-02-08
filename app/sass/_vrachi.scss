@@ -1,5 +1,4 @@
 .row-content {
-  display: flex;
   @include large-desktop {
     flex-direction: column-reverse;
   }
@@ -344,8 +343,10 @@ button.tab-input {
 }
 
 /* --------------- СТИЛИ ФИЛЬТРА (НАЧАЛО) --------------- */
+.row-doc-filter {
+  overflow: hidden;
+}
 .col-doctors-filter {
-  display: flex;
   @include medium-desktop-lg {
     flex-direction: column;
   }
@@ -369,22 +370,52 @@ button.tab-input {
 }
 .col-doctors-filter {
   height: 39px;
+  @include medium-desktop-lg {
+    height: 90px;
+  }
+  @include small-devices {
+    height: 125px;
+  }
+  @include phone-lg {
+    height: 140px;
+  }
+  @include phone {
+    height: 155px;
+  }
     .doctors-filter-buttons {
+      float: left;
       margin-top: 14px;
+      margin-right: 25px;
     }
     .block-checkboxes {
-      .block-checkbox-adults {
-        margin-right: 10px;
-        label[for="checkbox-adults"] {
-          width: 100px;
-        }
+      position: absolute;
+      top: 5px;
+      right: 0px;
+      @include medium-desktop-lg {
+        top: 41px;
+        left: 15px;
       }
-      .block-checkbox-children {
-        margin-right: 10px;
-        label[for="checkbox-children"] {
-          width: 100px;
-        }
+      @include small-devices {
+        top: 75px;
       }
+      @include phone-lg {
+        top: 95px;
+      }
+      @include phone {
+        top: 120px;
+      }
+        .block-checkbox-adults {
+          margin-right: 10px;
+          label[for="checkbox-adults"] {
+            width: 100px;
+          }
+        }
+        .block-checkbox-children {
+          margin-right: 10px;
+          label[for="checkbox-children"] {
+            width: 100px;
+          }
+        }
     }
 }
 .btn-group-sm {
@@ -436,15 +467,8 @@ button.tab-input {
 .filter-block-divider {
   margin-top: 1px;
   border-top: 1px solid $divider;
-  @include medium-desktop-lg {
-    margin-bottom: 60px;
-  }
-  @include small-devices {
-    visibility: hidden;
-    margin-bottom: 80px;
-  }
-  @include phone-lg {
-    margin-bottom: 100px;
+  @include large-desktop {
+    border-top: 1px solid transparent;
   }
 }
 /* --------------- СТИЛИ ФИЛЬТРА (КОНЕЦ) --------------- */
