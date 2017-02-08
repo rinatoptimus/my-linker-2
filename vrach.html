@@ -137,7 +137,7 @@
                             <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title text-uppercase">Оставьте отзыв</p>
                             <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-uppercase">
                                 <input id="boxid" type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-thumbs-up' aria-hidden='true'></i>" data-off-text="<i class='fa fa-thumbs-down' aria-hidden='true'></i>">
-                                <span class="test">Положительный</span>
+                                <span class="test show-me toggle red"></span>
                             </p>
                         </div>
                         <hr class="testimonial-divider">
@@ -387,6 +387,54 @@
 //        $('.test').html('Положительный');
 //    }
 //});
+
+//$('#boxid').click(function() {
+//    if ($(this).is(':checked')) {
+//        $('.test').html('checked');
+//    } else {
+//        $('.test').html('Положительный');
+//    }
+//});
+
+
+//$('.bootstrap-switch-success').click(function() {
+//    $('.test').css('visibility', 'hidden');
+//});
+
+
+
+//$(function(){
+//    $(".bootstrap-switch-success").click(
+//            function() {
+//                $('.test', this).toggleClass("hide-me");
+//            },
+//            function() {
+//                $('.test', this).toggleClass("show-me");
+//            });
+//});
+
+//РАбюотает $('.bootstrap-switch-success').click(function() {
+//    $('.test').hide();
+//    $(this).find('.test').toggle();
+//});
+
+/* РАБОЧИЙ!
+$('.bootstrap-switch-success').click(function(){
+    $('.test').toggleClass('red green');
+});
+
+$('.bootstrap-switch-danger').click(function(){
+    $('.test').toggleClass('green red');
+});
+*/
+
+$('.bootstrap-switch-success').click(function(){
+    $('.test').toggleClass('red green');
+});
+
+$('.bootstrap-switch-danger').click(function(){
+    $('.test').toggleClass('green red');
+});
 </script>
 </body>
 </html>

@@ -4490,7 +4490,15 @@ textarea:focus, input:focus, .btn:focus {
 
 /* ----------------- SIDEBAR STYLES BEGIN ----------------- */
 .sidebar-right {
-  color: #2b2b2b; }
+  color: #2b2b2b;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+  .sidebar-right:hover {
+    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
   @media (max-width: 991px) {
     .sidebar-right .overlay:before {
       position: absolute; } }
@@ -4711,7 +4719,15 @@ textarea:focus, input:focus, .btn:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+  .calendar:hover {
+    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
   @media (max-width: 991px) {
     .calendar {
       display: block; } }
@@ -4844,12 +4860,15 @@ textarea:focus, input:focus, .btn:focus {
   margin-top: 20px;
   background-color: #fff;
   -webkit-border-radius: 6px;
-          border-radius: 6px; }
+          border-radius: 6px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
   .leave-testimonial:hover {
     -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out; }
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
   .leave-testimonial form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4999,12 +5018,15 @@ textarea:focus, input:focus, .btn:focus {
   padding: 33px 25px 30px 23px;
   background-color: #fff;
   -webkit-border-radius: 6px;
-          border-radius: 6px; }
+          border-radius: 6px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
   .block-testimonials:hover {
     -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out; }
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
   .block-testimonials h4 {
     margin-bottom: 29px;
     font-size: 15px;
@@ -5162,6 +5184,12 @@ textarea:focus, input:focus, .btn:focus {
     text-align: right; } }
 
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
+.red:before {
+  content: 'Положительный'; }
+
+.green:before {
+  content: 'Отрицательный'; }
+
 .bg-top {
   margin-top: -20px;
   padding-bottom: 28px;
