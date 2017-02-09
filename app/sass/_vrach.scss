@@ -728,3 +728,62 @@
 }
 .affirmative:before { content: 'Положительный'; }
 .negative:before { content: 'Отрицательный'; }
+
+
+
+
+// Для анимации зеленой точки (работает со скриптом
+.form-testimonial-list {
+  li {
+    div {
+      input.form-control-custom[type=number] {
+        -moz-appearance: textfield !important;
+      }
+      input.form-control-custom[type=number]::-webkit-outer-spin-button,
+      input.form-control-custom[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+      // add icon after input validation
+      .clearable{
+        background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
+        padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
+        border-radius: 0;
+        transition: background 0.4s;
+      }
+      .clearable.x  {
+        background-position: right 5px center;
+
+        // для скрытия зеленой точки:
+        position: absolute;
+        z-index: 10;
+      }
+      .clearable::-ms-clear {display: none; width:0; height:0;}
+
+      .clearable::-ms-clear {
+        display: none;
+      }
+    }
+  }
+}
+
+.block-name {
+  position: relative;
+}
+.green-dot {
+  width: 4px;
+  height: 4px;
+  background-color: green;
+
+  position: absolute;
+  top: 48px;
+  right: 14px;
+  border-radius: 50%;
+}
+.green-dot-visible {
+  visibility: visible;
+}
+.green-dot-hidden {
+  visibility: hidden;
+}
