@@ -27,7 +27,6 @@
     padding: 0 0 30px;
     background-color: $white;
     nav {
-      //.sidebar-right {
       .sidebar-right-block {
         margin-top: 11px;
         @include large-desktop {
@@ -460,6 +459,9 @@
               width: 240px;
             }
           }
+          textarea.clearable-textarea {
+            padding-top: 12px;
+          }
         }
     }
 }
@@ -727,12 +729,25 @@
         // для скрытия зеленой точки:
         position: relative;
         z-index: 10;
-
       }
       .clearable::-ms-clear {display: none; width:0; height:0;}
-
       .clearable::-ms-clear {
         display: none;
+      }
+
+      // для анимации галочки в textarea
+      .clearable-textarea {
+        background: #fff url('../img/icon-checked.png') no-repeat right -17px top 15px;
+        padding: 3px 25px 3px 10px;
+        border-radius: 0;
+        transition: background 0.4s;
+      }
+      .clearable-textarea.x  {
+        background-position: right 5px top 15px;
+
+        // для скрытия зеленой точки:
+        position: relative;
+        z-index: 10;
       }
     }
   }

@@ -4936,6 +4936,8 @@ textarea:focus, input:focus, .btn:focus {
       @media (max-width: 401px) {
         .form-testimonial-list li .form-group textarea {
           width: 240px; } }
+    .form-testimonial-list li .form-group textarea.clearable-textarea {
+      padding-top: 12px; }
 
 .form-group-testimonial label {
   margin-bottom: 8px;
@@ -5198,6 +5200,19 @@ textarea:focus, input:focus, .btn:focus {
 
 .form-testimonial-list li div .clearable::-ms-clear {
   display: none; }
+
+.form-testimonial-list li div .clearable-textarea {
+  background: #fff url("../img/icon-checked.png") no-repeat right -17px top 15px;
+  padding: 3px 25px 3px 10px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s; }
+
+.form-testimonial-list li div .clearable-textarea.x {
+  background-position: right 5px top 15px;
+  position: relative;
+  z-index: 10; }
 
 .block-name {
   position: relative; }

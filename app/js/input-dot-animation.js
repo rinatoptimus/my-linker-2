@@ -19,4 +19,14 @@ $(function() {
             $(".green-dot-phone").removeClass("green-dot-hidden");
         }
     });
+
+    $("textarea").on("click", function(e) {
+        $(".green-dot-testimonial").addClass("green-dot-hidden");
+        e.stopPropagation()
+    });
+    $(document).on("click", function(e) {
+        if ($(e.target).is("textarea") === false) {
+            $(".green-dot-testimonial").removeClass("green-dot-hidden");
+        }
+    });
 });
