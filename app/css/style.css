@@ -5027,7 +5027,8 @@ textarea:focus, input:focus, .btn:focus {
   .btn-doctor-page:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(#00c7bb), to(#01867a));
     background: -webkit-linear-gradient(top, #00c7bb 0%, #01867a 100%);
-    background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%); }
+    background: linear-gradient(to bottom, #00c7bb 0%, #01867a 100%);
+    color: #fff; }
 
 /* ----------------- LEAVE-TESTIMONIAL STYLES END ----------------- */
 /* ----------------- TESTIMONIALS-LIST STYLES BEGIN ----------------- */
