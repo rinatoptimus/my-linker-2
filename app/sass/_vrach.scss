@@ -729,10 +729,7 @@
 .affirmative:before { content: 'Положительный'; }
 .negative:before { content: 'Отрицательный'; }
 
-
-
-
-// Для анимации зеленой точки (работает со скриптом
+// Для анимации зеленой точки (работает со скриптом input-dot-animation)
 .form-testimonial-list {
   li {
     div {
@@ -768,7 +765,6 @@
     }
   }
 }
-
 .block-name {
   position: relative;
 }
@@ -788,3 +784,4 @@
 .green-dot-hidden {
   visibility: hidden;
 }
+// Конец стилей для анимации зеленой точки в инпутах
