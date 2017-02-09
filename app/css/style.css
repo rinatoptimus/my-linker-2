@@ -4396,11 +4396,13 @@ button.tab-input {
         top: 120px; } }
     .col-doctors-filter .block-checkboxes .block-checkbox-adults {
       display: inline;
+      margin-top: 6px;
       margin-right: 10px; }
       .col-doctors-filter .block-checkboxes .block-checkbox-adults label[for="checkbox-adults"] {
         width: 100px; }
     .col-doctors-filter .block-checkboxes .block-checkbox-children {
       display: inline;
+      margin-top: 6px;
       margin-right: 10px; }
       .col-doctors-filter .block-checkboxes .block-checkbox-children label[for="checkbox-children"] {
         width: 100px; }
@@ -4509,49 +4511,66 @@ textarea:focus, input:focus, .btn:focus {
   display: inline-block; }
 
 /* ----------------- SIDEBAR STYLES BEGIN ----------------- */
-.sidebar-right {
+.sidebar-right-doctors {
+  margin-top: -2px;
   color: #2b2b2b; }
   @media (max-width: 991px) {
-    .sidebar-right .overlay:before {
+    .sidebar-right-doctors .overlay:before {
       position: absolute; } }
-  .sidebar-right #sidebar.affix {
-    position: relative; }
-  .sidebar-right #sidebar {
+  .sidebar-right-doctors #sidebar.affix {
+    position: relative;
+    height: auto; }
+  .sidebar-right-doctors #sidebar {
     padding-left: 0; }
-    .sidebar-right #sidebar .sidebar-title {
-      padding-top: 20px;
-      padding-bottom: 10px;
-      padding-left: 25px; }
+    .sidebar-right-doctors #sidebar .sidebar-title {
+      padding-top: 30px;
+      padding-bottom: 0;
+      padding-left: 27px; }
       @media (max-width: 1201px) {
-        .sidebar-right #sidebar .sidebar-title {
+        .sidebar-right-doctors #sidebar .sidebar-title {
           padding-top: 20px; } }
-  .sidebar-right #sidebar.well {
-    padding: 0 0 30px; }
-    @media (max-width: 1201px) {
-      .sidebar-right #sidebar.well nav .sidebar-right {
-        margin-left: 20px; } }
-    .sidebar-right #sidebar.well nav .sidebar-right li {
-      padding-left: 20px; }
-    .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li-places {
-      border-bottom: none; }
-      .sidebar-right #sidebar.well nav .sidebar-right .sidebar-right-li-places a {
-        overflow: hidden;
-        letter-spacing: 0;
-        font-family: "Open Sans", Arial, sans-serif;
-        font-size: 12px;
-        color: #2b2b2b; }
+  .sidebar-right-doctors #sidebar.well {
+    padding: 0 0 30px;
+    background-color: #fff; }
+    .sidebar-right-doctors #sidebar.well nav .sidebar-right-block {
+      margin-top: 11px; }
+      @media (max-width: 1201px) {
+        .sidebar-right-doctors #sidebar.well nav .sidebar-right-block {
+          margin-left: 20px; } }
+      .sidebar-right-doctors #sidebar.well nav .sidebar-right-block li {
+        margin-bottom: -2px;
+        padding-left: 20px; }
+        .sidebar-right-doctors #sidebar.well nav .sidebar-right-block li:hover {
+          background-color: transparent; }
+      .sidebar-right-doctors #sidebar.well nav .sidebar-right-block .sidebar-right-li-places {
+        border-bottom: none; }
+        .sidebar-right-doctors #sidebar.well nav .sidebar-right-block .sidebar-right-li-places a {
+          padding-top: 0;
+          padding-right: 30px;
+          padding-left: 0;
+          overflow: hidden;
+          line-height: 20px;
+          letter-spacing: 0;
+          font-family: "Open Sans", Arial, sans-serif;
+          font-size: 12px;
+          color: #2b2b2b; }
+          .sidebar-right-doctors #sidebar.well nav .sidebar-right-block .sidebar-right-li-places a:hover {
+            background-color: transparent; }
 
 .container-geo-mark {
   margin-right: 5px; }
   .container-geo-mark i {
     float: left;
     height: 20px;
-    margin-top: 20px;
-    margin-right: 10px; }
+    margin-top: 11px;
+    margin-right: 10px;
+    margin-left: -10px;
+    font-size: 20px; }
 
 .sidebar-map {
   width: 100%;
-  height: 270px;
+  height: 240px;
+  margin-top: 6px;
   background-color: red;
   -webkit-border-radius: 7px;
           border-radius: 7px; }
@@ -4562,7 +4581,7 @@ textarea:focus, input:focus, .btn:focus {
   height: 85px;
   top: 65px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 9px 0 0;
   background: #00bdaf;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -4582,26 +4601,37 @@ textarea:focus, input:focus, .btn:focus {
   .bubble ul {
     padding-top: 10px;
     padding-left: 0; }
+    .bubble ul li {
+      height: 16px;
+      font-size: 13px; }
+    .bubble ul .bubble-phone-number {
+      font-size: 12px; }
   .bubble i {
-    margin-top: 15px;
+    margin-top: 23px;
     font-size: 30px; }
 
 .doctor-info-title {
   margin-top: 25px;
   margin-bottom: 0;
+  padding-right: 30px;
   padding-left: 20px; }
 
 .doctor-name {
+  margin-top: -2px;
   padding-right: 30px;
+  margin-bottom: -6px;
   padding-left: 20px;
   font-size: 16px;
   color: #00bcae; }
 
 .doctor-info-divider {
-  margin-right: 15px;
+  margin-right: 34px;
   margin-bottom: 25px;
-  margin-left: 15px;
+  margin-left: 29px;
   border-top: 1px solid #e0e0e0; }
+
+.doctor-sidebar-divider {
+  margin-bottom: 15px; }
 
 .info-text-divider {
   clear: both; }
@@ -4614,14 +4644,21 @@ textarea:focus, input:focus, .btn:focus {
   font-weight: 600; }
 
 .specification-text {
+  margin-top: -6px;
   padding-right: 30px;
   padding-left: 20px;
+  line-height: 20px;
   font-size: 12px; }
 
 .specification-list {
+  margin-top: 13px;
   padding-right: 30px;
+  margin-bottom: -6px;
   list-style: none;
   font-size: 12px; }
+  .specification-list li {
+    margin-bottom: 8px;
+    line-height: 14px; }
   .specification-list li::before {
     content: "•";
     color: #00bcae;
@@ -4631,6 +4668,12 @@ textarea:focus, input:focus, .btn:focus {
     margin-left: -1em;
     font-size: 17px;
     vertical-align: sub; }
+
+.title-education {
+  margin-top: -10px; }
+
+.title-courses {
+  margin-top: -10px; }
 
 /* ----------------- SIDEBAR STYLES END ----------------- */
 .col-thumbnail {
@@ -4886,7 +4929,13 @@ textarea:focus, input:focus, .btn:focus {
     .testimonial-header p .bootstrap-switch {
       margin-left: 0; } }
 
-.testimonial-divider {
+.block-affirmative-negative {
+  padding-left: 50px; }
+  @media (max-width: 991px) {
+    .block-affirmative-negative {
+      padding-left: 15px; } }
+
+.leave-testimonial-divider {
   margin-top: 14px;
   border-top: 1px solid #e4e4e4; }
 
@@ -5133,6 +5182,11 @@ textarea:focus, input:focus, .btn:focus {
     text-align: right; } }
 
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
+.change-label {
+  margin-left: 15px;
+  font-size: 12px;
+  color: #7e7e7e; }
+
 .affirmative:before {
   content: 'Положительный'; }
 

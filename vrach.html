@@ -197,12 +197,12 @@
                     <div class="leave-testimonial">
                         <div class="row testimonial-header">
                             <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 title text-uppercase">Оставьте отзыв</p>
-                            <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-uppercase">
+                            <p class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-uppercase block-affirmative-negative">
                                 <input id="boxid" type="checkbox" name="my-checkbox" checked data-on-color="success" data-off-color="danger" data-on-text="<i class='fa fa-thumbs-up' aria-hidden='true'></i>" data-off-text="<i class='fa fa-thumbs-down' aria-hidden='true'></i>">
-                                <span class="change-label show-me toggle affirmative"></span>
+                                <span class="change-label affirmative"></span>
                             </p>
                         </div>
-                        <hr class="testimonial-divider">
+                        <hr class="leave-testimonial-divider">
                         <form action="" method="POST">
                             <ul class="form-testimonial-list">
                                 <li class="name-phone">
@@ -315,11 +315,11 @@
             </div>
         </div>
 
-        <div class="col-lg-3 scrollspy-sidebar sidebar-right">
+        <div class="col-lg-3 scrollspy-sidebar sidebar-right-doctors">
             <div class="well affix-top" id="sidebar">
                 <p class="text-uppercase sidebar-title">Принимает по адресу</p>
                 <nav class="bs-docs-sidebar">
-                    <ul class="nav nav-pills nav-stacked nav-sidebar sidebar-right">
+                    <ul class="nav nav-pills nav-stacked nav-sidebar sidebar-right-block">
                         <li class="sidebar-right-li sidebar-right-li-places">
                             <div class="container-geo-mark">
                                 <i class="fa fa-map-marker green-icon" aria-hidden="true"></i>
@@ -338,14 +338,14 @@
                             <ul>
                                 <li>г. Казань,</li>
                                 <li>ул. Тельмана, д. 23</li>
-                                <li>085578</li>
+                                <li class="bubble-phone-number">085578</li>
                             </ul>
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </div>
                     </div>
                     <p class="doctor-info-title text-uppercase">Информация о враче</p>
                     <p class="doctor-name">Евгений Гуляев</p>
-                    <hr class="doctor-info-divider">
+                    <hr class="doctor-info-divider doctor-sidebar-divider">
                     <p class="sidebar-subtitle text-uppercase">Специализация</p>
                     <p class="specification-text">Выполняет диагностику, лечение и хирургические вмешательства по следующим видам заболеваний:</p>
                     <ul class="specification-list">
@@ -356,7 +356,7 @@
                         <li>планирование семьи;</li>
                     </ul>
                     <hr class="doctor-info-divider">
-                    <p class="sidebar-subtitle text-uppercase">Образование</p>
+                    <p class="sidebar-subtitle text-uppercase title-education">Образование</p>
                     <ul class="">
                         <li></li>
                         <li></li>
@@ -368,7 +368,7 @@
                         <li>Аспирантура, Казанская медицинская академия (2001 г.)</li>
                     </ul>
                     <hr class="doctor-info-divider">
-                    <p class="sidebar-subtitle text-uppercase">Курсы повышения квалификации</p>
+                    <p class="sidebar-subtitle text-uppercase title-courses">Курсы повышения квалификации</p>
                     <ul class="specification-list">
                         <li>"Акушерство и гинекология", Германия, Корея, Словения, Хорватия, Черногория, Франция</li>
                         <li>"Оперативная гинекология и акушерство", Ведущая клиника Красного креста г. Мюнхен, Германия (2004 г.)</li>

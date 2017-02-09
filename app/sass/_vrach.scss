@@ -1,5 +1,7 @@
 /* ----------------- SIDEBAR STYLES BEGIN ----------------- */
-.sidebar-right {
+//.sidebar-right {
+.sidebar-right-doctors {
+  margin-top: -2px;
   color: $header-h4;
   //transition: .1s ease-in-out;
   //&:hover {
@@ -13,13 +15,14 @@
   }
   #sidebar.affix {
     position: relative;
+    height: auto;
   }
   #sidebar {
     padding-left: 0;
       .sidebar-title {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        padding-left: 25px;
+        padding-top: 30px;
+        padding-bottom: 0;
+        padding-left: 27px;
         @include large-desktop {
           padding-top: 20px;
         }
@@ -27,22 +30,36 @@
   }
   #sidebar.well {
     padding: 0 0 30px;
+    background-color: $white;
     nav {
-      .sidebar-right {
+      //.sidebar-right {
+      .sidebar-right-block {
+        margin-top: 11px;
         @include large-desktop {
           margin-left: 20px;
         }
         li {
+          margin-bottom: -2px;
           padding-left: 20px;
+          &:hover {
+            background-color: transparent;
+          }
         }
         .sidebar-right-li-places {
           border-bottom: none;
             a {
+              padding-top: 0;
+              padding-right: 30px;
+              padding-left: 0;
               overflow: hidden;
+              line-height: 20px;
               letter-spacing: 0;
               font-family: $regular;
               font-size: 12px;
               color: $header-h4;
+              &:hover {
+                background-color: transparent;
+              }
             }
         }
       }
@@ -54,13 +71,16 @@
     i {
       float: left;
       height: 20px;
-      margin-top: 20px;
+      margin-top: 11px;
       margin-right: 10px;
+      margin-left: -10px;
+      font-size: 20px;
     }
 }
 .sidebar-map {
   width: 100%;
-  height: 270px;
+  height: 240px;
+  margin-top: 6px;
   background-color: red;
   border-radius: 7px;
 }
@@ -71,7 +91,7 @@
   height: 85px;
   top: 65px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 9px 0 0;
   background: #00bdaf;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -93,28 +113,41 @@
   ul {
     padding-top: 10px;
     padding-left: 0;
+      li {
+        height: 16px;
+        font-size: 13px;
+      }
+      .bubble-phone-number {
+        font-size: 12px;
+      }
   }
   i {
-    margin-top: 15px;
+    margin-top: 23px;
     font-size: 30px;
   }
 }
 .doctor-info-title {
   margin-top: 25px;
   margin-bottom: 0;
+  padding-right: 30px;
   padding-left: 20px;
 }
 .doctor-name {
+  margin-top: -2px;
   padding-right: 30px;
+  margin-bottom: -6px;
   padding-left: 20px;
   font-size: 16px;
   color: $green-name;
 }
 .doctor-info-divider {
-  margin-right: 15px;
+  margin-right: 34px;
   margin-bottom: 25px;
-  margin-left: 15px;
+  margin-left: 29px;
   border-top: 1px solid $divider;
+}
+.doctor-sidebar-divider {
+  margin-bottom: 15px;
 }
 .info-text-divider{
   clear: both;
@@ -127,14 +160,22 @@
   font-weight: 600;
 }
 .specification-text {
+  margin-top: -6px;
   padding-right: 30px;
   padding-left: 20px;
+  line-height: 20px;
   font-size: 12px;
 }
 .specification-list {
+  margin-top: 13px;
   padding-right: 30px;
+  margin-bottom: -6px;
   list-style: none;
   font-size: 12px;
+    li {
+      margin-bottom: 8px;
+      line-height: 14px;
+    }
     li::before {
       content: "•";
       color: $green-name;
@@ -145,6 +186,12 @@
       font-size: 17px;
       vertical-align: sub;
     }
+}
+.title-education {
+  margin-top: -10px;
+}
+.title-courses {
+  margin-top: -10px;
 }
 /* ----------------- SIDEBAR STYLES END ----------------- */
 
@@ -402,7 +449,13 @@
       }
     }
 }
-.testimonial-divider {
+.block-affirmative-negative {
+  padding-left: 50px;
+  @include medium-desktop-lg {
+    padding-left: 15px;
+  }
+}
+.leave-testimonial-divider {
   margin-top: 14px;
   border-top: 1px solid $grey-divider-light;
 }
@@ -666,6 +719,12 @@
 }
 /* ----------------- TESTIMONIALS PAGINATION STYLES END ----------------- */
 
+
 // Для переключения чекбокса "Положительный-Отрицательный"
+.change-label {
+  margin-left: 15px;
+  font-size: 12px;
+  color: $grey-darker;
+}
 .affirmative:before { content: 'Положительный'; }
 .negative:before { content: 'Отрицательный'; }
