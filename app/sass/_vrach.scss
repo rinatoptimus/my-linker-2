@@ -756,8 +756,9 @@
         background-position: right 5px center;
 
         // для скрытия зеленой точки:
-        position: absolute;
+        position: relative;
         z-index: 10;
+
       }
       .clearable::-ms-clear {display: none; width:0; height:0;}
 
@@ -774,7 +775,7 @@
 .green-dot {
   width: 4px;
   height: 4px;
-  background-color: green;
+  background-color: $breadcrumb-first;
 
   position: absolute;
   top: 48px;

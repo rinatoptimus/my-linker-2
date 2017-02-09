@@ -2724,7 +2724,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   appearance: none;
   margin: 0; }
 
-.clearable000000000 {
+.clearable {
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
   padding: 3px 18px 3px 10px;
   /* Use the same right padding (18) in jQ! */
@@ -2733,30 +2733,30 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   -webkit-transition: background 0.4s;
   transition: background 0.4s; }
 
-.clearable000000000.x {
+.clearable.x {
   background-position: right 5px center; }
 
-.clearable000000000::-ms-clear {
+.clearable::-ms-clear {
   display: none;
   width: 0;
   height: 0; }
 
-.clearable000000000::-ms-clear {
+.clearable::-ms-clear {
   display: none; }
 
-.clearable000000000::-webkit-input-placeholder {
+.clearable::-webkit-input-placeholder {
   font-style: normal; }
 
-.clearable000000000:-moz-placeholder {
+.clearable:-moz-placeholder {
   font-style: italic; }
 
-.clearable000000000::-moz-placeholder {
+.clearable::-moz-placeholder {
   font-style: italic; }
 
-.clearable000000000:-ms-input-placeholder {
+.clearable:-ms-input-placeholder {
   font-style: italic; }
 
-.clearable-long000000000 {
+.clearable-long {
   max-width: 600px;
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
   padding: 3px 18px 3px 20px;
@@ -2767,10 +2767,10 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
   transition: background 0.4s;
   font-style: normal; }
 
-.clearable-long000000000.x {
+.clearable-long.x {
   background-position: right 20px center; }
 
-.clearable-long000000000::-ms-clear {
+.clearable-long::-ms-clear {
   display: none; }
 
 .form-group-custom {
@@ -5213,7 +5213,7 @@ textarea:focus, input:focus, .btn:focus {
 
 .form-testimonial-list li div .clearable.x {
   background-position: right 5px center;
-  position: absolute;
+  position: relative;
   z-index: 10; }
 
 .form-testimonial-list li div .clearable::-ms-clear {
@@ -5230,7 +5230,7 @@ textarea:focus, input:focus, .btn:focus {
 .green-dot {
   width: 4px;
   height: 4px;
-  background-color: green;
+  background-color: #00bdaf;
   position: absolute;
   top: 48px;
   right: 14px;
