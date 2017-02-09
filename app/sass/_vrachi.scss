@@ -405,12 +405,14 @@ button.tab-input {
         top: 120px;
       }
         .block-checkbox-adults {
+          display: inline;
           margin-right: 10px;
           label[for="checkbox-adults"] {
             width: 100px;
           }
         }
         .block-checkbox-children {
+          display: inline;
           margin-right: 10px;
           label[for="checkbox-children"] {
             width: 100px;
