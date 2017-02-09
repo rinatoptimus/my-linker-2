@@ -10,7 +10,9 @@
   }
   #sidebar.affix {
     position: relative;
-    height: auto;
+  }
+  #sidebar.affix-top {
+    position: relative;
   }
   #sidebar {
     padding-left: 0;

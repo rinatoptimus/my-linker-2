@@ -4528,8 +4528,9 @@ textarea:focus, input:focus, .btn:focus {
     .sidebar-right-doctors .overlay:before {
       position: absolute; } }
   .sidebar-right-doctors #sidebar.affix {
-    position: relative;
-    height: auto; }
+    position: relative; }
+  .sidebar-right-doctors #sidebar.affix-top {
+    position: relative; }
   .sidebar-right-doctors #sidebar {
     padding-left: 0; }
     .sidebar-right-doctors #sidebar .sidebar-title {
