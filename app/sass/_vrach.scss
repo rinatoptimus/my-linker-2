@@ -3,11 +3,6 @@
 .sidebar-right-doctors {
   margin-top: -2px;
   color: $header-h4;
-  //transition: .1s ease-in-out;
-  //&:hover {
-  //  box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-  //  transform: translateY(-1px);
-  //}
   .overlay:before {
     @include medium-desktop-lg {
       position: absolute;
@@ -276,55 +271,34 @@
 /* ----------------- THUMBNAIL STYLES END ----------------- */
 
 /* ----------------- CALENDAR STYLES BEGIN ----------------- */
-.calendar {
-  position: relative;
-  overflow: hidden;
+.bg-calendar {
+  max-width: 570px;
+  height: auto;
   margin-bottom: 30px;
-  transition: .1s ease-in-out;
-  &:hover {
-    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    transform: translateY(-1px);
-  }
-  @include medium-desktop-lg {
-    display: block;
-  }
-  @include small-devices {
-    display: block;
-    margin-top: 25px;
-  }
-    .black {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      @include medium-desktop-lg {
-        border-top-right-radius: 6px;
-        border-top-left-radius: 6px;
-        border-bottom-left-radius: 0;
-      }
-    }
-    .black:before {
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    .black > * {
-      position: relative;
-    }
-}
-.calendar-left {
-  float: left;
-  width: 270px;
-  height: 340px;
-  padding-top: 26px;
-  background: url('../img/bg-calendar.jpg') no-repeat;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: url('../img/bg-calendar-large.jpg') no-repeat;
+  background-size: cover;
   color: $white;
-  @include medium-desktop-lg {
-    width: 100%;
-    height: auto;
-    background-size: cover;
-  }
   @include small-devices {
-    width: 100%;
-    height: auto;
-    background-size: cover;
+    margin: 20px auto 0;
   }
+  @include phone-md {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+.bg-calendar.overlay:before {
+  @include medium-desktop-lg {
+    position: absolute;
+  }
+}
+.calendar-content {
+  position: relative;
+}
+.calendar-title {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .calendar-divider {
   margin-right: 30px;
@@ -352,6 +326,9 @@
   line-height: 18px;
 }
 .calendar-table {
+  margin: -15px auto 0;
+  border-collapse: separate;
+  border-spacing: 8px 10px;
   @include medium-desktop-lg {
     margin: 0 auto;
   }
@@ -359,60 +336,58 @@
     height: 100px;
     margin: 0 auto;
   }
-  tr {
-    td {
-      padding: 0 8px 1px;
-      background-color: $white;
-      border-radius: 10px;
-      text-align: center;
+    tr {
+      td {
+        padding: 0 8px 1px;
+        background-color: $white;
+        border-radius: 10px;
+        text-align: center;
+        &:hover {
+          background-color: $breadcrumb-first;
+        }
         a {
           font-size: 10px;
           color: $calendar-time;
+          &:hover {
+            text-decoration: none;
+          }
         }
+      }
     }
-  }
 }
 .calendar-footer {
+  text-align: center;
+    .input-date {
+      width: 230px;
+      margin: 0 auto;
+      border-radius: 17px;
+      border: none;
+    }
   div {
     float: left;
     margin-right: 7px;
     padding: 0 6px;
     background-color: $white;
     border-radius: 50%;
-      .calendar-location {
-        transform: scaleX(-1);
-        color: $black;
-        font-size: 11px;
-      }
-  }
-  .address {
-    font-family: $semibold;
-    font-size: 13px;
-    font-weight: 400;
+    .calendar-location {
+      transform: scaleX(-1);
+      color: $black;
+      font-size: 11px;
+    }
   }
 }
-.calendar-right {
-  width: 300px;
-  height: 340px;
-  background-color: $bg-calendar;
-  border-radius: 0 6px 6px 0;
-  text-align: center;
-  color: $white;
-
-
-  position: absolute;
-  right: 0;
-  @include large-desktop {
-    width: 370px;
-  }
-  @include medium-desktop-lg {
-    width: 100%;
-    height: auto;
-    border-radius: 0 0 6px 6px;
-  }
-  @include small-devices {
-    width: 100%;
-  }
+.calendar-footer-list {
+  max-width: 230px;
+  margin: 10px auto 0;
+  padding-left: 0;
+    li {
+      .address {
+        margin-bottom: 20px;
+        font-family: $semibold;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
 }
 /* ----------------- CALENDAR STYLES END ----------------- */
 
@@ -422,11 +397,6 @@
   margin-top: 20px;
   background-color: $white;
   border-radius: 6px;
-  transition: .1s ease-in-out;
-  &:hover {
-    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    transform: translateY(-1px);
-  }
     form {
       overflow: hidden;
       height: auto;
@@ -547,6 +517,16 @@
       }
     }
 }
+.green-dot-symbol {
+  position: relative;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  right: 25px;
+  float: left;
+  border-radius: 50%;
+  background-color: $breadcrumb-first;
+  text-align: right;}
 .btn-doctor-page {
   margin-top: 15px;
   padding: 12px 30px;
@@ -572,11 +552,6 @@
   padding: 33px 25px 30px 23px;
   background-color: $white;
   border-radius: 6px;
-  transition: .1s ease-in-out;
-  &:hover {
-    box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    transform: translateY(-1px);
-  }
   h4 {
     margin-bottom: 29px;
     font-size: 15px;
@@ -609,9 +584,6 @@
     color: $green;
     outline: none;
   }
-}
-.testimonial-first-level {
-
 }
 .testimonial-second-level,
 .testimonial-third-level {
@@ -745,7 +717,7 @@
       // add icon after input validation
       .clearable{
         background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
-        padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
+        padding: 3px 25px 3px 10px; /* Use the same right padding (18) in jQ! */
         border-radius: 0;
         transition: background 0.4s;
       }

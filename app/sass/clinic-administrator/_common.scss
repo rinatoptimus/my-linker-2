@@ -102,7 +102,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 // add icon after input validation
 .clearable{
   background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
-  padding: 3px 18px 3px 10px; /* Use the same right padding (18) in jQ! */
+  padding: 3px 25px 3px 10px; /* Use the same right padding (18) in jQ! */
   border-radius: 0;
   transition: background 0.4s;
 }
@@ -123,7 +123,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 .clearable-long {
   max-width: 600px;
   background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
-  padding: 3px 18px 3px 20px; /* Use the same right padding (18) in jQ! */
+  padding: 3px 25px 3px 20px; /* Use the same right padding (18) in jQ! */
   border-radius: 0;
   transition: background 0.4s;
   font-style: normal;

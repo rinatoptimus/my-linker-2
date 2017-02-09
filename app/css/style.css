@@ -135,6 +135,16 @@ select {
       .title-icon:before {
         display: none; } }
 
+.hover-animation {
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out; }
+  .hover-animation:hover {
+    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px); }
+
 .navbar-main-menu {
   position: relative;
   min-height: 29px;
@@ -2726,7 +2736,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 
 .clearable {
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
-  padding: 3px 18px 3px 10px;
+  padding: 3px 25px 3px 10px;
   /* Use the same right padding (18) in jQ! */
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -2759,7 +2769,7 @@ input.form-control-custom[type=number]::-webkit-inner-spin-button {
 .clearable-long {
   max-width: 600px;
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
-  padding: 3px 18px 3px 20px;
+  padding: 3px 25px 3px 20px;
   /* Use the same right padding (18) in jQ! */
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -4756,60 +4766,33 @@ textarea:focus, input:focus, .btn:focus {
 
 /* ----------------- THUMBNAIL STYLES END ----------------- */
 /* ----------------- CALENDAR STYLES BEGIN ----------------- */
-.calendar {
-  position: relative;
-  overflow: hidden;
+.bg-calendar {
+  max-width: 570px;
+  height: auto;
   margin-bottom: 30px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out; }
-  .calendar:hover {
-    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
-  @media (max-width: 991px) {
-    .calendar {
-      display: block; } }
-  @media (max-width: 767px) {
-    .calendar {
-      display: block;
-      margin-top: 25px; } }
-  .calendar .black {
-    -webkit-border-top-right-radius: 0;
-            border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
-            border-bottom-right-radius: 0; }
-    @media (max-width: 991px) {
-      .calendar .black {
-        -webkit-border-top-right-radius: 6px;
-                border-top-right-radius: 6px;
-        -webkit-border-top-left-radius: 6px;
-                border-top-left-radius: 6px;
-        -webkit-border-bottom-left-radius: 0;
-                border-bottom-left-radius: 0; } }
-  .calendar .black:before {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .calendar .black > * {
-    position: relative; }
-
-.calendar-left {
-  float: left;
-  width: 270px;
-  height: 340px;
-  padding-top: 26px;
-  background: url("../img/bg-calendar.jpg") no-repeat;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  background: url("../img/bg-calendar-large.jpg") no-repeat;
+  background-size: cover;
   color: #fff; }
-  @media (max-width: 991px) {
-    .calendar-left {
-      width: 100%;
-      height: auto;
-      background-size: cover; } }
   @media (max-width: 767px) {
-    .calendar-left {
-      width: 100%;
-      height: auto;
-      background-size: cover; } }
+    .bg-calendar {
+      margin: 20px auto 0; } }
+  @media (max-width: 376px) {
+    .bg-calendar {
+      padding-top: 13px;
+      padding-bottom: 13px; } }
+
+@media (max-width: 991px) {
+  .bg-calendar.overlay:before {
+    position: absolute; } }
+
+.calendar-content {
+  position: relative; }
+
+.calendar-title {
+  padding-left: 30px;
+  padding-right: 30px; }
 
 .calendar-divider {
   margin-right: 30px;
@@ -4836,66 +4819,62 @@ textarea:focus, input:focus, .btn:focus {
   margin-bottom: -6px;
   line-height: 18px; }
 
-@media (max-width: 991px) {
-  .calendar-table {
-    margin: 0 auto; } }
-
-@media (max-width: 767px) {
-  .calendar-table {
-    height: 100px;
-    margin: 0 auto; } }
-
-.calendar-table tr td {
-  padding: 0 8px 1px;
-  background-color: #fff;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  text-align: center; }
-  .calendar-table tr td a {
-    font-size: 10px;
-    color: #181818; }
-
-.calendar-footer div {
-  float: left;
-  margin-right: 7px;
-  padding: 0 6px;
-  background-color: #fff;
-  -webkit-border-radius: 50%;
-          border-radius: 50%; }
-  .calendar-footer div .calendar-location {
-    -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-            transform: scaleX(-1);
-    color: #000;
-    font-size: 11px; }
-
-.calendar-footer .address {
-  font-family: "Open Sans Semibold", Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 400; }
-
-.calendar-right {
-  width: 300px;
-  height: 340px;
-  background-color: #2a2a2a;
-  -webkit-border-radius: 0 6px 6px 0;
-          border-radius: 0 6px 6px 0;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  right: 0; }
-  @media (max-width: 1201px) {
-    .calendar-right {
-      width: 370px; } }
+.calendar-table {
+  margin: -15px auto 0;
+  border-collapse: separate;
+  border-spacing: 8px 10px; }
   @media (max-width: 991px) {
-    .calendar-right {
-      width: 100%;
-      height: auto;
-      -webkit-border-radius: 0 0 6px 6px;
-              border-radius: 0 0 6px 6px; } }
+    .calendar-table {
+      margin: 0 auto; } }
   @media (max-width: 767px) {
-    .calendar-right {
-      width: 100%; } }
+    .calendar-table {
+      height: 100px;
+      margin: 0 auto; } }
+  .calendar-table tr td {
+    padding: 0 8px 1px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    text-align: center; }
+    .calendar-table tr td:hover {
+      background-color: #00bdaf; }
+    .calendar-table tr td a {
+      font-size: 10px;
+      color: #181818; }
+      .calendar-table tr td a:hover {
+        text-decoration: none; }
+
+.calendar-footer {
+  text-align: center; }
+  .calendar-footer .input-date {
+    width: 230px;
+    margin: 0 auto;
+    -webkit-border-radius: 17px;
+            border-radius: 17px;
+    border: none; }
+  .calendar-footer div {
+    float: left;
+    margin-right: 7px;
+    padding: 0 6px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+    .calendar-footer div .calendar-location {
+      -webkit-transform: scaleX(-1);
+          -ms-transform: scaleX(-1);
+              transform: scaleX(-1);
+      color: #000;
+      font-size: 11px; }
+
+.calendar-footer-list {
+  max-width: 230px;
+  margin: 10px auto 0;
+  padding-left: 0; }
+  .calendar-footer-list li .address {
+    margin-bottom: 20px;
+    font-family: "Open Sans Semibold", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400; }
 
 /* ----------------- CALENDAR STYLES END ----------------- */
 /* ----------------- LEAVE-TESTIMONIAL STYLES BEGIN ----------------- */
@@ -4904,15 +4883,7 @@ textarea:focus, input:focus, .btn:focus {
   margin-top: 20px;
   background-color: #fff;
   -webkit-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out; }
-  .leave-testimonial:hover {
-    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
+          border-radius: 6px; }
   .leave-testimonial form {
     overflow: hidden;
     height: auto;
@@ -5023,6 +4994,18 @@ textarea:focus, input:focus, .btn:focus {
       .form-footer .btn-doctor-page {
         margin-top: 0; } }
 
+.green-dot-symbol {
+  position: relative;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  right: 25px;
+  float: left;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #00bdaf;
+  text-align: right; }
+
 .btn-doctor-page {
   margin-top: 15px;
   padding: 12px 30px;
@@ -5051,15 +5034,7 @@ textarea:focus, input:focus, .btn:focus {
   padding: 33px 25px 30px 23px;
   background-color: #fff;
   -webkit-border-radius: 6px;
-          border-radius: 6px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out; }
-  .block-testimonials:hover {
-    -webkit-box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 39px 45px -34px rgba(0, 0, 0, 0.75);
-    -webkit-transform: translateY(-1px);
-        -ms-transform: translateY(-1px);
-            transform: translateY(-1px); }
+          border-radius: 6px; }
   .block-testimonials h4 {
     margin-bottom: 29px;
     font-size: 15px;
@@ -5204,7 +5179,7 @@ textarea:focus, input:focus, .btn:focus {
 
 .form-testimonial-list li div .clearable {
   background: #fff url("../img/icon-checked.png") no-repeat right -17px center;
-  padding: 3px 18px 3px 10px;
+  padding: 3px 25px 3px 10px;
   /* Use the same right padding (18) in jQ! */
   -webkit-border-radius: 0;
           border-radius: 0;
