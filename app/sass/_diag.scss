@@ -1,0 +1,311 @@
+.col-input-diag {
+  margin-top: -5px;
+  padding-right: 14px;
+  padding-left: 14px;
+    .left-input {
+      .form-group {
+        .tab-input {
+          max-width: 300px;
+          padding-right: 14px;
+        }
+      }
+    }
+}
+.input-region-diag {
+  margin-left: 18px;
+  @include medium-desktop-lg {
+    margin-left: -6px;
+  }
+    .left-inner-addon {
+      .form-group {
+        .tab-icon-geo {
+          @include phone-lg {
+            position: relative;
+            top: 50px;
+          }
+        }
+        .tab-input {
+          max-width: 280px;
+          padding-right: 14px;
+          @include phone-md {
+            margin-left: 10px;
+            width: 100%;
+          }
+        }
+        .subtext {
+          position: relative;
+          top: 7px;
+          @include medium-desktop-lg {
+            left: 0;
+          }
+        }
+      }
+    }
+}
+.input-group-btn:last-child>button.btn-find-clinic {
+  margin-left: 34px;
+  padding-right: 28px;
+  padding-left: 28px;
+  @include large-desktop {
+    margin-left: 0;
+  }
+}
+
+button.btn-find-clinic {
+  padding-right: 22px;
+  padding-left: 22px;
+  font-size: 14px;
+}
+
+.found-clinics-list {
+  @include large-desktop {
+    padding-bottom: 20px;
+  }
+}
+
+/* --------------- CLINIC DESCRIPTION BEGIN --------------- */
+.clinic-description-wrap {
+  margin-bottom: 20px;
+  padding-top: 25px;
+  overflow: hidden;
+  background-color: $white;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.clinic-description-block {
+  padding: 15px;
+  background: url('../img/bg-clinic-description.jpg') no-repeat;
+  background-size: cover;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  &:before {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    @include medium-desktop-lg {
+      position: absolute;
+    }
+  }
+}
+.description-header-list {
+  padding-left: 0;
+}
+.time-table {
+  text-align: right;
+  @include large-desktop {
+    //text-align: center;
+  }
+  @include small-devices {
+    margin-top: 20px;
+    text-align: left; // 1111
+  }
+}
+.overlay > * {
+  position: relative;
+}
+.clinic-description-title {
+  float: left;
+  font-family: $extraBold;
+  font-weight: 800;
+  font-size: 15px;
+  color: $white;
+  @include small-devices {
+    float: none; // 1111
+  }
+}
+.clinic-description-logo {
+  float: left;
+  width: 80px;
+  height: 60px;
+  margin-right: 15px;
+  background: url('../img/clinic-description-logo.jpg') no-repeat;
+  @include large-desktop {
+    //float: none;
+    //margin: 0 auto;
+  }
+  @include small-devices {
+    float: none; // 1111
+  }
+}
+//.clinic-description-title {
+//  float: left;
+//}
+.sign-in-block {
+  display: inline-block;
+  right: 15px;
+  padding: 13px 18px 12px;
+  background-color: $white;
+  border-radius: 4px;
+  text-align: center;
+    .sign-in-block-title {
+      margin-bottom: 0;
+      font-size: 12px;
+      color: $header-list;
+    }
+    .sign-in-block-number {
+      margin: 0;
+      font-size: 15px;
+      font-font: $bold;
+      font-weight: 600;
+      color: $breadcrumb-first;
+    }
+}
+.bg-clinic-description {
+  margin-top: -5px;
+  padding-bottom: 20px;
+  padding-left: 29px;
+  @include small-devices {
+    padding-left: 0;
+  }
+}
+.clinic-address {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: $green;
+}
+.clinic-text {
+  text-align: justify;
+  font-size: 13px;
+  color: $header-list;
+}
+.clinic-price-block {
+  border-bottom: 1px solid $grey;
+    p {
+      margin-bottom: 0;
+      color: $header-list;
+    }
+    .service-name {
+      float: left;
+    }
+    .service-price {
+      font-size: 15px;
+      font-family: $bold;
+      color: $black-price;
+    }
+}
+.work-time-list {
+  position: relative;
+  margin-top: 7px;
+  margin-right: 0;
+  padding-left: 16px;
+
+  .work-time-title {
+      padding-bottom: 5px;
+      font-size: 11px;
+      font-family: $bold;
+      font-weight: 400;
+      color: $header-h4;
+      @include small-devices {
+        margin-top: 20px;
+      }
+    }
+    li {
+      font-size: 13px;
+      color: $header-list;
+    }
+    .li-show-on-map {
+      margin-bottom: 28px;
+      text-align: center;
+        .fa {
+          color: $green;
+        }
+    }
+}
+span.time {
+  position: absolute;
+  right: 0;
+}
+.btn-show-on-map {
+  display: inline-block;
+  margin-top: 8px;
+  color: $green;
+  text-decoration: underline;
+  &:hover {
+    color: $green;
+    text-decoration: none;
+  }
+}
+.btn-order {
+  margin-top: 15px;
+  padding: 15px 34px;
+  font-size: 13px;
+  font-family: $bold;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: $white;
+  background-color: $green-dirty;
+  border-radius: 24px;
+  &:hover {
+    background-color: $green-dirty-hover;
+    text-decoration: none;
+    color: $white;
+  }
+  @include large-desktop {
+    display: block;
+    text-align: center;
+  }
+  @include medium-desktop-lg {
+    padding: 15px;
+  }
+}
+/* --------------- CLINIC DESCRIPTION END --------------- */
+
+.select-list {
+  padding-left: 0;
+    .select-title {
+      margin-bottom: 6px;
+      font-size: 11px;
+      font-family: $bold;
+      font-weight: 400;
+      color: $header-h4;
+    }
+    li {
+      select.form-control {
+        margin-bottom: 16px;
+        padding: 8px 15px 9px 19px;
+        border: 1px solid #e6e6e6;
+        box-shadow: none;
+        border-radius: 17px;
+        font-size: 12px;
+        font-style: normal;
+        color: $header-list;
+          option {
+            font-style: normal;
+          }
+      }
+    }
+}
+
+// для анимации стрелки в селекте
+select.classic {
+  background-image:
+          linear-gradient(45deg, transparent 50%, $header-h4 50%),
+          linear-gradient(135deg, $header-h4 70%, transparent 50%),
+          linear-gradient(to right, $white, $white);
+  background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          100% 0;
+  background-size:
+          5px 5px,
+          5px 5px,
+          2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+select.classic:focus {
+  background-image:
+          linear-gradient(45deg, $black 50%, transparent 50%),
+          linear-gradient(135deg, transparent 70%, $black 50%),
+          linear-gradient(to right, $white, $white);
+  background-position:
+          calc(100% - 15px) 1em,
+          calc(100% - 20px) 1em,
+          100% 0;
+  background-size:
+          5px 5px,
+          5px 5px,
+          2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}

@@ -3185,6 +3185,7 @@ div.form-block-characteristics {
       margin-left: 5px;
       font-size: 11px; }
 
+/* --------------- SELECT STYLES --------------- */
 .ui-select {
   max-width: 100%;
   margin-bottom: 10px;
@@ -3283,6 +3284,7 @@ select.stomatolog, option[value="stomatolog"] {
   .block-edit-doctor .fa-times {
     top: -1px; }
 
+/* --------------- CHECKBOX STYLES --------------- */
 .block-checkbox-adults {
   margin-right: 32px; }
 
@@ -3375,6 +3377,33 @@ select.stomatolog, option[value="stomatolog"] {
   @media (max-width: 1201px) {
     .checkbox + .block-checkbox-children {
       margin-left: 45px; } }
+
+/* --------------- BLOCK PAGINATION BEGIN --------------- */
+.block-pagination {
+  margin-top: 20px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 7px;
+          border-radius: 7px; }
+  .block-pagination .col-prev {
+    text-align: left; }
+    .block-pagination .col-prev p {
+      margin-left: 15px; }
+      .block-pagination .col-prev p a {
+        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
+        .block-pagination .col-prev p a i {
+          padding-right: 12px;
+          font-size: 16px; }
+  .block-pagination .col-next {
+    text-align: right; }
+    .block-pagination .col-next p {
+      margin-right: 15px; }
+      .block-pagination .col-next p a {
+        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
+        .block-pagination .col-next p a i {
+          padding-left: 12px;
+          font-size: 16px; }
 
 .col-diagnostick-select {
   padding-left: 0; }
@@ -5234,6 +5263,265 @@ textarea:focus, input:focus, .btn:focus {
 
 .green-dot-hidden {
   visibility: hidden; }
+
+.col-input-diag {
+  margin-top: -5px;
+  padding-right: 14px;
+  padding-left: 14px; }
+  .col-input-diag .left-input .form-group .tab-input {
+    max-width: 300px;
+    padding-right: 14px; }
+
+.input-region-diag {
+  margin-left: 18px; }
+  @media (max-width: 991px) {
+    .input-region-diag {
+      margin-left: -6px; } }
+  @media (max-width: 571px) {
+    .input-region-diag .left-inner-addon .form-group .tab-icon-geo {
+      position: relative;
+      top: 50px; } }
+  .input-region-diag .left-inner-addon .form-group .tab-input {
+    max-width: 280px;
+    padding-right: 14px; }
+    @media (max-width: 376px) {
+      .input-region-diag .left-inner-addon .form-group .tab-input {
+        margin-left: 10px;
+        width: 100%; } }
+  .input-region-diag .left-inner-addon .form-group .subtext {
+    position: relative;
+    top: 7px; }
+    @media (max-width: 991px) {
+      .input-region-diag .left-inner-addon .form-group .subtext {
+        left: 0; } }
+
+.input-group-btn:last-child > button.btn-find-clinic {
+  margin-left: 34px;
+  padding-right: 28px;
+  padding-left: 28px; }
+  @media (max-width: 1201px) {
+    .input-group-btn:last-child > button.btn-find-clinic {
+      margin-left: 0; } }
+
+button.btn-find-clinic {
+  padding-right: 22px;
+  padding-left: 22px;
+  font-size: 14px; }
+
+@media (max-width: 1201px) {
+  .found-clinics-list {
+    padding-bottom: 20px; } }
+
+/* --------------- CLINIC DESCRIPTION BEGIN --------------- */
+.clinic-description-wrap {
+  margin-bottom: 20px;
+  padding-top: 25px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid transparent;
+  -webkit-border-bottom-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+  -webkit-border-bottom-left-radius: 7px;
+          border-bottom-left-radius: 7px; }
+
+.clinic-description-block {
+  padding: 15px;
+  background: url("../img/bg-clinic-description.jpg") no-repeat;
+  background-size: cover;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0; }
+  .clinic-description-block:before {
+    -webkit-border-bottom-right-radius: 0;
+            border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+            border-bottom-left-radius: 0; }
+    @media (max-width: 991px) {
+      .clinic-description-block:before {
+        position: absolute; } }
+
+.description-header-list {
+  padding-left: 0; }
+
+.time-table {
+  text-align: right; }
+  @media (max-width: 767px) {
+    .time-table {
+      margin-top: 20px;
+      text-align: left; } }
+
+.overlay > * {
+  position: relative; }
+
+.clinic-description-title {
+  float: left;
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff; }
+  @media (max-width: 767px) {
+    .clinic-description-title {
+      float: none; } }
+
+.clinic-description-logo {
+  float: left;
+  width: 80px;
+  height: 60px;
+  margin-right: 15px;
+  background: url("../img/clinic-description-logo.jpg") no-repeat; }
+  @media (max-width: 767px) {
+    .clinic-description-logo {
+      float: none; } }
+
+.sign-in-block {
+  display: inline-block;
+  right: 15px;
+  padding: 13px 18px 12px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  text-align: center; }
+  .sign-in-block .sign-in-block-title {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #898989; }
+  .sign-in-block .sign-in-block-number {
+    margin: 0;
+    font-size: 15px;
+    font-font: "Open Sans Bold", Arial, sans-serif;
+    font-weight: 600;
+    color: #00bdaf; }
+
+.bg-clinic-description {
+  margin-top: -5px;
+  padding-bottom: 20px;
+  padding-left: 29px; }
+  @media (max-width: 767px) {
+    .bg-clinic-description {
+      padding-left: 0; } }
+
+.clinic-address {
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #00bdaf; }
+
+.clinic-text {
+  text-align: justify;
+  font-size: 13px;
+  color: #898989; }
+
+.clinic-price-block {
+  border-bottom: 1px solid #aeaeae; }
+  .clinic-price-block p {
+    margin-bottom: 0;
+    color: #898989; }
+  .clinic-price-block .service-name {
+    float: left; }
+  .clinic-price-block .service-price {
+    font-size: 15px;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    color: #171616; }
+
+.work-time-list {
+  position: relative;
+  margin-top: 7px;
+  margin-right: 0;
+  padding-left: 16px; }
+  .work-time-list .work-time-title {
+    padding-bottom: 5px;
+    font-size: 11px;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-weight: 400;
+    color: #2b2b2b; }
+    @media (max-width: 767px) {
+      .work-time-list .work-time-title {
+        margin-top: 20px; } }
+  .work-time-list li {
+    font-size: 13px;
+    color: #898989; }
+  .work-time-list .li-show-on-map {
+    margin-bottom: 28px;
+    text-align: center; }
+    .work-time-list .li-show-on-map .fa {
+      color: #00bdaf; }
+
+span.time {
+  position: absolute;
+  right: 0; }
+
+.btn-show-on-map {
+  display: inline-block;
+  margin-top: 8px;
+  color: #00bdaf;
+  text-decoration: underline; }
+  .btn-show-on-map:hover {
+    color: #00bdaf;
+    text-decoration: none; }
+
+.btn-order {
+  margin-top: 15px;
+  padding: 15px 34px;
+  font-size: 13px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #6aa899;
+  -webkit-border-radius: 24px;
+          border-radius: 24px; }
+  .btn-order:hover {
+    background-color: #5f9689;
+    text-decoration: none;
+    color: #fff; }
+  @media (max-width: 1201px) {
+    .btn-order {
+      display: block;
+      text-align: center; } }
+  @media (max-width: 991px) {
+    .btn-order {
+      padding: 15px; } }
+
+/* --------------- CLINIC DESCRIPTION END --------------- */
+.select-list {
+  padding-left: 0; }
+  .select-list .select-title {
+    margin-bottom: 6px;
+    font-size: 11px;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-weight: 400;
+    color: #2b2b2b; }
+  .select-list li select.form-control {
+    margin-bottom: 16px;
+    padding: 8px 15px 9px 19px;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 17px;
+            border-radius: 17px;
+    font-size: 12px;
+    font-style: normal;
+    color: #898989; }
+    .select-list li select.form-control option {
+      font-style: normal; }
+
+select.classic {
+  background-image: -webkit-linear-gradient(45deg, transparent 50%, #2b2b2b 50%), -webkit-linear-gradient(315deg, #2b2b2b 70%, transparent 50%), -webkit-linear-gradient(left, #fff, #fff);
+  background-image: linear-gradient(45deg, transparent 50%, #2b2b2b 50%), linear-gradient(135deg, #2b2b2b 70%, transparent 50%), linear-gradient(to right, #fff, #fff);
+  background-position: -webkit-calc(100% - 20px) -webkit-calc(1em + 2px), -webkit-calc(100% - 15px) -webkit-calc(1em + 2px), 100% 0;
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat; }
+
+select.classic:focus {
+  background-image: -webkit-linear-gradient(45deg, #000 50%, transparent 50%), -webkit-linear-gradient(315deg, transparent 70%, #000 50%), -webkit-linear-gradient(left, #fff, #fff);
+  background-image: linear-gradient(45deg, #000 50%, transparent 50%), linear-gradient(135deg, transparent 70%, #000 50%), linear-gradient(to right, #fff, #fff);
+  background-position: -webkit-calc(100% - 15px) 1em, -webkit-calc(100% - 20px) 1em, 100% 0;
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0; }
 
 .bg-top {
   margin-top: -20px;
