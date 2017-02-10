@@ -240,6 +240,43 @@ span.time {
 }
 /* --------------- CLINIC DESCRIPTION END --------------- */
 
+/* --------------- BLOCK PAGINATION BEGIN --------------- */
+.block-clinic-pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  background-color: $white;
+  overflow: hidden;
+  border-radius: 7px;
+  .col-prev {
+    text-align: left;
+    p {
+      margin-left: 15px;
+      a {
+        font-family: $extraBold;
+        i {
+          padding-right: 12px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .col-next {
+    text-align: right;
+    p {
+      margin-right: 15px;
+      a {
+        font-family: $extraBold;
+        i {
+          padding-left: 12px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+/**/
+
 .select-list {
   padding-left: 0;
     .select-title {

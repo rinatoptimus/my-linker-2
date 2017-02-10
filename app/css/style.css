@@ -3378,33 +3378,6 @@ select.stomatolog, option[value="stomatolog"] {
     .checkbox + .block-checkbox-children {
       margin-left: 45px; } }
 
-/* --------------- BLOCK PAGINATION BEGIN --------------- */
-.block-pagination {
-  margin-top: 20px;
-  padding-bottom: 18px;
-  background-color: #fff;
-  overflow: hidden;
-  -webkit-border-radius: 7px;
-          border-radius: 7px; }
-  .block-pagination .col-prev {
-    text-align: left; }
-    .block-pagination .col-prev p {
-      margin-left: 15px; }
-      .block-pagination .col-prev p a {
-        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
-        .block-pagination .col-prev p a i {
-          padding-right: 12px;
-          font-size: 16px; }
-  .block-pagination .col-next {
-    text-align: right; }
-    .block-pagination .col-next p {
-      margin-right: 15px; }
-      .block-pagination .col-next p a {
-        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
-        .block-pagination .col-next p a i {
-          padding-left: 12px;
-          font-size: 16px; }
-
 .col-diagnostick-select {
   padding-left: 0; }
   .col-diagnostick-select form .table-schedule {
@@ -5483,6 +5456,35 @@ span.time {
       padding: 15px; } }
 
 /* --------------- CLINIC DESCRIPTION END --------------- */
+/* --------------- BLOCK PAGINATION BEGIN --------------- */
+.block-clinic-pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 7px;
+          border-radius: 7px; }
+  .block-clinic-pagination .col-prev {
+    text-align: left; }
+    .block-clinic-pagination .col-prev p {
+      margin-left: 15px; }
+      .block-clinic-pagination .col-prev p a {
+        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
+        .block-clinic-pagination .col-prev p a i {
+          padding-right: 12px;
+          font-size: 16px; }
+  .block-clinic-pagination .col-next {
+    text-align: right; }
+    .block-clinic-pagination .col-next p {
+      margin-right: 15px; }
+      .block-clinic-pagination .col-next p a {
+        font-family: "Open Sans ExtraBold", Arial, sans-serif; }
+        .block-clinic-pagination .col-next p a i {
+          padding-left: 12px;
+          font-size: 16px; }
+
+/**/
 .select-list {
   padding-left: 0; }
   .select-list .select-title {
