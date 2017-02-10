@@ -92,12 +92,9 @@ button.btn-find-clinic {
 }
 .time-table {
   text-align: right;
-  @include large-desktop {
-    //text-align: center;
-  }
   @include small-devices {
     margin-top: 20px;
-    text-align: left; // 1111
+    text-align: left;
   }
 }
 .overlay > * {
@@ -110,7 +107,7 @@ button.btn-find-clinic {
   font-size: 15px;
   color: $white;
   @include small-devices {
-    float: none; // 1111
+    float: none;
   }
 }
 .clinic-description-logo {
@@ -119,17 +116,10 @@ button.btn-find-clinic {
   height: 60px;
   margin-right: 15px;
   background: url('../img/clinic-description-logo.jpg') no-repeat;
-  @include large-desktop {
-    //float: none;
-    //margin: 0 auto;
-  }
   @include small-devices {
-    float: none; // 1111
+    float: none;
   }
 }
-//.clinic-description-title {
-//  float: left;
-//}
 .sign-in-block {
   display: inline-block;
   right: 15px;
