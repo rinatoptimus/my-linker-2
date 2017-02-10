@@ -10,6 +10,13 @@ h2 {
 h3 {
   font-size: 20px;
 }
+nav {
+  ul.nav {
+    li {
+      width: 228px;
+    }
+  }
+}
 .logo {
   background: url('../img/logo.png') no-repeat;
   display: block;
