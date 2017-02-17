@@ -9,9 +9,6 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
-
-
-
             {
                 breakpoint: 1101,
                 settings: {
@@ -19,11 +16,6 @@ $(document).ready(function(){
                     dots: true
                 }
             },
-
-
-
-
-
             {
                 breakpoint: 1025,
                 settings: {
@@ -34,7 +26,6 @@ $(document).ready(function(){
                 }
             },
             {
-                // breakpoint: 600,
                 breakpoint: 710,
                 settings: {
                     slidesToShow: 2,
