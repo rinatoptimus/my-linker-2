@@ -69,6 +69,7 @@
 /* COLORS */
 /* CLINIC PAGE */
 /* DIAGNOSTICK PAGE */
+/* DIAGNOSTICK SEARCH NOT ACTIVE */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -1491,6 +1492,136 @@ header.one-row-header-with-cart .nav {
     font-size: 18px;
     border: 1px solid #ddd;
     border-bottom: transparent; }
+
+.diagnoctick-search-tab-block {
+  padding-right: 0;
+  padding-left: 0; }
+
+.diagnostik-search-tab-link {
+  width: 235px;
+  border: 2px solid #00bdaf; }
+
+.diagnostik-search-tab-link.active {
+  border: 2px solid #59c0ce;
+  text-decoration: underline; }
+  .diagnostik-search-tab-link.active:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px 0;
+    border-color: #62c2ce transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -5px;
+    left: 115px; }
+
+.container-diagnostick-search-list {
+  margin-top: 38px; }
+  @media (max-width: 969px) {
+    .container-diagnostick-search-list {
+      padding-left: 50px; } }
+
+.row .diagnoctick-column-first {
+  max-width: 250px;
+  padding-left: 70px; }
+  @media (max-width: 1201px) {
+    .row .diagnoctick-column-first {
+      max-width: 210px;
+      padding-left: 0; } }
+
+.diagnostick-search-list-title {
+  text-decoration: underline;
+  color: #00bdaf; }
+  .diagnostick-search-list-title:hover {
+    color: #2b2b2b; }
+
+.diagnostick-search-not-active-list {
+  padding-left: 25px; }
+  .diagnostick-search-not-active-list li:before {
+    content: "•";
+    color: #00bcae;
+    display: inline-block;
+    width: 1em;
+    margin-right: -4px;
+    margin-left: -1em;
+    font-size: 17px;
+    vertical-align: sub; }
+  .diagnostick-search-not-active-list li a {
+    color: #2b2b2b; }
+    .diagnostick-search-not-active-list li a:hover {
+      color: #00bdaf; }
+
+.diagnoctick-search-tab-block .nav-tabs-custom li:first-child {
+  -webkit-border-bottom-left-radius: 10px;
+          border-bottom-left-radius: 10px; }
+  .diagnoctick-search-tab-block .nav-tabs-custom li:first-child a {
+    -webkit-border-top-left-radius: 0;
+            border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 7px;
+            border-bottom-left-radius: 7px; }
+
+.diagnoctick-search-tab-block .nav-tabs-custom li:last-child {
+  -webkit-border-bottom-right-radius: 10px;
+          border-bottom-right-radius: 10px; }
+  .diagnoctick-search-tab-block .nav-tabs-custom li:last-child a {
+    -webkit-border-top-right-radius: 0;
+            border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 7px;
+            border-bottom-right-radius: 7px; }
+
+.diagnostick-search-last-list {
+  padding-left: 20px; }
+  .diagnostick-search-last-list li:before {
+    content: "—";
+    color: #00bcae;
+    display: inline-block;
+    width: 1em;
+    margin-right: 5px;
+    margin-left: -1em;
+    font-size: 17px;
+    vertical-align: baseline; }
+  .diagnostick-search-last-list li a {
+    color: #2b2b2b; }
+    .diagnostick-search-last-list li a:hover {
+      color: #00bdaf; }
+
+.diagnoctick-search-tab-input {
+  padding: 15px 25px;
+  color: #fff;
+  background-color: #00c3b6;
+  -webkit-border-radius: 30px !important;
+          border-radius: 30px !important;
+  font-size: 18px; }
+
+.diagnostick-search-tab-content input {
+  max-width: 300px; }
+
+.diagnostick-search-tab-content .left-inner-addon {
+  margin-left: -20px; }
+
+.diagnostick-search-tab-content .input-region {
+  margin-left: -40px; }
+
+.diagnostick-search-tab-content .tab-btn-search {
+  display: inline;
+  margin-left: -35px; }
+
+.diagnoctick-column {
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 20px;
+  width: 210px;
+  vertical-align: top; }
+  @media (max-width: 1201px) {
+    .diagnoctick-column {
+      margin-right: 20px; } }
+  @media (max-width: 767px) {
+    .diagnoctick-column {
+      padding-left: 0; } }
+  @media (max-width: 376px) {
+    .diagnoctick-column {
+      max-width: 300px; } }
 
 footer {
   height: 100px;

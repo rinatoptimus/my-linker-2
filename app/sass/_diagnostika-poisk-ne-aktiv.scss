@@ -1,0 +1,148 @@
+.diagnoctick-search-tab-block {
+  padding-right: 0;
+  padding-left: 0;
+}
+.diagnostik-search-tab-link {
+  width: 235px;
+  border: 2px solid $green;
+  &:hover {
+    //border: 2px solid $green-border-dark;
+  }
+}
+.diagnostik-search-tab-link.active {
+  border: 2px solid $tab-border;
+  text-decoration: underline;
+  &:after
+  {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 10px 0;
+    border-color: #62c2ce transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -5px;
+    left: 115px;
+  }
+}
+.container-diagnostick-search-list {
+  margin-top: 38px;
+  @include medium-desktop {
+    padding-left: 50px;
+  }
+}
+.row .diagnoctick-column-first {
+  max-width: 250px;
+  padding-left: 70px;
+  @include large-desktop {
+    //max-width: 154px;
+    max-width: 210px;
+    padding-left: 0;
+  }
+}
+.diagnostick-search-list-title {
+  text-decoration: underline;
+  color: $green;
+  &:hover {
+    color: $header-h4;
+  }
+}
+.diagnostick-search-not-active-list {
+  padding-left: 25px;
+    li {
+      &:before {
+        content: "•";
+        color: #00bcae;
+        display: inline-block;
+        width: 1em;
+        margin-right: -4px;
+        margin-left: -1em;
+        font-size: 17px;
+        vertical-align: sub;
+      }
+      a {
+        color: $header-h4;
+        &:hover {
+          color: $green;
+        }
+      }
+    }
+}
+.diagnoctick-search-tab-block .nav-tabs-custom {
+  li:first-child {
+    border-bottom-left-radius: 10px;
+    a {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 7px;
+    }
+  }
+  li:last-child {
+    border-bottom-right-radius: 10px;
+    a {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 7px;
+    }
+  }
+}
+.diagnostick-search-last-list {
+  padding-left: 20px;
+    li {
+      &:before {
+        content: "—";
+        color: #00bcae;
+        display: inline-block;
+        width: 1em;
+        margin-right: 5px;
+        margin-left: -1em;
+        font-size: 17px;
+        vertical-align: baseline;
+      }
+        a {
+          color: $header-h4;
+          &:hover {
+            color: $green;
+          }
+        }
+    }
+}
+
+.diagnoctick-search-tab-input {
+  padding: 15px 25px;
+  color: $white;
+  background-color: #00c3b6;
+  border-radius: 30px !important;
+  font-size: 18px;
+}
+
+.diagnostick-search-tab-content input {
+  max-width: 300px;
+}
+.diagnostick-search-tab-content .left-inner-addon {
+  margin-left: -20px;
+}
+.diagnostick-search-tab-content .input-region {
+  margin-left: -40px;
+}
+.diagnostick-search-tab-content .tab-btn-search {
+  display: inline;
+  margin-left: -35px;
+}
+
+// test
+.diagnoctick-column {
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 20px;
+  width: 210px;
+  vertical-align: top;
+  @include large-desktop {
+    margin-right: 20px;
+  }
+  @include small-devices {
+    padding-left: 0;
+  }
+  @include phone-md {
+    max-width: 300px;
+  }
+}

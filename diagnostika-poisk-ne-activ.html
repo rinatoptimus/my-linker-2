@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Диагностика(поиск не актив)</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="app/css/style.css">
+    </head>
+    <body data-target=".scrollspy">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 diagnoctick-search-tab-block">
+                <div class="col-lg-12 col-tabs overlay black">
+                    <!--<ul class="nav nav-tabs responsive nav-tabs-custom" id="myTab">-->
+                        <!--<li class="active diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#home">Записаться к врачу</a></li>-->
+                        <!--<li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#profile">Подобрать клинику</a></li>-->
+                        <!--<li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#messages">Найти лекарство</a></li>-->
+                        <!--<li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#messages2">Обследование</a></li>-->
+                    <!--</ul>-->
+
+                    <!--<div class="tab-content responsive diagnostick-search-tab-content">-->
+                        <!--<div class="tab-pane active" id="home">-->
+                            <!--<div class="tab-content-footer">-->
+                                <!--<form action="" method="" class="tab-form">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon left-inner-addon-sm left-input">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-user tab-icon-user"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />-->
+                                                    <!--<p class="tab-input-text">Например «МРТ»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon btn-r">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-geo tab-icon-geo"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />-->
+                                                    <!--<p class="subtext">Например «метро Кремлёвская»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-2 col-md-1">-->
+                                            <!--<span class="input-group-btn btn-alph-search tab-btn-search">-->
+                                                <!--<button class="btn diagnoctick-search-tab-input" type="submit">Найти клинику</button>-->
+                                            <!--</span>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tab-pane" id="profile">-->
+                            <!--<div class="tab-content-footer">-->
+                                <!--<form action="" method="" class="tab-form">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon left-inner-addon-sm left-input">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-user tab-icon-user"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />-->
+                                                    <!--<p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon btn-r">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-geo tab-icon-geo"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />-->
+                                                    <!--<p>Например «метро Кремлёвская»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-2 col-md-1">-->
+                                            <!--<span class="input-group-btn btn-alph-search tab-btn-search">-->
+                                                <!--<button class="btn tab-input" type="submit">Найти</button>-->
+                                            <!--</span>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tab-pane" id="messages">-->
+                            <!--<div class="tab-content-footer">-->
+                                <!--<form action="" method="" class="tab-form">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon left-inner-addon-sm left-input">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-user tab-icon-user"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />-->
+                                                    <!--<p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon btn-r">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-geo tab-icon-geo"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />-->
+                                                <!--</div>-->
+                                                <!--<p>Например «метро Кремлёвская»</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-2 col-md-1">-->
+                                            <!--<span class="input-group-btn btn-alph-search tab-btn-search">-->
+                                                <!--<button class="btn tab-input" type="submit">Найти</button>-->
+                                            <!--</span>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="tab-pane" id="messages2">-->
+                            <!--<div class="tab-content-footer">-->
+                                <!--<form action="" method="" class="tab-form">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon left-inner-addon-sm left-input">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-user tab-icon-user"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />-->
+                                                    <!--<p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">-->
+                                            <!--<div class="left-inner-addon btn-r">-->
+                                                <!--<div class="form-group">-->
+                                                    <!--<span class="icon-geo tab-icon-geo"></span>-->
+                                                    <!--<input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />-->
+                                                <!--</div>-->
+                                                <!--<p>Например «метро Кремлёвская»</p>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="col-lg-2 col-md-1">-->
+                                            <!--<span class="input-group-btn btn-alph-search tab-btn-search">-->
+                                                <!--<button class="btn tab-input" type="submit">Найти</button>-->
+                                            <!--</span>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+
+                    <ul class="nav nav-tabs responsive nav-tabs-custom" id="myTab">
+                        <li class="active diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#home">Записаться к врачу</a></li>
+                        <li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#profile">Подобрать клинику</a></li>
+                        <li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#messages">Найти лекарство</a></li>
+                        <li class="diagnostik-search-tab-link"><a class="tab-link text-uppercase text-center" href="#messages2">Обследование</a></li>
+                    </ul>
+
+                    <div class="tab-content responsive diagnostick-search-tab-content">
+                        <div class="tab-pane active" id="home">
+                            <div class="tab-content-footer">
+                                <form action="" method="" class="tab-form">
+                                    <div class="row">
+                                        <div class="col-lg-offset-2 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                                            <div class="left-inner-addon">
+                                                <div class="form-group">
+                                                    <span class="icon-user tab-icon-user"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />
+                                                    <p class="tab-input-text">Например «МРТ»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 input-region">
+                                            <div class="left-inner-addon btn-r">
+                                                <div class="form-group">
+                                                    <span class="icon-geo tab-icon-geo"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                    <p class="subtext">Например «метро Кремлёвская»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-1">
+                                            <span class="input-group-btn tab-btn-search">
+                                                <button class="btn diagnoctick-search-tab-input" type="submit">Найти клинику</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile">
+                            <div class="tab-content-footer">
+                                <form action="" method="" class="tab-form">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon left-inner-addon-sm left-input">
+                                                <div class="form-group">
+                                                    <span class="icon-user tab-icon-user"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                    <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon btn-r">
+                                                <div class="form-group">
+                                                    <span class="icon-geo tab-icon-geo"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                    <p>Например «метро Кремлёвская»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="btn tab-input" type="submit">Найти</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages">
+                            <div class="tab-content-footer">
+                                <form action="" method="" class="tab-form">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon left-inner-addon-sm left-input">
+                                                <div class="form-group">
+                                                    <span class="icon-user tab-icon-user"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                    <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon btn-r">
+                                                <div class="form-group">
+                                                    <span class="icon-geo tab-icon-geo"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                </div>
+                                                <p>Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="btn tab-input" type="submit">Найти</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages2">
+                            <div class="tab-content-footer">
+                                <form action="" method="" class="tab-form">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon left-inner-addon-sm left-input">
+                                                <div class="form-group">
+                                                    <span class="icon-user tab-icon-user"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Специальность врача или фамилия" />
+                                                    <p class="tab-input-text">Например «Иванов» или «Гастроэнтеролог»</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-input">
+                                            <div class="left-inner-addon btn-r">
+                                                <div class="form-group">
+                                                    <span class="icon-geo tab-icon-geo"></span>
+                                                    <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                </div>
+                                                <p>Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="btn tab-input" type="submit">Найти</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="container container-diagnostick-search-list">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 diagnoctick-column-first">-->
+                <!--<a href="#" class="diagnostick-search-list-title">-->
+                    <!--<h5>УЗИ</h5>-->
+                <!--</a>-->
+                <!--<ul class="diagnostick-search-not-active-list">-->
+                    <!--<li>-->
+                        <!--<a href="#">при беременности</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">брюшной полости</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">малого таза</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">сердца</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">3D УЗИ</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">-->
+                <!--<a href="#" class="diagnostick-search-list-title">-->
+                    <!--<h5 class="">КТ</h5>-->
+                <!--</a>-->
+                <!--<ul class="diagnostick-search-not-active-list">-->
+                    <!--<li>-->
+                        <!--<a href="#">головного мозга</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">брюшной полости</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">малого таза</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">сердца</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 col-researches">-->
+                <!--<a href="#" class="diagnostick-search-list-title">-->
+                    <!--<h5>МРТ</h5>-->
+                <!--</a>-->
+                <!--<ul class="diagnostick-search-not-active-list">-->
+                    <!--<li>-->
+                        <!--<a href="#">головного мозга</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">брюшной полости</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">малого таза</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">сердца</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6 col-researches">-->
+                <!--<a href="#" class="diagnostick-search-list-title">-->
+                    <!--<h5>Рентген</h5>-->
+                <!--</a>-->
+                <!--<ul class="diagnostick-search-not-active-list">-->
+                    <!--<li>-->
+                        <!--<a href="#">головного мозга</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">брюшной полости</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">малого таза</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">сердца</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">почек</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-researches">-->
+                <!--<ul class="diagnostick-search-last-list">-->
+                    <!--<li>-->
+                        <!--<a href="#">Флюорогорафия</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Электрокардиография (ЭКГ)</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Колоноскопия</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Гастроскопия</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Бронхоскопия</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Ректороманоскопия</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">Денситометрия</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+
+    <!-- test -->
+    <div class="container container-diagnostick-search-list">
+        <div class="row">
+            <div class="diagnoctick-column diagnoctick-column-first">
+                <a href="#" class="diagnostick-search-list-title">
+                    <h5>УЗИ</h5>
+                </a>
+                <ul class="diagnostick-search-not-active-list">
+                    <li>
+                        <a href="#">при беременности</a>
+                    </li>
+                    <li>
+                        <a href="#">брюшной полости брюшной полости брюшной полости</a>
+                    </li>
+                    <li>
+                        <a href="#">малого таза</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">3D УЗИ</a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">3D УЗИ</a>
+                    </li>
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="diagnoctick-column">
+                <a href="#" class="diagnostick-search-list-title">
+                    <h5 class="">КТ</h5>
+                </a>
+                <ul class="diagnostick-search-not-active-list">
+                    <li>
+                        <a href="#">головного мозга</a>
+                    </li>
+                    <li>
+                        <a href="#">брюшной полости</a>
+                    </li>
+                    <li>
+                        <a href="#">малого таза</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="diagnoctick-column">
+                <a href="#" class="diagnostick-search-list-title">
+                    <h5>МРТ</h5>
+                </a>
+                <ul class="diagnostick-search-not-active-list">
+                    <li>
+                        <a href="#">головного мозга b b b b b b b b b b b b</a>
+                    </li>
+                    <li>
+                        <a href="#">брюшной полости</a>
+                    </li>
+                    <li>
+                        <a href="#">малого таза</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="diagnoctick-column">
+                <a href="#" class="diagnostick-search-list-title">
+                    <h5>Рентген</h5>
+                </a>
+                <ul class="diagnostick-search-not-active-list">
+                    <li>
+                        <a href="#">головного мозга m m m m m m m m m m m m m </a>
+                    </li>
+                    <li>
+                        <a href="#">брюшной полости</a>
+                    </li>
+                    <li>
+                        <a href="#">малого таза</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+
+
+
+
+
+                    <li>
+                        <a href="#">почек</a>
+                    </li>
+                    <li>
+                        <a href="#">сердца</a>
+                    </li>
+                    <li>
+                        <a href="#">3D УЗИ</a>
+                    </li>
+
+
+
+
+
+
+                </ul>
+            </div>
+            <div class="diagnoctick-column">
+                <ul class="diagnostick-search-last-list">
+                    <li>
+                        <a href="#">Флюорогорафия</a>
+                    </li>
+                    <li>
+                        <a href="#">Электрокардиография (ЭКГ)</a>
+                    </li>
+                    <li>
+                        <a href="#">Колоноскопия</a>
+                    </li>
+                    <li>
+                        <a href="#">Гастроскопия</a>
+                    </li>
+                    <li>
+                        <a href="#">Бронхоскопия</a>
+                    </li>
+                    <li>
+                        <a href="#">Ректороманоскопия</a>
+                    </li>
+                    <li>
+                        <a href="#">Денситометрия</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-how">
+        <div class="row text-center">
+            <h2 class="title-how">Как работает наш сервис</h2>
+
+            <div class="col-lg-3 col-md-4 col-how">
+                <div class="how-block-first">
+                    <p class="how-number how-number-first">1.</p>
+                    <div class="how-icon how-icon-doc"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-choose">Выберите специалиста</h3>
+                    <p class="text text-first">Сравните рейтинги врачей  и почитайте отзывы,чтобы определиться с выбором</p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-arrow">
+                <div class="arrow-right arrow-right-first"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-how col-middle">
+                <div class="how-block-first">
+                    <p class="how-number how-number-second">2.</p>
+                    <div class="how-icon how-icon-paper-pen"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-sign-in">Запишитесь на прием</h3>
+                    <p class="text text-second">Заполните анкету, указав удобную для вас дату и время приёма</p>
+                </div>
+            </div>
+            <div class="col-lg-1 col-arrow">
+                <div class="arrow-right arrow-right-second"></div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-how">
+                <div class="how-block-first">
+                    <p class="how-number how-number-third">3.</p>
+                    <div class="how-icon how-icon-mark-geo"></div>
+                </div>
+                <div class="how-block-second">
+                    <h3 class="how-visit">Посетите врача</h3>
+                    <p class="text text-third">Мы пришлём вам sms - напоминание накануне визита к доктору</p>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- how -->
+
+    <footer>
+        <div class="footer-overlay">
+            <div class="container container-footer">
+                <div class="row">
+                    <div class="col-lg-3 col-logo">
+                        <a class="logo logo-bottom" href="#" title=""></a>
+                        <div class="logo-border"></div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <ul class="footer-list">
+                            <li><a href="#">Вы врач</a></li>
+                            <li><a href="#">Партнерская программа</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <ul class="footer-list">
+                            <li><a href="#">Медицинская библиотека</a></li>
+                            <li><a href="#">Симптомы</a></li>
+                            <li><a href="#">Болезни</a></li>
+                            <li><a href="#">Рейтинги</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-xs-12">
+                        <ul class="footer-list">
+                            <li><a href="#">Сетевые клиники</a></li>
+                            <li><a href="#">Вызов врача на дом</a></li>
+                            <li><a href="#">Календарь беременности</a></li>
+                            <li><a href="#">Календарь развития ребенка</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="app/js/sticky-sidebar.js"></script>
+<script src="app/js/scrollspy-sidebar.js"></script>
+<script src="app/js/popup-clinics.js"></script>
+<script src="app/js/scroll-animation.js"></script>
+
+<script src="app/js/vendor/responsive-tabs.js"></script>
+<script src="app/js/tabs.js"></script>
+
+<script src="app/js/sidebar-rotate-icon.js"></script>
+</body>
+</html>
