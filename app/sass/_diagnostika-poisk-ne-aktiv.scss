@@ -5,8 +5,8 @@
 .diagnostik-search-tab-link {
   width: 235px;
   border: 2px solid $green;
-  &:hover {
-    //border: 2px solid $green-border-dark;
+  @include medium-desktop-lg {
+    width: inherit;
   }
 }
 .diagnostik-search-tab-link.active {
@@ -32,8 +32,8 @@
     padding-left: 50px;
   }
 }
-.row .diagnoctick-column-first {
-  max-width: 250px;
+.row .diagnoctick-column-left {
+  width: 230px;
   padding-left: 70px;
   @include large-desktop {
     //max-width: 154px;
@@ -59,7 +59,7 @@
         margin-right: -4px;
         margin-left: -1em;
         font-size: 17px;
-        vertical-align: sub;
+        vertical-align: middle;
       }
       a {
         color: $header-h4;
@@ -67,6 +67,10 @@
           color: $green;
         }
       }
+    }
+    li:hover:before {
+      margin: -3px -8px -4px -18px;
+      font-size: 22px;
     }
 }
 .diagnoctick-search-tab-block .nav-tabs-custom {
@@ -113,27 +117,61 @@
   background-color: #00c3b6;
   border-radius: 30px !important;
   font-size: 18px;
+  @include phone-lg {
+    margin-top: 15px;
+  }
 }
 
 .diagnostick-search-tab-content input {
-  max-width: 300px;
+  width: 300px;
 }
 .diagnostick-search-tab-content .left-inner-addon {
   margin-left: -20px;
+  @include large-desktop {
+    margin-left: 15px;
+  }
+  @include phone-md {
+    margin: 0 auto;
+  }
 }
+
 .diagnostick-search-tab-content .input-region {
   margin-left: -40px;
 }
 .diagnostick-search-tab-content .tab-btn-search {
   display: inline;
-  margin-left: -35px;
+  margin-left: -59px;
+  @include large-desktop {
+    margin-left: -35px;
+  }
+}
+.diagnoctick-search-how {
+  .container-how {
+    .col-how {
+      margin-left: 25px;
+    }
+  }
+}
+.diagnoctick-search-tab-block {
+  .nav-tabs-custom {
+    li {
+      a.tab-link {
+        padding-top: 18px;
+      }
+    }
+  }
+}
+.diagnostick-search-tab-content  .btn-r {
+  @include phone {
+    max-width: 80vw;
+  }
+  .left-inner-addon-sm {
+    width: 280px;
+  }
 }
 
-// test
 .diagnoctick-column {
-  border: 1px solid black;
   display: inline-block;
-  margin-right: 20px;
   width: 210px;
   vertical-align: top;
   @include large-desktop {
@@ -145,4 +183,22 @@
   @include phone-md {
     max-width: 300px;
   }
+}
+.diagnoctick-column-mid {
+  width: 200px;
+  padding-left: 33px;
+  @include medium-desktop-lg {
+    padding-left: 0;
+  }
+  @include phone {
+    width: 250px;
+  }
+}
+.diagnoctick-column-right {
+  width: 250px;
+  margin-top: 10px;
+  padding-left: 14px;
+  @include small-devices {
+  padding-left: 0;
+}
 }
