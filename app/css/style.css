@@ -1493,6 +1493,7 @@ header.one-row-header-with-cart .nav {
     border: 1px solid #ddd;
     border-bottom: transparent; }
 
+/* -------------- ДИГНОСТИКА ПОИСК НЕ АКТИВ (НАЧАЛО) -------------- */
 .diagnoctick-search-tab-block {
   padding-right: 0;
   padding-left: 0; }
@@ -1516,7 +1517,7 @@ header.one-row-header-with-cart .nav {
     display: block;
     width: 0;
     z-index: 1;
-    bottom: -5px;
+    bottom: -7px;
     left: 115px; }
 
 .container-diagnostick-search-list {
@@ -1606,14 +1607,19 @@ header.one-row-header-with-cart .nav {
 .diagnostick-search-tab-content input {
   width: 300px; }
 
-.diagnostick-search-tab-content .left-inner-addon {
+.diagnostick-search-tab-content .left-inner-addon-diagnostick {
   margin-left: -20px; }
   @media (max-width: 1201px) {
-    .diagnostick-search-tab-content .left-inner-addon {
+    .diagnostick-search-tab-content .left-inner-addon-diagnostick {
       margin-left: 15px; } }
   @media (max-width: 376px) {
-    .diagnostick-search-tab-content .left-inner-addon {
-      margin: 0 auto; } }
+    .diagnostick-search-tab-content .left-inner-addon-diagnostick {
+      margin-right: 10px;
+      margin-left: 10px; } }
+
+@media (max-width: 376px) {
+  .diagnostick-search-tab-content .diagnostick-search-subtext {
+    padding-left: 0; } }
 
 .diagnostick-search-tab-content .input-region {
   margin-left: -40px; }
@@ -1629,7 +1635,9 @@ header.one-row-header-with-cart .nav {
   margin-left: 25px; }
 
 .diagnoctick-search-tab-block .nav-tabs-custom li a.tab-link {
-  padding-top: 18px; }
+  padding-top: 18px;
+  padding-bottom: 19px;
+  text-decoration: underline; }
 
 @media (max-width: 401px) {
   .diagnostick-search-tab-content .btn-r {
@@ -1670,6 +1678,7 @@ header.one-row-header-with-cart .nav {
     .diagnoctick-column-right {
       padding-left: 0; } }
 
+/* -------------- ДИГНОСТИКА ПОИСК НЕ АКТИВ (КОНЕЦ) -------------- */
 footer {
   height: 100px;
   width: 100%;
@@ -4404,16 +4413,16 @@ input.tab-input {
   padding-left: 3px; }
 
 @media (max-width: 991px) {
-  .left-inner-addon {
+  .left-inner-addon:not(.left-inner-addon-diagnostick) {
     margin: 0 auto; } }
 
 @media (max-width: 376px) {
-  .left-inner-addon {
+  .left-inner-addon:not(.left-inner-addon-diagnostick) {
     margin-left: 20px;
     margin-right: 20px; } }
 
 @media (max-width: 991px) {
-  .left-inner-addon .form-group p {
+  .left-inner-addon:not(.left-inner-addon-diagnostick) .form-group p {
     margin-bottom: 20px; } }
 
 @media (max-width: 991px) {
@@ -4691,7 +4700,7 @@ button.tab-input {
           margin-left: 0; } }
 
 @media (max-width: 376px) {
-  .subtext {
+  .subtext:not(.diagnostick-search-subtext) {
     padding-left: 15px; } }
 
 textarea:focus, input:focus, .btn:focus {

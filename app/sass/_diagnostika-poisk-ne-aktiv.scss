@@ -1,3 +1,4 @@
+/* -------------- ДИГНОСТИКА ПОИСК НЕ АКТИВ (НАЧАЛО) -------------- */
 .diagnoctick-search-tab-block {
   padding-right: 0;
   padding-left: 0;
@@ -22,7 +23,7 @@
     display: block;
     width: 0;
     z-index: 1;
-    bottom: -5px;
+    bottom: -7px;
     left: 115px;
   }
 }
@@ -125,13 +126,19 @@
 .diagnostick-search-tab-content input {
   width: 300px;
 }
-.diagnostick-search-tab-content .left-inner-addon {
+.diagnostick-search-tab-content .left-inner-addon-diagnostick {
   margin-left: -20px;
   @include large-desktop {
     margin-left: 15px;
   }
   @include phone-md {
-    margin: 0 auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+.diagnostick-search-tab-content .diagnostick-search-subtext {
+  @include phone-md {
+    padding-left: 0;
   }
 }
 
@@ -157,6 +164,8 @@
     li {
       a.tab-link {
         padding-top: 18px;
+        padding-bottom: 19px;
+        text-decoration: underline;
       }
     }
   }
@@ -199,6 +208,7 @@
   margin-top: 10px;
   padding-left: 14px;
   @include small-devices {
-  padding-left: 0;
+    padding-left: 0;
+  }
 }
-}
+/* -------------- ДИГНОСТИКА ПОИСК НЕ АКТИВ (КОНЕЦ) -------------- */

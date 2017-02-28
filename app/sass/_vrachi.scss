@@ -202,7 +202,7 @@ input.tab-input {
   padding-left: 3px;
 }
 
-.left-inner-addon {
+.left-inner-addon:not(.left-inner-addon-diagnostick) {
   @include medium-desktop-lg {
     margin: 0 auto;
   }
@@ -525,7 +525,7 @@ button.tab-input {
     }
 }
 
-.subtext {
+.subtext:not(.diagnostick-search-subtext) {
   @include phone-md {
     padding-left: 15px;
   }
