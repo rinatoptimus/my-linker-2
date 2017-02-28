@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Клиники-fin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body data-target=".scrollspy">
+<div class="container container-wide">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="breadcrumb breadcrumb-custom breadcrumb-doc">
+                <li><a class="breadcrumb-first" href="#">Главная</a></li>
+                <li class="active"><span>Кардиологи</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="col-lg-12 col-tabs overlay black">
+                <ul class="nav nav-tabs responsive nav-tabs-custom" id="myTab">
+                    <li class="active"><a class="tab-link text-uppercase text-center" href="#home">Записаться к врачу</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#profile">Подобрать клинику</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#messages">Найти лекарство</a></li>
+                    <li><a class="tab-link text-uppercase text-center" href="#messages2">Обследование</a></li>
+                </ul>
+                <div class="tab-content responsive">
+                    <div class="tab-pane active" id="home">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input-diag">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />
+                                                <p class="tab-input-text">Например «МРТ»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-input input-region-diag">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p class="subtext">Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="text-uppercase btn tab-input btn-find-clinic" type="submit">Найти клинику</button>
+                                            </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input-diag">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />
+                                                <p class="tab-input-text">Например «МРТ»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-input input-region-diag">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p class="subtext">Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="text-uppercase btn tab-input btn-find-clinic" type="submit">Найти клинику</button>
+                                            </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input-diag">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />
+                                                <p class="tab-input-text">Например «МРТ»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-input input-region-diag">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p class="subtext">Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="text-uppercase btn tab-input btn-find-clinic" type="submit">Найти клинику</button>
+                                            </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages2">
+                        <div class="tab-content-footer">
+                            <form action="" method="" class="tab-form">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-input-diag">
+                                        <div class="left-inner-addon left-inner-addon-sm left-input">
+                                            <div class="form-group">
+                                                <span class="icon-user tab-icon-user"></span>
+                                                <input type="text" class="form-control form-control-jumbotron tab-input" placeholder="Диагностика" />
+                                                <p class="tab-input-text">Например «МРТ»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-input input-region-diag">
+                                        <div class="left-inner-addon btn-r">
+                                            <div class="form-group">
+                                                <span class="icon-geo tab-icon-geo"></span>
+                                                <input type="text" class="form-control form-control-jumbotron left-inner-addon-sm tab-input" placeholder="Район" />
+                                                <p class="subtext">Например «метро Кремлёвская»</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-1">
+                                            <span class="input-group-btn btn-alph-search tab-btn-search">
+                                                <button class="text-uppercase btn tab-input btn-find-clinic" type="submit">Найти клинику</button>
+                                            </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3 class="doctor-page-results text-uppercase">Клиника в районе Вахитовский</h3>
+                </div>
+                <div class="col-lg-3">
+                    <p class="found-results-text">
+                    <ul class="dostors-found-list found-clinics-list">
+                        <li>
+                            <span class="found text-uppercase">Найдена: </span>
+                        </li>
+                        <li>
+                            <span class="found-quantity">21</span>
+                        </li>
+                        <li>
+                            <span class="found-doctors text-uppercase">клиника</span>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row row-doc-filter">
+                <div class="col-lg-12 col-doctors-filter">
+                    <div class="btn-group btn-group-sm doctors-filter-buttons" role="group" aria-label="Small button group">
+                        <p class="label-sort text-uppercase">Сортировка по:</p>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Популярности</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name">
+                            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                            <i class="fa fa-long-arrow-down hide" aria-hidden="true"></i>
+                            Рейтингу</button>
+                        <button type="button" class="btn btn-default text-uppercase doctors-filter-name doctors-filter-reset"><i class="fa fa-window-close" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+            <hr class="filter-block-divider">
+
+            <div class="col-lg-12 clinic-description-block overlay black">
+                <ul class="description-header-list">
+                    <li>
+                        <div class="clinic-description-logo"></div>
+                    </li>
+                    <li>
+                        <h2 class="clinic-description-title">Клиника инновационной медицины</h2>
+                    </li>
+                    <li class="time-table">
+                        <div class="sign-in-block">
+                            <p class="sign-in-block-title">Запись по телефону</p>
+                            <p class="sign-in-block-number">8 (843) 216-82-98</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clinic-description-wrap clinic-description-wrap">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <p class="clinic-address">г. Казань, ул. Гаврилова, д. 1</p>
+                    <p class="clinic-text">Клиника инновационной медицины в Казани. Предоставляет услуги гинеколога, онколога, маммолога,
+                        кардиолога, гастроэнтеролога, кардиолога, уролога, эндокринолога и терапевта. Медицинская
+                        клиника расположена в Ново-Савиновском районе города Казани.</p>
+                    <div class="clinic-description-bottom">
+                        <div class="clinic-description-btn-block">
+                            <a href="#" class="btn btn-default text-uppercase btn-doctor-page clinic-description-btn" role="button">Подробнее о клинике</a>
+                        </div>
+                        <div class="clinic-description-avatars">
+                            <ul class="clinic-description-avatars-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/women/59.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/men/6.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/women/75.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 bg-clinic-description">
+                    <ul class="work-time-list">
+                        <p class="text-uppercase work-time-title">График работы центра:</p>
+                        <li>
+                            <span class="day">ПН</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li>
+                            <span class="day">СБ</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li>
+                            <span class="day">ВС</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li class="li-show-on-map">
+                            <i class="fa fa-map-pin" aria-hidden="true"></i>
+                            <a href="#" class="btn-show-on-map">Показать на карте</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- CLINIC DESCRIPTION -->
+
+            <div class="col-lg-12 clinic-description-block overlay black">
+                <ul class="description-header-list">
+                    <li>
+                        <div class="clinic-description-logo"></div>
+                    </li>
+                    <li>
+                        <h2 class="clinic-description-title">Клиника инновационной медицины</h2>
+                    </li>
+                    <li class="time-table">
+                        <div class="sign-in-block">
+                            <p class="sign-in-block-title">Запись по телефону</p>
+                            <p class="sign-in-block-number">8 (843) 216-82-98</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clinic-description-wrap clinic-description-wrap">
+                <div class="col-lg-9 col-md-9 col-sm-9">
+                    <p class="clinic-address">г. Казань, ул. Гаврилова, д. 1</p>
+                    <p class="clinic-text">Клиника инновационной медицины в Казани. Предоставляет услуги гинеколога, онколога, маммолога,
+                        кардиолога, гастроэнтеролога, кардиолога, уролога, эндокринолога и терапевта. Медицинская
+                        клиника расположена в Ново-Савиновском районе города Казани.</p>
+                    <div class="clinic-description-bottom">
+                        <div class="clinic-description-btn-block">
+                            <a href="#" class="btn btn-default text-uppercase btn-doctor-page clinic-description-btn" role="button">Подробнее о клинике</a>
+                        </div>
+                        <div class="clinic-description-avatars">
+                            <ul class="clinic-description-avatars-list">
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/women/59.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/men/6.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/women/75.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" title="" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 bg-clinic-description">
+                    <ul class="work-time-list">
+                        <p class="text-uppercase work-time-title">График работы центра:</p>
+                        <li>
+                            <span class="day">ПН</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li>
+                            <span class="day">СБ</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li>
+                            <span class="day">ВС</span><span class="time">07:00-23:00</span>
+                        </li>
+                        <li class="li-show-on-map">
+                            <i class="fa fa-map-pin" aria-hidden="true"></i>
+                            <a href="#" class="btn-show-on-map">Показать на карте</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- CLINIC DESCRIPTION -->
+
+            <div class="block-clinic-pagination">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-prev">
+                    <p class="text-uppercase">
+                        <a href="#">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i> Назад
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-numbers">
+                    <ul class="pagination-numbers-list">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="li-last-number"><a class="last-number" href="#">457</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-next">
+                    <p class="text-uppercase">
+                        <a href="#">
+                            Вперёд <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 scrollspy-sidebar sidebar-right">
+            <div class="well affix-top" id="sidebar">
+                <ul class="select-list">
+                    <li class="text-uppercase select-title">Вид диагностики</li>
+                    <li class="sidebar-right-li">
+                        <select class="form-control classic">
+                            <option>МРТ</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </li>
+                    <li class="text-uppercase select-title">Область диагностики</li>
+                    <li class="sidebar-right-li">
+                        <select class="form-control classic">
+                            <option>Головного мозга</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </li>
+                    <li class="text-uppercase select-title">Выбрать метро</li>
+                    <li class="sidebar-right-li">
+                        <select class="form-control classic">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-overlay">
+        <div class="container container-footer">
+            <div class="row">
+                <div class="col-lg-3 col-logo">
+                    <a class="logo logo-bottom" href="#" title=""></a>
+                    <div class="logo-border"></div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Вы врач</a></li>
+                        <li><a href="#">Партнерская программа</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Медицинская библиотека</a></li>
+                        <li><a href="#">Симптомы</a></li>
+                        <li><a href="#">Болезни</a></li>
+                        <li><a href="#">Рейтинги</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-xs-12">
+                    <ul class="footer-list">
+                        <li><a href="#">Сетевые клиники</a></li>
+                        <li><a href="#">Вызов врача на дом</a></li>
+                        <li><a href="#">Календарь беременности</a></li>
+                        <li><a href="#">Календарь развития ребенка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="app/js/sticky-sidebar.js"></script>
+<script src="app/js/scrollspy-sidebar.js"></script>
+<script src="app/js/popup-clinics.js"></script>
+<script src="app/js/scroll-animation.js"></script>
+
+<script src="app/js/vendor/responsive-tabs.js"></script>
+<script src="app/js/tabs.js"></script>
+
+<script src="app/js/sidebar-rotate-icon.js"></script>
+
+<script src="app/js/input-validation-icon.js"></script>
+<script src="app/js/vendor/bootstrap-switch.js"></script>
+<script src="app/js/bootstrap-switch-init.js"></script>
+
+<script src="app/js/checkbox-label-toggler.js"></script>
+<script src="app/js/input-dot-animation.js"></script>
+
+
+</body>
+</html>

@@ -1622,11 +1622,17 @@ header.one-row-header-with-cart .nav {
     padding-left: 0; } }
 
 .diagnostick-search-tab-content .input-region {
-  margin-left: -40px; }
+  margin-left: -63px; }
+  @media (max-width: 1249px) {
+    .diagnostick-search-tab-content .input-region {
+      margin-left: -30px; } }
+  @media (max-width: 991px) {
+    .diagnostick-search-tab-content .input-region {
+      margin-left: -35px; } }
 
 .diagnostick-search-tab-content .tab-btn-search {
   display: inline;
-  margin-left: -59px; }
+  margin-left: -38px; }
   @media (max-width: 1201px) {
     .diagnostick-search-tab-content .tab-btn-search {
       margin-left: -35px; } }
@@ -1679,6 +1685,61 @@ header.one-row-header-with-cart .nav {
       padding-left: 0; } }
 
 /* -------------- ДИГНОСТИКА ПОИСК НЕ АКТИВ (КОНЕЦ) -------------- */
+/*---------------- KLINIKI-FIN (НАЧАЛО) ----------------*/
+.clinic-description-wrap {
+  padding-bottom: 19px; }
+  @media (max-width: 767px) {
+    .clinic-description-wrap {
+      padding-bottom: 0; } }
+
+p.work-time-title {
+  margin-bottom: 0; }
+
+.clinic-description-btn-block {
+  float: left;
+  margin-right: 12px; }
+  @media (max-width: 571px) {
+    .clinic-description-btn-block {
+      float: none; } }
+  .clinic-description-btn-block .clinic-description-btn {
+    font-size: 13px; }
+
+.clinic-description-avatars {
+  padding-top: 15px; }
+
+.clinic-description-avatars-list li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border: none;
+  overflow: hidden;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  position: relative;
+  -webkit-transition: all 250ms cubic-bezier(0.25, 0, 0.105, 1.005);
+  transition: all 250ms cubic-bezier(0.25, 0, 0.105, 1.005);
+  vertical-align: middle;
+  cursor: pointer; }
+
+.clinic-description-avatars-list li:nth-child(1n+2) {
+  margin-left: -10px; }
+
+.clinic-description-avatars-list li:hover {
+  z-index: 10;
+  -webkit-transform: scale(1.3) translateY(-2px);
+      -ms-transform: scale(1.3) translateY(-2px);
+          transform: scale(1.3) translateY(-2px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-width: 3px; }
+
+.clinic-description-avatars-list li a img {
+  height: auto;
+  width: 100%; }
+
+/*---------------- KLINIKI-FIN (КОНЕЦ) ----------------*/
 footer {
   height: 100px;
   width: 100%;

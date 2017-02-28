@@ -1,0 +1,53 @@
+/*---------------- KLINIKI-FIN (НАЧАЛО) ----------------*/
+.clinic-description-wrap {
+  padding-bottom: 19px;
+  @include small-devices {
+    padding-bottom: 0;
+  }
+}
+p.work-time-title {
+  margin-bottom: 0;
+}
+.clinic-description-btn-block {
+  float: left;
+  margin-right: 12px;
+  @include phone-lg {
+    float: none;
+  }
+    .clinic-description-btn {
+      font-size: 13px;
+    }
+}
+.clinic-description-avatars {
+  padding-top: 15px;
+}
+
+// clinic description avatars animation
+.clinic-description-avatars-list li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  border: none;
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0, 0.105, 1.005);
+  vertical-align: middle;
+  cursor: pointer;
+}
+.clinic-description-avatars-list li:nth-child(1n+2) {
+  margin-left: -10px;
+}
+.clinic-description-avatars-list li:hover {
+  z-index: 10;
+  transform: scale(1.3) translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-width: 3px;
+}
+.clinic-description-avatars-list li a img {
+  height: auto;
+  width: 100%;
+}
+/*---------------- KLINIKI-FIN (КОНЕЦ) ----------------*/

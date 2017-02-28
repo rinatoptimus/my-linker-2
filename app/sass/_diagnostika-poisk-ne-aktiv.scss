@@ -143,11 +143,17 @@
 }
 
 .diagnostick-search-tab-content .input-region {
-  margin-left: -40px;
+  margin-left: -63px;
+  @include large-desktop-md {
+    margin-left: -30px;
+  }
+  @include medium-desktop-lg {
+    margin-left: -35px;
+  }
 }
 .diagnostick-search-tab-content .tab-btn-search {
   display: inline;
-  margin-left: -59px;
+  margin-left: -38px;
   @include large-desktop {
     margin-left: -35px;
   }
