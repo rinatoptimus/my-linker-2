@@ -1,9 +1,11 @@
-//.results-analisis-block {
-//  margin-top: 23px;
-//}
+/* ----------------- РЕЗУЛЬТАТЫ-FIN BEGIN ----------------- */
+// блок с кнопками Добавить анализ и Предоставить доступ
 .results-analisis-content .bg-white-results-analisis {
   padding-top: 40px;
   padding-right: 56px;
+  //@include large-desktop {
+  //  padding-top: 0;
+  //}
   @include medium-desktop-lg {
     padding-left: 20px;
   }
@@ -14,6 +16,14 @@
   @include phone-lg {
     padding-right: 0;
     padding-left: 7px;
+  }
+  @include phone-md {
+    padding-left: 0;
+  }
+}
+.results-analisis-content  .col-diagnostick-select {
+  @include small-devices {
+    padding-left: 15px;
   }
 }
 .results-btns-block {
@@ -34,9 +44,9 @@
   }
 }
 .btn-group-add-offer {
-  position: absolute;
-  top: 3px;
-  right: 15px;
+  //position: absolute;
+  //top: 3px;
+  //right: 15px;
   @include small-devices {
     position: relative;
     display: block;
@@ -49,6 +59,13 @@
   }
 }
 .btn-add-analisis {
+  margin-right: 10px;
+  padding: 6px 14px;
+  @include phone-lg {
+    width: 280px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
   @include phone {
     position: absolute;
     top: 50%;
@@ -57,15 +74,20 @@
   }
 }
 .btn-offer-access {
+  padding: 6px 8px;
+  @include phone-lg {
+    width: 280px;
+  }
   @include phone {
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, 125%);
   }
 }
 
 .results-analisis-content .table-diagnostick {
+  width: 100%;
   @include small-devices {
     margin-top: 0;
   }
@@ -106,6 +128,13 @@
     margin-left: 5px;
   }
 }
+.results-analisis-content .eye-analisis {
+  color: $icon-grey;
+  &:hover {
+    text-decoration: none;
+    color: $sidebar-link;
+  }
+}
 .table-diagnostick tbody .first-row .td-date {
   padding-top: 12px;
 }
@@ -137,8 +166,100 @@
   }
 }
 
-//{
-//  font-family: $semibold;
-//  font-size: 13px;
-//  color: $header-h4;
-//}
+// блок с кнопками Печать и Назад
+.lead-block-icons-container {
+  float: left;
+  width: 19px;
+  margin-top: 6px;
+    .fa-plus {
+      font-size: 10px;
+      float: left;
+    }
+
+}
+.lead-content {
+  margin: 0 auto;
+  max-width: 280px;
+}
+.lead-title-block {
+  max-width: 280px;
+}
+
+.label-upload-results {
+  font-family: $extraBold;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.upload-block {
+  position: absolute;
+  margin-top: 50px;
+}
+.label-choose-file {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+
+
+
+// tabs
+.nav-pills-analisis {
+  float: left;
+  @include small-devices {
+    float: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+.btn-group-add-offer {
+  position: absolute;
+  right: 14px;
+  padding-top: 2px;
+  @include small-devices {
+    position: relative;
+    max-width: 100%;
+    right: 0;
+    text-align: center;
+  }
+}
+.results-analisis-content button .fa {
+  float: left;
+  padding-right: 7px;
+  font-size: 16px;
+}
+.results-analisis-content .tab-content {
+  //margin-top: 0;
+  @include large-desktop {
+    margin-top: 0;
+  }
+  @include small-devices {
+    margin-top: 10px;
+  }
+}
+.results-analisis-content .nav-pills>li+li {
+  margin-left: -4px;
+}
+.results-analisis-content .tab-auto {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  @include phone-md {
+    padding: 5px 15px;
+  }
+}
+.results-analisis-content .tab-added {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  @include phone-md {
+    padding: 5px 15px;
+  }
+}
+.results-analisis-content .nav-pills>li.active>a {
+  background-color: $btn-group;
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+}
+// color: $sidebar-link;
+/* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */

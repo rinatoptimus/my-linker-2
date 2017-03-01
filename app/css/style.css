@@ -70,6 +70,7 @@
 /* CLINIC PAGE */
 /* DIAGNOSTICK PAGE */
 /* DIAGNOSTICK SEARCH NOT ACTIVE */
+/* RESULTS-FIN */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -1740,6 +1741,7 @@ p.work-time-title {
   width: 100%; }
 
 /*---------------- KLINIKI-FIN (КОНЕЦ) ----------------*/
+/* ----------------- РЕЗУЛЬТАТЫ-FIN BEGIN ----------------- */
 .results-analisis-content .bg-white-results-analisis {
   padding-top: 40px;
   padding-right: 56px; }
@@ -1754,6 +1756,13 @@ p.work-time-title {
     .results-analisis-content .bg-white-results-analisis {
       padding-right: 0;
       padding-left: 7px; } }
+  @media (max-width: 376px) {
+    .results-analisis-content .bg-white-results-analisis {
+      padding-left: 0; } }
+
+@media (max-width: 767px) {
+  .results-analisis-content .col-diagnostick-select {
+    padding-left: 15px; } }
 
 .results-btns-block {
   margin-bottom: 35px; }
@@ -1771,50 +1780,60 @@ p.work-time-title {
     width: 278px;
     height: 40px; } }
 
-.btn-group-add-offer {
-  position: absolute;
-  top: 3px;
-  right: 15px; }
-  @media (max-width: 767px) {
-    .btn-group-add-offer {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      max-width: 317px;
-      right: 0; } }
-  @media (max-width: 401px) {
-    .btn-group-add-offer {
-      max-width: 300px; } }
-
-@media (max-width: 401px) {
-  .btn-add-analisis {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 5%);
-        -ms-transform: translate(-50%, 5%);
-            transform: translate(-50%, 5%); } }
-
-@media (max-width: 401px) {
-  .btn-offer-access {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 25%);
-        -ms-transform: translate(-50%, 25%);
-            transform: translate(-50%, 25%); } }
-
 @media (max-width: 767px) {
-  .results-analisis-content .table-diagnostick {
-    margin-top: 0; } }
-
-@media (max-width: 571px) {
-  .results-analisis-content .table-diagnostick {
-    margin-top: 35px; } }
+  .btn-group-add-offer {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 317px;
+    right: 0; } }
 
 @media (max-width: 401px) {
-  .results-analisis-content .table-diagnostick {
-    margin-top: 65px; } }
+  .btn-group-add-offer {
+    max-width: 300px; } }
+
+.btn-add-analisis {
+  margin-right: 10px;
+  padding: 6px 14px; }
+  @media (max-width: 571px) {
+    .btn-add-analisis {
+      width: 280px;
+      margin-right: 0;
+      margin-bottom: 5px; } }
+  @media (max-width: 401px) {
+    .btn-add-analisis {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 5%);
+          -ms-transform: translate(-50%, 5%);
+              transform: translate(-50%, 5%); } }
+
+.btn-offer-access {
+  padding: 6px 8px; }
+  @media (max-width: 571px) {
+    .btn-offer-access {
+      width: 280px; } }
+  @media (max-width: 401px) {
+    .btn-offer-access {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 125%);
+          -ms-transform: translate(-50%, 125%);
+              transform: translate(-50%, 125%); } }
+
+.results-analisis-content .table-diagnostick {
+  width: 100%; }
+  @media (max-width: 767px) {
+    .results-analisis-content .table-diagnostick {
+      margin-top: 0; } }
+  @media (max-width: 571px) {
+    .results-analisis-content .table-diagnostick {
+      margin-top: 35px; } }
+  @media (max-width: 401px) {
+    .results-analisis-content .table-diagnostick {
+      margin-top: 65px; } }
 
 .table > thead > tr > .results-table-title-left {
   padding-top: 12px;
@@ -1844,6 +1863,12 @@ p.work-time-title {
       margin-right: 0;
       margin-left: 5px; } }
 
+.results-analisis-content .eye-analisis {
+  color: #d8dce4; }
+  .results-analisis-content .eye-analisis:hover {
+    text-decoration: none;
+    color: #68a697; }
+
 .table-diagnostick tbody .first-row .td-date {
   padding-top: 12px; }
 
@@ -1870,6 +1895,95 @@ p.work-time-title {
   .icon-remove-analisis:hover {
     color: #008977; }
 
+.lead-block-icons-container {
+  float: left;
+  width: 19px;
+  margin-top: 6px; }
+  .lead-block-icons-container .fa-plus {
+    font-size: 10px;
+    float: left; }
+
+.lead-content {
+  margin: 0 auto;
+  max-width: 280px; }
+
+.lead-title-block {
+  max-width: 280px; }
+
+.label-upload-results {
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 900; }
+
+.upload-block {
+  position: absolute;
+  margin-top: 50px; }
+
+.label-choose-file {
+  position: relative;
+  float: left;
+  margin-right: 10px; }
+
+.nav-pills-analisis {
+  float: left; }
+  @media (max-width: 767px) {
+    .nav-pills-analisis {
+      float: none;
+      margin-bottom: 10px;
+      text-align: center; } }
+
+.btn-group-add-offer {
+  position: absolute;
+  right: 14px;
+  padding-top: 2px; }
+  @media (max-width: 767px) {
+    .btn-group-add-offer {
+      position: relative;
+      max-width: 100%;
+      right: 0;
+      text-align: center; } }
+
+.results-analisis-content button .fa {
+  float: left;
+  padding-right: 7px;
+  font-size: 16px; }
+
+@media (max-width: 1201px) {
+  .results-analisis-content .tab-content {
+    margin-top: 0; } }
+
+@media (max-width: 767px) {
+  .results-analisis-content .tab-content {
+    margin-top: 10px; } }
+
+.results-analisis-content .nav-pills > li + li {
+  margin-left: -4px; }
+
+.results-analisis-content .tab-auto {
+  -webkit-border-top-right-radius: 0;
+          border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0; }
+  @media (max-width: 376px) {
+    .results-analisis-content .tab-auto {
+      padding: 5px 15px; } }
+
+.results-analisis-content .tab-added {
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0; }
+  @media (max-width: 376px) {
+    .results-analisis-content .tab-added {
+      padding: 5px 15px; } }
+
+.results-analisis-content .nav-pills > li.active > a {
+  background-color: #e5e5e5;
+  color: #000; }
+  .results-analisis-content .nav-pills > li.active > a:hover {
+    color: #000; }
+
+/* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */
 footer {
   height: 100px;
   width: 100%;
