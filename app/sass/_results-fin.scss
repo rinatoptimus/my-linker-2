@@ -1,11 +1,10 @@
 /* ----------------- РЕЗУЛЬТАТЫ-FIN BEGIN ----------------- */
 // блок с кнопками Добавить анализ и Предоставить доступ
 .results-analisis-content .bg-white-results-analisis {
+  margin-bottom: 27px;
   padding-top: 40px;
   padding-right: 56px;
-  //@include large-desktop {
-  //  padding-top: 0;
-  //}
+  padding-bottom: 23px;
   @include medium-desktop-lg {
     padding-left: 20px;
   }
@@ -44,9 +43,6 @@
   }
 }
 .btn-group-add-offer {
-  //position: absolute;
-  //top: 3px;
-  //right: 15px;
   @include small-devices {
     position: relative;
     display: block;
@@ -58,6 +54,8 @@
     max-width: 300px;
   }
 }
+
+// кнопки Добавить анализ и Предоставить доступ
 .btn-add-analisis {
   margin-right: 10px;
   padding: 6px 14px;
@@ -75,6 +73,40 @@
 }
 .btn-offer-access {
   padding: 6px 8px;
+  @include phone-lg {
+    width: 280px;
+  }
+  @include phone {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 125%);
+  }
+}
+// кнопки Печать и Назад
+.results-analisis-content .btn-print {
+  margin-right: 10px;
+  padding: 4px 19px;
+  @include phone-lg {
+    width: 280px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  @include phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+  }
+  .fa-print {
+    @include phone-lg {
+      margin-left: -4px;
+      padding-right: 3px;
+    }
+  }
+}
+.results-analisis-content .btn-back {
+  padding: 4px 19px;
   @include phone-lg {
     width: 280px;
   }
@@ -165,8 +197,34 @@
     color: $green-border-dark;
   }
 }
+.bg-white-results-analisis .tab-content-certificate {
+  margin-top: 55px;
+  margin-left: 40px;
+  @include large-desktop {
+    clear: both;
+    padding-top: 30px;
+  }
+  @include small-devices {
+    margin-top: 0;
+  }
+  @include phone {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+.certificate-date {
+  float: left;
+  margin-right: 20px;
+  font-size: 13px;
+}
+.certificate-address {
+  font-size: 12px;
+}
+.med-certificate {
+  clear: both;
+}
 
-// блок с кнопками Печать и Назад
+// блок с иконками Плюс и Капля
 .lead-block-icons-container {
   float: left;
   width: 19px;
@@ -201,8 +259,6 @@
   margin-right: 10px;
 }
 
-
-
 // tabs
 .nav-pills-analisis {
   float: left;
@@ -228,8 +284,8 @@
   padding-right: 7px;
   font-size: 16px;
 }
-.results-analisis-content .tab-content {
-  //margin-top: 0;
+.results-analisis-content .tab-content-table {
+  margin-top: 64px;
   @include large-desktop {
     margin-top: 0;
   }
@@ -261,5 +317,8 @@
     color: $black;
   }
 }
-// color: $sidebar-link;
+
+.results-analisis-content .bg-white-certificate {
+  padding-bottom: 40px;
+}
 /* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */

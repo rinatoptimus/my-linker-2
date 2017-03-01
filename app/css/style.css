@@ -1743,8 +1743,10 @@ p.work-time-title {
 /*---------------- KLINIKI-FIN (КОНЕЦ) ----------------*/
 /* ----------------- РЕЗУЛЬТАТЫ-FIN BEGIN ----------------- */
 .results-analisis-content .bg-white-results-analisis {
+  margin-bottom: 27px;
   padding-top: 40px;
-  padding-right: 56px; }
+  padding-right: 56px;
+  padding-bottom: 23px; }
   @media (max-width: 991px) {
     .results-analisis-content .bg-white-results-analisis {
       padding-left: 20px; } }
@@ -1816,6 +1818,41 @@ p.work-time-title {
       width: 280px; } }
   @media (max-width: 401px) {
     .btn-offer-access {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 125%);
+          -ms-transform: translate(-50%, 125%);
+              transform: translate(-50%, 125%); } }
+
+.results-analisis-content .btn-print {
+  margin-right: 10px;
+  padding: 4px 19px; }
+  @media (max-width: 571px) {
+    .results-analisis-content .btn-print {
+      width: 280px;
+      margin-right: 0;
+      margin-bottom: 5px; } }
+  @media (max-width: 401px) {
+    .results-analisis-content .btn-print {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 5%);
+          -ms-transform: translate(-50%, 5%);
+              transform: translate(-50%, 5%); } }
+  @media (max-width: 571px) {
+    .results-analisis-content .btn-print .fa-print {
+      margin-left: -4px;
+      padding-right: 3px; } }
+
+.results-analisis-content .btn-back {
+  padding: 4px 19px; }
+  @media (max-width: 571px) {
+    .results-analisis-content .btn-back {
+      width: 280px; } }
+  @media (max-width: 401px) {
+    .results-analisis-content .btn-back {
       position: absolute;
       top: 60%;
       left: 50%;
@@ -1895,6 +1932,32 @@ p.work-time-title {
   .icon-remove-analisis:hover {
     color: #008977; }
 
+.bg-white-results-analisis .tab-content-certificate {
+  margin-top: 55px;
+  margin-left: 40px; }
+  @media (max-width: 1201px) {
+    .bg-white-results-analisis .tab-content-certificate {
+      clear: both;
+      padding-top: 30px; } }
+  @media (max-width: 767px) {
+    .bg-white-results-analisis .tab-content-certificate {
+      margin-top: 0; } }
+  @media (max-width: 401px) {
+    .bg-white-results-analisis .tab-content-certificate {
+      margin-top: 40px;
+      margin-left: 0; } }
+
+.certificate-date {
+  float: left;
+  margin-right: 20px;
+  font-size: 13px; }
+
+.certificate-address {
+  font-size: 12px; }
+
+.med-certificate {
+  clear: both; }
+
 .lead-block-icons-container {
   float: left;
   width: 19px;
@@ -1948,13 +2011,14 @@ p.work-time-title {
   padding-right: 7px;
   font-size: 16px; }
 
-@media (max-width: 1201px) {
-  .results-analisis-content .tab-content {
-    margin-top: 0; } }
-
-@media (max-width: 767px) {
-  .results-analisis-content .tab-content {
-    margin-top: 10px; } }
+.results-analisis-content .tab-content-table {
+  margin-top: 64px; }
+  @media (max-width: 1201px) {
+    .results-analisis-content .tab-content-table {
+      margin-top: 0; } }
+  @media (max-width: 767px) {
+    .results-analisis-content .tab-content-table {
+      margin-top: 10px; } }
 
 .results-analisis-content .nav-pills > li + li {
   margin-left: -4px; }
@@ -1982,6 +2046,9 @@ p.work-time-title {
   color: #000; }
   .results-analisis-content .nav-pills > li.active > a:hover {
     color: #000; }
+
+.results-analisis-content .bg-white-certificate {
+  padding-bottom: 40px; }
 
 /* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */
 footer {
