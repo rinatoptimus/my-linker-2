@@ -1,0 +1,144 @@
+//.results-analisis-block {
+//  margin-top: 23px;
+//}
+.results-analisis-content .bg-white-results-analisis {
+  padding-top: 40px;
+  padding-right: 56px;
+  @include medium-desktop-lg {
+    padding-left: 20px;
+  }
+  @include small-devices {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  @include phone-lg {
+    padding-right: 0;
+    padding-left: 7px;
+  }
+}
+.results-btns-block {
+  margin-bottom: 35px;
+}
+.results-analisis-content .block-mrt-btn {
+  padding: 6px 21px;
+  font-family: $semibold;
+  font-size: 11px;
+}
+.btn-group-results {
+  @include small-devices {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 278px;
+    height: 40px;
+  }
+}
+.btn-group-add-offer {
+  position: absolute;
+  top: 3px;
+  right: 15px;
+  @include small-devices {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 317px;
+    right: 0;
+  }
+  @include phone {
+    max-width: 300px;
+  }
+}
+.btn-add-analisis {
+  @include phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+  }
+}
+.btn-offer-access {
+  @include phone {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
+}
+
+.results-analisis-content .table-diagnostick {
+  @include small-devices {
+    margin-top: 0;
+  }
+  @include phone-lg {
+    margin-top: 35px;
+  }
+  @include phone {
+    margin-top: 65px;
+  }
+}
+.table > thead > tr > .results-table-title-left {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  padding-left: 60px;
+  @include phone-lg {
+    font-size: 13px;
+  }
+}
+.results-analisis-content .table > thead > tr > .diagnostick-table-title-right {
+  @include phone-lg {
+    font-size: 13px;
+  }
+}
+.results-analisis-content .table > tbody > tr > td {
+  @include phone-lg {
+    line-height: 20px;
+  }
+}
+.results-table-date {
+  width: 74px;
+  height: 30px;
+  margin-left: 34px;
+  margin-right: 12px;
+  font-size: 13px;
+  color: $header-h4;
+  @include medium-desktop-lg {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+.table-diagnostick tbody .first-row .td-date {
+  padding-top: 12px;
+}
+.table-diagnostick tbody tr .td-date {
+  padding-top: 5px;
+  padding-right: 0;
+  padding-left: 5px;
+}
+.table-diagnostick tbody .first-row .td-analisis-name {
+  padding-top: 12px;
+  padding-left: 23px;
+    span {
+      font-size: 12px;
+    }
+}
+.table-diagnostick tbody tr .td-analisis-name {
+  padding-top: 5px;
+  padding-left: 23px;
+    span {
+      font-size: 12px;
+    }
+}
+
+.icon-remove-analisis {
+  margin-left: 5px;
+  color: $green;
+  &:hover {
+    color: $green-border-dark;
+  }
+}
+
+//{
+//  font-family: $semibold;
+//  font-size: 13px;
+//  color: $header-h4;
+//}

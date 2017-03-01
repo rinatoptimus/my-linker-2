@@ -1740,6 +1740,136 @@ p.work-time-title {
   width: 100%; }
 
 /*---------------- KLINIKI-FIN (КОНЕЦ) ----------------*/
+.results-analisis-content .bg-white-results-analisis {
+  padding-top: 40px;
+  padding-right: 56px; }
+  @media (max-width: 991px) {
+    .results-analisis-content .bg-white-results-analisis {
+      padding-left: 20px; } }
+  @media (max-width: 767px) {
+    .results-analisis-content .bg-white-results-analisis {
+      padding-top: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 571px) {
+    .results-analisis-content .bg-white-results-analisis {
+      padding-right: 0;
+      padding-left: 7px; } }
+
+.results-btns-block {
+  margin-bottom: 35px; }
+
+.results-analisis-content .block-mrt-btn {
+  padding: 6px 21px;
+  font-family: "Open Sans Semibold", Arial, sans-serif;
+  font-size: 11px; }
+
+@media (max-width: 767px) {
+  .btn-group-results {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 278px;
+    height: 40px; } }
+
+.btn-group-add-offer {
+  position: absolute;
+  top: 3px;
+  right: 15px; }
+  @media (max-width: 767px) {
+    .btn-group-add-offer {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      max-width: 317px;
+      right: 0; } }
+  @media (max-width: 401px) {
+    .btn-group-add-offer {
+      max-width: 300px; } }
+
+@media (max-width: 401px) {
+  .btn-add-analisis {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 5%);
+        -ms-transform: translate(-50%, 5%);
+            transform: translate(-50%, 5%); } }
+
+@media (max-width: 401px) {
+  .btn-offer-access {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 25%);
+        -ms-transform: translate(-50%, 25%);
+            transform: translate(-50%, 25%); } }
+
+@media (max-width: 767px) {
+  .results-analisis-content .table-diagnostick {
+    margin-top: 0; } }
+
+@media (max-width: 571px) {
+  .results-analisis-content .table-diagnostick {
+    margin-top: 35px; } }
+
+@media (max-width: 401px) {
+  .results-analisis-content .table-diagnostick {
+    margin-top: 65px; } }
+
+.table > thead > tr > .results-table-title-left {
+  padding-top: 12px;
+  padding-bottom: 5px;
+  padding-left: 60px; }
+  @media (max-width: 571px) {
+    .table > thead > tr > .results-table-title-left {
+      font-size: 13px; } }
+
+@media (max-width: 571px) {
+  .results-analisis-content .table > thead > tr > .diagnostick-table-title-right {
+    font-size: 13px; } }
+
+@media (max-width: 571px) {
+  .results-analisis-content .table > tbody > tr > td {
+    line-height: 20px; } }
+
+.results-table-date {
+  width: 74px;
+  height: 30px;
+  margin-left: 34px;
+  margin-right: 12px;
+  font-size: 13px;
+  color: #2b2b2b; }
+  @media (max-width: 991px) {
+    .results-table-date {
+      margin-right: 0;
+      margin-left: 5px; } }
+
+.table-diagnostick tbody .first-row .td-date {
+  padding-top: 12px; }
+
+.table-diagnostick tbody tr .td-date {
+  padding-top: 5px;
+  padding-right: 0;
+  padding-left: 5px; }
+
+.table-diagnostick tbody .first-row .td-analisis-name {
+  padding-top: 12px;
+  padding-left: 23px; }
+  .table-diagnostick tbody .first-row .td-analisis-name span {
+    font-size: 12px; }
+
+.table-diagnostick tbody tr .td-analisis-name {
+  padding-top: 5px;
+  padding-left: 23px; }
+  .table-diagnostick tbody tr .td-analisis-name span {
+    font-size: 12px; }
+
+.icon-remove-analisis {
+  margin-left: 5px;
+  color: #00bdaf; }
+  .icon-remove-analisis:hover {
+    color: #008977; }
+
 footer {
   height: 100px;
   width: 100%;
@@ -2866,7 +2996,6 @@ a.btn-picture {
   display: none; }
 
 .bg-white {
-  margin-top: 20px;
   margin: 20px 0 0 0;
   padding-top: 17px;
   padding-right: 30px;

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Результаты-fin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body data-target=".scrollspy">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sidebar scrollspy-sidebar">
+            <div class="well affix-top" id="sidebar">
+                <div class="sidebar-logo"></div>
+                <nav class="bs-docs-sidebar">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a class="text-uppercase sidebar-link" href="#clinics-biomed">Профиль пациента</a></li>
+                        <li><a href="#doctors" class="text-uppercase sidebar-link">Результаты анализа</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Мой календарь</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">История посещений</a></li>
+                        <li><a href="#researches" class="text-uppercase sidebar-link">Оплата</a></li>
+                        <li><a href="#" class="text-uppercase sidebar-link">Акции</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-lg-9 col-content results-analisis-content">
+            <div class="row bg-white bg-white-results-analisis">
+                <div class="col-lg-12 col-diagnostick-select">
+
+                    <form action="" method="POST">
+                        <div class="form-group results-btns-block">
+                            <div class="btn-group btn-group-results" role="group" aria-label="...">
+                                <button type="button" class="text-uppercase btn btn-default block-mrt-btn">Автоматические</button>
+                                <button type="button" class="text-uppercase btn btn-default block-mrt-btn">Добавленные</button>
+                            </div>
+                            <div class="btn-group btn-group-add-offer">
+                                <button class="btn btn-default btn-ghost text-uppercase btn-add-analisis" type="submit">
+                                    <i class="fa fa-tint green-icon" aria-hidden="true"></i> Добавить анализ
+                                </button>
+                                <button class="btn btn-default btn-ghost text-uppercase btn-offer-access" type="submit">
+                                    <i class="fa fa-hospital-o green-icon" aria-hidden="true"></i> Предоставить доступ
+                                </button>
+                            </div>
+                        </div>
+
+                        <table class="table table-schedule table-diagnostick">
+                            <thead>
+                                <tr class="diagnostick-header">
+                                    <td width="19%" class="results-table-title-left text-uppercase">Дата</td>
+                                    <td class="diagnostick-table-title-right text-uppercase" colspan="2">Наименование анализа</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="first-row">
+                                    <td class="td-date">
+                                        <i class="fa fa-eye green-icon" aria-hidden="true"></i>
+                                        <span class="results-table-date">12.10.2017</span>
+                                    </td>
+                                    <td class="td-analisis-name">
+                                        <span class="text-uppercase">УЗИ, Биомед, Чистопольская</span>
+                                        <a href="#">
+                                            <i class="fa fa-times icon-remove-analisis" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-date">
+                                        <i class="fa fa-eye green-icon" aria-hidden="true"></i>
+                                        <span class="results-table-date">12.10.2017</span>
+                                    </td>
+                                    <td class="td-analisis-name">
+                                        <span class="text-uppercase">МРТ, Здоровье семьи, Чистопольская 33</span>
+                                        <a href="#">
+                                            <i class="fa fa-times icon-remove-analisis" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-date">
+                                        <i class="fa fa-eye green-icon" aria-hidden="true"></i>
+                                        <span class="results-table-date">12.10.2017</span>
+                                    </td>
+                                    <td class="td-analisis-name">
+                                        <span class="text-uppercase">Рентген грудной клетки, Биомед, Чистопольская 33</span>
+                                        <a href="#">
+                                            <i class="fa fa-times icon-remove-analisis" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-date">
+                                        <i class="fa fa-eye green-icon" aria-hidden="true"></i>
+                                        <span class="results-table-date">12.10.2017</span>
+                                    </td>
+                                    <td class="td-analisis-name">
+                                        <span class="text-uppercase">МРТ, Здоровье семьи, Чистопольская 33</span>
+                                        <a href="#">
+                                            <i class="fa fa-times icon-remove-analisis" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-date">
+                                        <i class="fa fa-eye green-icon" aria-hidden="true"></i>
+                                        <span class="results-table-date">12.10.2017</span>
+                                    </td>
+                                    <td class="td-analisis-name">
+                                        <span class="text-uppercase">МРТ, Здоровье семьи, Чистопольская 33</span>
+                                        <a href="#">
+                                            <i class="fa fa-times icon-remove-analisis" aria-hidden="true"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="lead-block">
+                <p class="lead lead-custom text-center">МРТ Гипофиза</p>
+            </div>
+
+            <div class="row bg-white diagnoctick-price">
+                <div class="col-lg-7 col-diagnostick-select">
+                    <form action="" method="">
+                        <table class="table table-schedule-bottom">
+                            <thead>
+                            <tr class="diagnostick-header">
+                                <td class="diagnostick-left text-uppercase">Календарь приема</td>
+                                <td class="diagnostick-right text-uppercase" colspan="2">Время приема</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-6 first-row"><span id="mon">Понедельник</span></td>
+                                <td class="col-md-6 td-inputs first-row">
+                                    <input class="no-spin form-control form-control-custom input-diagnostick-time mon" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time mon" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="tue">Вторник</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time tue" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time tue" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="wed">Среда</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time wed" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time wed" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="thu">Четверг</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time thu" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time thu" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="fri">Пятница</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time fri" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time fri" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="sat">Суббота</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time sat" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time sat" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-6"><span id="sun">Воскресенье</span></td>
+                                <td class="col-md-6 td-inputs">
+                                    <input class="form-control form-control-custom input-diagnostick-time sun" name="" type="number" value="00" min="0" max="24">
+                                    <span class="diagnostick-time-colon">:</span>
+                                    <input class="form-control form-control-custom input-diagnostick-time sun" name="" type="number" value="00" min="0" max="24">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="mrt-table-bottom">
+                            <p class="text-uppercase"><span id="interval">Интервал приема</span></p>
+                            <input class="form-control form-control-custom input-diagnostick-time interval" name="" type="number" value="00" min="0" max="24">
+                            <button class="btn btn-default btn-ghost text-uppercase" type="submit"><i class="fa fa-floppy-o green-icon" aria-hidden="true"></i> Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="app/js/sticky-sidebar.js"></script>
+<script src="app/js/scrollspy-sidebar.js"></script>
+<script src="app/js/popup-clinics.js"></script>
+<script src="app/js/scroll-animation.js"></script>
+
+<script src="app/js/vendor/btn-upload.js"></script>
+<script src="app/js/input-validation-icon.js"></script>
+<script src="app/js/input-validation-icon-long.js"></script>
+
+<script src="app/js/input-select-styles.js"></script>
+
+<script src="app/js/dropdown-arrow.js"></script>
+<script src="app/js/doctor-visit-time.js"></script>
+
+<script src="app/js/vendor/bootstrap-switch.js"></script>
+<script src="app/js/bootstrap-switch-init.js"></script>
+</body>
+</html>
