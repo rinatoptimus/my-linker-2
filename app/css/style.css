@@ -1841,10 +1841,6 @@ p.work-time-title {
       -webkit-transform: translate(-50%, 5%);
           -ms-transform: translate(-50%, 5%);
               transform: translate(-50%, 5%); } }
-  @media (max-width: 571px) {
-    .results-analisis-content .btn-print .fa-print {
-      margin-left: -4px;
-      padding-right: 3px; } }
 
 .results-analisis-content .btn-back {
   padding: 4px 19px; }
@@ -1958,13 +1954,17 @@ p.work-time-title {
 .med-certificate {
   clear: both; }
 
-.lead-block-icons-container {
+.lead-content .lead-block-icons-container {
   float: left;
   width: 19px;
   margin-top: 6px; }
-  .lead-block-icons-container .fa-plus {
+  .lead-content .lead-block-icons-container .fa-plus {
     font-size: 10px;
     float: left; }
+  @media (max-width: 571px) {
+    .lead-content .lead-block-icons-container .fa-tint {
+      margin-left: 29%;
+      margin-right: -23%; } }
 
 .lead-content {
   margin: 0 auto;
@@ -2005,11 +2005,6 @@ p.work-time-title {
       max-width: 100%;
       right: 0;
       text-align: center; } }
-
-.results-analisis-content button .fa {
-  float: left;
-  padding-right: 7px;
-  font-size: 16px; }
 
 .results-analisis-content .tab-content-table {
   margin-top: 64px; }
