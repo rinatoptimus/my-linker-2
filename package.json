@@ -13,5 +13,13 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-watch": "^4.3.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinatoptimus/my-linker-2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rinatoptimus/my-linker-2/issues"
+  },
+  "homepage": "https://github.com/rinatoptimus/my-linker-2#readme"
 }
