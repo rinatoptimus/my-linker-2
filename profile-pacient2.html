@@ -29,143 +29,142 @@
                 </nav>
             </div>
         </div>
-        <div class="col-lg-9 col-content">
-            <div class="row bg-white profile-pacient-content">
-                <div class="col-lg-7 col-md-7 col-sm-7 profile-pacient-form">
-                    <div class="form-group">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Имя</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
-                                   placeholder="Введите имя" required="required">
-                            <div class="green-dot green-dot-name green-dot-visible"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Фамилия</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
-                                   placeholder="Введите фамилию" required="required">
-                            <div class="green-dot green-dot-name green-dot-visible"></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Отчество</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
-                                   placeholder="Введите отчество" required="required">
-                            <div class="green-dot green-dot-name green-dot-visible"></div>
-                        </div>
-                    </div>
-                    <div class="form-group form-group-date">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Дата
-                            рождения</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input class="form-control form-control-custom time-start-input input-birth-day mon"
-                                   name="day" type="number" min="0" max="24" value="00"/>
-                            <input class="form-control form-control-custom time-start-input input-birth-day mon"
-                                   name="month" type="number" min="0" max="24" value="00"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Телефон</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
-                                   placeholder="Введите номер телефона" required="required">
-                            <div class="green-dot green-dot-name green-dot-visible"></div>
-                            <button class="btn btn-default btn-ghost text-uppercase btn-additional-phone" type="submit">
-                                <i class="fa fa-plus green-icon" aria-hidden="true"></i>
-                                <i class="fa fa-phone green-icon" aria-hidden="true"></i>Дополнительный телефон
-                            </button>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Email</label>
-                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                            <input type="email" id="" name="" class="clearable form-control form-control-profile-client"
-                                   placeholder="Введите свой email" required="required">
-                            <div class="green-dot green-dot-name green-dot-visible"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
-
-                    <div class="form-group form-group-profile-avatar">
-                        <p class="text-uppercase label-client-avatar" for="">Фотография</p>
-                        <div class="col-xs-6">
-                            <img src="app/img/doctor-ava.jpg" class="client-avatar" alt="" title="">
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="profile-upload-btns-block">
-                                <label class="btn btn-default btn-file label-btn-upload">
-                                    <i class="fa fa-folder-open fa-1 green-icon icon-upload-avatar"
-                                       aria-hidden="true"></i>
-                                    <span class="text-uppercase"> Обзор</span>
-                                    <input class="input-upload" type="file" name="image-file">
-                                </label>
-                                <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times green-icon" aria-hidden="true"></i> Удалить</a>
+        <form>
+            <div class="col-lg-9 col-content">
+                <div class="row bg-white profile-pacient-content">
+                    <div class="col-lg-7 col-md-7 col-sm-7 profile-pacient-form">
+                        <div class="form-group">
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Имя</label>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
+                                       placeholder="Введите имя" required="required">
+                                <div class="green-dot green-dot-name green-dot-visible"></div>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="call-to-action-block">
-                <div class="bg-call-to-action">
-                    <div class="unskew">
-                        <p>Хотите получать скидки и индивидуальные предложения?</p>
-                        <p class="text-second">Заполните следующие данные.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row bg-white profile-pacient-content">
-                <div class="col-lg-7 col-md-7 col-sm-7 block-oms-lks profile-pacient-form">
-                    <div class="form-group">
-                        <div class="form-group block-name">
-                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name"
-                                   for="">Номер полиса ОМС</label>
+                        <div class="form-group">
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Фамилия</label>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                                <input type="text" id="" name=""
-                                       class="clearable form-control form-control-profile-client input-oms-lks"
+                                <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
                                        placeholder="Введите фамилию" required="required">
                                 <div class="green-dot green-dot-name green-dot-visible"></div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name"
-                                   for="">Номер ЛКС</label>
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Отчество</label>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
-                                <input type="text" id="" name=""
-                                       class="clearable form-control form-control-profile-client input-oms-lks"
-                                       placeholder="13 цифр" required="required">
+                                <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
+                                       placeholder="Введите отчество" required="required">
+                                <div class="green-dot green-dot-name green-dot-visible"></div>
+                            </div>
+                        </div>
+                        <div class="form-group form-group-date">
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Дата
+                                рождения</label>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                <input class="form-control form-control-custom time-start-input input-birth-day mon"
+                                       name="day" type="number" min="0" max="24" value="00"/>
+                                <input class="form-control form-control-custom time-start-input input-birth-day mon"
+                                       name="month" type="number" min="0" max="24" value="00"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Телефон</label>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                <input type="text" id="" name="" class="clearable form-control form-control-profile-client"
+                                       placeholder="Введите номер телефона" required="required">
+                                <div class="green-dot green-dot-name green-dot-visible"></div>
+                                <button class="btn btn-default btn-ghost text-uppercase btn-additional-phone" type="submit">
+                                    <i class="fa fa-plus green-icon" aria-hidden="true"></i>
+                                    <i class="fa fa-phone green-icon" aria-hidden="true"></i>Дополнительный телефон
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name" for="">Email</label>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                <input type="email" id="" name="" class="clearable form-control form-control-profile-client"
+                                       placeholder="Введите свой email" required="required">
                                 <div class="green-dot green-dot-name green-dot-visible"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-offset-3 col-lg-9 col-md-offset-3 col-md-9 col-sm-offset-3 col-sm-9 col-xs-12">
-                    <div class="form-footer">
-
-                        <div class="hidden-lg visible-xs-12">
-                            <div class="green-dot-symbol"></div>
-                            <div class="">
-                                <p>— обязательно для заполнения</p>
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
+                        <div class="form-group form-group-profile-avatar">
+                            <p class="text-uppercase label-client-avatar" for="">Фотография</p>
+                            <div class="col-xs-6">
+                                <img src="app/img/doctor-ava.jpg" class="client-avatar" alt="" title="">
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="profile-upload-btns-block">
+                                    <label class="btn btn-default btn-file label-btn-upload">
+                                        <i class="fa fa-folder-open fa-1 green-icon icon-upload-avatar"
+                                           aria-hidden="true"></i>
+                                        <span class="text-uppercase"> Обзор</span>
+                                        <input class="input-upload" type="file" name="image-file">
+                                    </label>
+                                    <a class="btn btn-default btn-ghost text-uppercase" href="#" role="button"><i class="fa fa-times green-icon" aria-hidden="true"></i> Удалить</a>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <button type="submit" class="btn btn-default btn-custom btn-doctor-page text-uppercase"><i
-                                class="fa fa-floppy-o" aria-hidden="true"></i>Сохранить
-                        </button>
-                        <div class="green-dot-symbol hidden-xs visible-lg"></div>
-                        <div class=" hidden-xs visible-lg">
-                            <p>— обязательно для заполнения</p>
+                <div class="call-to-action-block">
+                    <div class="bg-call-to-action">
+                        <div class="unskew">
+                            <p>Хотите получать скидки и индивидуальные предложения?</p>
+                            <p class="text-second">Заполните следующие данные.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bg-white profile-pacient-content">
+                    <div class="col-lg-7 col-md-7 col-sm-7 block-oms-lks profile-pacient-form">
+                        <div class="form-group">
+                            <div class="form-group block-name">
+                                <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name"
+                                       for="">Номер полиса ОМС</label>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                    <input type="text" id="" name=""
+                                           class="clearable form-control form-control-profile-client input-oms-lks"
+                                           placeholder="Введите фамилию" required="required">
+                                    <div class="green-dot green-dot-name green-dot-visible"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="text-right text-uppercase col-lg-5 col-md-5 col-sm-5 col-xs-4 label-name"
+                                       for="">Номер ЛКС</label>
+                                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-8 label-input-block">
+                                    <input type="text" id="" name=""
+                                           class="clearable form-control form-control-profile-client input-oms-lks"
+                                           placeholder="13 цифр" required="required">
+                                    <div class="green-dot green-dot-name green-dot-visible"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-offset-3 col-lg-9 col-md-offset-3 col-md-9 col-sm-offset-3 col-sm-9 col-xs-12">
+                        <div class="form-footer">
+
+                            <div class="hidden-lg visible-xs-12">
+                                <div class="green-dot-symbol"></div>
+                                <div class="">
+                                    <p>— обязательно для заполнения</p>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-default btn-custom btn-doctor-page text-uppercase"><i
+                                    class="fa fa-floppy-o" aria-hidden="true"></i>Сохранить
+                            </button>
+                            <div class="green-dot-symbol hidden-xs visible-lg"></div>
+                            <div class=" hidden-xs visible-lg">
+                                <p>— обязательно для заполнения</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        </form>
     </div>
 </div>
 
@@ -192,22 +191,5 @@
 <script src="app/js/vendor/bootstrap-switch.js"></script>
 <script src="app/js/bootstrap-switch-init.js"></script>
 
-<script>
-    //    $("input[type='number']").each(function(i, el) {
-    //        el.type = "text";
-    //        el.onfocus = function(){this.type="number";};
-    //        el.onblur = function(){this.type="text";};
-    //    });
-    //
-    //    // Stand-alone version
-    //    (function(){ var elms = document.querySelectorAll("input"), i=elms.length;
-    //        while(i--) {
-    //            var el=elms[i]; if(el.type=="number")
-    //                el.type="text",
-    //                        el.onfocus = function(){this.type="number";},
-    //                        el.onblur = function(){this.type="text";};
-    //        }
-    //    })();
-</script>
 </body>
 </html>

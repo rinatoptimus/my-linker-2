@@ -95,7 +95,6 @@
   }
   .btn-additional-phone {
     margin-top: 5px;
-    //margin-bottom: 20px;
     margin-bottom: 29px; // 1111
     @include phone-md {
       padding: 4px;
@@ -119,27 +118,6 @@
   }
 }
 
-//.form-group-date {
-//  .label-input-block {
-//    .form-control-custom::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-//      font-family: $regular;
-//      color: $clinic-placeholder;
-//    }
-//    .form-control-custom::-moz-placeholder { /* Firefox 19+ */
-//      font-family: $regular;
-//      color: $clinic-placeholder;
-//    }
-//    .form-control-custom:-ms-input-placeholder { /* IE 10+ */
-//      font-family: $regular;
-//      color: $clinic-placeholder;
-//    }
-//    .form-control-custom:-moz-placeholder { /* Firefox 18- */
-//      font-family: $regular;
-//      color: $clinic-placeholder;
-//    }
-//  }
-//}
-
 .call-to-action-block {
   margin-bottom: -20px;
   background-color: $white;
@@ -147,7 +125,6 @@
 }
 .bg-call-to-action {
   max-width: 693px;
-  //margin-top: 10px;
   margin-top: 20px; // 1111
   margin-left: -35px;
   padding-left: 50px;
@@ -244,10 +221,6 @@
   border-radius: 50%;
 }
 .profile-upload-btns-block {
-  //width: 100px;
-  //position: absolute;
-  //right: 4vw;
-  //top: 3vw;
   margin-top: 38px;
   margin-left: -24px;
   @include medium-desktop-lg {
@@ -257,9 +230,6 @@
   @include small-devices {
     right: 0;
     margin-left: 0;
-  }
-  @include phone {
-    //margin-left: 90px;
   }
     .label-btn-upload {
       margin-bottom: 9px;
