@@ -2294,7 +2294,12 @@ p.work-time-title {
   right: 15px; }
 
 .profile-pacient-form .input-birth-day {
-  width: 53px;
+  width: 53px; }
+
+.profile-pacient-form .input-birth-year {
+  width: 70px; }
+
+.profile-pacient-form .input-birth {
   float: left;
   margin-right: 10px;
   text-align: center;
