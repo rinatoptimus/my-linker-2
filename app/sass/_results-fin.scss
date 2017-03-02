@@ -20,11 +20,7 @@
     padding-left: 0;
   }
 }
-.results-analisis-content  .col-diagnostick-select {
-  @include small-devices {
-    //padding-left: 15px;
-  }
-}
+
 .results-btns-block {
   margin-bottom: 35px;
 }
@@ -42,30 +38,14 @@
     height: 40px;
   }
 }
-//.btn-group-add-offer {
-//  @include small-devices {
-//    position: relative;
-//    display: block;
-//    margin: 0 auto;
-//    max-width: 317px;
-//    right: 0;
-//  }
-//  @include phone {
-//    max-width: 300px;
-//  }
-//}
 
 .btn-group-add-offer {
   position: absolute;
   right: 14px;
   padding-top: 7px;
   @include small-devices {
-    //position: relative;
     display: block;
     margin: 0 auto;
-    //max-width: 317px;
-    //right: 0;
-
     position: relative;
     max-width: 100%;
     right: 0;
@@ -119,12 +99,6 @@
     left: 50%;
     transform: translate(-50%, 5%);
   }
-  .fa-print {
-    @include phone-lg {
-      //margin-left: 35%;
-      //margin-right: -39%;
-    }
-  }
 }
 .results-analisis-content .btn-back {
   padding: 4px 22px;
@@ -136,12 +110,6 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, 125%);
-  }
-  .fa-angle-left {
-    @include phone-lg {
-      //margin-left: 37%;
-      //margin-right: -38%;
-    }
   }
 }
 
@@ -262,10 +230,6 @@
     .fa-plus {
       font-size: 10px;
       float: left;
-      //@include phone-lg {
-      //  margin-left: 28%;
-      //  margin-right: -24%;
-      //}
     }
     .fa-tint {
       @include phone-lg {
@@ -283,41 +247,16 @@
 }
 
 .label-upload-results {
+  position: relative;
+  float: left;
   width: 110px;
-  //margin-right: 5px;
-  //margin-top: 2px;
-  //text-align: right;
-  //line-height: 15px;
-
   font-family: $extraBold;
   font-size: 12px;
   font-weight: 900;
-
-  position: relative;
-  float: left;
-  //
-  //width: 110px;
-  //margin-right: 5px;
-  //text-align: right;
-  //line-height: 15px;
   @include small-devices {
     width: 100%;
     text-align: left;
   }
-}
-
-.upload-block {
-  //position: absolute;
-  //margin-top: 50px;
-}
-.label-choose-file {
-  //position: relative;
-  //float: left;
-  //
-  //width: 110px;
-  //margin-right: 5px;
-  //text-align: right;
-  //line-height: 15px;
 }
 
 // tabs
@@ -330,12 +269,6 @@
     text-align: center;
   }
 }
-
-//.results-analisis-content button .fa {
-//  float: left;
-//  padding-right: 7px;
-//  font-size: 16px;
-//}
 
 .results-analisis-content .tab-content-table {
   margin-top: 68px;
@@ -352,9 +285,6 @@
 .results-analisis-content .tab-auto {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  //@include phone-lg {
-  //  padding: 6px 18px;
-  //}
   @include phone-md {
     padding: 5px 15px;
   }
@@ -362,9 +292,6 @@
 .results-analisis-content .tab-added {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  //@include phone-lg {
-  //  padding: 6px 18px;
-  //}
   @include phone-md {
     padding: 5px 15px;
   }
@@ -408,19 +335,6 @@
   }
 }
 .label-analisis-name {
-  //margin-top: 3px;
-  //margin-right: 6px;
-
-  //width: 98px;
-  //margin-right: -20px;
-  //margin-top: 2px;
-  //text-align: right;
-  //line-height: 15px;width: 98px;
-  //margin-right: -20px;
-  //margin-top: 2px;
-  //text-align: right;
-  //line-height: 15px;
-
   width: 84px;
   margin-right: -6px;
   margin-top: 2px;
@@ -436,14 +350,8 @@
   }
 }
 .results-analisis-content .upload-block {
-  //position: absolute;
-  //margin-top: 50px;
-
-  //position: relative;
-  //margin-top: 0;
   margin-top: 15px;
   margin-left: -22px;
-
   padding-top: 50px;
   @include small-devices {
     //margin-left: 0;
@@ -538,14 +446,14 @@
   }
 }
 .form-group-clinics-list .checkbox {
-  label {
-    margin-top: 4px;
-    margin-left: 3px;
-    font-size: 12px;
-    @include phone {
-      line-height: 15px;
-    }
+  @include phone {
+    margin-bottom: 10px;
   }
+    label {
+      margin-top: 4px;
+      margin-left: 3px;
+      font-size: 12px;
+    }
 }
 .give-access-submit-block {
   margin-top: -8px;

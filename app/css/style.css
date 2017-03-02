@@ -1977,12 +1977,12 @@ p.work-time-title {
   max-width: 280px; }
 
 .label-upload-results {
+  position: relative;
+  float: left;
   width: 110px;
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-size: 12px;
-  font-weight: 900;
-  position: relative;
-  float: left; }
+  font-weight: 900; }
   @media (max-width: 767px) {
     .label-upload-results {
       width: 100%;
@@ -2166,13 +2166,14 @@ p.work-time-title {
     .form-group-clinics-list .checkbox {
       height: 50px; } }
 
+@media (max-width: 401px) {
+  .form-group-clinics-list .checkbox {
+    margin-bottom: 10px; } }
+
 .form-group-clinics-list .checkbox label {
   margin-top: 4px;
   margin-left: 3px;
   font-size: 12px; }
-  @media (max-width: 401px) {
-    .form-group-clinics-list .checkbox label {
-      line-height: 15px; } }
 
 .give-access-submit-block {
   margin-top: -8px; }
