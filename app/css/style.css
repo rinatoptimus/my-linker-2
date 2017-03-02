@@ -71,6 +71,7 @@
 /* DIAGNOSTICK PAGE */
 /* DIAGNOSTICK SEARCH NOT ACTIVE */
 /* RESULTS-FIN */
+/* PROFILE-PACIENT */
 body {
   font-family: "Open Sans", Arial, sans-serif; }
 
@@ -2207,14 +2208,240 @@ p.work-time-title {
       color: #000; }
 
 /* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */
+.col-content .profile-pacient-content {
+  padding-top: 26px;
+  padding-left: 0; }
+  @media (max-width: 767px) {
+    .col-content .profile-pacient-content {
+      padding-right: 0; } }
+
+.profile-pacient-form .form-group {
+  height: 31px;
+  margin-left: -5px;
+  margin-bottom: 9px; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .form-group {
+      margin-bottom: 30px; } }
+
+.profile-pacient-form .form-control-profile-client {
+  background-color: #f6f6f6;
+  border-color: #e5e5e5;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #393939;
+  font-style: normal;
+  margin-bottom: 6px; }
+
+.profile-pacient-form .form-control-profile-client::-webkit-input-placeholder {
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  font-size: 16px;
+  color: #2b2b2b; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .form-control-profile-client::-webkit-input-placeholder {
+      font-size: 13px; } }
+
+.profile-pacient-form .form-control-profile-client:-moz-placeholder {
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  font-size: 16px;
+  color: #2b2b2b; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .form-control-profile-client:-moz-placeholder {
+      font-size: 13px; } }
+
+.profile-pacient-form .form-control-profile-client::-moz-placeholder {
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  font-size: 16px;
+  color: #2b2b2b; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .form-control-profile-client::-moz-placeholder {
+      font-size: 13px; } }
+
+.profile-pacient-form .form-control-profile-client:-ms-input-placeholder {
+  font-family: "Open Sans Italic", Arial, sans-serif;
+  font-size: 16px;
+  color: #2b2b2b; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .form-control-profile-client:-ms-input-placeholder {
+      font-size: 13px; } }
+
+.profile-pacient-form .form-group-date {
+  margin-top: 23px;
+  margin-bottom: 23px; }
+
 .profile-pacient-form .label-name {
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-weight: 900;
   font-size: 12px; }
+  @media (max-width: 571px) {
+    .profile-pacient-form .label-name {
+      font-size: 2.5vw;
+      text-align: left; } }
+  @media (max-width: 376px) {
+    .profile-pacient-form .label-name {
+      padding-right: 5px;
+      font-size: 9px; } }
+
+.profile-pacient-form .label-input-block {
+  margin-top: -9px;
+  margin-left: -5px;
+  padding-right: 0;
+  padding-left: 0; }
 
 .profile-pacient-form .green-dot {
   top: 15px;
-  right: 30px; }
+  right: 15px; }
+
+.profile-pacient-form .input-birth-day {
+  width: 53px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #5d5d5d; }
+
+.profile-pacient-form .btn-additional-phone {
+  margin-top: 5px;
+  margin-bottom: 29px; }
+  @media (max-width: 376px) {
+    .profile-pacient-form .btn-additional-phone {
+      padding: 4px; } }
+  .profile-pacient-form .btn-additional-phone .fa-plus {
+    margin-top: 6px;
+    margin-left: 2px;
+    font-size: 8px; }
+    @media (max-width: 376px) {
+      .profile-pacient-form .btn-additional-phone .fa-plus {
+        display: none; } }
+  .profile-pacient-form .btn-additional-phone .fa-phone {
+    margin-right: 2px;
+    margin-left: -7px;
+    font-size: 13px; }
+    @media (max-width: 376px) {
+      .profile-pacient-form .btn-additional-phone .fa-phone {
+        display: none; } }
+
+.call-to-action-block {
+  margin-bottom: -20px;
+  background-color: #fff;
+  overflow: hidden; }
+
+.bg-call-to-action {
+  max-width: 693px;
+  margin-top: 20px;
+  margin-left: -35px;
+  padding-left: 50px;
+  background-color: #f6f6f6;
+  -webkit-transform: skew(-40deg);
+      -ms-transform: skew(-40deg);
+          transform: skew(-40deg); }
+  @media (max-width: 767px) {
+    .bg-call-to-action {
+      max-width: 500px;
+      padding-left: 0px;
+      margin-left: -40px; } }
+  @media (max-width: 571px) {
+    .bg-call-to-action {
+      -webkit-transform: skew(0deg);
+          -ms-transform: skew(0deg);
+              transform: skew(0deg); } }
+  .bg-call-to-action p {
+    font-family: "Open Sans ExtraBold", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #68a697; }
+
+.unskew {
+  padding-left: 55px;
+  padding-top: 4px;
+  -webkit-transform: skew(40deg);
+      -ms-transform: skew(40deg);
+          transform: skew(40deg); }
+  @media (max-width: 571px) {
+    .unskew {
+      -webkit-transform: skew(0deg);
+          -ms-transform: skew(0deg);
+              transform: skew(0deg); } }
+  .unskew .text-second {
+    margin-top: -10px;
+    padding-bottom: 6px; }
+
+.block-oms-lks {
+  padding-top: 3px; }
+
+.block-oms-lks .input-oms-lks {
+  margin-left: 3px; }
+
+.block-oms-lks .green-dot {
+  right: 15px; }
+
+.profile-pacient-content .form-footer {
+  margin-top: 29px;
+  margin-left: -26px; }
+
+.profile-pacient-content .form-footer .btn-doctor-page {
+  float: left;
+  margin-bottom: 45px;
+  padding: 13px 39px;
+  text-align: center;
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 11px; }
+  .profile-pacient-content .form-footer .btn-doctor-page .fa-floppy-o {
+    margin-right: 12px;
+    font-size: 15px; }
+
+.profile-pacient-content .form-footer .green-dot-symbol {
+  right: -10px;
+  margin-right: 30px; }
+
+.profile-pacient-content .form-footer p {
+  margin-left: -12px; }
+
+@media (max-width: 767px) {
+  .form-group-profile-avatar {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: auto; } }
+
+@media (max-width: 571px) {
+  .form-group-profile-avatar {
+    margin-top: 20px; } }
+
+.label-client-avatar {
+  font-family: "Open Sans ExtraBold", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 12px; }
+  @media (max-width: 571px) {
+    .label-client-avatar {
+      margin-top: 20px; } }
+
+.client-avatar {
+  float: left;
+  width: 130px;
+  height: 130px;
+  margin-left: -19px;
+  margin-top: 7px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.profile-upload-btns-block {
+  margin-top: 38px;
+  margin-left: -24px; }
+  @media (max-width: 991px) {
+    .profile-upload-btns-block {
+      position: relative;
+      margin-left: 9px; } }
+  @media (max-width: 767px) {
+    .profile-upload-btns-block {
+      right: 0;
+      margin-left: 0; } }
+  .profile-upload-btns-block .label-btn-upload {
+    margin-bottom: 9px;
+    padding: 2px 12px; }
+  .profile-upload-btns-block .btn-ghost {
+    padding: 4px 9px; }
 
 footer {
   height: 100px;

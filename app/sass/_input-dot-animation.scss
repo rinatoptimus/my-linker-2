@@ -10,7 +10,7 @@
 }
 // add icon after input validation
 .clearable{
-  background: #fff url('../img/icon-checked.png') no-repeat right -17px center;
+  background: $white url('../img/icon-checked.png') no-repeat right -17px center;
   padding: 3px 25px 3px 10px; /* Use the same right padding (18) in jQ! */
   border-radius: 0;
   transition: background 0.4s;
@@ -29,7 +29,7 @@
 
 // для анимации галочки в textarea
 .clearable-textarea {
-  background: #fff url('../img/icon-checked.png') no-repeat right -17px top 15px;
+  background: $white url('../img/icon-checked.png') no-repeat right -17px top 15px;
   padding: 3px 25px 3px 10px;
   border-radius: 0;
   transition: background 0.4s;
