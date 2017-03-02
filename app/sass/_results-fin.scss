@@ -253,8 +253,18 @@
   font-family: $extraBold;
   font-size: 12px;
   font-weight: 900;
+
+
+  margin-left: 6px;
+  text-align: right;
+  margin-right: 5px;
+
+  display: block;
+  width: 140px;
+  margin-left: -28px;
   @include small-devices {
     width: 100%;
+    margin-left: 0;
     text-align: left;
   }
 }
@@ -334,6 +344,12 @@
     padding-left: 0;
   }
 }
+.form-group-analisis-name {
+  margin-left: 35px;
+  @include small-devices {
+    margin-left: 0;
+  }
+}
 .label-analisis-name {
   width: 84px;
   margin-right: -6px;
@@ -342,7 +358,7 @@
   line-height: 15px;
   @include small-devices {
     width: 100%;
-    margin-left: 0;
+    margin-left: 15px;
     text-align: left;
   }
   @include phone-lg {
@@ -354,7 +370,6 @@
   margin-left: -22px;
   padding-top: 50px;
   @include small-devices {
-    //margin-left: 0;
     margin-left: 15px;
     padding-top: 70px;
   }

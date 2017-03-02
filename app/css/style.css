@@ -1982,10 +1982,17 @@ p.work-time-title {
   width: 110px;
   font-family: "Open Sans ExtraBold", Arial, sans-serif;
   font-size: 12px;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-left: 6px;
+  text-align: right;
+  margin-right: 5px;
+  display: block;
+  width: 140px;
+  margin-left: -28px; }
   @media (max-width: 767px) {
     .label-upload-results {
       width: 100%;
+      margin-left: 0;
       text-align: left; } }
 
 .nav-pills-analisis {
@@ -2061,6 +2068,12 @@ p.work-time-title {
       padding-right: 0;
       padding-left: 0; } }
 
+.form-group-analisis-name {
+  margin-left: 35px; }
+  @media (max-width: 767px) {
+    .form-group-analisis-name {
+      margin-left: 0; } }
+
 .label-analisis-name {
   width: 84px;
   margin-right: -6px;
@@ -2070,7 +2083,7 @@ p.work-time-title {
   @media (max-width: 767px) {
     .label-analisis-name {
       width: 100%;
-      margin-left: 0;
+      margin-left: 15px;
       text-align: left; } }
   @media (max-width: 571px) {
     .label-analisis-name {
