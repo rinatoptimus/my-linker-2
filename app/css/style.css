@@ -2234,6 +2234,12 @@ p.work-time-title {
   font-style: normal;
   margin-bottom: 6px; }
 
+.profile-pacient-form .form-control-profile-client:focus:invalid {
+  border-color: #fcb5b5; }
+
+.profile-pacient-form .form-control-profile-client:focus:invalid + .green-dot {
+  background-color: #e90a44; }
+
 .profile-pacient-form .form-control-profile-client::-webkit-input-placeholder {
   font-family: "Open Sans Italic", Arial, sans-serif;
   font-size: 16px;
@@ -2308,7 +2314,8 @@ p.work-time-title {
 
 .profile-pacient-form .btn-additional-phone {
   margin-top: 5px;
-  margin-bottom: 29px; }
+  margin-bottom: 29px;
+  padding-top: 1px; }
   @media (max-width: 376px) {
     .profile-pacient-form .btn-additional-phone {
       padding: 4px; } }

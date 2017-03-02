@@ -23,6 +23,12 @@
     font-style: normal;
     margin-bottom: 6px;
   }
+  .form-control-profile-client:focus:invalid {
+    border-color: $invalid-input;
+  }
+  .form-control-profile-client:focus:invalid + .green-dot {
+    background-color: $invalid-input-dot;
+  }
 
   .form-control-profile-client::-webkit-input-placeholder {
     font-family: $italic;
@@ -101,6 +107,7 @@
   .btn-additional-phone {
     margin-top: 5px;
     margin-bottom: 29px; // 1111
+    padding-top: 1px;
     @include phone-md {
       padding: 4px;
     }
