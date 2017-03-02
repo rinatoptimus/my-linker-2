@@ -237,7 +237,7 @@
                     <!--</form>-->
                 <!--</div>-->
             <!--</div>-->
-            <div class="row bg-white bg-white-results-analisis bg-white-certificate">
+            <div class="row bg-white bg-white-certificate">
                 <div class="col-lg-12 col-diagnostick-select">
                     <ul  class="nav nav-pills nav-pills-analisis">
                         <li class="active">
@@ -257,7 +257,7 @@
                     </div>
                     <div class="tab-content clearfix tab-content-certificate">
                         <div class="tab-pane active" id="aaa">
-                            <div>
+                            <div class="certificate-caption">
                                 <p class="certificate-date">12.10.2017</p>
                                 <p class="text-uppercase certificate-address">УЗИ, Биомед, Чистопольская</p>
                             </div>
@@ -266,7 +266,13 @@
                             </div>
                         </div>
                         <div class="tab-pane" id="bbb">
-
+                            <div class="certificate-caption">
+                                <p class="certificate-date">10.11.2017</p>
+                                <p class="text-uppercase certificate-address">УЗИ, Биомед, Московская 3</p>
+                            </div>
+                            <div class="med-certificate">
+                                <img class="img-responsive" src="app/img/spravka.jpg" alt="Справка" title="Справка">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,29 +297,102 @@
                 </div>
             </div>
 
-            <div class="row bg-white diagnoctick-price">
-                <div class="col-lg-7 col-diagnostick-select">
+            <!--<div class="row bg-white add-analisis-results">-->
+                <!--<div class="col-lg-7 col-diagnostick-select">-->
+                    <!--<form action="" method="">-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="" class="text-uppercase col-lg-2 col-md-2 col-sm-2 col-xs-12 label-upload-results label-analisis-name">Название анализа:</label>-->
+                            <!--<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">-->
+                                <!--<input name="" type="text" class="form-control" id="" placeholder="Введите фамилию">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<div class="upload-block">-->
+                                <!--<p class="text-uppercase label-upload-results">Выберите файл:</p>-->
+                                <!--<label class="btn btn-default btn-file label-btn-upload">-->
+                                    <!--<i class="fa fa-folder-open fa-1 green-icon" aria-hidden="true"></i>-->
+                                    <!--<span class="text-uppercase"> Обзор</span>-->
+                                    <!--<input class="input-upload" type="file" name="image-file">-->
+                                <!--</label>-->
+                                <!--<button class="btn btn-default btn-ghost text-uppercase btn-remove-analisis" type="submit">-->
+                                    <!--<i class="fa fa-times green-icon" aria-hidden="true"></i> Удалить-->
+                                <!--</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                    <!--<hr class="add-analisis-divider">-->
+                    <!--<div class="upload-results-subtext">-->
+                        <!--<p class="text-uppercase text-center">Допускается использование форматов: .JPG, .PNG, .PDF</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+            <div class="row bg-white add-analisis-results">
+                <div class="col-diagnostick-select">
                     <form action="" method="">
                         <div class="form-group">
-                            <label for="" class="text-uppercase col-sm-2 control-label label-upload-results">Название анализа</label>
-                            <div class="col-sm-10">
+                            <label for="" class="text-uppercase label-upload-results label-analisis-name">Название анализа:</label>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <input name="" type="text" class="form-control" id="" placeholder="Введите фамилию">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="upload-block">
-                                <p class="text-uppercase label-choose-file label-upload-results">Выберите файл</p>
+                                <p class="text-uppercase label-upload-results">Выберите файл:</p>
                                 <label class="btn btn-default btn-file label-btn-upload">
                                     <i class="fa fa-folder-open fa-1 green-icon" aria-hidden="true"></i>
                                     <span class="text-uppercase"> Обзор</span>
                                     <input class="input-upload" type="file" name="image-file">
                                 </label>
-                                <button class="btn btn-default btn-ghost text-uppercase btn-add-analisis" type="submit">
+                                <button class="btn btn-default btn-ghost text-uppercase btn-remove-analisis" type="submit">
                                     <i class="fa fa-times green-icon" aria-hidden="true"></i> Удалить
                                 </button>
                             </div>
                         </div>
+                    </form>
+                    <hr class="add-analisis-divider">
+                    <div class="upload-results-subtext">
+                        <p class="text-uppercase text-center">Допускается использование форматов: .JPG, .PNG, .PDF</p>
+                    </div>
+                </div>
+            </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="lead-block">
+                <div class="lead-content">
+                    <div class="lead-block-icons-container">
+                        <i class="fa fa-hospital-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="lead-title-block">
+                        <p class="lead lead-custom text-center">Предоставить доступ. Выберите клиники</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row bg-white give-access">
+                <div class="col-lg-7 col-diagnostick-select">
+                    <form action="" method="">
+                        <div class="form-group">
+                            <label for="" class="text-uppercase col-lg-2 col-md-2 col-sm-2 col-xs-12 label-upload-results label-analisis-name">Поиск</label>
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <input name="" type="text" class="form-control" id="" placeholder="Введите название клиники">
+                            </div>
+                        </div>
+                        <div class="form-group">
+
+                        </div>
                     </form>
                 </div>
             </div>
