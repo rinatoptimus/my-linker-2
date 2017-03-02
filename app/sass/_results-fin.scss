@@ -428,8 +428,11 @@
   line-height: 15px;
   @include small-devices {
     width: 100%;
-    margin-left: 15px;
+    margin-left: 0;
     text-align: left;
+  }
+  @include phone-lg {
+    margin-left: 15px;
   }
 }
 .results-analisis-content .upload-block {
@@ -493,7 +496,76 @@
 }
 
 // блок Предоставить доступ
-.give-access {
-
+.results-analisis-content .lead-block-results {
+  margin-top: 33px;
+}
+.results-analisis-content .give-access {
+  padding-top: 20px;
+  padding-left: 25px;
+  @include phone {
+    padding-left: 0;
+  }
+    .access-search-label {
+      margin-top: 10px;
+      margin-right: -18px;
+      @include small-devices {
+        width: 70px;
+      }
+      @include phone-lg {
+        padding-left: 0;
+      }
+    }
+}
+.form-group-search-clinic {
+  height: 40px;
+}
+.results-analisis-content .form-group-clinics-list {
+  margin-top: -3px;
+  padding-left: 27px;
+  @include small-devices {
+    margin-top: 30px;
+    padding-left: 15px;
+  }
+  @include phone-lg {
+    margin-top: 35px;
+  }
+}
+.form-group-clinics-list .checkbox {
+  height: 37px;
+  margin-bottom: -7px;
+  @include phone {
+    height: 50px;
+  }
+}
+.form-group-clinics-list .checkbox {
+  label {
+    margin-top: 4px;
+    margin-left: 3px;
+    font-size: 12px;
+    @include phone {
+      line-height: 15px;
+    }
+  }
+}
+.give-access-submit-block {
+  margin-top: -8px;
+    .btn-doctor-page {
+      margin-left: 28px;
+      padding: 12px 41px;
+    }
+    .give-access-form-cancel {
+      display: inline-block;
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 17px;
+      padding-top: 18px;
+      font-size: 11px;
+      text-decoration: underline;
+      color: $header-list;
+      &:hover {
+        text-decoration: none;
+        color: $black;
+      }
+    }
 }
 /* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */

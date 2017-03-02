@@ -2070,8 +2070,11 @@ p.work-time-title {
   @media (max-width: 767px) {
     .label-analisis-name {
       width: 100%;
-      margin-left: 15px;
+      margin-left: 0;
       text-align: left; } }
+  @media (max-width: 571px) {
+    .label-analisis-name {
+      margin-left: 15px; } }
 
 .results-analisis-content .upload-block {
   margin-top: 15px;
@@ -2122,6 +2125,72 @@ p.work-time-title {
       .upload-results-subtext p {
         max-width: 280px;
         margin: 20px auto 0; } }
+
+.results-analisis-content .lead-block-results {
+  margin-top: 33px; }
+
+.results-analisis-content .give-access {
+  padding-top: 20px;
+  padding-left: 25px; }
+  @media (max-width: 401px) {
+    .results-analisis-content .give-access {
+      padding-left: 0; } }
+  .results-analisis-content .give-access .access-search-label {
+    margin-top: 10px;
+    margin-right: -18px; }
+    @media (max-width: 767px) {
+      .results-analisis-content .give-access .access-search-label {
+        width: 70px; } }
+    @media (max-width: 571px) {
+      .results-analisis-content .give-access .access-search-label {
+        padding-left: 0; } }
+
+.form-group-search-clinic {
+  height: 40px; }
+
+.results-analisis-content .form-group-clinics-list {
+  margin-top: -3px;
+  padding-left: 27px; }
+  @media (max-width: 767px) {
+    .results-analisis-content .form-group-clinics-list {
+      margin-top: 30px;
+      padding-left: 15px; } }
+  @media (max-width: 571px) {
+    .results-analisis-content .form-group-clinics-list {
+      margin-top: 35px; } }
+
+.form-group-clinics-list .checkbox {
+  height: 37px;
+  margin-bottom: -7px; }
+  @media (max-width: 401px) {
+    .form-group-clinics-list .checkbox {
+      height: 50px; } }
+
+.form-group-clinics-list .checkbox label {
+  margin-top: 4px;
+  margin-left: 3px;
+  font-size: 12px; }
+  @media (max-width: 401px) {
+    .form-group-clinics-list .checkbox label {
+      line-height: 15px; } }
+
+.give-access-submit-block {
+  margin-top: -8px; }
+  .give-access-submit-block .btn-doctor-page {
+    margin-left: 28px;
+    padding: 12px 41px; }
+  .give-access-submit-block .give-access-form-cancel {
+    display: inline-block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 17px;
+    padding-top: 18px;
+    font-size: 11px;
+    text-decoration: underline;
+    color: #898989; }
+    .give-access-submit-block .give-access-form-cancel:hover {
+      text-decoration: none;
+      color: #000; }
 
 /* ----------------- РЕЗУЛЬТАТЫ-FIN END ----------------- */
 footer {
