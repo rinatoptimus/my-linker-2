@@ -1,0 +1,18 @@
+input.form-control.form-control-custom.input-birth-day:empty {
+  text-indent: -9999px;
+  background-image: url("../img/bg-input-day.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+input.form-control.form-control-custom.input-birth-month:empty {
+  text-indent: -9999px;
+  background-image: url("../img/bg-input-month.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+input.form-control.form-control-custom.input-birth-year:empty {
+  text-indent: -9999px;
+  background-image: url("../img/bg-input-year.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

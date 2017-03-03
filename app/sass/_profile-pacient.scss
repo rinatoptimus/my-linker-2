@@ -1,3 +1,4 @@
+/* ----------------- ПРОФИЛЬ ПАЦИЕНТА-FIN (НАЧАЛО) ----------------- */
 .col-content .profile-pacient-content {
   padding-top: 26px;
   padding-left: 0;
@@ -7,8 +8,8 @@
 }
 .profile-pacient-form {
   .form-group {
-    height: 31px; // 1111
-    margin-left: -5px; // 1111
+    height: 31px;
+    margin-left: -5px;
     margin-bottom: 9px;
     @include phone-lg {
       margin-bottom: 30px;
@@ -63,6 +64,8 @@
     }
   }
 
+  
+
   .form-group-date {
     margin-top: 23px;
     margin-bottom: 23px;
@@ -83,15 +86,14 @@
   .label-input-block {
     margin-top: -9px;
     margin-left: -5px;
-    padding-right: 0; // 1111
+    padding-right: 0;
     padding-left: 0;
   }
   .green-dot {
     top: 15px;
-    //right: 30px;
-    right: 15px; // 1111
+    right: 15px;
   }
-  .input-birth-day {
+  .input-birth-day, .input-birth-month {
     width: 53px;
   }
   .input-birth-year {
@@ -106,7 +108,7 @@
   }
   .btn-additional-phone {
     margin-top: 5px;
-    margin-bottom: 29px; // 1111
+    margin-bottom: 29px;
     padding-top: 1px;
     @include phone-md {
       padding: 4px;
@@ -137,7 +139,7 @@
 }
 .bg-call-to-action {
   max-width: 693px;
-  margin-top: 20px; // 1111
+  margin-top: 20px;
   margin-left: -35px;
   padding-left: 50px;
 
@@ -181,7 +183,7 @@
   right: 15px;
 }
 .profile-pacient-content .form-footer {
-  margin-top: 29px; // 1111
+  margin-top: 29px;
   margin-left: -26px;
 }
 .profile-pacient-content .form-footer .btn-doctor-page {
@@ -251,3 +253,4 @@
       padding: 4px 9px;
     }
 }
+/* ----------------- ПРОФИЛЬ ПАЦИЕНТА-FIN (КОНЕЦ) ----------------- */

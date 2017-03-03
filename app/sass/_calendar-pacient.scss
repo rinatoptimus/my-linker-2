@@ -1,0 +1,97 @@
+/* ----------------- КАЛЕНДАРЬ ПАЦИЕНТА-FIN (НАЧАЛО) ----------------- */
+.calendar-content-block {
+  padding-left: 23px;
+}
+.calendar-pacient-title{
+  margin-top: 31px;
+  margin-left: -15px;
+  font-family: $extraBold;
+  font-weight: 900;
+  font-size: 16px;
+  color: $header-h4;
+}
+.calendar-pacient-widget {
+  width: 270px;
+  position: relative;
+  margin-top: 17px;
+  margin-right: 9px;
+  margin-left: -16px;
+  padding: 17px 17px 12px 30px;
+
+  background-color: $bg-calendar-pacient-widget;
+  border-radius: 8px;
+    .calendar-date-block {
+      overflow: hidden;
+      margin-bottom: 6px;
+      color: $white;
+    }
+    .specialist-name {
+      letter-spacing: 1.4px;
+      font-family: $extraBold;
+      font-weight: 900;
+      font-size: 11px;
+      color: $header-h4;
+    }
+    span {
+      font-family: $regular;
+    }
+    .left-number {
+      float: left;
+      margin-top: -17px;
+    }
+    .right-number {
+      padding-top: 8px;
+      letter-spacing: 2px;
+      font-size: 13px;
+      .date-text {
+        margin-bottom: 1px;
+        line-height: 16px;
+      }
+      .time {
+        display: inline;
+        margin-left: 2px;
+        padding: 2px 5px;
+        background-color: $green;
+        border-radius: 4px;
+        font-size: 10px;
+      }
+    }
+    .day-number {
+      font-family: $extraBold;
+      font-weight: 900;
+      font-size: 70px;
+    }
+    .address {
+      margin-top: -35px;
+      max-width: 159px;
+    }
+    .address a {
+      max-width: 200px;
+      margin-top: -62px;
+      padding: 3px 12px;
+      background-color: $sidebar-link;
+      border-radius: 4px;
+      font-size: 9px;
+      color: $white;
+      margin-top: -32px;
+      display: block;
+    }
+    i {
+      position: absolute;
+      color: $white;
+      &:hover {
+        color: $icon-hover;
+      }
+    }
+    .fa-times {
+      top: 10px;
+      right: 12px;
+      font-size: 15px;
+    }
+    .fa-cog {
+      bottom: 10px;
+      right: 11px;
+      font-size: 18px;
+    }
+}
+/* ----------------- КАЛЕНДАРЬ ПАЦИЕНТА-FIN (КОНЕЦ) ----------------- */
