@@ -3,7 +3,8 @@
  */
 $('#sidebar').affix({
     offset: {
-        top: 100
+        top: 0,
+        bottom: 300
     }
 });
 

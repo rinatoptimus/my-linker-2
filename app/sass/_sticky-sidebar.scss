@@ -70,3 +70,14 @@
     width: 270px;
   }
 }
+
+// для исправления ошибка, когда сайдбар наезжал на футер
+.affix {
+  position: fixed;
+  top: 0;
+  background: red;
+}
+.affix-bottom {
+  position: absolute;
+  bottom: 0;
+}
